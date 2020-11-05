@@ -839,7 +839,7 @@ Response ItemDonorProducerMechanic
 }
 Rule ItemDonorProducerMechanic
 {
-	criteria ConceptPlayerPickup IsMechanic IsDonorProducer ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem
+	criteria ConceptPlayerPickup IsMechanic IsDonorProducer ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkMechanic:1:3"
 	applycontexttoworld
 	Response ItemDonorProducerMechanic
@@ -853,7 +853,7 @@ Response ItemDonorCoachMechanic
 }
 Rule ItemDonorCoachMechanic
 {
-	criteria ConceptPlayerPickup IsMechanic IsDonorCoach ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem
+	criteria ConceptPlayerPickup IsMechanic IsDonorCoach ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkMechanic:1:3"
 	applycontexttoworld
 	Response ItemDonorCoachMechanic
@@ -867,7 +867,7 @@ Response ItemDonorGamblerMechanic
 }
 Rule ItemDonorGamblerMechanic
 {
-	criteria ConceptPlayerPickup IsMechanic IsDonorGambler ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem
+	criteria ConceptPlayerPickup IsMechanic IsDonorGambler ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkMechanic:1:3"
 	applycontexttoworld
 	Response ItemDonorGamblerMechanic
@@ -881,7 +881,7 @@ Response ItemDonorBikerMechanic
 }
 Rule ItemDonorBikerMechanic
 {
-	criteria ConceptPlayerPickup IsMechanic IsDonorBiker ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem
+	criteria ConceptPlayerPickup IsMechanic IsDonorBiker ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkMechanic:1:3"
 	applycontexttoworld
 	Response ItemDonorBikerMechanic
@@ -895,7 +895,7 @@ Response ItemDonorTeenGirlMechanic
 }
 Rule ItemDonorTeenGirlMechanic
 {
-	criteria ConceptPlayerPickup IsMechanic IsDonorTeenGirl ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem
+	criteria ConceptPlayerPickup IsMechanic IsDonorTeenGirl ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkMechanic:1:3"
 	applycontexttoworld
 	Response ItemDonorTeenGirlMechanic
@@ -909,7 +909,7 @@ Response ItemDonorManagerMechanic
 }
 Rule ItemDonorManagerMechanic
 {
-	criteria ConceptPlayerPickup IsMechanic IsDonorManager ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem
+	criteria ConceptPlayerPickup IsMechanic IsDonorManager ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkMechanic:1:3"
 	applycontexttoworld
 	Response ItemDonorManagerMechanic
@@ -924,7 +924,7 @@ Response ItemDonorNamVetMechanic
 }
 Rule ItemDonorNamVetMechanic
 {
-	criteria ConceptPlayerPickup IsMechanic IsDonorNamVet ChanceToFire30Percent IsHealingItem
+	criteria ConceptPlayerPickup IsMechanic IsDonorNamVet ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkMechanic:1:3"
 	applycontexttoworld
 	Response ItemDonorNamVetMechanic

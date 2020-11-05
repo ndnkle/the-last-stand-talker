@@ -858,7 +858,7 @@ Response ItemDonorProducerCoach
 }
 Rule ItemDonorProducerCoach
 {
-	criteria ConceptPlayerPickup IsCoach IsDonorProducer ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem
+	criteria ConceptPlayerPickup IsCoach IsDonorProducer ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkCoach:1:3"
 	applycontexttoworld
 	Response ItemDonorProducerCoach
@@ -870,7 +870,7 @@ Response ItemDonorMechanicCoach
 }
 Rule ItemDonorMechanicCoach
 {
-	criteria ConceptPlayerPickup IsCoach IsDonorMechanic ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem
+	criteria ConceptPlayerPickup IsCoach IsDonorMechanic ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkCoach:1:3"
 	applycontexttoworld
 	Response ItemDonorMechanicCoach
@@ -882,7 +882,7 @@ Response ItemDonorGamblerCoach
 }
 Rule ItemDonorGamblerCoach
 {
-	criteria ConceptPlayerPickup IsCoach IsDonorGambler ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem
+	criteria ConceptPlayerPickup IsCoach IsDonorGambler ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkCoach:1:3"
 	applycontexttoworld
 	Response ItemDonorGamblerCoach
@@ -894,7 +894,7 @@ Response ItemDonorBikerCoach
 }
 Rule ItemDonorBikerCoach
 {
-	criteria ConceptPlayerPickup IsCoach IsDonorBiker ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem
+	criteria ConceptPlayerPickup IsCoach IsDonorBiker ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkCoach:1:3"
 	applycontexttoworld
 	Response ItemDonorBikerCoach
@@ -907,7 +907,7 @@ Response ItemDonorTeenGirlCoach
 }
 Rule ItemDonorTeenGirlCoach
 {
-	criteria ConceptPlayerPickup IsCoach IsDonorTeenGirl ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem
+	criteria ConceptPlayerPickup IsCoach IsDonorTeenGirl ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkCoach:1:3"
 	applycontexttoworld
 	Response ItemDonorTeenGirlCoach
@@ -920,7 +920,7 @@ Response ItemDonorManagerCoach
 }
 Rule ItemDonorManagerCoach
 {
-	criteria ConceptPlayerPickup IsCoach IsDonorManager ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem
+	criteria ConceptPlayerPickup IsCoach IsDonorManager ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkCoach:1:3"
 	applycontexttoworld
 	Response ItemDonorManagerCoach
@@ -933,7 +933,7 @@ Response ItemDonorNamVetCoach
 }
 Rule ItemDonorNamVetCoach
 {
-	criteria ConceptPlayerPickup IsCoach IsDonorNamVet ChanceToFire30Percent IsHealingItem
+	criteria ConceptPlayerPickup IsCoach IsDonorNamVet ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkCoach:1:3"
 	applycontexttoworld
 	Response ItemDonorNamVetCoach
@@ -12788,7 +12788,7 @@ Response TeamKillFromMechanicCoach
 }
 Rule TeamKillFromMechanicCoach
 {
-	criteria ConceptSurvivorDied IsNotCoughing IsCoach IsTalk IsTalkCoach IsNotSaidSomeoneDied IsSaidFaultFriendlyFireGeneral IsNotSaidFaultFriendlyFireMechanic ChanceToFire50Percent IsWorldTalkCoach
+	criteria ConceptSurvivorDied IsNotCoughing IsCoach IsTalk IsTalkCoach IsNotSaidSomeoneDied IsSaidFaultFriendlyFireGeneral IsSaidFaultFriendlyFireMechanic ChanceToFire50Percent IsWorldTalkCoach
 	ApplyContext "SaidSomeoneDied:1:10,TalkCoach:1:4"
 	applycontexttoworld
 	Response TeamKillFromMechanicCoach

@@ -851,6 +851,7 @@ criterion "IsNotPickedUpPipeBomb"  "ItemPickedUp" "!=PipeBomb" required
 criterion "IsNotPickedUpVomitJar"  "ItemPickedUp" "!=VomitJar" required
 criterion "IsNotPickedUpPainPills"  "ItemPickedUp" "!=PainPills" required
 criterion "IsNotPickedUpAdrenaline"  "ItemPickedUp" "!=Adrenaline" required
+criterion "IsNotPickedUpDefibrillator"  "ItemPickedUp" "!=Defibrillator" required
 
 criterion "IsPickedUpFirstAidKit"  "ItemPickedUp" "FirstAidKit" required
 criterion "IsPickedUpSecondPistol"  "ItemPickedUp" "SecondPistol" required

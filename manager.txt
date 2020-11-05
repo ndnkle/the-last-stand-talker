@@ -211,7 +211,7 @@ Response ItemDonorProducerManager
 }
 Rule ItemDonorProducerManager
 {
-	criteria ConceptPlayerPickup IsManager IsDonorProducer ChanceToFire30Percent IsHealingItem
+	criteria ConceptPlayerPickup IsManager IsDonorProducer ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkManager:1:3"
 	applycontexttoworld
 	Response ItemDonorProducerManager
@@ -227,7 +227,7 @@ Response ItemDonorCoachManager
 }
 Rule ItemDonorCoachManager
 {
-	criteria ConceptPlayerPickup IsManager IsDonorCoach ChanceToFire30Percent IsHealingItem
+	criteria ConceptPlayerPickup IsManager IsDonorCoach ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkManager:1:3"
 	applycontexttoworld
 	Response ItemDonorCoachManager
@@ -243,7 +243,7 @@ Response ItemDonorGamblerManager
 }
 Rule ItemDonorGamblerManager
 {
-	criteria ConceptPlayerPickup IsManager IsDonorGambler ChanceToFire30Percent IsHealingItem
+	criteria ConceptPlayerPickup IsManager IsDonorGambler ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkManager:1:3"
 	applycontexttoworld
 	Response ItemDonorGamblerManager
@@ -259,7 +259,7 @@ Response ItemDonorMechanicManager
 }
 Rule ItemDonorMechanicManager
 {
-	criteria ConceptPlayerPickup IsManager IsDonorMechanic ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem
+	criteria ConceptPlayerPickup IsManager IsDonorMechanic ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkManager:1:3"
 	applycontexttoworld
 	Response ItemDonorMechanicManager
@@ -275,7 +275,7 @@ Response ItemDonorBikerManager
 }
 Rule ItemDonorBikerManager
 {
-	criteria ConceptPlayerPickup IsManager IsDonorBiker ChanceToFire30Percent IsHealingItem
+	criteria ConceptPlayerPickup IsManager IsDonorBiker ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkManager:1:3"
 	applycontexttoworld
 	Response ItemDonorBikerManager
@@ -290,7 +290,7 @@ Response ItemDonorTeenGirlManager
 }
 Rule ItemDonorTeenGirlManager
 {
-	criteria ConceptPlayerPickup IsManager IsDonorTeenGirl ChanceToFire30Percent IsHealingItem
+	criteria ConceptPlayerPickup IsManager IsDonorTeenGirl ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkManager:1:3"
 	applycontexttoworld
 	Response ItemDonorTeenGirlManager
@@ -306,7 +306,7 @@ Response ItemDonorNamVetManager
 }
 Rule ItemDonorNamVetManager
 {
-	criteria ConceptPlayerPickup IsManager IsDonorNamVet ChanceToFire30Percent IsHealingItem
+	criteria ConceptPlayerPickup IsManager IsDonorNamVet ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkManager:1:3"
 	applycontexttoworld
 	Response ItemDonorNamVetManager

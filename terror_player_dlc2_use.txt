@@ -33,7 +33,7 @@ Criterion "IsCrashCourse1" "map" "c9m1_alleys" "required" weight 100
 Criterion "IsCrashCourse2" "map" "c9m2_lots" "required" weight 100
 Criterion "IsDeathToll1" "map" "c10m1_caves" "required" weight 100
 Criterion "IsDeathToll2" "map" "c10m2_drainage" "required" weight 100
-Criterion "IsDeathToll3" "map" "c10m3_ranchouse" "required" weight 100
+Criterion "IsDeathToll3" "map" "c10m3_ranchhouse" "required" weight 100
 Criterion "IsDeathToll4" "map" "c10m4_mainstreet" "required" weight 100
 Criterion "IsDeathToll5" "map" "c10m5_houseboat" "required" weight 100
 Criterion "IsDeadAir1" "map" "c11m1_greenhouse" "required" weight 100

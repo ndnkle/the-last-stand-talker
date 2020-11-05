@@ -688,7 +688,7 @@ Response ItemDonorCoachProducer
 }
 Rule ItemDonorCoachProducer
 {
-	criteria ConceptPlayerPickup IsProducer IsDonorCoach ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem
+	criteria ConceptPlayerPickup IsProducer IsDonorCoach ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkProducer:1:3"
 	applycontexttoworld
 	Response ItemDonorCoachProducer
@@ -700,7 +700,7 @@ Response ItemDonorMechanicProducer
 }
 Rule ItemDonorMechanicProducer
 {
-	criteria ConceptPlayerPickup IsProducer IsDonorMechanic ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem
+	criteria ConceptPlayerPickup IsProducer IsDonorMechanic ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkProducer:1:3"
 	applycontexttoworld
 	Response ItemDonorMechanicProducer
@@ -714,7 +714,7 @@ Response ItemDonorBikerProducer
 }
 Rule ItemDonorBikerProducer
 {
-	criteria ConceptPlayerPickup IsProducer IsDonorBiker ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem
+	criteria ConceptPlayerPickup IsProducer IsDonorBiker ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkProducer:1:3"
 	applycontexttoworld
 	Response ItemDonorBikerProducer
@@ -729,7 +729,7 @@ Response ItemDonorTeenGirlProducer
 }
 Rule ItemDonorTeenGirlProducer
 {
-	criteria ConceptPlayerPickup IsProducer IsDonorTeenGirl ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem
+	criteria ConceptPlayerPickup IsProducer IsDonorTeenGirl ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkProducer:1:3"
 	applycontexttoworld
 	Response ItemDonorTeenGirlProducer
@@ -742,7 +742,7 @@ Response ItemDonorManagerProducer
 }
 Rule ItemDonorManagerProducer
 {
-	criteria ConceptPlayerPickup IsProducer IsDonorManager ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem
+	criteria ConceptPlayerPickup IsProducer IsDonorManager ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkProducer:1:3"
 	applycontexttoworld
 	Response ItemDonorManagerProducer
@@ -755,7 +755,7 @@ Response ItemDonorNamVetProducer
 }
 Rule ItemDonorNamVetProducer
 {
-	criteria ConceptPlayerPickup IsProducer IsDonorNamVet ChanceToFire30Percent IsHealingItem
+	criteria ConceptPlayerPickup IsProducer IsDonorNamVet ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
 	ApplyContext "TalkProducer:1:3"
 	applycontexttoworld
 	Response ItemDonorNamVetProducer

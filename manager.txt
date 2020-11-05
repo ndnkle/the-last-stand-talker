@@ -211,7 +211,7 @@ Response ItemDonorProducerManager
 }
 Rule ItemDonorProducerManager
 {
-	criteria ConceptPlayerPickup IsManager IsDonorProducer ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsManager IsDonorProducer ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkManager:1:3"
 	applycontexttoworld
 	Response ItemDonorProducerManager
@@ -227,7 +227,7 @@ Response ItemDonorCoachManager
 }
 Rule ItemDonorCoachManager
 {
-	criteria ConceptPlayerPickup IsManager IsDonorCoach ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsManager IsDonorCoach ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkManager:1:3"
 	applycontexttoworld
 	Response ItemDonorCoachManager
@@ -243,7 +243,7 @@ Response ItemDonorGamblerManager
 }
 Rule ItemDonorGamblerManager
 {
-	criteria ConceptPlayerPickup IsManager IsDonorGambler ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsManager IsDonorGambler ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkManager:1:3"
 	applycontexttoworld
 	Response ItemDonorGamblerManager
@@ -259,7 +259,7 @@ Response ItemDonorMechanicManager
 }
 Rule ItemDonorMechanicManager
 {
-	criteria ConceptPlayerPickup IsManager IsDonorMechanic ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsManager IsDonorMechanic ChanceToFire30Percent IsNotc6m3_portHeavy IsPickedUpValidHealingItem
 	ApplyContext "TalkManager:1:3"
 	applycontexttoworld
 	Response ItemDonorMechanicManager
@@ -275,7 +275,7 @@ Response ItemDonorBikerManager
 }
 Rule ItemDonorBikerManager
 {
-	criteria ConceptPlayerPickup IsManager IsDonorBiker ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsManager IsDonorBiker ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkManager:1:3"
 	applycontexttoworld
 	Response ItemDonorBikerManager
@@ -290,7 +290,7 @@ Response ItemDonorTeenGirlManager
 }
 Rule ItemDonorTeenGirlManager
 {
-	criteria ConceptPlayerPickup IsManager IsDonorTeenGirl ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsManager IsDonorTeenGirl ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkManager:1:3"
 	applycontexttoworld
 	Response ItemDonorTeenGirlManager
@@ -306,7 +306,7 @@ Response ItemDonorNamVetManager
 }
 Rule ItemDonorNamVetManager
 {
-	criteria ConceptPlayerPickup IsManager IsDonorNamVet ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsManager IsDonorNamVet ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkManager:1:3"
 	applycontexttoworld
 	Response ItemDonorNamVetManager
@@ -320,7 +320,6 @@ Response L4D1HealThanksManager
 	scene "scenes/Manager/Thanks03.vcd" predelay ".2,.5" then Subject YouAreWelcome foo:0 -0.675 //Thanks, I owe you one.
 	scene "scenes/Manager/Thanks08.vcd" predelay ".2,.5" then Subject YouAreWelcome foo:0 -0.675 //Thanks, I owe ya a big one.
 	scene "scenes/Manager/Thanks09.vcd" predelay ".2,.5" then Subject YouAreWelcome foo:0 -0.675 //Thanks a lot.
-	scene "scenes/Manager/Thanks10.vcd" predelay ".2,.5" then Subject YouAreWelcome foo:0 0.3 //Whoo, thanks.
 	scene "scenes/Manager/Thanks10.vcd" predelay ".2,.5" then Subject YouAreWelcome foo:0 0.3 //Whoo, thanks.
 	scene "scenes/Manager/Thanks12.vcd" predelay ".2,.5" odds 1 then Subject YouAreWelcome foo:0 0.3 //Thanks Dog
 	scene "scenes/Manager/Thanks14.vcd" predelay ".2,.5" odds 1 then Subject YouAreWelcome foo:0 -0.864 //Thanks, Playa.
@@ -3447,8 +3446,6 @@ Response SurvivorJockeyHurtMajorManager
 	scene "scenes/Manager/HurtMajor01.vcd"  then all commentjockey foo:0 -0.867 //[Pain noise - huh]
 	scene "scenes/Manager/HurtMajor02.vcd"  then all commentjockey foo:0 -0.982 //[Pain noise - ahh]
 	scene "scenes/Manager/ScreamWhilePounced02.vcd"  then all commentjockey foo:0 -3.232 //GET IT GET IT OFF GET IT OFF!
-	scene "scenes/Manager/ScreamWhilePounced02.vcd"  then all commentjockey foo:0 -3.232 //GET IT GET IT OFF GET IT OFF!
-	scene "scenes/Manager/ScreamWhilePounced02.vcd"  then all commentjockey foo:0 -3.232 //GET IT GET IT OFF GET IT OFF!
 	scene "scenes/Manager/ScreamWhilePounced03.vcd"  then all commentjockey foo:0 -4.019 //GET IT GET IT OFF GET IT OFF!
 }
 Rule SurvivorJockeyHurtMajorManager
@@ -5550,7 +5547,7 @@ Response L4D1PlayerYouAreWelcomeManager
 }
 Rule L4D1PlayerYouAreWelcomeManager
 {
-	criteria ConceptPlayerYouAreWelcome IsNotCoughing IsManager IsTalk IsTalkManager IsNotSpeaking IsWorldTalkManager
+	criteria ConceptPlayerYouAreWelcome IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager
 	Response L4D1PlayerYouAreWelcomeManager
 }
 
@@ -5883,6 +5880,12 @@ Rule L4D1PlayerGetInsideCheckPointManager
 	Response L4D1PlayerGetInsideCheckPointManager
 }
 
+Rule L4D1PlayerStayTogetherSaferoomManager
+{
+	criteria ConceptPlayerStayTogether IsNotCoughing IsManager IsInSafeSpot IsTalk IsTalkManager SomeoneOutsideSafeSpot IsWorldTalkManager
+	Response L4D1PlayerGetInsideCheckPointManager
+}
+
 Response L4D1PlayerGrenadeManager
 {
 	scene "scenes/Manager/Grenade01.vcd" predelay ".5,1" then Any GrenadeCareful foo:0 -0.728 //GRENADE!
@@ -6059,18 +6062,6 @@ Rule AUTOBLANK_L4D1PlayerRemarkairport01_burningManager
 	ApplyContext "Saidairport01_burning:1:0"
 	applycontexttoworld
 	Response _PlayerInfoRemarkableBlankManager
-}
-
-Response L4D1PlayerStayTogetherInsideManager
-{
-	scene "scenes/Manager/StayTogetherInside01.vcd"  //C'mon, everyone inside, inside!
-	scene "scenes/Manager/StayTogetherInside02.vcd"  //Let's get inside!
-	scene "scenes/Manager/StayTogetherInside04.vcd"  //We gotta get inside!
-}
-Rule L4D1PlayerStayTogetherInsideManager
-{
-	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsManager IsInSafeSpot IsTalk IsTalkManager SomeoneOutsideSafeSpot IsWorldTalkManager
-	Response L4D1PlayerStayTogetherInsideManager
 }
 
 Response L4D1PlayerSuggestHealthManager
@@ -6508,7 +6499,7 @@ Response L4D1SurvivorVocalizeEmphaticGoManager
 }
 Rule L4D1SurvivorVocalizeEmphaticGoManager
 {
-	criteria ConceptPlayerEmphaticGo IsManager  IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkManager IsWorldTalkManager
+	criteria ConceptPlayerEmphaticGo IsManager IsNotCoughing IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkManager IsWorldTalkManager
 	Response L4D1SurvivorVocalizeEmphaticGoManager
 }
 
@@ -7829,7 +7820,6 @@ Response SurvivorSpottedWeaponManager
 {
 	scene "scenes/Manager/SpotWeapons01.vcd"  //Weapons here!
 	scene "scenes/Manager/SpotWeapons02.vcd"  //Weapons over here!
-	scene "scenes/Manager/SpotWeapons02.vcd"  //Weapons over here!
 	scene "scenes/Manager/SpotWeapons03.vcd"  //Weapons!
 }
 
@@ -8335,7 +8325,7 @@ Rule SurvivorSpottedShotgunManager
 
 Rule SurvivorSpottedOtherWeaponManager
 {
-	criteria ConceptPlayerSpotOtherWeapon IsNotCoughing IsManager IsTalk IsTalkManager IsNotSaidSomeoneDied IsNotSmartLookAuto IsWorldTalkManager _auto_NotSpottedVehicle
+	criteria ConceptPlayerSpotOtherWeapon IsNotCoughing IsManager IsTalk IsTalkManager IsNotSaidSomeoneDied IsNotSmartLookAuto IsWorldTalkManager IsNotAlone _auto_NotSpottedVehicle
 	ApplyContext "SaidSpotWeapons:1:5,SaidSpot:1:20"
 	applycontexttoworld
 	Response SurvivorSpottedWeaponManager

@@ -645,7 +645,6 @@ criterion "EquippedMeleeWeapon"			"ActiveWeapon"	"Melee"		required
 
 criterion "IsHealingItem"			"ItemType"	"healing"			required 
 
-
 criterion "Hasgrenade_launcher"			"ActiveWeapon"	"grenadelauncher"		required
 criterion "HasNotGrenadeLauncher"		"ActiveWeapon"	"!=GrenadeLauncher"		required
 criterion "ConceptChainsawUsed"			"Concept" "ChainsawUsed"			required
@@ -877,7 +876,7 @@ Criterion "NotSaidGrabbingCan" "SaidGrabbingCan" "!=1" "required" weight 0
 
 Criterion "NotPickedUpItem" "PickedUpItem" "!=1" "required" weight 0
 
-
+criterion "IsPickedUpValidHealingItem" { IsPickedUpPainPills IsPickedUpAdrenaline } required 
 
 criterion "IsItemFirstAidKit"  "Item" "FirstAidKit" required
 criterion "IsItemPainPills"  "Item" "PainPills" required
@@ -2423,7 +2422,6 @@ criterion "IsNotSrcGrp_ELLISSTORY" "worldSrcGrp_ELLISSTORY" "<1" required
 #include "talker/terror_player_dlc3.txt"
 #include "talker/terror_player_addon.txt"
 #include "talker/terror_player_addon_dlc3.txt"
-#include "talker/requires_dlc1.txt"
 #include "talker/conversation.txt"
 #include "talker/finales_dlc2.txt"
 #include "talker/gambler.txt"
@@ -2441,5 +2439,5 @@ criterion "IsNotSrcGrp_ELLISSTORY" "worldSrcGrp_ELLISSTORY" "<1" required
 #include "talker/manager.txt"
 #include "talker/namvet.txt"
 #include "talker/teengirl.txt"
-
+#include "talker/requires_dlc1.txt"
 

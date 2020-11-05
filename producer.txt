@@ -689,7 +689,7 @@ Response ItemDonorCoachProducer
 }
 Rule ItemDonorCoachProducer
 {
-	criteria ConceptPlayerPickup IsProducer IsDonorCoach ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsProducer IsDonorCoach ChanceToFire30Percent isNotmap_c1m1_hotel IsPickedUpValidHealingItem
 	ApplyContext "TalkProducer:1:3"
 	applycontexttoworld
 	Response ItemDonorCoachProducer
@@ -701,7 +701,7 @@ Response ItemDonorMechanicProducer
 }
 Rule ItemDonorMechanicProducer
 {
-	criteria ConceptPlayerPickup IsProducer IsDonorMechanic ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsProducer IsDonorMechanic ChanceToFire30Percent isNotmap_c1m1_hotel IsPickedUpValidHealingItem
 	ApplyContext "TalkProducer:1:3"
 	applycontexttoworld
 	Response ItemDonorMechanicProducer
@@ -715,7 +715,7 @@ Response ItemDonorBikerProducer
 }
 Rule ItemDonorBikerProducer
 {
-	criteria ConceptPlayerPickup IsProducer IsDonorBiker ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsProducer IsDonorBiker ChanceToFire30Percent IsNotc6m3_portHeavy IsPickedUpValidHealingItem
 	ApplyContext "TalkProducer:1:3"
 	applycontexttoworld
 	Response ItemDonorBikerProducer
@@ -730,7 +730,7 @@ Response ItemDonorTeenGirlProducer
 }
 Rule ItemDonorTeenGirlProducer
 {
-	criteria ConceptPlayerPickup IsProducer IsDonorTeenGirl ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsProducer IsDonorTeenGirl ChanceToFire30Percent IsNotc6m3_portHeavy IsPickedUpValidHealingItem
 	ApplyContext "TalkProducer:1:3"
 	applycontexttoworld
 	Response ItemDonorTeenGirlProducer
@@ -743,7 +743,7 @@ Response ItemDonorManagerProducer
 }
 Rule ItemDonorManagerProducer
 {
-	criteria ConceptPlayerPickup IsProducer IsDonorManager ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsProducer IsDonorManager ChanceToFire30Percent IsNotc6m3_portHeavy IsPickedUpValidHealingItem
 	ApplyContext "TalkProducer:1:3"
 	applycontexttoworld
 	Response ItemDonorManagerProducer
@@ -756,7 +756,7 @@ Response ItemDonorNamVetProducer
 }
 Rule ItemDonorNamVetProducer
 {
-	criteria ConceptPlayerPickup IsProducer IsDonorNamVet ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsProducer IsDonorNamVet ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkProducer:1:3"
 	applycontexttoworld
 	Response ItemDonorNamVetProducer
@@ -818,7 +818,7 @@ Response ReviveThanksProducer
 	scene "scenes/Producer/Thanks02.vcd" predelay ".2,.5" then subject YouAreWelcome foo:0 0 //Hey, thanks!
 	scene "scenes/Producer/Thanks03.vcd" predelay ".2,.5" then subject YouAreWelcome foo:0 0 //Thanks!
 	scene "scenes/Producer/Thanks04.vcd" predelay ".2,.5" then subject YouAreWelcome foo:0 0 //Thanks I owe you one.
-	scene "scenes/Producer/Thanks07.vcd" predelay ".2,.5" then subject YouAreWelcome foo:0 0 //Phew, thanks.
+	scene "scenes/Producer/Thanks06.vcd" predelay ".2,.5" then subject YouAreWelcome foo:0 0 //Phew, thanks.
 }
 Rule ReviveThanksProducer
 {
@@ -5456,7 +5456,7 @@ Rule SurvivorSpottedWitchProducer
 
 Rule SurvivorSpottedWitch2Producer
 {
-	criteria ConceptPlayerWarnWitch IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotIncapacitated _auto_NotSpottedVehicle
+	criteria ConceptPlayerWarnWitch IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotIncapacitated IsNotSaidWitchStartAttack _auto_NotSpottedVehicle
 	Response SurvivorSpottedWitchProducer
 }
 
@@ -5474,10 +5474,15 @@ Rule SurvivorSpottedWitchC1Producer
 	Response SurvivorSpottedWitchC1Producer
 }
 
-Rule SurvivorAlsoSpottedWitchC1Producer
+Response SurvivorSpottedWitch2C1Producer
+{
+	scene "scenes/Producer/HeardWitchC101.vcd"  //She doesn't sound happy.
+	scene "scenes/Producer/HeardWitchC103.vcd"  //We should steer clear of her.
+}
+Rule SurvivorSpottedWitch2C1Producer
 {
 	criteria ConceptPlayerWarnWitch IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotIncapacitated IsNotSaidWitchStartAttack C1M1orC1M2 IsNotSurvival
-	Response SurvivorSpottedWitchC1Producer
+	Response SurvivorSpottedWitch2C1Producer
 }
 
 
@@ -9414,7 +9419,7 @@ Response PlayerYouAreWelcomeProducer
 }
 Rule PlayerYouAreWelcomeProducer
 {
-	criteria ConceptPlayerYouAreWelcome IsNotCoughing IsProducer IsTalk IsTalkProducer IsNotSpeaking IsWorldTalkProducer
+	criteria ConceptPlayerYouAreWelcome IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
 	Response PlayerYouAreWelcomeProducer
 }
 
@@ -9709,7 +9714,7 @@ Response PlayerHeardTankProducer
 }
 Rule PlayerHeardTankProducer
 {
-	criteria ConceptPlayerHeardTank IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer isNotmap_c1m1_hotel isNotmap_c1m2_streets _auto_NotSpottedVehicle
+	criteria ConceptPlayerHeardTank IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer _auto_NotSpottedVehicle
 	Response PlayerHeardTankProducer
 }
 
@@ -9722,7 +9727,7 @@ Response PlayerHeardWitchProducer
 }
 Rule PlayerHeardWitchProducer
 {
-	criteria ConceptPlayerHeardWitch IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer isNotmap_c1m1_hotel isNotmap_c1m2_streets _auto_NotSpottedVehicle
+	criteria ConceptPlayerHeardWitch IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer _auto_NotSpottedVehicle
 	Response PlayerHeardWitchProducer
 }
 
@@ -10228,6 +10233,21 @@ Rule PlayerGetInsideCheckPointProducer
 	Response PlayerGetInsideCheckPointProducer
 }
 
+Response PlayerStayTogetherSaferoomProducer
+{
+	scene "scenes/Producer/StayTogetherInside01.vcd"  //Get your asses inside.
+	scene "scenes/Producer/StayTogetherInside02.vcd"  //What in the hell are you doing out there?  Get inside!
+	scene "scenes/Producer/StayTogetherInside03.vcd"  //Get inside!
+	scene "scenes/Producer/StayTogetherInside04.vcd"  //Everyone inside!
+	scene "scenes/Producer/StayTogetherInside05.vcd"  //Everyone, in here!
+	scene "scenes/Producer/StayTogetherInside06.vcd"  //Get inside!  Free hamhocks and chitlins in here!
+}
+Rule PlayerStayTogetherSaferoomProducer
+{
+	criteria ConceptPlayerStayTogether IsNotCoughing IsProducer IsInSafeSpot IsTalk IsTalkProducer SomeoneOutsideSafeSpot IsWorldTalkProducer
+	Response PlayerStayTogetherSaferoomProducer
+}
+
 Response PlayerGrabbedByJockeyProducer
 {
 	scene "scenes/Producer/GrabbedByJockey01.vcd"  //GET THIS THING OFF ME!!!
@@ -10571,21 +10591,6 @@ Rule PlayerRevivedByDefibrillator2Producer
 	ApplyContext "TalkProducer:1:3"
 	applycontexttoworld
 	Response PlayerRevivedByDefibrillator2Producer
-}
-
-Response PlayerStayTogetherInsideProducer
-{
-	scene "scenes/Producer/StayTogetherInside01.vcd"  //Get your asses inside.
-	scene "scenes/Producer/StayTogetherInside02.vcd"  //What in the hell are you doing out there?  Get inside!
-	scene "scenes/Producer/StayTogetherInside03.vcd"  //Get inside!
-	scene "scenes/Producer/StayTogetherInside04.vcd"  //Everyone inside!
-	scene "scenes/Producer/StayTogetherInside05.vcd"  //Everyone, in here!
-	scene "scenes/Producer/StayTogetherInside06.vcd"  //Get inside!  Free hamhocks and chitlins in here!
-}
-Rule PlayerStayTogetherInsideProducer
-{
-	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsProducer IsInSafeSpot IsTalk IsTalkProducer SomeoneOutsideSafeSpot IsWorldTalkProducer
-	Response PlayerStayTogetherInsideProducer
 }
 
 Response PlayerSuggestMeHealthProducer
@@ -10960,7 +10965,7 @@ Rule PlayerWarnHeardWitchC1Producer
 
 Rule PlayerHeardWitchC1Producer
 {
-	criteria ConceptPlayerHeardWitch IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer C1M1orC1M2 IsNotSurvival _auto_NotSpottedVehicle
+	criteria ConceptPlayerHeardWitch IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer C1M1orC1M2 IsNotSurvival
 	Response PlayerWarnHeardWitchC1Producer
 }
 
@@ -11543,7 +11548,7 @@ Response SurvivorVocalizeBackUpProducer
 }
 Rule SurvivorVocalizeBackUpProducer
 {
-	criteria ConceptPlayerBackUp IsProducer IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkProducer IsWorldTalkProducer
+	criteria ConceptPlayerBackUp IsProducer IsNotCoughing IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkProducer IsWorldTalkProducer
 	Response SurvivorVocalizeBackUpProducer
 }
 
@@ -11559,7 +11564,7 @@ Response SurvivorVocalizeEmphaticGoProducer
 }
 Rule SurvivorVocalizeEmphaticGoProducer
 {
-	criteria ConceptPlayerEmphaticGo IsProducer IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkProducer IsWorldTalkProducer
+	criteria ConceptPlayerEmphaticGo IsProducer IsNotCoughing IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkProducer IsWorldTalkProducer
 	Response SurvivorVocalizeEmphaticGoProducer
 }
 
@@ -12494,7 +12499,7 @@ Rule SurvivorPickupVomitJarAlwaysC1Producer
 //--------------------------------------------------------------------------------------------------------------
 Response PlayerGettingRevivedProducer
 {
-	scene "scenes/Producer/GettingRevived02.vcd"  then From ReviveFriendDownFinal foo:0 -3.840 //Give it to me straight, doc... am I going to make it?
+	scene "scenes/Producer/GettingRevived01.vcd"  then From ReviveFriendDownFinal foo:0 -3.840 //Give it to me straight, doc... am I going to make it?
 	scene "scenes/Producer/GettingRevived02.vcd"  then From ReviveFriendDownFinal foo:0 -1.860 //Uh, yeah, yeah, I'm okay.
 	scene "scenes/Producer/GettingRevived03.vcd"  then From ReviveFriendDownFinal foo:0 -0.909 //I think I'm okay.
 	scene "scenes/Producer/GettingRevived04.vcd"  then From ReviveFriendDownFinal foo:0 -1.412 //Guess I feel all right.
@@ -12506,6 +12511,7 @@ Response PlayerGettingRevivedProducer
 	scene "scenes/Producer/GettingRevived10.vcd"  then From ReviveFriendDownFinal foo:0 -1.793 //Well how do I look?
 	scene "scenes/Producer/GettingRevived11.vcd"  then From ReviveFriendDownFinal foo:0 -0.780 //Is it bad?
 	scene "scenes/Producer/GettingRevived12.vcd"  then From ReviveFriendDownFinal foo:0 -1.563 //I'm a little bit of a mess.
+	scene "scenes/Producer/GettingRevived13.vcd"  then From ReviveFriendDownFinal foo:0 -1.890 //I'm just playing possum.
 	scene "scenes/Producer/GettingRevived14.vcd"  then From ReviveFriendDownFinal foo:0 -2.237 //This is great, nah, this is great.  I'm good.
 	scene "scenes/Producer/GettingRevived15.vcd"  then From ReviveFriendDownFinal foo:0 -3.152 //Blah blah blah, just please get me up.
 	scene "scenes/Producer/GettingRevived16.vcd"  then From ReviveFriendDownFinal foo:0 -1.438 //Does my hair look good?
@@ -13571,19 +13577,17 @@ Rule BlankTestoProducer
 	Response NoResponse
 }
 
-Response c1m1_elevator_door_open
+Response c1m1_elevator_door_openProducer
 {
 	scene "scenes/Producer/Cough01.vcd"  then all C1M1Cough foo:0 -2.638 //[Coughing from smoke]
 	scene "scenes/Producer/Cough02.vcd"  then all C1M1Cough foo:0 -1.859 //[Coughing from smoke]
 	scene "scenes/Producer/Cough04.vcd"  then all C1M1Cough foo:0 -1.290 //[Coughing from smoke]
 	scene "scenes/Producer/Cough05.vcd"  then all C1M1Cough foo:0 -1.169 //[Coughing from smoke]
 }
-Rule c1m1_elevator_door_open
+Rule c1m1_elevator_door_openProducer
 {
-	criteria Conceptc1m1_elevator_door_open IsProducer AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "SaidC1M1InSmoke:1:30,Talk:0:0"
-	applycontexttoworld
-	Response c1m1_elevator_door_open
+	criteria Conceptc1m1_elevator_door_open2 IsProducer AutoIsNotScavenge AutoIsNotSurvival
+	Response c1m1_elevator_door_openProducer
 }
 
 Response c1m1_elevator_ready2Producer
@@ -13595,7 +13599,7 @@ Response c1m1_elevator_ready2Producer
 Rule c1m1_elevator_ready2Producer
 {
 	criteria Conceptc1m1_elevator_ready2 IsProducer IsNotSaidC1M1OpenDoor AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "SaidC1M1OpenDoor:1:30"
+	ApplyContext "SaidC1M1OpenDoor:1:30,Talk:0:0"
 	applycontexttoworld
 	Response c1m1_elevator_ready2Producer
 }

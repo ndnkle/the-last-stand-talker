@@ -63,6 +63,7 @@ criterion "ConceptC1M3AlarmActive" "Concept" "C1M3AlarmActive" required
 
 criterion "Conceptc1m1_elevator_ready" "Concept" "c1m1_elevator_ready" required
 criterion "Conceptc1m1_elevator_door_open" "Concept" "c1m1_elevator_door_open" required
+criterion "Conceptc1m1_elevator_door_open2" "Concept" "c1m1_elevator_door_open2" required
 
 criterion "IsSaidC1M1OpenDoor"  "worldSaidC1M1OpenDoor" "1" required
 criterion "IsNotSaidC1M1OpenDoor"  "worldSaidC1M1OpenDoor" "!=1" required

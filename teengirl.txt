@@ -234,7 +234,7 @@ Response ItemDonorProducerTeenGirl
 }
 Rule ItemDonorProducerTeenGirl
 {
-	criteria ConceptPlayerPickup IsTeenGirl IsDonorProducer ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsTeenGirl IsDonorProducer ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkTeenGirl:1:3"
 	applycontexttoworld
 	Response ItemDonorProducerTeenGirl
@@ -250,7 +250,7 @@ Response ItemDonorCoachTeenGirl
 }
 Rule ItemDonorCoachTeenGirl
 {
-	criteria ConceptPlayerPickup IsTeenGirl IsDonorCoach ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsTeenGirl IsDonorCoach ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkTeenGirl:1:3"
 	applycontexttoworld
 	Response ItemDonorCoachTeenGirl
@@ -266,7 +266,7 @@ Response ItemDonorGamblerTeenGirl
 }
 Rule ItemDonorGamblerTeenGirl
 {
-	criteria ConceptPlayerPickup IsTeenGirl IsDonorGambler ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsTeenGirl IsDonorGambler ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkTeenGirl:1:3"
 	applycontexttoworld
 	Response ItemDonorGamblerTeenGirl
@@ -282,7 +282,7 @@ Response ItemDonorMechanicTeenGirl
 }
 Rule ItemDonorMechanicTeenGirl
 {
-	criteria ConceptPlayerPickup IsTeenGirl IsDonorMechanic ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsTeenGirl IsDonorMechanic ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkTeenGirl:1:3"
 	applycontexttoworld
 	Response ItemDonorMechanicTeenGirl
@@ -298,7 +298,7 @@ Response ItemDonorBikerTeenGirl
 }
 Rule ItemDonorBikerTeenGirl
 {
-	criteria ConceptPlayerPickup IsTeenGirl IsDonorBiker ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsTeenGirl IsDonorBiker ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkTeenGirl:1:3"
 	applycontexttoworld
 	Response ItemDonorBikerTeenGirl
@@ -314,7 +314,7 @@ Response ItemDonorManagerTeenGirl
 }
 Rule ItemDonorManagerTeenGirl
 {
-	criteria ConceptPlayerPickup IsTeenGirl IsDonorManager ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsTeenGirl IsDonorManager ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkTeenGirl:1:3"
 	applycontexttoworld
 	Response ItemDonorManagerTeenGirl
@@ -330,7 +330,7 @@ Response ItemDonorNamVetTeenGirl
 }
 Rule ItemDonorNamVetTeenGirl
 {
-	criteria ConceptPlayerPickup IsTeenGirl IsDonorNamVet ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsTeenGirl IsDonorNamVet ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkTeenGirl:1:3"
 	applycontexttoworld
 	Response ItemDonorNamVetTeenGirl
@@ -3219,7 +3219,7 @@ Response L4D1SurvivorSpottedInfectedTeenGirl
 }
 Rule L4D1SurvivorSpottedInfectedTeenGirl
 {
-	criteria ConceptPlayerIncoming IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl _auto_NotSpottedVehicle
+	criteria ConceptPlayerIncoming IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl IsNotIncapacitated _auto_NotSpottedVehicle
 	Response L4D1SurvivorSpottedInfectedTeenGirl
 }
 
@@ -5968,7 +5968,7 @@ Response L4D1PlayerYouAreWelcomeTeenGirl
 }
 Rule L4D1PlayerYouAreWelcomeTeenGirl
 {
-	criteria ConceptPlayerYouAreWelcome IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGirl IsNotSpeaking IsWorldTalkTeenGirl
+	criteria ConceptPlayerYouAreWelcome IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl
 	Response L4D1PlayerYouAreWelcomeTeenGirl
 }
 
@@ -6336,6 +6336,12 @@ Rule L4D1PlayerGetInsideCheckPointTeenGirl
 	Response L4D1PlayerGetInsideCheckPointTeenGirl
 }
 
+Rule L4D1PlayerStayTogetherSaferoomTeenGirl
+{
+	criteria ConceptPlayerStayTogether IsNotCoughing IsTeenGirl IsInSafeSpot IsTalk IsTalkTeenGirl SomeoneOutsideSafeSpot IsWorldTalkTeenGirl
+	Response L4D1PlayerGetInsideCheckPointTeenGirl
+}
+
 Response L4D1PlayerGrenadeTeenGirl
 {
 	scene "scenes/TeenGirl/Grenade02.vcd" predelay ".5,1" then Any GrenadeCareful foo:0 -0.994 //GRENADE!
@@ -6522,21 +6528,6 @@ Rule L4D1PlayerRemarkairport01_path01TeenGirl
 	ApplyContext "Saidairport01_path01:1:0"
 	applycontexttoworld
 	Response C11M1LeavingSafeTeenGirl
-}
-
-Response L4D1PlayerStayTogetherInsideTeenGirl
-{
-	scene "scenes/TeenGirl/StayTogetherInside02.vcd"  //Everyone inside!
-	scene "scenes/TeenGirl/StayTogetherInside03.vcd"  //Get inside!
-	scene "scenes/TeenGirl/StayTogetherInside04.vcd"  //Guys, get inside!
-	scene "scenes/TeenGirl/StayTogetherInside05.vcd"  //Come on, come on! Everyone in here!
-	scene "scenes/TeenGirl/StayTogetherInside06.vcd"  //Everyone, in here!
-	scene "scenes/TeenGirl/StayTogetherInside07.vcd"  //Everyone inside!
-}
-Rule L4D1PlayerStayTogetherInsideTeenGirl
-{
-	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsTeenGirl IsInSafeSpot IsTalk IsTalkTeenGirl SomeoneOutsideSafeSpot IsWorldTalkTeenGirl
-	Response L4D1PlayerStayTogetherInsideTeenGirl
 }
 
 Response L4D1PlayerSuggestHealthTeenGirl
@@ -6996,7 +6987,7 @@ Response L4D1SurvivorVocalizeBackUpTeenGirl
 }
 Rule L4D1SurvivorVocalizeBackUpTeenGirl
 {
-	criteria ConceptPlayerBackUp IsTeenGirl IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl
+	criteria ConceptPlayerBackUp IsTeenGirl IsNotCoughing IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl
 	Response L4D1SurvivorVocalizeBackUpTeenGirl
 }
 
@@ -7020,7 +7011,7 @@ Response L4D1SurvivorVocalizeEmphaticGoTeenGirl
 }
 Rule L4D1SurvivorVocalizeEmphaticGoTeenGirl
 {
-	criteria ConceptPlayerEmphaticGo IsTeenGirl  IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl
+	criteria ConceptPlayerEmphaticGo IsTeenGirl IsNotCoughing IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl
 	Response L4D1SurvivorVocalizeEmphaticGoTeenGirl
 }
 
@@ -7132,14 +7123,14 @@ Rule SurvivorVocalizeLookOutEllisTeenGirl
 	Response SurvivorVocalizeLookOutEllisTeenGirl
 }
 
-Response SurvivorVocalizeLookOutRTeenGirl
+Response SurvivorVocalizeLookOutRochelleTeenGirl
 {
 	scene "scenes/TeenGirl/DLC1_C6M3_L4D11stSpot02.vcd"  //Watch out Rochelle!
 }
-Rule SurvivorVocalizeLookOutRTeenGirl
+Rule SurvivorVocalizeLookOutRochelleTeenGirl
 {
 	criteria ConceptPlayerLookOut IsNotCoughing IsTeenGirl SubjectIsProducer IsTalk IsTalkTeenGirl ChanceToFire30Percent IsWorldTalkTeenGirl _auto_NotSpottedVehicle
-	Response SurvivorVocalizeLookOutRTeenGirl
+	Response SurvivorVocalizeLookOutRochelleTeenGirl
 }
 
 Response L4D1SurvivorVocalizeThisWayTeenGirl
@@ -7298,6 +7289,7 @@ Rule PlayerGrabbedByJockeyTeenGirl
 
 Response PlayerRevivedByDefibrillatorTeenGirl
 {
+	scene "scenes/TeenGirl/ReactionStartled08.vcd"  //DAAAH!
 	scene "scenes/TeenGirl/ReactionStartled11.vcd"  //(gasp)
 	scene "scenes/TeenGirl/ReactionStartled17.vcd"  //(gasp)
 }
@@ -8426,7 +8418,6 @@ Response SurvivorSpottedWeaponsTeenGirl
 	scene "scenes/TeenGirl/SpotWeapons02.vcd"  //Weapons here!
 	scene "scenes/TeenGirl/SpotWeapons03.vcd"  //Weapons here!
 	scene "scenes/TeenGirl/SpotWeapons04.vcd"  //Weapons here!
-	scene "scenes/TeenGirl/SpotWeapons05.vcd"  //Weapons over here!
 	scene "scenes/TeenGirl/SpotWeapons05.vcd"  //Weapons over here!
 	scene "scenes/TeenGirl/SpotWeapons06.vcd"  //Hey, there's weapon' over here!
 	scene "scenes/TeenGirl/SpotWeapons07.vcd" odds 2 //Guys, better weapons!

@@ -245,7 +245,7 @@ Response ItemDonorProducerNamVet
 }
 Rule ItemDonorProducerNamVet
 {
-	criteria ConceptPlayerPickup IsNamVet IsDonorProducer ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsNamVet IsDonorProducer ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkNamVet:1:3"
 	applycontexttoworld
 	Response ItemDonorProducerNamVet
@@ -262,7 +262,7 @@ Response ItemDonorCoachNamVet
 }
 Rule ItemDonorCoachNamVet
 {
-	criteria ConceptPlayerPickup IsNamVet IsDonorCoach ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsNamVet IsDonorCoach ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkNamVet:1:3"
 	applycontexttoworld
 	Response ItemDonorCoachNamVet
@@ -280,7 +280,7 @@ Response ItemDonorGamblerNamVet
 }
 Rule ItemDonorGamblerNamVet
 {
-	criteria ConceptPlayerPickup IsNamVet IsDonorGambler ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsNamVet IsDonorGambler ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkNamVet:1:3"
 	applycontexttoworld
 	Response ItemDonorGamblerNamVet
@@ -298,7 +298,7 @@ Response ItemDonorMechanicNamVet
 }
 Rule ItemDonorMechanicNamVet
 {
-	criteria ConceptPlayerPickup IsNamVet IsDonorMechanic ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsNamVet IsDonorMechanic ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkNamVet:1:3"
 	applycontexttoworld
 	Response ItemDonorMechanicNamVet
@@ -316,7 +316,7 @@ Response ItemDonorManagerNamVet
 }
 Rule ItemDonorManagerNamVet
 {
-	criteria ConceptPlayerPickup IsNamVet IsDonorBiker ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsNamVet IsDonorBiker ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkNamVet:1:3"
 	applycontexttoworld
 	Response ItemDonorManagerNamVet
@@ -334,7 +334,7 @@ Response ItemDonorTeenGirlNamVet
 }
 Rule ItemDonorTeenGirlNamVet
 {
-	criteria ConceptPlayerPickup IsNamVet IsDonorTeenGirl ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsNamVet IsDonorTeenGirl ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkNamVet:1:3"
 	applycontexttoworld
 	Response ItemDonorTeenGirlNamVet
@@ -352,7 +352,7 @@ Response ItemDonorBikerNamVet
 }
 Rule ItemDonorBikerNamVet
 {
-	criteria ConceptPlayerPickup IsNamVet IsDonorBiker ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsNamVet IsDonorBiker ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkNamVet:1:3"
 	applycontexttoworld
 	Response ItemDonorBikerNamVet
@@ -5082,7 +5082,7 @@ Response L4D1PlayerYouAreWelcomeNamVet
 }
 Rule L4D1PlayerYouAreWelcomeNamVet
 {
-	criteria ConceptPlayerYouAreWelcome IsNotCoughing  IsNamVet IsTalk IsTalkNamVet IsNotSpeaking IsWorldTalkNamVet
+	criteria ConceptPlayerYouAreWelcome IsNotCoughing  IsNamVet IsTalk IsTalkNamVet IsWorldTalkNamVet
 	Response L4D1PlayerYouAreWelcomeNamVet
 }
 
@@ -5375,6 +5375,12 @@ Response L4D1PlayerGetInsideCheckPointNamVet
 Rule L4D1PlayerGetInsideCheckPointNamVet
 {
 	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsNamVet IsInSafeSpot IsTalk IsTalkNamVet SomeoneOutsideSafeSpot IsWorldTalkNamVet
+	Response L4D1PlayerGetInsideCheckPointNamVet
+}
+
+Rule L4D1PlayerStayTogetherSaferoomNamVet
+{
+	criteria ConceptPlayerStayTogether IsNotCoughing IsNamVet IsInSafeSpot IsTalk IsTalkNamVet SomeoneOutsideSafeSpot IsWorldTalkNamVet
 	Response L4D1PlayerGetInsideCheckPointNamVet
 }
 
@@ -5889,7 +5895,7 @@ Response L4D1SurvivorVocalizeBackUpNamVet
 }
 Rule L4D1SurvivorVocalizeBackUpNamVet
 {
-	criteria ConceptPlayerBackUp IsNamVet IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkNamVet IsWorldTalkNamVet
+	criteria ConceptPlayerBackUp IsNamVet IsNotCoughing IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkNamVet IsWorldTalkNamVet
 	Response L4D1SurvivorVocalizeBackUpNamVet
 }
 
@@ -5904,7 +5910,7 @@ Response L4D1SurvivorVocalizeEmphaticGoNamVet
 }
 Rule L4D1SurvivorVocalizeEmphaticGoNamVet
 {
-	criteria ConceptPlayerEmphaticGo IsNamVet IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkNamVet IsWorldTalkNamVet
+	criteria ConceptPlayerEmphaticGo IsNamVet IsNotCoughing IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkNamVet IsWorldTalkNamVet
 	Response L4D1SurvivorVocalizeEmphaticGoNamVet
 }
 
@@ -7160,9 +7166,8 @@ Rule AutoPlayerLostCallNamVet
 Response SurvivorSpottedWeaponNamVet
 {
 	scene "scenes/NamVet/SpotWeapons01.vcd"  //Weapons here!
-	scene "scenes/NamVet/SpotWeapons01.vcd"  //Weapons here!
-	scene "scenes/NamVet/SpotWeapons02.vcd"  //We've got to stick together.
-	scene "scenes/NamVet/SpotWeapons03.vcd"  //Stay close.
+	scene "scenes/NamVet/SpotWeapons02.vcd"  //Weapon over here!
+	scene "scenes/NamVet/SpotWeapons03.vcd"  //Got a Weapon!
 }
 
 //--------------------------------------------------------------------------------------------------------------

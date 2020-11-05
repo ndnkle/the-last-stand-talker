@@ -839,7 +839,7 @@ Response ItemDonorProducerMechanic
 }
 Rule ItemDonorProducerMechanic
 {
-	criteria ConceptPlayerPickup IsMechanic IsDonorProducer ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsMechanic IsDonorProducer ChanceToFire30Percent isNotmap_c1m1_hotel IsPickedUpValidHealingItem
 	ApplyContext "TalkMechanic:1:3"
 	applycontexttoworld
 	Response ItemDonorProducerMechanic
@@ -854,7 +854,7 @@ Response ItemDonorCoachMechanic
 }
 Rule ItemDonorCoachMechanic
 {
-	criteria ConceptPlayerPickup IsMechanic IsDonorCoach ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsMechanic IsDonorCoach ChanceToFire30Percent isNotmap_c1m1_hotel IsPickedUpValidHealingItem
 	ApplyContext "TalkMechanic:1:3"
 	applycontexttoworld
 	Response ItemDonorCoachMechanic
@@ -869,7 +869,7 @@ Response ItemDonorGamblerMechanic
 }
 Rule ItemDonorGamblerMechanic
 {
-	criteria ConceptPlayerPickup IsMechanic IsDonorGambler ChanceToFire30Percent isNotmap_c1m1_hotel IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsMechanic IsDonorGambler ChanceToFire30Percent isNotmap_c1m1_hotel IsPickedUpValidHealingItem
 	ApplyContext "TalkMechanic:1:3"
 	applycontexttoworld
 	Response ItemDonorGamblerMechanic
@@ -883,7 +883,7 @@ Response ItemDonorBikerMechanic
 }
 Rule ItemDonorBikerMechanic
 {
-	criteria ConceptPlayerPickup IsMechanic IsDonorBiker ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsMechanic IsDonorBiker ChanceToFire30Percent IsNotc6m3_portHeavy IsPickedUpValidHealingItem
 	ApplyContext "TalkMechanic:1:3"
 	applycontexttoworld
 	Response ItemDonorBikerMechanic
@@ -897,7 +897,7 @@ Response ItemDonorTeenGirlMechanic
 }
 Rule ItemDonorTeenGirlMechanic
 {
-	criteria ConceptPlayerPickup IsMechanic IsDonorTeenGirl ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsMechanic IsDonorTeenGirl ChanceToFire30Percent IsNotc6m3_portHeavy IsPickedUpValidHealingItem
 	ApplyContext "TalkMechanic:1:3"
 	applycontexttoworld
 	Response ItemDonorTeenGirlMechanic
@@ -911,7 +911,7 @@ Response ItemDonorManagerMechanic
 }
 Rule ItemDonorManagerMechanic
 {
-	criteria ConceptPlayerPickup IsMechanic IsDonorManager ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsMechanic IsDonorManager ChanceToFire30Percent IsNotc6m3_portHeavy IsPickedUpValidHealingItem
 	ApplyContext "TalkMechanic:1:3"
 	applycontexttoworld
 	Response ItemDonorManagerMechanic
@@ -926,7 +926,7 @@ Response ItemDonorNamVetMechanic
 }
 Rule ItemDonorNamVetMechanic
 {
-	criteria ConceptPlayerPickup IsMechanic IsDonorNamVet ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsMechanic IsDonorNamVet ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkMechanic:1:3"
 	applycontexttoworld
 	Response ItemDonorNamVetMechanic
@@ -6322,6 +6322,8 @@ Rule SurvivorSpottedWitch2Mechanic
 Response SurvivorSpottedWitchC1Mechanic
 {
 	norepeat
+	scene "scenes/Mechanic/HeardWitchC102.vcd"  //Dude, she don't sound happy.
+	scene "scenes/Mechanic/HeardWitchC103.vcd"  //Let's not go by the crying girl.
 	scene "scenes/Mechanic/HeardWitchC104.vcd"  //Seriously, I'm thinkin' we should just leave the crying girl alone.
 	scene "scenes/Mechanic/HeardWitchC106.vcd"  //I'm not - I'm not going near the crying girl.
 }
@@ -6333,10 +6335,17 @@ Rule SurvivorSpottedWitchC1Mechanic
 	Response SurvivorSpottedWitchC1Mechanic
 }
 
+Response SurvivorSpottedWitch2C1Mechanic
+{
+	scene "scenes/Mechanic/HeardWitchC102.vcd"  //Dude, she don't sound happy.
+	scene "scenes/Mechanic/HeardWitchC103.vcd"  //Let's not go by the crying girl.
+	scene "scenes/Mechanic/HeardWitchC104.vcd"  //Seriously, I'm thinkin' we should just leave the crying girl alone.
+	scene "scenes/Mechanic/HeardWitchC106.vcd"  //I'm not - I'm not going near the crying girl.
+}
 Rule SurvivorSpottedWitch2C1Mechanic
 {
 	criteria ConceptPlayerWarnWitch IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotIncapacitated IsNotSaidWitchStartAttack C1M1orC1M2 IsNotSurvival
-	Response SurvivorSpottedWitchC1Mechanic
+	Response SurvivorSpottedWitch2C1Mechanic
 }
 
 //--------------------------------------------------------------------------------------------------------------
@@ -10777,7 +10786,7 @@ Response PlayerYouAreWelcomeMechanic
 }
 Rule PlayerYouAreWelcomeMechanic
 {
-	criteria ConceptPlayerYouAreWelcome IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsNotSpeaking IsWorldTalkMechanic
+	criteria ConceptPlayerYouAreWelcome IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response PlayerYouAreWelcomeMechanic
 }
 
@@ -11096,7 +11105,7 @@ Response PlayerHeardTankMechanic
 }
 Rule PlayerHeardTankMechanic
 {
-	criteria ConceptPlayerHeardTank IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic isNotmap_c1m1_hotel isNotmap_c1m2_streets _auto_NotSpottedVehicle
+	criteria ConceptPlayerHeardTank IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic _auto_NotSpottedVehicle
 	Response PlayerHeardTankMechanic
 }
 
@@ -11108,7 +11117,7 @@ Response PlayerHeardWitchMechanic
 }
 Rule PlayerHeardWitchMechanic
 {
-	criteria ConceptPlayerHeardWitch IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic isNotmap_c1m1_hotel isNotmap_c1m2_streets _auto_NotSpottedVehicle
+	criteria ConceptPlayerHeardWitch IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic _auto_NotSpottedVehicle
 	Response PlayerHeardWitchMechanic
 }
 
@@ -11646,6 +11655,22 @@ Rule PlayerGetInsideCheckPointMechanic
 	Response PlayerGetInsideCheckPointMechanic
 }
 
+Response PlayerStayTogetherSaferoomMechanic
+{
+	scene "scenes/Mechanic/StayTogetherInside01.vcd"  //I need every one of you inside now!
+	scene "scenes/Mechanic/StayTogetherInside02.vcd"  //Shit! Get inside!
+	scene "scenes/Mechanic/StayTogetherInside03.vcd"  //Y'all inside, now!
+	scene "scenes/Mechanic/StayTogetherInside04.vcd"  //Get inside y'all!
+	scene "scenes/Mechanic/StayTogetherInside05.vcd"  //C'mon y'all get inside now!
+	scene "scenes/Mechanic/StayTogetherInside06.vcd"  //C'mon y'all get inside!
+	scene "scenes/Mechanic/StayTogetherInside07.vcd"  //Hey I need everybody inside now!
+}
+Rule PlayerStayTogetherSaferoomMechanic
+{
+	criteria ConceptPlayerStayTogether IsNotCoughing IsMechanic IsInSafeSpot IsTalk IsTalkMechanic SomeoneOutsideSafeSpot IsWorldTalkMechanic
+	Response PlayerStayTogetherSaferoomMechanic
+}
+
 Response PlayerGetInsideCheckPointC2M2Mechanic
 {
 	norepeat
@@ -12040,22 +12065,6 @@ Rule PlayerRevivedByDefibrillator2Mechanic
 	ApplyContext "TalkMechanic:1:3"
 	applycontexttoworld
 	Response PlayerRevivedByDefibrillator2Mechanic
-}
-
-Response PlayerStayTogetherInsideMechanic
-{
-	scene "scenes/Mechanic/StayTogetherInside01.vcd"  //I need every one of you inside now!
-	scene "scenes/Mechanic/StayTogetherInside02.vcd"  //Shit! Get inside!
-	scene "scenes/Mechanic/StayTogetherInside03.vcd"  //Y'all inside, now!
-	scene "scenes/Mechanic/StayTogetherInside04.vcd"  //Get inside y'all!
-	scene "scenes/Mechanic/StayTogetherInside05.vcd"  //C'mon y'all get inside now!
-	scene "scenes/Mechanic/StayTogetherInside06.vcd"  //C'mon y'all get inside!
-	scene "scenes/Mechanic/StayTogetherInside07.vcd"  //Hey I need everybody inside now!
-}
-Rule PlayerStayTogetherInsideMechanic
-{
-	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsMechanic IsInSafeSpot IsTalk IsTalkMechanic SomeoneOutsideSafeSpot IsWorldTalkMechanic
-	Response PlayerStayTogetherInsideMechanic
 }
 
 Response PlayerSuggestMeHealthMechanic
@@ -12455,8 +12464,6 @@ Rule PlayerWarnHeardWitchMechanic
 Response PlayerWarnHeardWitchC1Mechanic
 {
 	scene "scenes/Mechanic/HeardWitchC101.vcd"  //Hey, do you hear that crying?
-	scene "scenes/Mechanic/HeardWitchC102.vcd"  //Dude, she don't sound happy.
-	scene "scenes/Mechanic/HeardWitchC103.vcd"  //Let's not go by the crying girl.
 	scene "scenes/Mechanic/HeardWitchC105.vcd"  //I don't like the sound of that crying.
 }
 Rule PlayerWarnHeardWitchC1Mechanic
@@ -12469,7 +12476,7 @@ Rule PlayerWarnHeardWitchC1Mechanic
 
 Rule PlayerHeardWitchC1Mechanic
 {
-	criteria ConceptPlayerHeardWitch IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic C1M1orC1M2 IsNotSurvival _auto_NotSpottedVehicle
+	criteria ConceptPlayerHeardWitch IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic C1M1orC1M2 IsNotSurvival
 	Response PlayerWarnHeardWitchC1Mechanic
 }
 
@@ -13107,7 +13114,7 @@ Response SurvivorVocalizeBackUpMechanic
 }
 Rule SurvivorVocalizeBackUpMechanic
 {
-	criteria ConceptPlayerBackUp IsMechanic IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkMechanic IsWorldTalkMechanic
+	criteria ConceptPlayerBackUp IsMechanic IsNotCoughing IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response SurvivorVocalizeBackUpMechanic
 }
 
@@ -13121,7 +13128,7 @@ Response SurvivorVocalizeEmphaticGoMechanic
 }
 Rule SurvivorVocalizeEmphaticGoMechanic
 {
-	criteria ConceptPlayerEmphaticGo IsMechanic  IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkMechanic IsWorldTalkMechanic
+	criteria ConceptPlayerEmphaticGo IsMechanic IsNotCoughing IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response SurvivorVocalizeEmphaticGoMechanic
 }
 
@@ -14178,7 +14185,7 @@ Response PlayerHealOtherC1Mechanic
 }
 Rule PlayerHealOtherC1Mechanic
 {
-	criteria ConceptPlayerHealingOther IsNotCoughing  IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic ismap_c1m1_hotelC1 NoKnowNames
+	criteria ConceptPlayerHealingOther IsNotCoughing  IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic ismap_c1m1_hotelC1
 	ApplyContext "TalkMechanic:1:5"
 	Response PlayerHealOtherC1Mechanic
 }
@@ -15467,18 +15474,16 @@ Rule BlankTestoMechanic
 	Response NoResponse
 }
 
-Response c1m1_elevator_door_open
+Response c1m1_elevator_door_openMechanic
 {
 	scene "scenes/Mechanic/Cough01.vcd"  then all C1M1Cough foo:0 -1.399 //[Coughing from smoke]
 	scene "scenes/Mechanic/Cough02.vcd"  then all C1M1Cough foo:0 -2.692 //[Coughing from smoke]
 	scene "scenes/Mechanic/Cough03.vcd"  then all C1M1Cough foo:0 -1.647 //[Coughing from smoke]
 }
-Rule c1m1_elevator_door_open
+Rule c1m1_elevator_door_openMechanic
 {
-	criteria Conceptc1m1_elevator_door_open IsMechanic AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "SaidC1M1InSmoke:1:30,Talk:0:0"
-	applycontexttoworld
-	Response c1m1_elevator_door_open
+	criteria Conceptc1m1_elevator_door_open2 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
+	Response c1m1_elevator_door_openMechanic
 }
 
 Response c1m1_elevator_ready2Mechanic

@@ -237,7 +237,7 @@ Response ItemDonorProducerBiker
 }
 Rule ItemDonorProducerBiker
 {
-	criteria ConceptPlayerPickup IsBiker IsDonorProducer ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsBiker IsDonorProducer ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkBiker:1:3"
 	applycontexttoworld
 	Response ItemDonorProducerBiker
@@ -253,7 +253,7 @@ Response ItemDonorCoachBiker
 }
 Rule ItemDonorCoachBiker
 {
-	criteria ConceptPlayerPickup IsBiker IsDonorCoach ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsBiker IsDonorCoach ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkBiker:1:3"
 	applycontexttoworld
 	Response ItemDonorCoachBiker
@@ -269,7 +269,7 @@ Response ItemDonorGamblerBiker
 }
 Rule ItemDonorGamblerBiker
 {
-	criteria ConceptPlayerPickup IsBiker IsDonorGambler ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsBiker IsDonorGambler ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkBiker:1:3"
 	applycontexttoworld
 	Response ItemDonorGamblerBiker
@@ -285,7 +285,7 @@ Response ItemDonorMechanicBiker
 }
 Rule ItemDonorMechanicBiker
 {
-	criteria ConceptPlayerPickup IsBiker IsDonorMechanic ChanceToFire30Percent IsNotc6m3_portHeavy IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsBiker IsDonorMechanic ChanceToFire30Percent IsNotc6m3_portHeavy IsPickedUpValidHealingItem
 	ApplyContext "TalkBiker:1:3"
 	applycontexttoworld
 	Response ItemDonorMechanicBiker
@@ -301,7 +301,7 @@ Response ItemDonorManagerBiker
 }
 Rule ItemDonorManagerBiker
 {
-	criteria ConceptPlayerPickup IsBiker IsDonorBiker ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsBiker IsDonorBiker ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkBiker:1:3"
 	applycontexttoworld
 	Response ItemDonorManagerBiker
@@ -316,7 +316,7 @@ Response ItemDonorTeenGirlBiker
 }
 Rule ItemDonorTeenGirlBiker
 {
-	criteria ConceptPlayerPickup IsBiker IsDonorTeenGirl ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsBiker IsDonorTeenGirl ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkBiker:1:3"
 	applycontexttoworld
 	Response ItemDonorTeenGirlBiker
@@ -332,7 +332,7 @@ Response ItemDonorNamVetBiker
 }
 Rule ItemDonorNamVetBiker
 {
-	criteria ConceptPlayerPickup IsBiker IsDonorNamVet ChanceToFire30Percent IsHealingItem IsNotPickedUpDefibrillator IsNotPickedUpFirstAidKit
+	criteria ConceptPlayerPickup IsBiker IsDonorNamVet ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkBiker:1:3"
 	applycontexttoworld
 	Response ItemDonorNamVetBiker
@@ -1076,21 +1076,6 @@ Rule c6m3_outroL4D1ProducerBiker
 	criteria Conceptc6m3_outro3 IsBiker isC6m3_port IsProducerAlive ChanceToFire30Percent IsNotVersus IsNotIncapacitated
 	forceweight 7
 	Response c6m3_outroL4D1ProducerBiker
-}
-
-Response C6M3VocalizeLookOutBiker
-{
-	scene "scenes/Biker/LookOut01.vcd"  //Look out!
-	scene "scenes/Biker/LookOut02.vcd"  //Look out!
-	scene "scenes/Biker/LookOut03.vcd"  //Watch out!
-	scene "scenes/Biker/LookOut04.vcd"  //Watch out!
-	scene "scenes/Biker/LookOut05.vcd"  //Watch your ass!
-	scene "scenes/Biker/LookOut06.vcd"  //Heads up!
-}
-Rule C6M3VocalizeLookOutBiker
-{
-	criteria ConceptPlayerLookOut IsNotCoughing IsBiker IsC6M3_Port IsTalk IsTalkBiker IsWorldTalkBiker _auto_NotSpottedVehicle
-	Response C6M3VocalizeLookOutBiker
 }
 
 Response IncapBounce2Biker
@@ -6857,7 +6842,7 @@ Response L4D1PlayerYouAreWelcomeBiker
 }
 Rule L4D1PlayerYouAreWelcomeBiker
 {
-	criteria ConceptPlayerYouAreWelcome IsNotCoughing  IsBiker IsTalk IsTalkBiker IsNotSpeaking IsWorldTalkBiker
+	criteria ConceptPlayerYouAreWelcome IsNotCoughing  IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
 	Response L4D1PlayerYouAreWelcomeBiker
 }
 
@@ -7191,6 +7176,12 @@ Rule L4D1PlayerGetInsideCheckPointBiker
 	Response L4D1PlayerGetInsideCheckPointBiker
 }
 
+Rule L4D1PlayerStayTogetherSaferoomBiker
+{
+	criteria ConceptPlayerStayTogether IsNotCoughing IsBiker IsInSafeSpot IsTalk IsTalkBiker SomeoneOutsideSafeSpot IsWorldTalkBiker
+	Response L4D1PlayerGetInsideCheckPointBiker
+}
+
 Response L4D1PlayerGrenadeBiker
 {
 	scene "scenes/Biker/Grenade01.vcd" predelay ".5,1" then Any GrenadeCareful foo:0 -0.791 //GRENADE!
@@ -7380,20 +7371,6 @@ Rule AUTOBLANK_L4D1PlayerRemarkfarm01_campingBiker
 	ApplyContext "Saidfarm01_camping:1:0"
 	applycontexttoworld
 	Response _PlayerInfoRemarkableBlankBiker
-}
-
-Response L4D1PlayerStayTogetherInsideBiker
-{
-	scene "scenes/Biker/StayTogetherInside01.vcd"  //Get your asses in here!
-	scene "scenes/Biker/StayTogetherInside02.vcd"  //Come on ladies, everyone inside!
-	scene "scenes/Biker/StayTogetherInside03.vcd"  //Get in here!
-	scene "scenes/Biker/StayTogetherInside04.vcd"  //Everyone inside!
-	scene "scenes/Biker/StayTogetherInside05.vcd"  //Quit pissin' around and get in here!
-}
-Rule L4D1PlayerStayTogetherInsideBiker
-{
-	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsBiker IsInSafeSpot IsTalk IsTalkBiker SomeoneOutsideSafeSpot IsWorldTalkBiker
-	Response L4D1PlayerStayTogetherInsideBiker
 }
 
 Response L4D1PlayerSuggestHealthBiker
@@ -7796,7 +7773,7 @@ Response L4D1SurvivorVocalizeBackUpBiker
 }
 Rule L4D1SurvivorVocalizeBackUpBiker
 {
-	criteria ConceptPlayerBackUp IsBiker IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkBiker IsWorldTalkBiker
+	criteria ConceptPlayerBackUp IsBiker IsNotCoughing IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkBiker IsWorldTalkBiker
 	Response L4D1SurvivorVocalizeBackUpBiker
 }
 
@@ -7811,7 +7788,7 @@ Response L4D1SurvivorVocalizeEmphaticGoBiker
 }
 Rule L4D1SurvivorVocalizeEmphaticGoBiker
 {
-	criteria ConceptPlayerEmphaticGo IsBiker  IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkBiker IsWorldTalkBiker
+	criteria ConceptPlayerEmphaticGo IsBiker IsNotCoughing IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkBiker IsWorldTalkBiker
 	Response L4D1SurvivorVocalizeEmphaticGoBiker
 }
 
@@ -9162,11 +9139,8 @@ Response SurvivorSpottedWeaponBiker
 {
 	scene "scenes/Biker/SpotWeapons01.vcd"  //Weapons here!
 	scene "scenes/Biker/SpotWeapons02.vcd"  //Weapon's over here!
-	scene "scenes/Biker/SpotWeapons02.vcd"  //Weapon's over here!
 	scene "scenes/Biker/SpotWeapons03.vcd"  //Buncha guns over here!
 	scene "scenes/Biker/SpotWeapons04.vcd"  //Weapon's over here!
-	scene "scenes/Biker/SpotWeapons04.vcd"  //Weapon's over here!
-	scene "scenes/Biker/SpotWeapons05.vcd"  //We got weapons over here.
 	scene "scenes/Biker/SpotWeapons05.vcd"  //We got weapons over here.
 }
 
@@ -9687,7 +9661,7 @@ Rule SurvivorSpottedKnifeAutoBiker
 
 Rule SurvivorSpottedOtherWeaponBiker
 {
-	criteria ConceptPlayerSpotOtherWeapon IsNotCoughing IsBiker IsTalk IsTalkBiker IsNotSaidSomeoneDied IsNotSmartLookAuto IsWorldTalkBiker _auto_NotSpottedVehicle
+	criteria ConceptPlayerSpotOtherWeapon IsNotCoughing IsBiker IsTalk IsTalkBiker IsNotSaidSomeoneDied IsNotSmartLookAuto IsWorldTalkBiker IsNotAlone _auto_NotSpottedVehicle
 	ApplyContext "SaidSpotWeapons:1:5,SaidSpot:1:20"
 	applycontexttoworld
 	Response SurvivorSpottedMeleeWeaponBiker

@@ -23,6 +23,18 @@ Rule c1m1_elevator_readyOrator
 	Response c1m1_elevator_readyOrator
 }
 
+Response c1m1_elevator_door_openOrator
+{
+	scene "scenes/npcs/orator_blank.vcd"  then any c1m1_elevator_door_open2 foo:0 0 //
+}
+Rule c1m1_elevator_door_openOrator
+{
+	criteria Conceptc1m1_elevator_door_open AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "SaidC1M1InSmoke:1:30,Talk:0:0"
+	applycontexttoworld
+	Response c1m1_elevator_door_openOrator
+}
+
 Response Playerc1m1_elevator_startOrator
 {
 	scene "scenes/npcs/orator_blank.vcd"  then any _C1M1_ElevatorHelloStart foo:0 0.01 //

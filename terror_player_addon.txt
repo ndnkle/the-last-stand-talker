@@ -1660,8 +1660,6 @@ Response CrashFinaleGeneratorOnOrator
 Rule CrashFinaleGeneratorOnOrator
 {
 	criteria ConceptCrashFinaleGeneratorOn
-	ApplyContext "_auto_Finale:1:0"
-	applycontexttoworld
 	Response CrashFinaleGeneratorOnOrator
 }
 

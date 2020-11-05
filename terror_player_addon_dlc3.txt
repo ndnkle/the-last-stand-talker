@@ -86,7 +86,7 @@ Response C7M3Generator
 Rule C7M3GeneratorOn1
 {
 	criteria ConceptCrashFinaleGeneratorOn Ismapc7m3_Port IsFirstGenerator ChanceToFire100Percent                                                                                                                                                                                                
-	ApplyContext "_auto_Finale:1:0,C7M3GeneratorCount:++1"
+	ApplyContext "C7M3GeneratorCount:++1"
 	applycontexttoworld
 	Response C7M3Generator
 }

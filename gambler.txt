@@ -4261,9 +4261,7 @@ Response C6M3_elevatorCancelGambler
 }
 Rule C6M3_elevatorCancelGambler
 {
-	criteria ConceptC6M3_ElevatorCancel IsGambler IsNotSaidC6M3Elevator IsC6M3_port
-	ApplyContext "SaidC6M3Elevator:1:0,Talk:0:0"
-	applycontexttoworld
+	criteria ConceptC6M3_ElevatorCancel IsGambler IsC6M3_port AutoIsNotScavenge AutoIsNotSurvival
 	forceweight 1
 	Response C6M3_elevatorCancelGambler
 }
@@ -4276,7 +4274,9 @@ Response C6M3_elevatorGambler
 }
 Rule C6M3_elevatorGambler
 {
-	criteria Conceptc6m3_elevator IsGambler IsC6M3_port
+	criteria Conceptc6m3_elevator IsGambler IsC6M3_port IsNotSaidC6M3Elevator AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "SaidC6M3Elevator:1:0,Talk:1:10"
+	applycontexttoworld
 	Response C6M3_elevatorGambler
 }
 
@@ -4287,7 +4287,9 @@ Response C6M3_elevatorFrancisGambler
 }
 Rule C6M3_elevatorFrancisGambler
 {
-	criteria Conceptc6m3_elevator IsGambler IsC6M3_port IsFrancisIntroActor IsNotVersus
+	criteria Conceptc6m3_elevator IsGambler IsC6M3_port IsFrancisIntroActor IsNotVersus IsNotSaidC6M3Elevator AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "SaidC6M3Elevator:1:0,Talk:1:10"
+	applycontexttoworld
 	Response C6M3_elevatorFrancisGambler
 }
 
@@ -6601,7 +6603,7 @@ Response C3M3BridgeButtonGambler
 Rule C3M3BridgeButtonGambler
 {
 	criteria ConceptC3M3BridgeButton IsNotSaidC3M3BridgeButton IsGambler IsNotSaidC3M3BridgeButton AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "SaidC3M3BridgeButton:1:30"
+	ApplyContext "SaidC3M3BridgeButton:1:0,WarnMegaMob:1:300,SaidSpecialWarn:1:30"
 	applycontexttoworld
 	Response C3M3BridgeButtonGambler
 }
@@ -12582,7 +12584,7 @@ Response SurvivorVocalizeLookOutGambler
 }
 Rule SurvivorVocalizeLookOutGambler
 {
-	criteria ConceptPlayerLookOut IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
+	criteria ConceptPlayerLookOut IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler _auto_NotSpottedVehicle
 	Response SurvivorVocalizeLookOutGambler
 }
 
@@ -14428,8 +14430,6 @@ Response _c4m3_startsafe02Gambler
 Rule _c4m3_startsafe02Gambler
 {
 	criteria Concept_c4m3_startsafe02 IsGambler IsInStartArea AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:1.178"
-	applycontexttoworld
 	Response _c4m3_startsafe02Gambler
 }
 
@@ -14440,8 +14440,6 @@ Response _c4m3_startsafe04Gambler
 Rule _c4m3_startsafe04Gambler
 {
 	criteria Concept_c4m3_startsafe04 IsGambler IsInStartArea AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:0.754"
-	applycontexttoworld
 	Response _c4m3_startsafe04Gambler
 }
 
@@ -16250,21 +16248,6 @@ Rule C2M3AlarmOffNagGambler
 	ApplyContext "_auto_TimerLockA:1:8,_auto_TimerLockGambler:1:11"
 	applycontexttoworld
 	Response PlayerRemarkc2m3_coasteroffGambler
-}
-
-Response PlayerMeleeKillGambler
-{
-	scene "scenes/Gambler/MeleeSwing01.vcd"  //
-	scene "scenes/Gambler/MeleeSwing04.vcd"  //
-	scene "scenes/Gambler/MeleeSwing06.vcd"  //
-	scene "scenes/Gambler/MeleeSwing09.vcd"  //
-	scene "scenes/Gambler/MeleeSwing11.vcd"  //
-	scene "scenes/Gambler/MeleeSwing13.vcd"  //
-}
-Rule PlayerMeleeKillGambler
-{
-	criteria ConceptKilledZombie IsGambler IsTalk IsTalkGambler EquippedMeleeWeapon InCombat SubjectIsNotTank IsSubjectNear100 ChanceToFire30Percent IsWorldTalkGambler
-	Response PlayerMeleeKillGambler
 }
 
 Response AskWhatGambler

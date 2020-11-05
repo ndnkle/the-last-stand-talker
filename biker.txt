@@ -582,19 +582,6 @@ Rule L4D1BotYesReadyBiker
 }
 
 
-//--------------------------------------------------------------------------------------------------------------
-// C7M3
-//--------------------------------------------------------------------------------------------------------------
-Response C7M3_saferoom001Biker
-{
-	scene "scenes/Biker/C6DLC3SECONDSAFEROOM01.vcd"  //I wish I was heading to a deserted island. Can we each get our own?
-}
-Rule C7M3_saferoom001Biker
-{
-	criteria ConceptC7M3_saferoom001 IsBiker IsInStartArea AutoIsNotScavenge AutoIsNotSurvival
-	Response C7M3_saferoom001Biker
-}
-
 
 //--------------------------------------------------------------------------------------------------------------
 // C6M1
@@ -5267,7 +5254,7 @@ Response L4D1PlayerRemarkFarm05_path07VampirescBiker
 }
 Rule L4D1PlayerRemarkFarm05_path07VampirescBiker
 {
-	criteria ConceptFarmVampiresc IsBiker
+	criteria ConceptFarmVampiresc IsBiker IsNotCoughing NotInCombat IsTalk IsTalkBiker FinaleAttract IsWorldTalkBiker
 	Response L4D1PlayerRemarkFarm05_path07VampirescBiker
 }
 

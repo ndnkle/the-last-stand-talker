@@ -985,7 +985,7 @@ Response InfoRemc7m2_listingtugNamVet
 }
 Rule InfoRemc7m2_listingtugNamVet
 {
-	criteria ConceptInfoRemc7m2_listingtug IsNamVet IsNamVetNear800
+	criteria ConceptInfoRemc7m2_listingtug IsNamVet IssuerClose
 	Response InfoRemc7m2_listingtugNamVet
 }
 
@@ -3539,7 +3539,7 @@ Response L4D1PlayerRemarkFarm05_path07VampiresbNamVet
 }
 Rule L4D1PlayerRemarkFarm05_path07VampiresbNamVet
 {
-	criteria ConceptFarmVampiresb IsNamVet
+	criteria ConceptFarmVampiresb IsNamVet IsNotCoughing NotInCombat IsTalk IsTalkNamVet FinaleAttract IsWorldTalkNamVet
 	Response L4D1PlayerRemarkFarm05_path07VampiresbNamVet
 }
 
@@ -8145,8 +8145,8 @@ Rule L4D1C14M2PowerOutAgainNamVet
 
 Response L4D1SurvivorFinalVehicleSpottedBoatC14M2NamVet
 {
-	scene "scenes/NamVet/ArriveBoatInitial01.vcd"  then any EmphaticArriveRun foo:0 -2.418 //That's the boat! Time to bug out!
-	scene "scenes/NamVet/ArriveBoatInitial02.vcd"  then any EmphaticArriveRun foo:0 -1.908 //Allright, the boat's here! Let's go!
+	scene "scenes/NamVet/ArriveBoatInitial01.vcd" predelay "12" then any EmphaticArriveRun foo:0 -14.418 //That's the boat! Time to bug out!
+	scene "scenes/NamVet/ArriveBoatInitial02.vcd" predelay "12" then any EmphaticArriveRun foo:0 -13.908 //Allright, the boat's here! Let's go!
 }
 Rule L4D1SurvivorFinalVehicleSpottedBoatC14M2NamVet
 {

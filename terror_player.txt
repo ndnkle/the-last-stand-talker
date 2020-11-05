@@ -36,6 +36,8 @@ criterion "AutoIsNotScavenge"   "gamemode" "!=scavenge"	  required weight 0
 criterion "IsSurvival"   "gamemode" "survival"	  required
 criterion "IsScavenge"   "gamemode" "scavenge"	  required
 criterion "IsCoop"   "gamemode" "coop"	  required
+criterion "IsRealism"   "gamemode" "realism"	  required
+criterion "IsACoopMode" { IsCoop IsRealism } required
 criterion "ConceptPlayerPourStarted"	"Concept" "PlayerPourStarted"		required
 criterion "ConceptPlayerEquippedScavengeItem"	"Concept" "PlayerEquippedScavengeItem"		required
 criterion "ConceptPlayerPourFinished"	"Concept" "PlayerPourFinished"		required
@@ -2320,6 +2322,8 @@ criterion "ConceptC13M4AlmostThere"   "Concept" "C13M4AlmostThere"	  required
 criterion "ConceptC13M4NoticedHelicopter"   "Concept" "C13M4NoticedHelicopter"	  required
 
 criterion "ConceptC13M4PilotEscapeNag"   "Concept" "C13M4PilotEscapeNag"	  required
+
+criterion "ConceptC13M4Outro"   "Concept" "C13M4Outro"	  required
 
 Criterion "IsNotInC13M4Creek" "worldInC13M4Creek" "<1" required
 Criterion "IsNotInC13M4Smoke" "InC13M4Smoke" "<1" required

@@ -683,7 +683,6 @@ Rule RescuedSurvivorProducer
 
 Response ItemDonorCoachProducer
 {
-	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo22.vcd" predelay "2,2.5" then coach YouAreWelcome foo:0 0 //Thanks, Coach.
 	scene "scenes/Producer/ThanksCoach02.vcd" predelay "2,2.5" then coach YouAreWelcome foo:0 0 //Thanks, Coach!
 }
 Rule ItemDonorCoachProducer
@@ -827,7 +826,6 @@ Rule ReviveThanksProducer
 
 Response ReviveThanksCoachProducer
 {
-	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo22.vcd" predelay ".2,.5" then subject YouAreWelcome foo:0 0 //Thanks, Coach.
 	scene "scenes/Producer/ThanksCoach02.vcd" predelay ".2,.5" then subject YouAreWelcome foo:0 0 //Thanks, Coach!
 }
 Rule ReviveThanksCoachProducer
@@ -1045,16 +1043,6 @@ Rule C1M2SafeRoomb3Producer
 {
 	criteria ConceptC1M2SafeRoomb3 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M2SafeRoomb3Producer
-}
-
-Response C1M2SafeRoomc2Producer
-{
-	scene "scenes/Producer/GettingRevived22.vcd"  //Okay I guess.
-}
-Rule C1M2SafeRoomc2Producer
-{
-	criteria ConceptC1M2SafeRoomc2 IsProducer AutoIsNotScavenge AutoIsNotSurvival
-	Response C1M2SafeRoomc2Producer
 }
 
 Response C1M2SafeRoomd2Producer
@@ -1532,6 +1520,12 @@ Response C2M5_PlanWorkedProducer
 Rule C2M5_PlanWorkedProducer
 {
 	criteria ConceptC2M5_PlanWorked IsProducer NotCoachMadAtRiders IsNotIncapacitated NotInCombat AutoIsNotScavenge AutoIsNotSurvival
+	Response C2M5_PlanWorkedProducer
+}
+
+Rule C2M5_PlanWorkedCoachMadProducer
+{
+	criteria ConceptC2M5_PlanWorked IsProducer CoachMadAtRiders IsNotIncapacitated NotInCombat AutoIsNotScavenge AutoIsNotSurvival
 	Response C2M5_PlanWorkedProducer
 }
 
@@ -3889,9 +3883,7 @@ Response C6M3_elevatorCancelProducer
 }
 Rule C6M3_elevatorCancelProducer
 {
-	criteria ConceptC6M3_ElevatorCancel IsProducer IsNotSaidC6M3Elevator IsC6M3_port
-	ApplyContext "SaidC6M3Elevator:1:0,Talk:0:0"
-	applycontexttoworld
+	criteria ConceptC6M3_ElevatorCancel IsProducer IsC6M3_port AutoIsNotScavenge AutoIsNotSurvival
 	forceweight 1
 	Response C6M3_elevatorCancelProducer
 }
@@ -3908,7 +3900,9 @@ Response C6M3_elevatorProducer
 }
 Rule C6M3_elevatorProducer
 {
-	criteria Conceptc6m3_elevator IsProducer IsC6M3_port
+	criteria Conceptc6m3_elevator IsProducer IsC6M3_port IsNotSaidC6M3Elevator AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "SaidC6M3Elevator:1:0,Talk:1:10"
+	applycontexttoworld
 	Response C6M3_elevatorProducer
 }
 
@@ -4076,6 +4070,7 @@ Rule DLC1_C6M3_SafeRoomConvo08gProducer
 Response DLC1_C6M3_SafeRoomConvo09bProducer
 {
 	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo25.vcd"  //Oh, yeah, um... What woman wouldn't love that.
+	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo26.vcd"  //What woman wouldn't love that.
 	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo27.vcd"  //Uh... Lucky girl.
 	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo28.vcd"  //Lucky girl.
 }
@@ -6219,7 +6214,7 @@ Response C3M3BridgeButtonProducer
 Rule C3M3BridgeButtonProducer
 {
 	criteria ConceptC3M3BridgeButton IsNotSaidC3M3BridgeButton IsProducer IsNotSaidC3M3BridgeButton AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "SaidC3M3BridgeButton:1:30"
+	ApplyContext "SaidC3M3BridgeButton:1:0,WarnMegaMob:1:300,SaidSpecialWarn:1:30"
 	applycontexttoworld
 	Response C3M3BridgeButtonProducer
 }
@@ -11635,7 +11630,7 @@ Response SurvivorVocalizeLookOutProducer
 }
 Rule SurvivorVocalizeLookOutProducer
 {
-	criteria ConceptPlayerLookOut IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
+	criteria ConceptPlayerLookOut IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer _auto_NotSpottedVehicle
 	Response SurvivorVocalizeLookOutProducer
 }
 

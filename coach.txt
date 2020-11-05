@@ -4201,9 +4201,7 @@ Response C6M3_elevatorCancelCoach
 }
 Rule C6M3_elevatorCancelCoach
 {
-	criteria ConceptC6M3_ElevatorCancel IsCoach IsNotSaidC6M3Elevator IsC6M3_port AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "SaidC6M3Elevator:1:0,Talk:0:0"
-	applycontexttoworld
+	criteria ConceptC6M3_ElevatorCancel IsCoach IsC6M3_port AutoIsNotScavenge AutoIsNotSurvival
 	forceweight 1
 	Response C6M3_elevatorCancelCoach
 }
@@ -4219,7 +4217,9 @@ Response C6M3_elevatorCoach
 }
 Rule C6M3_elevatorCoach
 {
-	criteria Conceptc6m3_elevator IsCoach IsC6M3_port AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc6m3_elevator IsCoach IsC6M3_port IsNotSaidC6M3Elevator AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "SaidC6M3Elevator:1:0,Talk:1:10"
+	applycontexttoworld
 	Response C6M3_elevatorCoach
 }
 
@@ -4231,6 +4231,8 @@ Response C6M3_elevatorZoeyCoach
 Rule C6M3_elevatorZoeyCoach
 {
 	criteria Conceptc6m3_elevator IsCoach IsC6M3_port IsZoeyIntroActor IsMechanicAlive IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "SaidC6M3Elevator:1:0,Talk:1:10"
+	applycontexttoworld
 	Response C6M3_elevatorZoeyCoach
 }
 
@@ -10477,10 +10479,10 @@ Response PlayerHeardJockeyC1Coach
 	scene "scenes/Coach/HeardJockeyC102.vcd"  //What is that noise?
 	scene "scenes/Coach/HeardJockeyC103.vcd"  //Is that one of those little things?
 }
-Rule PlayerHeardJockeyC1Mechanic
+Rule PlayerHeardJockeyC1Coach
 {
 	criteria ConceptPlayerHeardJockey IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach C1M1orC1M2 NoKnowJockey
-	Response PlayerHeardJockeyC1Mechanic
+	Response PlayerHeardJockeyC1Coach
 }
 
 Response PlayerHeardTankCoach
@@ -12609,7 +12611,7 @@ Response SurvivorVocalizeLookOutCoach
 }
 Rule SurvivorVocalizeLookOutCoach
 {
-	criteria ConceptPlayerLookOut IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
+	criteria ConceptPlayerLookOut IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach _auto_NotSpottedVehicle
 	Response SurvivorVocalizeLookOutCoach
 }
 

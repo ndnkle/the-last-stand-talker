@@ -10198,7 +10198,7 @@ Response PlayerYouAreWelcomeCoach
 }
 Rule PlayerYouAreWelcomeCoach
 {
-	criteria ConceptPlayerYouAreWelcome IsNotCoughing IsNotSpeaking IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
+	criteria ConceptPlayerYouAreWelcome IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
 	Response PlayerYouAreWelcomeCoach
 }
 

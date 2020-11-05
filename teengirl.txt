@@ -9236,7 +9236,7 @@ Response L4D1C14M2RadioSpeakTeenGirl
 }
 Rule L4D1C14M2RadioSpeakTeenGirl
 {
-	criteria ConceptC14M2Radio IsTeenGirl IsNotIncapacitated IsTalkTeenGirl IsWorldTalkTeenGirl AutoIsNotScavenge AutoIsNotSurvival _auto_IsTalkingTeenGirl
+	criteria ConceptC14M2RadioSpeak IsTeenGirl IsNotIncapacitated IsTalkTeenGirl IsWorldTalkTeenGirl AutoIsNotScavenge AutoIsNotSurvival _auto_IsTalkingTeenGirl
 	Response L4D1C14M2RadioSpeakTeenGirl
 }
 

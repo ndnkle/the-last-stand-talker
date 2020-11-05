@@ -3473,6 +3473,7 @@ Response L4D1PlayerHelpIncappedManager
 	scene "scenes/Manager/Help01.vcd"  //Help!
 	scene "scenes/Manager/Help02.vcd"  //I need some help over here!
 	scene "scenes/Manager/Help03.vcd"  //Need a little help over here!
+	scene "scenes/Manager/Help04.vcd"  //Dammit, I need some help!
 	scene "scenes/Manager/Help05.vcd"  //Help me!
 	scene "scenes/Manager/Help06.vcd"  //Help!
 }
@@ -6482,7 +6483,7 @@ Response L4D1SurvivorVocalizeBackUpManager
 }
 Rule L4D1SurvivorVocalizeBackUpManager
 {
-	criteria ConceptPlayerBackUp IsManager IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkManager IsWorldTalkManager
+	criteria ConceptPlayerBackUp IsManager IsNotCoughing IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkManager IsWorldTalkManager
 	Response L4D1SurvivorVocalizeBackUpManager
 }
 

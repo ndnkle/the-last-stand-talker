@@ -11023,7 +11023,7 @@ Response PlayerStayTogetherSaferoomGambler
 }
 Rule PlayerStayTogetherSaferoomGambler
 {
-	criteria ConceptPlayerStayTogether IsNotCoughing IsGambler IsInSafeSpot IsTalk IsTalkGambler SomeoneOutsideSafeSpot IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerStayTogether IsNotCoughing IsGambler IsInSafeSpot IsTalk IsTalkGambler SomeoneOutsideSafeSpot IsWorldTalkGambler
 	Response PlayerStayTogetherSaferoomGambler
 }
 

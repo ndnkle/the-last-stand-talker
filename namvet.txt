@@ -922,7 +922,7 @@ Response C7M2_saferoom01aNamVet
 }
 Rule C7M2_saferoom01aNamVet
 {
-	criteria ConceptC7M2_saferoom01a IsNamVet IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M2_saferoom01a IsNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M2_saferoom01aNamVet
 }
 
@@ -932,7 +932,7 @@ Response C7M2_saferoom05NamVet
 }
 Rule C7M2_saferoom05NamVet
 {
-	criteria ConceptC7M2_saferoom05 IsNamVet IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M2_saferoom05 IsNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M2_saferoom05NamVet
 }
 
@@ -943,7 +943,7 @@ Response C7M2_saferoom05bNamVet
 }
 Rule C7M2_saferoom05bNamVet
 {
-	criteria ConceptC7M2_saferoom05b IsNamVet IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M2_saferoom05b IsNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M2_saferoom05bNamVet
 }
 
@@ -953,7 +953,7 @@ Response C7M2_saferoom06NamVet
 }
 Rule C7M2_saferoom06NamVet
 {
-	criteria ConceptC7M2_saferoom06 IsNamVet IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M2_saferoom06 IsNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M2_saferoom06NamVet
 }
 
@@ -963,7 +963,7 @@ Response C7M2_saferoom07NamVet
 }
 Rule C7M2_saferoom07NamVet
 {
-	criteria ConceptC7M2_saferoom07 IsNamVet IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M2_saferoom07 IsNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M2_saferoom07NamVet
 }
 
@@ -1024,7 +1024,7 @@ Response C7M3_saferoom003NamVet
 }
 Rule C7M3_saferoom003NamVet
 {
-	criteria ConceptC7M3_saferoom003 IsNamVet IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom003 IsNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom003NamVet
 }
 
@@ -1035,7 +1035,7 @@ Response C7M3_saferoom003bNamVet
 }
 Rule C7M3_saferoom003bNamVet
 {
-	criteria ConceptC7M3_saferoom003b IsNamVet IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom003b IsNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom003bNamVet
 }
 
@@ -1045,7 +1045,7 @@ Response C7M3_saferoom003cNamVet
 }
 Rule C7M3_saferoom003cNamVet
 {
-	criteria ConceptC7M3_saferoom003c IsNamVet IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom003c IsNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom003cNamVet
 }
 
@@ -1055,7 +1055,7 @@ Response C7M3_saferoom006NamVet
 }
 Rule C7M3_saferoom006NamVet
 {
-	criteria ConceptC7M3_saferoom006 IsNamVet IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom006 IsNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom006NamVet
 }
 
@@ -1065,7 +1065,7 @@ Response C7M3_saferoom008aNamVet
 }
 Rule C7M3_saferoom008aNamVet
 {
-	criteria ConceptC7M3_saferoom008a IsNamVet IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom008a IsNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom008aNamVet
 }
 
@@ -1075,7 +1075,7 @@ Response C7M3_saferoom009NamVet
 }
 Rule C7M3_saferoom009NamVet
 {
-	criteria ConceptC7M3_saferoom009 IsNamVet IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom009 IsNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom009NamVet
 }
 
@@ -1085,7 +1085,7 @@ Response C7M3_saferoom010NamVet
 }
 Rule C7M3_saferoom010NamVet
 {
-	criteria ConceptC7M3_saferoom010 IsNamVet IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom010 IsNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom010NamVet
 }
 
@@ -1095,7 +1095,7 @@ Response C7M3_saferoom010bNamVet
 }
 Rule C7M3_saferoom010bNamVet
 {
-	criteria ConceptC7M3_saferoom010b IsNamVet IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom010b IsNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom010bNamVet
 }
 
@@ -1105,7 +1105,7 @@ Response C7M3_saferoom012NamVet
 }
 Rule C7M3_saferoom012NamVet
 {
-	criteria ConceptC7M3_saferoom012 IsNamVet IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom012 IsNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom012NamVet
 }
 
@@ -1115,7 +1115,7 @@ Response C7M3_saferoom012bNamVet
 }
 Rule C7M3_saferoom012bNamVet
 {
-	criteria ConceptC7M3_saferoom012b IsNamVet IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom012b IsNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom012bNamVet
 }
 
@@ -1125,7 +1125,7 @@ Response C7M3_saferoom012dNamVet
 }
 Rule C7M3_saferoom012dNamVet
 {
-	criteria ConceptC7M3_saferoom012d IsNamVet IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom012d IsNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom012dNamVet
 }
 
@@ -1135,7 +1135,7 @@ Response C7M3_saferoom012fNamVet
 }
 Rule C7M3_saferoom012fNamVet
 {
-	criteria ConceptC7M3_saferoom012f IsNamVet IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom012f IsNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom012fNamVet
 }
 
@@ -4999,27 +4999,15 @@ Rule L4D1PlayerNoNamVet
 	Response L4D1PlayerNoNamVet
 }
 
-Response L4D1PlayerProfanityNamVet
+Response L4D1PlayerAnswerLostCallNamVet
 {
-	scene "scenes/NamVet/Generic41.vcd"  //[indignant] Hey!
-	scene "scenes/NamVet/PlayerTransitionClose04.vcd"  //That was a little closer than I'da liked.
-	scene "scenes/NamVet/ReactionNegative03.vcd"  //Gee-zus
-	scene "scenes/NamVet/ReactionNegative10.vcd"  //Dammit
-	scene "scenes/NamVet/ReactionNegative10.vcd"  //Dammit
-	scene "scenes/NamVet/SwearCoupdeGrace02.vcd"  //Go to hell.
-	scene "scenes/NamVet/Swears05.vcd"  //Mother. Humper.
-	scene "scenes/NamVet/Swears07.vcd"  //Ah hell.
-	scene "scenes/NamVet/Swears08.vcd"  //Dammit.
-	scene "scenes/NamVet/Swears10.vcd"  //Mother of mercy.
-	scene "scenes/NamVet/ViolenceAwe01.vcd"  //Jee-zus...
-	scene "scenes/NamVet/ViolenceAwe02.vcd"  //Holy crap.
-	scene "scenes/NamVet/ViolenceAwe03.vcd"  //Whoa.
-	scene "scenes/NamVet/ViolenceAwe07.vcd"  //Holy Mother of God...
+	scene "scenes/NamVet/ScenarioJoin01.vcd"  //I'm here.
+	scene "scenes/NamVet/ScenarioJoin03.vcd"  //Hey, I'm here.
 }
-Rule L4D1PlayerProfanityNamVet
+Rule L4D1PlayerAnswerLostCallNamVet
 {
 	criteria ConceptPlayerAnswerLostCall IsNotCoughing  IsNamVet IsTalk IsTalkNamVet IsWorldTalkNamVet
-	Response L4D1PlayerProfanityNamVet
+	Response L4D1PlayerAnswerLostCallNamVet
 }
 
 Response L4D1PlayerSorryNamVet
@@ -5733,6 +5721,20 @@ Rule L4D1PlayerWarnHeardWitchNamVet
 	ApplyContext "WarnHeardWitch:1:300,SaidSpecialWarn:1:30"
 	applycontexttoworld
 	Response L4D1PlayerWarnHeardWitchNamVet
+}
+
+Response PlayerHeardWitchNamVet
+{
+	scene "scenes/NamVet/HeardWitch01.vcd"  //Hear that, that's a witch
+	scene "scenes/NamVet/HeardWitch02.vcd"  //Witch around here.
+	scene "scenes/NamVet/HeardWitch03.vcd"  //Shit, Witch
+	scene "scenes/NamVet/HeardWitch04.vcd"  //Quiet, there's a Witch around here.
+	scene "scenes/NamVet/HeardWitch05.vcd"  //Shhh, Witch near here.
+}
+Rule PlayerHeardWitchNamVet
+{
+	criteria ConceptPlayerHeardWitch IsNotCoughing IsNamVet IsTalk IsTalkNamVet IsWorldTalkNamVet _auto_NotSpottedVehicle
+	Response PlayerHeardWitchNamVet
 }
 
 Response L4D1PlayerWarnMegaMobNamVet

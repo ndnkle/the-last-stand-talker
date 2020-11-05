@@ -1455,7 +1455,7 @@ Response C7M2_saferoom02aBiker
 }
 Rule C7M2_saferoom02aBiker
 {
-	criteria ConceptC7M2_saferoom02a IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M2_saferoom02a IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M2_saferoom02aBiker
 }
 
@@ -1465,7 +1465,7 @@ Response C7M2_saferoom02cBiker
 }
 Rule C7M2_saferoom02cBiker
 {
-	criteria ConceptC7M2_saferoom02c IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M2_saferoom02c IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M2_saferoom02cBiker
 }
 
@@ -1475,7 +1475,7 @@ Response C7M2_saferoom02eBiker
 }
 Rule C7M2_saferoom02eBiker
 {
-	criteria ConceptC7M2_saferoom02e IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M2_saferoom02e IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M2_saferoom02eBiker
 }
 
@@ -1485,7 +1485,7 @@ Response C7M2_saferoom03Biker
 }
 Rule C7M2_saferoom03Biker
 {
-	criteria ConceptC7M2_saferoom03 IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M2_saferoom03 IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M2_saferoom03Biker
 }
 
@@ -1495,7 +1495,7 @@ Response C7M2_saferoom03bBiker
 }
 Rule C7M2_saferoom03bBiker
 {
-	criteria ConceptC7M2_saferoom03b IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M2_saferoom03b IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M2_saferoom03bBiker
 }
 
@@ -1506,7 +1506,7 @@ Response C7M2_saferoom05aBiker
 }
 Rule C7M2_saferoom05aBiker
 {
-	criteria ConceptC7M2_saferoom05a IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M2_saferoom05a IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M2_saferoom05aBiker
 }
 
@@ -1549,7 +1549,7 @@ Response C7M3_saferoom001Biker
 }
 Rule C7M3_saferoom001Biker
 {
-	criteria ConceptC7M3_saferoom001 IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom001 IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom001Biker
 }
 
@@ -1559,7 +1559,7 @@ Response C7M3_saferoom002Biker
 }
 Rule C7M3_saferoom002Biker
 {
-	criteria ConceptC7M3_saferoom002 IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom002 IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom002Biker
 }
 
@@ -1573,7 +1573,7 @@ Response C7M3_saferoom004bBiker
 }
 Rule C7M3_saferoom004bBiker
 {
-	criteria ConceptC7M3_saferoom004b IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom004b IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom004bBiker
 }
 
@@ -1583,7 +1583,7 @@ Response C7M3_saferoom006aBiker
 }
 Rule C7M3_saferoom006aBiker
 {
-	criteria ConceptC7M3_saferoom006a IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom006a IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom006aBiker
 }
 
@@ -1593,7 +1593,7 @@ Response C7M3_saferoom008Biker
 }
 Rule C7M3_saferoom008Biker
 {
-	criteria ConceptC7M3_saferoom008 IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom008 IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom008Biker
 }
 
@@ -1603,7 +1603,7 @@ Response C7M3_saferoom008bBiker
 }
 Rule C7M3_saferoom008bBiker
 {
-	criteria ConceptC7M3_saferoom008b IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom008b IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom008bBiker
 }
 
@@ -1613,7 +1613,7 @@ Response C7M3_saferoom012aBiker
 }
 Rule C7M3_saferoom012aBiker
 {
-	criteria ConceptC7M3_saferoom012a IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom012a IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom012aBiker
 }
 
@@ -1623,7 +1623,7 @@ Response C7M3_saferoom012cBiker
 }
 Rule C7M3_saferoom012cBiker
 {
-	criteria ConceptC7M3_saferoom012c IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom012c IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom012cBiker
 }
 
@@ -1634,7 +1634,7 @@ Response C7M3_saferoom012eBiker
 }
 Rule C7M3_saferoom012eBiker
 {
-	criteria ConceptC7M3_saferoom012e IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom012e IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom012eBiker
 }
 
@@ -1644,7 +1644,7 @@ Response C7M3_saferoom013Biker
 }
 Rule C7M3_saferoom013Biker
 {
-	criteria ConceptC7M3_saferoom013 IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom013 IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom013Biker
 }
 
@@ -1655,7 +1655,7 @@ Response C7M3_saferoom013bBiker
 }
 Rule C7M3_saferoom013bBiker
 {
-	criteria ConceptC7M3_saferoom013b IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom013b IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom013bBiker
 }
 
@@ -1665,7 +1665,7 @@ Response C7M3_saferoom013dBiker
 }
 Rule C7M3_saferoom013dBiker
 {
-	criteria ConceptC7M3_saferoom013d IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom013d IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom013dBiker
 }
 
@@ -1675,7 +1675,7 @@ Response C7M3_saferoom014Biker
 }
 Rule C7M3_saferoom014Biker
 {
-	criteria ConceptC7M3_saferoom014 IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom014 IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom014Biker
 }
 
@@ -1685,7 +1685,7 @@ Response C7M3_saferoom014bBiker
 }
 Rule C7M3_saferoom014bBiker
 {
-	criteria ConceptC7M3_saferoom014b IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom014b IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom014bBiker
 }
 
@@ -1695,7 +1695,7 @@ Response C7M3_saferoom015Biker
 }
 Rule C7M3_saferoom015Biker
 {
-	criteria ConceptC7M3_saferoom015 IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom015 IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom015Biker
 }
 
@@ -1706,7 +1706,7 @@ Response C7M3_saferoom016aBiker
 }
 Rule C7M3_saferoom016aBiker
 {
-	criteria ConceptC7M3_saferoom016a IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom016a IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom016aBiker
 }
 
@@ -1716,7 +1716,7 @@ Response C7M3_saferoom016cBiker
 }
 Rule C7M3_saferoom016cBiker
 {
-	criteria ConceptC7M3_saferoom016c IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom016c IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom016cBiker
 }
 
@@ -1726,7 +1726,7 @@ Response C7M3_saferoom017aBiker
 }
 Rule C7M3_saferoom017aBiker
 {
-	criteria ConceptC7M3_saferoom017a IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom017a IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom017aBiker
 }
 
@@ -1736,7 +1736,7 @@ Response C7M3_saferoom017cBiker
 }
 Rule C7M3_saferoom017cBiker
 {
-	criteria ConceptC7M3_saferoom017c IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom017c IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom017cBiker
 }
 
@@ -1746,7 +1746,7 @@ Response C7M3_saferoom017eBiker
 }
 Rule C7M3_saferoom017eBiker
 {
-	criteria ConceptC7M3_saferoom017e IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom017e IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom017eBiker
 }
 
@@ -1756,7 +1756,7 @@ Response C7M3_saferoom017gBiker
 }
 Rule C7M3_saferoom017gBiker
 {
-	criteria ConceptC7M3_saferoom017g IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom017g IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom017gBiker
 }
 
@@ -1766,7 +1766,7 @@ Response C7M3_saferoom017hBiker
 }
 Rule C7M3_saferoom017hBiker
 {
-	criteria ConceptC7M3_saferoom017h IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom017h IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom017hBiker
 }
 
@@ -2836,7 +2836,7 @@ Response CrashCourseI01Biker
 }
 Rule CrashCourseI01Biker
 {
-	criteria ConceptCrashCourseI01 IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptCrashCourseI01 IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response CrashCourseI01Biker
 }
 
@@ -2847,8 +2847,8 @@ Response CrashCourseB02Biker
 }
 Rule CrashCourseB02Biker
 {
-	criteria ConceptCrashCourseB02 IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "CanadaBikerHate:2:0"
+	criteria ConceptCrashCourseB02 IsBiker AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "CanadaBikerHate:1:0"
 	applycontexttoworld
 	Response CrashCourseB02Biker
 }
@@ -2859,7 +2859,7 @@ Response CrashCourseC01Biker
 }
 Rule CrashCourseC01Biker
 {
-	criteria ConceptCrashCourseC01 IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptCrashCourseC01 IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response CrashCourseC01Biker
 }
 
@@ -5413,7 +5413,7 @@ Response L4D1PlayerRemarkhospital05_path01aBiker
 }
 Rule L4D1PlayerRemarkhospital05_path01aBiker
 {
-	criteria Concepthospital05_path01a IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concepthospital05_path01a IsBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response L4D1PlayerRemarkhospital05_path01aBiker
 }
 
@@ -5531,7 +5531,7 @@ Response L4D1PlayerRemarksmalltown02_path01aBiker
 }
 Rule L4D1PlayerRemarksmalltown02_path01aBiker
 {
-	criteria ConceptSmallTown02_path01a IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoISNotSurvival
+	criteria ConceptSmallTown02_path01a IsBiker AutoIsNotScavenge AutoISNotSurvival
 	Response L4D1PlayerRemarksmalltown02_path01aBiker
 }
 
@@ -5541,7 +5541,7 @@ Response L4D1PlayerRemarksmalltown02_path01cBiker
 }
 Rule L4D1PlayerRemarksmalltown02_path01cBiker
 {
-	criteria ConceptSmallTown02_path01c IsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoISNotSurvival
+	criteria ConceptSmallTown02_path01c IsBiker AutoIsNotScavenge AutoISNotSurvival
 	Response L4D1PlayerRemarksmalltown02_path01cBiker
 }
 
@@ -6776,26 +6776,16 @@ Rule L4D1PlayerNoBiker
 	Response L4D1PlayerNoBiker
 }
 
-Response L4D1PlayerProfanityBiker
+Response L4D1PlayerAnswerLostCallBiker
 {
-	scene "scenes/Biker/NegativeNoise07.vcd"  //[Improv non-verbal displeasure & frustration sounds]
-	scene "scenes/Biker/NegativeNoise08.vcd"  //[Improv non-verbal displeasure & frustration sounds]
-	scene "scenes/Biker/ReactionNegative02.vcd"  //That's bad.
-	scene "scenes/Biker/ReactionNegative03.vcd"  //damn
-	scene "scenes/Biker/ReactionNegative07.vcd"  //Damnit.
-	scene "scenes/Biker/ReactionNegative07.vcd"  //Damnit.
-	scene "scenes/Biker/ReactionNegative08.vcd"  //Damnit.
-	scene "scenes/Biker/ReactionNegative08.vcd"  //Damnit.
-	scene "scenes/Biker/ReactionNegative09.vcd"  //Ahhhhh.
-	scene "scenes/Biker/Swear06.vcd"  //Crap.
-	scene "scenes/Biker/Swear14.vcd"  //Ah hell.
-	scene "scenes/Biker/Swear17.vcd"  //Dammit.
-	scene "scenes/Biker/ViolenceAwe02.vcd"  //Jee-zus...
+	scene "scenes/Biker/ScenarioJoin01.vcd"  //I'm here!
+	scene "scenes/Biker/ScenarioJoin02.vcd"  //Hey, I'm here!
+	scene "scenes/Biker/ScenarioJoin03.vcd"  //Hey, I'm here!
 }
-Rule L4D1PlayerProfanityBiker
+Rule L4D1PlayerAnswerLostCallBiker
 {
 	criteria ConceptPlayerAnswerLostCall IsNotCoughing  IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
-	Response L4D1PlayerProfanityBiker
+	Response L4D1PlayerAnswerLostCallBiker
 }
 
 Response L4D1PlayerSorryBiker
@@ -7632,6 +7622,23 @@ Rule L4D1PlayerWarnHeardWitchBiker
 	ApplyContext "WarnHeardWitch:1:300,SaidSpecialWarn:1:30"
 	applycontexttoworld
 	Response L4D1PlayerWarnHeardWitchBiker
+}
+
+Response PlayerHeardWitchBiker
+{
+	scene "scenes/Biker/HeardWitch01.vcd"  //I hear a Witch.
+	scene "scenes/Biker/HeardWitch02.vcd"  //Witch, and she's close!
+	scene "scenes/Biker/HeardWitch03.vcd"  //There's a Witch around here.
+	scene "scenes/Biker/HeardWitch04.vcd"  //Witch, and she's close!
+	scene "scenes/Biker/HeardWitch05.vcd"  //Hear that Witch? I'm gonna give her something to cry about.
+	scene "scenes/Biker/HeardWitch06.vcd"  //Shhh, I hear a Witch.
+	scene "scenes/Biker/HeardWitch07.vcd"  //There's a Witch around here.
+	scene "scenes/Biker/HeardWitch08.vcd"  //I hear a Witch.
+}
+Rule PlayerHeardWitchBiker
+{
+	criteria ConceptPlayerHeardWitch IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker _auto_NotSpottedVehicle
+	Response PlayerHeardWitchBiker
 }
 
 Response L4D1PlayerWarnMegaMobBiker

@@ -1401,7 +1401,7 @@ Rule C2M2SafeRoomCoach
 
 Rule _C2M2_Riders01Coach
 {
-	criteria Concept_C2M2_Riders01 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C2M2_Riders01 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response C2M2SafeRoomCoach
 }
 
@@ -1414,7 +1414,7 @@ Response _C2M2_Riders04Coach
 }
 Rule _C2M2_Riders04Coach
 {
-	criteria Concept_C2M2_Riders04 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C2M2_Riders04 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response _C2M2_Riders04Coach
 }
 
@@ -1425,7 +1425,7 @@ Response _C2M2_Riders05Coach
 }
 Rule _C2M2_Riders05Coach
 {
-	criteria Concept_C2M2_Riders05 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C2M2_Riders05 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response _C2M2_Riders05Coach
 }
 
@@ -1438,7 +1438,7 @@ Response _C2M2_Riders07Coach
 }
 Rule _C2M2_Riders07Coach
 {
-	criteria Concept_C2M2_Riders07 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C2M2_Riders07 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response _C2M2_Riders07Coach
 }
 
@@ -1915,7 +1915,7 @@ Response c2m5_intro001Coach
 }
 Rule c2m5_intro001Coach
 {
-	criteria Conceptc2m5_intro001 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro001 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro001Coach
 }
 
@@ -1928,7 +1928,7 @@ Response c2m5_intro002Coach
 }
 Rule c2m5_intro002Coach
 {
-	criteria Conceptc2m5_intro002 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro002 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro002Coach
 }
 
@@ -1939,7 +1939,7 @@ Response c2m5_intro003Coach
 }
 Rule c2m5_intro003Coach
 {
-	criteria Conceptc2m5_intro003 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro003 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro003Coach
 }
 
@@ -1950,7 +1950,7 @@ Response c2m5_intro006Coach
 }
 Rule c2m5_intro006Coach
 {
-	criteria Conceptc2m5_intro006 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro006 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro006Coach
 }
 
@@ -1963,7 +1963,7 @@ Response c2m5_intro007Coach
 }
 Rule c2m5_intro007Coach
 {
-	criteria Conceptc2m5_intro007 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro007 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro007Coach
 }
 
@@ -1975,7 +1975,7 @@ Response c2m5_intro008Coach
 }
 Rule c2m5_intro008Coach
 {
-	criteria Conceptc2m5_intro008 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro008 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro008Coach
 }
 
@@ -1988,7 +1988,7 @@ Response c2m5_intro010Coach
 }
 Rule c2m5_intro010Coach
 {
-	criteria Conceptc2m5_intro010 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro010 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro010Coach
 }
 
@@ -1998,7 +1998,7 @@ Response c2m5_intro012Coach
 }
 Rule c2m5_intro012Coach
 {
-	criteria Conceptc2m5_intro012 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro012 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro012Coach
 }
 
@@ -2009,13 +2009,13 @@ Response c2m5_intro014Coach
 }
 Rule c2m5_intro014Coach
 {
-	criteria Conceptc2m5_intro014 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro014 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro014Coach
 }
 
 Rule c2m5_intro018Coach
 {
-	criteria Conceptc2m5_intro018 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro018 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro014Coach
 }
 
@@ -2025,19 +2025,19 @@ Response c2m5_intro016Coach
 }
 Rule c2m5_intro016Coach
 {
-	criteria Conceptc2m5_intro016 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro016 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro016Coach
 }
 
 Rule c2m5_intro020Coach
 {
-	criteria Conceptc2m5_intro020 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro020 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro016Coach
 }
 
 Rule c2m5_intro025Coach
 {
-	criteria Conceptc2m5_intro025 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro025 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro016Coach
 }
 
@@ -2050,7 +2050,7 @@ Response c2m5_intro017Coach
 }
 Rule c2m5_intro017Coach
 {
-	criteria Conceptc2m5_intro017 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro017 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro017Coach
 }
 
@@ -2088,7 +2088,7 @@ Response C2M3SafeIntro010Coach
 }
 Rule C2M3SafeIntro010Coach
 {
-	criteria ConceptC2M3SafeIntro010 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC2M3SafeIntro010 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response C2M3SafeIntro010Coach
 }
 
@@ -2100,7 +2100,7 @@ Response C2M3SafeIntro011Coach
 }
 Rule C2M3SafeIntro011Coach
 {
-	criteria ConceptC2M3SafeIntro011 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC2M3SafeIntro011 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response C2M3SafeIntro011Coach
 }
 
@@ -2161,7 +2161,7 @@ Response C3M3SafeRoom2b2Coach
 }
 Rule C3M3SafeRoom2b2Coach
 {
-	criteria ConceptC3M3SafeRoom2b2 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC3M3SafeRoom2b2 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response C3M3SafeRoom2b2Coach
 }
 
@@ -2171,7 +2171,7 @@ Response C3M3SafeRoom2c2Coach
 }
 Rule C3M3SafeRoom2c2Coach
 {
-	criteria ConceptC3M3SafeRoom2c2 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC3M3SafeRoom2c2 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response C3M3SafeRoom2c2Coach
 }
 
@@ -2182,7 +2182,7 @@ Response C3M3SafeRoom2c3Coach
 }
 Rule C3M3SafeRoom2c3Coach
 {
-	criteria ConceptC3M3SafeRoom2c3 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC3M3SafeRoom2c3 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response C3M3SafeRoom2c3Coach
 }
 
@@ -2609,7 +2609,7 @@ Response _C4M5_Intro03Coach
 }
 Rule _C4M5_Intro03Coach
 {
-	criteria Concept_C4M5_Intro03 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C4M5_Intro03 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response _C4M5_Intro03Coach
 }
 
@@ -2619,7 +2619,7 @@ Response _C4M5_Intro04Coach
 }
 Rule _C4M5_Intro04Coach
 {
-	criteria Concept_C4M5_Intro04 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C4M5_Intro04 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response _C4M5_Intro04Coach
 }
 
@@ -2804,7 +2804,7 @@ Response C5M3Bodies01Coach
 }
 Rule C5M3Bodies01Coach
 {
-	criteria ConceptC5M3Bodies01 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC5M3Bodies01 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response C5M3Bodies01Coach
 }
 
@@ -2814,7 +2814,7 @@ Response C5M3Bodies03Coach
 }
 Rule C5M3Bodies03Coach
 {
-	criteria ConceptC5M3Bodies03 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC5M3Bodies03 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response C5M3Bodies03Coach
 }
 
@@ -3591,7 +3591,7 @@ Response C5M5_saferoom002Coach
 }
 Rule C5M5_saferoom002Coach
 {
-	criteria ConceptC5M5_saferoom002 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC5M5_saferoom002 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response C5M5_saferoom002Coach
 }
 
@@ -3601,7 +3601,7 @@ Response C5M5_saferoom004Coach
 }
 Rule C5M5_saferoom004Coach
 {
-	criteria ConceptC5M5_saferoom004 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC5M5_saferoom004 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response C5M5_saferoom004Coach
 }
 
@@ -3612,7 +3612,7 @@ Response C5M5_saferoom005Coach
 }
 Rule C5M5_saferoom005Coach
 {
-	criteria ConceptC5M5_saferoom005 IsCoach ChanceToFire50Percent IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC5M5_saferoom005 IsCoach ChanceToFire50Percent AutoIsNotScavenge AutoIsNotSurvival
 	Response C5M5_saferoom005Coach
 }
 
@@ -3925,7 +3925,7 @@ Response DLC1_C6M2_SafeRoomConvo01aCoach
 }
 Rule DLC1_C6M2_SafeRoomConvo01aCoach
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo01a IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo01a IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo01aCoach
 }
 
@@ -3935,7 +3935,7 @@ Response DLC1_C6M2_SafeRoomConvo09aCoach
 }
 Rule DLC1_C6M2_SafeRoomConvo09aCoach
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo09a IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo09a IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo09aCoach
 }
 
@@ -3957,7 +3957,7 @@ Response DLC1_C6M2_SafeRoomConvo12bCoach
 }
 Rule DLC1_C6M2_SafeRoomConvo12bCoach
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo12b IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo12b IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo12bCoach
 }
 
@@ -3967,7 +3967,7 @@ Response DLC1_C6M2_SafeRoomConvo12dCoach
 }
 Rule DLC1_C6M2_SafeRoomConvo12dCoach
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo12d IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo12d IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo12dCoach
 }
 
@@ -3977,7 +3977,7 @@ Response DLC1_C6M2_SafeRoomConvo13bCoach
 }
 Rule DLC1_C6M2_SafeRoomConvo13bCoach
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo13b IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo13b IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo13bCoach
 }
 
@@ -3988,7 +3988,7 @@ Response DLC1_C6M2_SafeRoomConvo13dCoach
 }
 Rule DLC1_C6M2_SafeRoomConvo13dCoach
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo13d IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo13d IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo13dCoach
 }
 
@@ -3998,7 +3998,7 @@ Response DLC1_C6M2_SafeRoomConvo14dCoach
 }
 Rule DLC1_C6M2_SafeRoomConvo14dCoach
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo14d IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo14d IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo14dCoach
 }
 
@@ -4008,7 +4008,7 @@ Response DLC1_C6M2_SafeRoomConvo15bCoach
 }
 Rule DLC1_C6M2_SafeRoomConvo15bCoach
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo15b IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo15b IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo15bCoach
 }
 
@@ -4018,7 +4018,7 @@ Response DLC1_C6M2_SafeRoomConvo16aCoach
 }
 Rule DLC1_C6M2_SafeRoomConvo16aCoach
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo16a IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo16a IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo16aCoach
 }
 
@@ -4028,7 +4028,7 @@ Response DLC1_C6M2_SafeRoomConvo16cCoach
 }
 Rule DLC1_C6M2_SafeRoomConvo16cCoach
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo16c IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo16c IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo16cCoach
 }
 
@@ -4038,7 +4038,7 @@ Response DLC1_C6M2_SafeRoomConvo18cCoach
 }
 Rule DLC1_C6M2_SafeRoomConvo18cCoach
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo18c IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo18c IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo18cCoach
 }
 
@@ -4048,7 +4048,7 @@ Response DLC1_C6M2_SafeRoomConvo18eCoach
 }
 Rule DLC1_C6M2_SafeRoomConvo18eCoach
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo18e IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo18e IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo18eCoach
 }
 
@@ -4073,7 +4073,7 @@ Response DLC1_C6M2_SafeRoomConvo19bCoach
 }
 Rule DLC1_C6M2_SafeRoomConvo19bCoach
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo19b IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo19b IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo19bCoach
 }
 
@@ -4083,7 +4083,7 @@ Response DLC1_C6M2_SafeRoomConvo19dCoach
 }
 Rule DLC1_C6M2_SafeRoomConvo19dCoach
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo19d IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo19d IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo19dCoach
 }
 
@@ -4268,7 +4268,7 @@ Response DLC1_C6M3_SafeRoomConvo02eCoach
 }
 Rule DLC1_C6M3_SafeRoomConvo02eCoach
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo02e IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo02e IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo02eCoach
 }
 
@@ -4305,7 +4305,7 @@ Response DLC1_C6M3_SafeRoomConvo08bCoach
 }
 Rule DLC1_C6M3_SafeRoomConvo08bCoach
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo08b IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo08b IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo08bCoach
 }
 
@@ -8746,7 +8746,7 @@ Response PlayerRemarkWorldC502NotZombies2Coach
 }
 Rule PlayerRemarkWorldC502NotZombies2Coach
 {
-	criteria ConceptWorldC502NotZombies2 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptWorldC502NotZombies2 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerRemarkWorldC502NotZombies2Coach
 }
 
@@ -8756,7 +8756,7 @@ Response PlayerRemarkWorldC502NotZombies3bCoach
 }
 Rule PlayerRemarkWorldC502NotZombies3bCoach
 {
-	criteria ConceptWorldC502NotZombies3b IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptWorldC502NotZombies3b IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerRemarkWorldC502NotZombies3bCoach
 }
 
@@ -10089,31 +10089,16 @@ Rule PlayerNoZoeyCoach
 	Response PlayerNoFemaleCoach
 }
 
-Response PlayerProfanityCoach
+Response PlayerAnswerLostCallCoach
 {
-	scene "scenes/Coach/ReactionNegative01.vcd"  //Shit.
-	scene "scenes/Coach/ReactionNegative02.vcd"  //What the f-
-	scene "scenes/Coach/ReactionNegative03.vcd"  //Damn!
-	scene "scenes/Coach/ReactionNegative06.vcd"  //Hell no.
-	scene "scenes/Coach/ReactionNegative07.vcd"  //hhhhhhh [frustrated]
-	scene "scenes/Coach/ReactionNegative08.vcd"  //Goddamnit!
-	scene "scenes/Coach/ReactionNegative09.vcd"  //Shiiit.
-	scene "scenes/Coach/ReactionNegative10.vcd"  //Shiiit.
-	scene "scenes/Coach/ReactionNegative11.vcd"  //What the? hhhhhhh [frustrated]
-	scene "scenes/Coach/ReactionNegative12.vcd"  //Bullshit.
-	scene "scenes/Coach/ReactionNegative13.vcd"  //Well, I'll be a monkey's uncle.
-	scene "scenes/Coach/ReactionNegative14.vcd"  //Bullshit.
-	scene "scenes/Coach/ReactionNegative15.vcd"  //Goddamn!
-	scene "scenes/Coach/ReactionNegative16.vcd"  //Son of a bitch.
-	scene "scenes/Coach/ReactionNegative17.vcd"  //Son of a bitch.
-	scene "scenes/Coach/ReactionNegative18.vcd"  //Goddamn!
-	scene "scenes/Coach/ReactionNegative19.vcd"  //Well, I'll be a monkey's uncle.
-	scene "scenes/Coach/ReactionNegative20.vcd"  //Bullshit.
+	scene "scenes/Coach/ScenarioJoin01.vcd"  //I'm here!
+	scene "scenes/Coach/ScenarioJoin03.vcd"  //I'm here!
+	scene "scenes/Coach/ScenarioJoin04.vcd"  //Hey, I'm here!
 }
-Rule PlayerProfanityCoach
+Rule PlayerAnswerLostCallCoach
 {
 	criteria ConceptPlayerAnswerLostCall IsNotCoughing  IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
-	Response PlayerProfanityCoach
+	Response PlayerAnswerLostCallCoach
 }
 
 Response KillStealCalledOutCoach
@@ -10509,6 +10494,19 @@ Rule PlayerHeardTankCoach
 {
 	criteria ConceptPlayerHeardTank IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach isNotmap_c1m1_hotel isNotmap_c1m2_streets _auto_NotSpottedVehicle
 	Response PlayerHeardTankCoach
+}
+
+Response PlayerHeardWitchCoach
+{
+	scene "scenes/Coach/HeardWitch01.vcd"  //Ya'all hear her?,Get ready to toss that bitch.
+	scene "scenes/Coach/HeardWitch02.vcd"  //Quiet everybody I hear a bitch.
+	scene "scenes/Coach/HeardWitch03.vcd"  //That there sounds like a witch.
+	scene "scenes/Coach/HeardWitch04.vcd"  //Quiet y'all, I hear a witch.
+}
+Rule PlayerHeardWitchCoach
+{
+	criteria ConceptPlayerHeardWitch IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach isNotmap_c1m1_hotel isNotmap_c1m2_streets _auto_NotSpottedVehicle
+	Response PlayerHeardWitchCoach
 }
 
 Response PlayerHurrahCoach
@@ -11224,11 +11222,11 @@ Rule PlayerKillConfirmationC1M1MeleeCoach
 
 Response PlayerKillJockeyConfirmationC2M4EasterEggCoach
 {
-	scene "scenes/Coach/No01.vcd" predelay ".5,1" then self C2M4JockeyEasterEgg foo:0 0.3 //No.
+	scene "scenes/Coach/No01.vcd" predelay "1" then self C2M4JockeyEasterEgg foo:0 1.5 //No.
 }
 Rule PlayerKillJockeyConfirmationC2M4EasterEggCoach
 {
-	criteria ConceptKilledZombie IsNotCoughing IsCoach SubjectIsJockey IsTalk IsTalkCoach IsNotSaidJockeyEasterEgg ChanceToFire100Percent ismap_c2m4 IsWorldTalkCoach
+	criteria ConceptKilledZombie IsNotCoughing IsCoach SubjectIsJockey IsTalk IsTalkCoach IsNotSaidJockeyEasterEgg ChanceToFire1Percent ismap_c2m4 IsWorldTalkCoach
 	ApplyContext "JockeyEasterEgg:1:0"
 	applycontexttoworld
 	Response PlayerKillJockeyConfirmationC2M4EasterEggCoach
@@ -12053,7 +12051,7 @@ Rule SurvivorCoughingCoach
 
 Rule SurvivorCoughingDeathCoach
 {
-	criteria ConceptPlayerDeath IsCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotVersus IsNotSpeaking
+	criteria ConceptPlayerDeath IsCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotVersus
 	Response SurvivorCoughingCoach
 }
 
@@ -12071,7 +12069,7 @@ Response SurvivorDeathCoach
 }
 Rule SurvivorDeathCoach
 {
-	criteria ConceptPlayerDeath IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotVersus IsNotSpeaking
+	criteria ConceptPlayerDeath IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotVersus
 	Response SurvivorDeathCoach
 }
 
@@ -12641,7 +12639,7 @@ Response SurvivorVocalizeWaitHereCoach
 }
 Rule SurvivorVocalizeWaitHereCoach
 {
-	criteria ConceptPlayerWaitHere IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerWaitHere IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
 	Response SurvivorVocalizeWaitHereCoach
 }
 
@@ -14333,7 +14331,7 @@ Response _c4m3_startsafe02Coach
 }
 Rule _c4m3_startsafe02Coach
 {
-	criteria Concept_c4m3_startsafe02 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_c4m3_startsafe02 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response _c4m3_startsafe02Coach
 }
 
@@ -14346,7 +14344,7 @@ Response _c4m3_startsafe03Coach
 }
 Rule _c4m3_startsafe03Coach
 {
-	criteria Concept_c4m3_startsafe03 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_c4m3_startsafe03 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response _c4m3_startsafe03Coach
 }
 
@@ -14748,7 +14746,7 @@ Response C1M3SafeRoom2cCoach
 }
 Rule C1M3SafeRoom2cCoach
 {
-	criteria ConceptC1M3SafeRoom2c IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M3SafeRoom2c IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M3SafeRoom2cCoach
 }
 
@@ -14759,7 +14757,7 @@ Response C1M3SafeRoom2dCoach
 }
 Rule C1M3SafeRoom2dCoach
 {
-	criteria ConceptC1M3SafeRoom2d IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M3SafeRoom2d IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M3SafeRoom2dCoach
 }
 
@@ -14801,7 +14799,7 @@ Response C1M4SafeRoom2a1Coach
 }
 Rule C1M4SafeRoom2a1Coach
 {
-	criteria ConceptC1M4SafeRoom2a1 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M4SafeRoom2a1 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M4SafeRoom2a1Coach
 }
 
@@ -14814,7 +14812,7 @@ Response C1M4SafeRoom2a3Coach
 }
 Rule C1M4SafeRoom2a3Coach
 {
-	criteria ConceptC1M4SafeRoom2a3 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M4SafeRoom2a3 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M4SafeRoom2a3Coach
 }
 
@@ -14825,7 +14823,7 @@ Response C1M4SafeRoom2b5Coach
 }
 Rule C1M4SafeRoom2b5Coach
 {
-	criteria ConceptC1M4SafeRoom2b5 IsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M4SafeRoom2b5 IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M4SafeRoom2b5Coach
 }
 

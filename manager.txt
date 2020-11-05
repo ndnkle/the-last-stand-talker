@@ -951,7 +951,7 @@ Response C7M2_saferoom02Manager
 }
 Rule C7M2_saferoom02Manager
 {
-	criteria ConceptC7M2_saferoom02 IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M2_saferoom02 IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M2_saferoom02Manager
 }
 
@@ -961,7 +961,7 @@ Response C7M2_saferoom02bManager
 }
 Rule C7M2_saferoom02bManager
 {
-	criteria ConceptC7M2_saferoom02b IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M2_saferoom02b IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M2_saferoom02bManager
 }
 
@@ -973,7 +973,7 @@ Response C7M2_saferoom02dManager
 }
 Rule C7M2_saferoom02dManager
 {
-	criteria ConceptC7M2_saferoom02d IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M2_saferoom02d IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M2_saferoom02dManager
 }
 
@@ -983,7 +983,7 @@ Response C7M2_saferoom03aManager
 }
 Rule C7M2_saferoom03aManager
 {
-	criteria ConceptC7M2_saferoom03a IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M2_saferoom03a IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M2_saferoom03aManager
 }
 
@@ -994,7 +994,7 @@ Response C7M2_saferoom04Manager
 }
 Rule C7M2_saferoom04Manager
 {
-	criteria ConceptC7M2_saferoom04 IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M2_saferoom04 IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M2_saferoom04Manager
 }
 
@@ -1004,7 +1004,7 @@ Response C7M2_saferoom05cManager
 }
 Rule C7M2_saferoom05cManager
 {
-	criteria ConceptC7M2_saferoom05c IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M2_saferoom05c IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M2_saferoom05cManager
 }
 
@@ -1046,7 +1046,7 @@ Response C7M3_saferoom003aManager
 }
 Rule C7M3_saferoom003aManager
 {
-	criteria ConceptC7M3_saferoom003a IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom003a IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom003aManager
 }
 
@@ -1057,7 +1057,7 @@ Response C7M3_saferoom004Manager
 }
 Rule C7M3_saferoom004Manager
 {
-	criteria ConceptC7M3_saferoom004 IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom004 IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom004Manager
 }
 
@@ -1068,7 +1068,7 @@ Response C7M3_saferoom004aManager
 }
 Rule C7M3_saferoom004aManager
 {
-	criteria ConceptC7M3_saferoom004a IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom004a IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom004aManager
 }
 
@@ -1078,7 +1078,7 @@ Response C7M3_saferoom006bManager
 }
 Rule C7M3_saferoom006bManager
 {
-	criteria ConceptC7M3_saferoom006b IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom006b IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom006bManager
 }
 
@@ -1088,7 +1088,7 @@ Response C7M3_saferoom007aManager
 }
 Rule C7M3_saferoom007aManager
 {
-	criteria ConceptC7M3_saferoom007a IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom007a IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom007aManager
 }
 
@@ -1098,7 +1098,7 @@ Response C7M3_saferoom007cManager
 }
 Rule C7M3_saferoom007cManager
 {
-	criteria ConceptC7M3_saferoom007c IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom007c IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom007cManager
 }
 
@@ -1108,7 +1108,7 @@ Response C7M3_saferoom009aManager
 }
 Rule C7M3_saferoom009aManager
 {
-	criteria ConceptC7M3_saferoom009a IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom009a IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom009aManager
 }
 
@@ -1119,7 +1119,7 @@ Response C7M3_saferoom010aManager
 }
 Rule C7M3_saferoom010aManager
 {
-	criteria ConceptC7M3_saferoom010a IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom010a IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom010aManager
 }
 
@@ -1129,7 +1129,7 @@ Response C7M3_saferoom011Manager
 }
 Rule C7M3_saferoom011Manager
 {
-	criteria ConceptC7M3_saferoom011 IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom011 IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom011Manager
 }
 
@@ -1139,7 +1139,7 @@ Response C7M3_saferoom013aManager
 }
 Rule C7M3_saferoom013aManager
 {
-	criteria ConceptC7M3_saferoom013a IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom013a IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom013aManager
 }
 
@@ -1149,7 +1149,7 @@ Response C7M3_saferoom013cManager
 }
 Rule C7M3_saferoom013cManager
 {
-	criteria ConceptC7M3_saferoom013c IsManager  IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom013c IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom013cManager
 }
 
@@ -1159,7 +1159,7 @@ Response C7M3_saferoom014aManager
 }
 Rule C7M3_saferoom014aManager
 {
-	criteria ConceptC7M3_saferoom014a IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom014a IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom014aManager
 }
 
@@ -1170,7 +1170,7 @@ Response C7M3_saferoom015aManager
 }
 Rule C7M3_saferoom015aManager
 {
-	criteria ConceptC7M3_saferoom015a IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom015a IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom015aManager
 }
 
@@ -1180,7 +1180,7 @@ Response C7M3_saferoom016bManager
 }
 Rule C7M3_saferoom016bManager
 {
-	criteria ConceptC7M3_saferoom016b IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom016b IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom016bManager
 }
 
@@ -1190,7 +1190,7 @@ Response C7M3_saferoom016dManager
 }
 Rule C7M3_saferoom016dManager
 {
-	criteria ConceptC7M3_saferoom016d IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom016d IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom016dManager
 }
 
@@ -1200,7 +1200,7 @@ Response C7M3_saferoom017Manager
 }
 Rule C7M3_saferoom017Manager
 {
-	criteria ConceptC7M3_saferoom017 IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom017 IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom017Manager
 }
 
@@ -1210,7 +1210,7 @@ Response C7M3_saferoom017bManager
 }
 Rule C7M3_saferoom017bManager
 {
-	criteria ConceptC7M3_saferoom017b IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom017b IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom017bManager
 }
 
@@ -1222,7 +1222,7 @@ Response C7M3_saferoom017dManager
 }
 Rule C7M3_saferoom017dManager
 {
-	criteria ConceptC7M3_saferoom017d IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom017d IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom017dManager
 }
 
@@ -1232,7 +1232,7 @@ Response C7M3_saferoom017fManager
 }
 Rule C7M3_saferoom017fManager
 {
-	criteria ConceptC7M3_saferoom017f IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom017f IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom017fManager
 }
 
@@ -1245,7 +1245,7 @@ Response C7M3_saferoom017gManager
 }
 Rule C7M3_saferoom017gManager
 {
-	criteria ConceptC7M3_saferoom017g IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC7M3_saferoom017g IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response C7M3_saferoom017gManager
 }
 
@@ -2048,7 +2048,7 @@ Response CrashCourseI01Manager
 }
 Rule CrashCourseI01Manager
 {
-	criteria ConceptCrashCourseI01 IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptCrashCourseI01 IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response CrashCourseI01Manager
 }
 
@@ -2058,7 +2058,7 @@ Response CrashCourseA01Manager
 }
 Rule CrashCourseA01Manager
 {
-	criteria ConceptCrashCourseA01 IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptCrashCourseA01 IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response CrashCourseA01Manager
 }
 
@@ -2068,7 +2068,7 @@ Response CrashCourseB01Manager
 }
 Rule CrashCourseB01Manager
 {
-	criteria ConceptCrashCourseB01 IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptCrashCourseB01 IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response CrashCourseB01Manager
 }
 
@@ -4323,7 +4323,7 @@ Response L4D1PlayerRemarkhospital05_path01bManager
 }
 Rule L4D1PlayerRemarkhospital05_path01bManager
 {
-	criteria Concepthospital05_path01b IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concepthospital05_path01b IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response L4D1PlayerRemarkhospital05_path01bManager
 }
 
@@ -4494,7 +4494,7 @@ Response L4D1PlayerRemarksmalltown02_path01bManager
 }
 Rule L4D1PlayerRemarksmalltown02_path01bManager
 {
-	criteria ConceptSmallTown02_path01b IsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptSmallTown02_path01b IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response L4D1PlayerRemarksmalltown02_path01bManager
 }
 
@@ -5468,23 +5468,15 @@ Rule L4D1PlayerNoManager
 	Response L4D1PlayerNoManager
 }
 
-Response L4D1PlayerProfanityManager
+Response L4D1PlayerAnswerLostCallManager
 {
-	scene "scenes/Manager/Swears02.vcd"  //Dammit.
-	scene "scenes/Manager/Swears03.vcd"  //Aw hell.
-	scene "scenes/Manager/Swears05.vcd"  //Shit.
-	scene "scenes/Manager/Swears06.vcd"  //Ah shit.
-	scene "scenes/Manager/Swears07.vcd"  //Shit shit shit.
-	scene "scenes/Manager/Swears10.vcd"  //Dammit.
-	scene "scenes/Manager/Swears11.vcd"  //Aw hell.
-	scene "scenes/Manager/Swears12.vcd"  //Shit.
-	scene "scenes/Manager/Swears13.vcd"  //Ah shit.
-	scene "scenes/Manager/Swears16.vcd"  //That's some country-ass bullshit.
+	scene "scenes/Manager/ScenarioJoin01.vcd"  //I'm here!
+	scene "scenes/Manager/ScenarioJoin03.vcd"  //Hey, I'm here!
 }
-Rule L4D1PlayerProfanityManager
+Rule L4D1PlayerAnswerLostCallManager
 {
 	criteria ConceptPlayerAnswerLostCall IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager
-	Response L4D1PlayerProfanityManager
+	Response L4D1PlayerAnswerLostCallManager
 }
 
 Response L4D1PlayerSorryManager
@@ -6315,6 +6307,22 @@ Rule L4D1PlayerWarnHeardWitchManager
 	Response L4D1PlayerWarnHeardWitchManager
 }
 
+Response PlayerHeardWitchManager
+{
+	scene "scenes/Manager/HeardWitch01.vcd"  //Shhh, I hear a Witch.
+	scene "scenes/Manager/HeardWitch02.vcd"  //I hear a Witch.
+	scene "scenes/Manager/HeardWitch03.vcd"  //I hear a damn Witch.
+	scene "scenes/Manager/HeardWitch04.vcd"  //There's a Witch around here.
+	scene "scenes/Manager/HeardWitch05.vcd"  //Hold on, hold on, shhh, that's a witch!
+	scene "scenes/Manager/HeardWitch06.vcd"  //Ahh damn, a witch is around here.
+	scene "scenes/Manager/HeardWitch07.vcd" odds 10 //Stop, Stop, Stop - I hear a witch
+}
+Rule PlayerHeardWitchManager
+{
+	criteria ConceptPlayerHeardWitch IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager _auto_NotSpottedVehicle
+	Response PlayerHeardWitchManager
+}
+
 Response L4D1PlayerWarnMegaMobManager
 {
 	scene "scenes/Manager/Incoming01.vcd" predelay "2.5,3.5" //Here they come!
@@ -6629,7 +6637,7 @@ Response L4D1SurvivorVocalizeWaitHereManager
 }
 Rule L4D1SurvivorVocalizeWaitHereManager
 {
-	criteria ConceptPlayerWaitHere IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotSpeaking
+	criteria ConceptPlayerWaitHere IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager
 	Response L4D1SurvivorVocalizeWaitHereManager
 }
 

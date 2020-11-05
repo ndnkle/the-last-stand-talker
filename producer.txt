@@ -1000,7 +1000,7 @@ Response C1M2SafeRooma1Producer
 }
 Rule C1M2SafeRooma1Producer
 {
-	criteria ConceptC1M2SafeRooma1 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M2SafeRooma1 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M2SafeRooma1Producer
 }
 
@@ -1010,7 +1010,7 @@ Response C1M2SafeRooma2Producer
 }
 Rule C1M2SafeRooma2Producer
 {
-	criteria ConceptC1M2SafeRooma2 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M2SafeRooma2 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M2SafeRooma2Producer
 }
 
@@ -1022,7 +1022,7 @@ Response C1M2SafeRooma3Producer
 }
 Rule C1M2SafeRooma3Producer
 {
-	criteria ConceptC1M2SafeRooma3 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M2SafeRooma3 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M2SafeRooma3Producer
 }
 
@@ -1033,7 +1033,7 @@ Response C1M2SafeRooma4Producer
 }
 Rule C1M2SafeRooma4Producer
 {
-	criteria ConceptC1M2SafeRooma4 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M2SafeRooma4 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M2SafeRooma4Producer
 }
 
@@ -1043,7 +1043,7 @@ Response C1M2SafeRoomb3Producer
 }
 Rule C1M2SafeRoomb3Producer
 {
-	criteria ConceptC1M2SafeRoomb3 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M2SafeRoomb3 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M2SafeRoomb3Producer
 }
 
@@ -1053,7 +1053,7 @@ Response C1M2SafeRoomc2Producer
 }
 Rule C1M2SafeRoomc2Producer
 {
-	criteria ConceptC1M2SafeRoomc2 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M2SafeRoomc2 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M2SafeRoomc2Producer
 }
 
@@ -1066,7 +1066,7 @@ Response C1M2SafeRoomd2Producer
 }
 Rule C1M2SafeRoomd2Producer
 {
-	criteria ConceptC1M2SafeRoomd2 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M2SafeRoomd2 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M2SafeRoomd2Producer
 }
 
@@ -1076,7 +1076,7 @@ Response C1M2SafeRoomd2aProducer
 }
 Rule C1M2SafeRoomd2aProducer
 {
-	criteria ConceptC1M2SafeRoomd2a IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M2SafeRoomd2a IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M2SafeRoomd2aProducer
 }
 
@@ -1237,7 +1237,7 @@ Response _C2M2_Riders03Producer
 }
 Rule _C2M2_Riders03Producer
 {
-	criteria Concept_C2M2_Riders03 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C2M2_Riders03 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response _C2M2_Riders03Producer
 }
 
@@ -1247,7 +1247,7 @@ Response _C2M2_Riders06Producer
 }
 Rule _C2M2_Riders06Producer
 {
-	criteria Concept_C2M2_Riders06 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C2M2_Riders06 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response _C2M2_Riders06Producer
 }
 
@@ -1257,7 +1257,7 @@ Response _C2M2_Riders07Producer
 }
 Rule _C2M2_Riders07Producer
 {
-	criteria Concept_C2M2_Riders07 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C2M2_Riders07 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response _C2M2_Riders07Producer
 }
 
@@ -1428,7 +1428,7 @@ Response c2m5_intro003Producer
 }
 Rule c2m5_intro003Producer
 {
-	criteria Conceptc2m5_intro003 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro003 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro003Producer
 }
 
@@ -1438,7 +1438,7 @@ Response c2m5_intro019Producer
 }
 Rule c2m5_intro019Producer
 {
-	criteria Conceptc2m5_intro019 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro019 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro019Producer
 }
 
@@ -1660,7 +1660,7 @@ Response C2M3SafeIntro005Producer
 }
 Rule C2M3SafeIntro005Producer
 {
-	criteria ConceptC2M3SafeIntro005 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC2M3SafeIntro005 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C2M3SafeIntro005Producer
 }
 
@@ -1671,7 +1671,7 @@ Response C2M3SafeIntro006Producer
 }
 Rule C2M3SafeIntro006Producer
 {
-	criteria ConceptC2M3SafeIntro006 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC2M3SafeIntro006 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C2M3SafeIntro006Producer
 }
 
@@ -1682,7 +1682,7 @@ Response C2M3SafeIntro009Producer
 }
 Rule C2M3SafeIntro009Producer
 {
-	criteria ConceptC2M3SafeIntro009 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC2M3SafeIntro009 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C2M3SafeIntro009Producer
 }
 
@@ -1692,7 +1692,7 @@ Response C2M3SafeIntro010Producer
 }
 Rule C2M3SafeIntro010Producer
 {
-	criteria ConceptC2M3SafeIntro010 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC2M3SafeIntro010 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C2M3SafeIntro010Producer
 }
 
@@ -1776,7 +1776,7 @@ Response C3M2SafeRoom2Producer
 }
 Rule C3M2SafeRoom2Producer
 {
-	criteria ConceptC3M2SafeRoom2 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC3M2SafeRoom2 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C3M2SafeRoom2Producer
 }
 
@@ -1851,7 +1851,7 @@ Response C3M3SafeRoom2a3Producer
 }
 Rule C3M3SafeRoom2a3Producer
 {
-	criteria ConceptC3M3SafeRoom2a3 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC3M3SafeRoom2a3 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C3M3SafeRoom2a3Producer
 }
 
@@ -1864,7 +1864,7 @@ Response C3M3SafeRoom2c2Producer
 }
 Rule C3M3SafeRoom2c2Producer
 {
-	criteria ConceptC3M3SafeRoom2c2 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC3M3SafeRoom2c2 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C3M3SafeRoom2c2Producer
 }
 
@@ -1875,7 +1875,7 @@ Response C3M3SafeRoom2e2Producer
 }
 Rule C3M3SafeRoom2e2Producer
 {
-	criteria ConceptC3M3SafeRoom2e2 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC3M3SafeRoom2e2 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C3M3SafeRoom2e2Producer
 }
 
@@ -2383,7 +2383,7 @@ Response PlayerRemarkWorldC502NotZombies2Producer
 }
 Rule PlayerRemarkWorldC502NotZombies2Producer
 {
-	criteria ConceptWorldC502NotZombies2 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptWorldC502NotZombies2 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerRemarkWorldC502NotZombies2Producer
 }
 
@@ -2393,7 +2393,7 @@ Response PlayerRemarkWorldC502NotZombies3bProducer
 }
 Rule PlayerRemarkWorldC502NotZombies3bProducer
 {
-	criteria ConceptWorldC502NotZombies3b IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptWorldC502NotZombies3b IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerRemarkWorldC502NotZombies3bProducer
 }
 
@@ -2898,7 +2898,7 @@ Response C5M5_saferoom004Producer
 }
 Rule C5M5_saferoom004Producer
 {
-	criteria ConceptC5M5_saferoom004 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC5M5_saferoom004 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C5M5_saferoom004Producer
 }
 
@@ -3450,7 +3450,7 @@ Response DLC1_C6M2_SafeRoomConvo01aProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo01aProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo01a IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo01a IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo01aProducer
 }
 
@@ -3461,7 +3461,7 @@ Response DLC1_C6M2_SafeRoomConvo03aProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo03aProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo03a IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo03a IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo03aProducer
 }
 
@@ -3471,7 +3471,7 @@ Response DLC1_C6M2_SafeRoomConvo03aZoeyProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo03aZoeyProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo03a IsProducer IsNotSaidLeavingSafeArea IsZoeyIntroActor ChanceToFire50Percent AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo03a IsProducer IsZoeyIntroActor ChanceToFire50Percent AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo03aZoeyProducer
 }
 
@@ -3482,7 +3482,7 @@ Response DLC1_C6M2_SafeRoomConvo03cProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo03cProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo03c IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo03c IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo03cProducer
 }
 
@@ -3492,7 +3492,7 @@ Response DLC1_C6M2_SafeRoomConvo06aProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo06aProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo06a IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo06a IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo06aProducer
 }
 
@@ -3515,7 +3515,7 @@ Response DLC1_C6M2_SafeRoomConvo07aProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo07aProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo07a IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo07a IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo07aProducer
 }
 
@@ -3526,7 +3526,7 @@ Response DLC1_C6M2_SafeRoomConvo08bProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo08bProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo08b IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo08b IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo08bProducer
 }
 
@@ -3537,7 +3537,7 @@ Response DLC1_C6M2_SafeRoomConvo08dProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo08dProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo08d IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo08d IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo08dProducer
 }
 
@@ -3547,7 +3547,7 @@ Response DLC1_C6M2_SafeRoomConvo08fProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo08fProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo08f IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo08f IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo08fProducer
 }
 
@@ -3558,7 +3558,7 @@ Response DLC1_C6M2_SafeRoomConvo10aProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo10aProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo10a IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo10a IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo10aProducer
 }
 
@@ -3568,7 +3568,7 @@ Response DLC1_C6M2_SafeRoomConvo10cProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo10cProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo10c IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo10c IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo10cProducer
 }
 
@@ -3578,7 +3578,7 @@ Response DLC1_C6M2_SafeRoomConvo14aProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo14aProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo14a IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo14a IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo14aProducer
 }
 
@@ -3589,7 +3589,7 @@ Response DLC1_C6M2_SafeRoomConvo14cProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo14cProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo14c IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo14c IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo14cProducer
 }
 
@@ -3599,7 +3599,7 @@ Response DLC1_C6M2_SafeRoomConvo14eProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo14eProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo14e IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo14e IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo14eProducer
 }
 
@@ -3609,7 +3609,7 @@ Response DLC1_C6M2_SafeRoomConvo15aProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo15aProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo15a IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo15a IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo15aProducer
 }
 
@@ -3634,7 +3634,7 @@ Response DLC1_C6M2_SafeRoomConvo16aProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo16aProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo16a IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo16a IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo16aProducer
 }
 
@@ -3644,7 +3644,7 @@ Response DLC1_C6M2_SafeRoomConvo16cProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo16cProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo16c IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo16c IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo16cProducer
 }
 
@@ -3655,7 +3655,7 @@ Response DLC1_C6M2_SafeRoomConvo17bProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo17bProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo17b IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo17b IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo17bProducer
 }
 
@@ -3665,7 +3665,7 @@ Response DLC1_C6M2_SafeRoomConvo18aProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo18aProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo18a IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo18a IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo18aProducer
 }
 
@@ -3676,7 +3676,7 @@ Response DLC1_C6M2_SafeRoomConvo18dProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo18dProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo18d IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo18d IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo18dProducer
 }
 
@@ -3686,7 +3686,7 @@ Response DLC1_C6M2_SafeRoomConvo19aProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo19aProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo19a IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo19a IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo19aProducer
 }
 
@@ -3696,7 +3696,7 @@ Response DLC1_C6M2_SafeRoomConvo19fProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo19fProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo19f IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo19f IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo19fProducer
 }
 
@@ -3706,7 +3706,7 @@ Response DLC1_C6M2_SafeRoomConvo20aProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo20aProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo20a IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo20a IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo20aProducer
 }
 
@@ -3717,7 +3717,7 @@ Response DLC1_C6M2_SafeRoomConvo21aProducer
 }
 Rule DLC1_C6M2_SafeRoomConvo21aProducer
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo21a IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo21a IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo21aProducer
 }
 
@@ -3967,7 +3967,7 @@ Response DLC1_C6M3_SafeRoomConvo01bProducer
 }
 Rule DLC1_C6M3_SafeRoomConvo01bProducer
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo01b IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo01b IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo01bProducer
 }
 
@@ -3977,7 +3977,7 @@ Response DLC1_C6M3_SafeRoomConvo02a1Producer
 }
 Rule DLC1_C6M3_SafeRoomConvo02a1Producer
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo02a1 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo02a1 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo02a1Producer
 }
 
@@ -3988,7 +3988,7 @@ Response DLC1_C6M3_SafeRoomConvo02cProducer
 }
 Rule DLC1_C6M3_SafeRoomConvo02cProducer
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo02c IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo02c IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo02cProducer
 }
 
@@ -3998,7 +3998,7 @@ Response DLC1_C6M3_SafeRoomConvo04bProducer
 }
 Rule DLC1_C6M3_SafeRoomConvo04bProducer
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo04b IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo04b IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo04bProducer
 }
 
@@ -4009,7 +4009,7 @@ Response DLC1_C6M3_SafeRoomConvo04dProducer
 }
 Rule DLC1_C6M3_SafeRoomConvo04dProducer
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo04d IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo04d IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo04dProducer
 }
 
@@ -4024,7 +4024,7 @@ Response DLC1_C6M3_SafeRoomConvo05cProducer
 }
 Rule DLC1_C6M3_SafeRoomConvo05cProducer
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo05c IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo05c IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo05cProducer
 }
 
@@ -4034,7 +4034,7 @@ Response DLC1_C6M3_SafeRoomConvo06aProducer
 }
 Rule DLC1_C6M3_SafeRoomConvo06aProducer
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo06a IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo06a IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo06aProducer
 }
 
@@ -4058,7 +4058,7 @@ Response DLC1_C6M3_SafeRoomConvo07bProducer
 }
 Rule DLC1_C6M3_SafeRoomConvo07bProducer
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo07b IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo07b IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo07bProducer
 }
 
@@ -4069,7 +4069,7 @@ Response DLC1_C6M3_SafeRoomConvo08gProducer
 }
 Rule DLC1_C6M3_SafeRoomConvo08gProducer
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo08g IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo08g IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo08gProducer
 }
 
@@ -4081,7 +4081,7 @@ Response DLC1_C6M3_SafeRoomConvo09bProducer
 }
 Rule DLC1_C6M3_SafeRoomConvo09bProducer
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo09b IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo09b IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo09bProducer
 }
 
@@ -9306,34 +9306,15 @@ Rule PlayerNoProducer
 	Response PlayerNoProducer
 }
 
-Response PlayerProfanityProducer
+Response PlayerAnswerLostCallProducer
 {
-	scene "scenes/Producer/ReactionNegative01.vcd"  //Nooooo oo ooo ohhhhh.
-	scene "scenes/Producer/ReactionNegative02.vcd"  //Damnn...
-	scene "scenes/Producer/ReactionNegative03.vcd"  //Oh this is bad...
-	scene "scenes/Producer/ReactionNegative04.vcd"  //Oh shit!
-	scene "scenes/Producer/ReactionNegative05.vcd"  //Sweet Jesus!
-	scene "scenes/Producer/ReactionNegative06.vcd"  //Sweet Lincoln's mullet!
-	scene "scenes/Producer/ReactionNegative08.vcd"  //Mother of Mercy.
-	scene "scenes/Producer/ReactionNegative09.vcd"  //Well this just sucks.
-	scene "scenes/Producer/ReactionNegative10.vcd"  //Blarg!
-	scene "scenes/Producer/ReactionNegative11.vcd"  //Can just one goddamn thing go right?
-	scene "scenes/Producer/ReactionNegative12.vcd"  //We are in some deep shit!
-	scene "scenes/Producer/ReactionNegative13.vcd"  //Holy shit!
-	scene "scenes/Producer/ReactionNegative13.vcd"  //Holy shit!
-	scene "scenes/Producer/ReactionNegative14.vcd"  //We are in some deep shit!
-	scene "scenes/Producer/ReactionNegative15.vcd"  //Could this really get any worse?  I don't think so.
-	scene "scenes/Producer/ReactionNegative16.vcd"  //We do not have time for this shit.
-	scene "scenes/Producer/ReactionNegative17.vcd"  //We don't have time for this shit.
-	scene "scenes/Producer/ReactionNegative18.vcd"  //Goddamnit!
-	scene "scenes/Producer/ReactionNegative19.vcd"  //Can just one more goddamn thing go wrong?
-	scene "scenes/Producer/ReactionNegative20.vcd"  //Argghh! (disgusted)
-	scene "scenes/Producer/ReactionNegative21.vcd"  //Jesus Christ!
+	scene "scenes/Producer/ScenarioJoin01.vcd"  //What's up?
+	scene "scenes/Producer/ScenarioJoin04.vcd"  //Hey.
 }
-Rule PlayerProfanityProducer
+Rule PlayerAnswerLostCallProducer
 {
 	criteria ConceptPlayerAnswerLostCall IsNotCoughing  IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
-	Response PlayerProfanityProducer
+	Response PlayerAnswerLostCallProducer
 }
 
 Response KillStealCalledOutProducer
@@ -9727,6 +9708,19 @@ Rule PlayerHeardTankProducer
 {
 	criteria ConceptPlayerHeardTank IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer isNotmap_c1m1_hotel isNotmap_c1m2_streets _auto_NotSpottedVehicle
 	Response PlayerHeardTankProducer
+}
+
+Response PlayerHeardWitchProducer
+{
+	scene "scenes/Producer/HeardWitch01.vcd"  //That sounds like a Witch.
+	scene "scenes/Producer/HeardWitch02.vcd"  //I hear a witch crying.
+	scene "scenes/Producer/HeardWitch03.vcd"  //I'm gonna give that witch something to cry about.
+	scene "scenes/Producer/HeardWitch04.vcd"  //Listen up, a witch!
+}
+Rule PlayerHeardWitchProducer
+{
+	criteria ConceptPlayerHeardWitch IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer isNotmap_c1m1_hotel isNotmap_c1m2_streets _auto_NotSpottedVehicle
+	Response PlayerHeardWitchProducer
 }
 
 Response PlayerHurrahProducer
@@ -13416,7 +13410,7 @@ Response _C4M5_Intro03Producer
 }
 Rule _C4M5_Intro03Producer
 {
-	criteria Concept_C4M5_Intro03 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C4M5_Intro03 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response _C4M5_Intro03Producer
 }
 
@@ -13427,7 +13421,7 @@ Response _C4M5_Intro04Producer
 }
 Rule _C4M5_Intro04Producer
 {
-	criteria Concept_C4M5_Intro04 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C4M5_Intro04 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response _C4M5_Intro04Producer
 }
 
@@ -13844,7 +13838,7 @@ Response C1M3SafeRoom2dProducer
 }
 Rule C1M3SafeRoom2dProducer
 {
-	criteria ConceptC1M3SafeRoom2d IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M3SafeRoom2d IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M3SafeRoom2dProducer
 }
 
@@ -13899,7 +13893,7 @@ Response C1M4SafeRoom2b2Producer
 }
 Rule C1M4SafeRoom2b2Producer
 {
-	criteria ConceptC1M4SafeRoom2b2 IsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M4SafeRoom2b2 IsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M4SafeRoom2b2Producer
 }
 

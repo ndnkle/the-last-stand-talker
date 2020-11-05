@@ -1138,7 +1138,7 @@ Response C1M2SafeRoomb1Gambler
 }
 Rule C1M2SafeRoomb1Gambler
 {
-	criteria ConceptC1M2SafeRoomb1 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M2SafeRoomb1 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M2SafeRoomb1Gambler
 }
 
@@ -1150,7 +1150,7 @@ Response C1M2SafeRoomb2Gambler
 }
 Rule C1M2SafeRoomb2Gambler
 {
-	criteria ConceptC1M2SafeRoomb2 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M2SafeRoomb2 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M2SafeRoomb2Gambler
 }
 
@@ -1162,7 +1162,7 @@ Response C1M2SafeRoomb3Gambler
 }
 Rule C1M2SafeRoomb3Gambler
 {
-	criteria ConceptC1M2SafeRoomb3 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M2SafeRoomb3 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M2SafeRoomb3Gambler
 }
 
@@ -1172,7 +1172,7 @@ Response C1M2SafeRoomc2Gambler
 }
 Rule C1M2SafeRoomc2Gambler
 {
-	criteria ConceptC1M2SafeRoomc2 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M2SafeRoomc2 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M2SafeRoomc2Gambler
 }
 
@@ -1184,7 +1184,7 @@ Response C1M2SafeRoomd1Gambler
 }
 Rule C1M2SafeRoomd1Gambler
 {
-	criteria ConceptC1M2SafeRoomd1 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M2SafeRoomd1 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M2SafeRoomd1Gambler
 }
 
@@ -1352,7 +1352,7 @@ Response _C2M2_Riders01Gambler
 }
 Rule _C2M2_Riders01Gambler
 {
-	criteria Concept_C2M2_Riders01 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C2M2_Riders01 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response _C2M2_Riders01Gambler
 }
 
@@ -1532,19 +1532,19 @@ Response c2m5_intro003Gambler
 }
 Rule c2m5_intro003Gambler
 {
-	criteria Conceptc2m5_intro003 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro003 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro003Gambler
 }
 
 Rule c2m5_intro004Gambler
 {
-	criteria Conceptc2m5_intro004 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro004 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro003Gambler
 }
 
 Rule c2m5_intro008Gambler
 {
-	criteria Conceptc2m5_intro008 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro008 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro003Gambler
 }
 
@@ -1556,13 +1556,13 @@ Response c2m5_intro011Gambler
 }
 Rule c2m5_intro011Gambler
 {
-	criteria Conceptc2m5_intro011 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro011 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro011Gambler
 }
 
 Rule c2m5_intro015Gambler
 {
-	criteria Conceptc2m5_intro015 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro015 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro011Gambler
 }
 
@@ -1572,7 +1572,7 @@ Response c2m5_intro020Gambler
 }
 Rule c2m5_intro020Gambler
 {
-	criteria Conceptc2m5_intro020 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro020 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro020Gambler
 }
 
@@ -1802,7 +1802,7 @@ Response C2M3SafeIntro007Gambler
 }
 Rule C2M3SafeIntro007Gambler
 {
-	criteria ConceptC2M3SafeIntro007 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC2M3SafeIntro007 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response C2M3SafeIntro007Gambler
 }
 
@@ -1812,7 +1812,7 @@ Response C2M3SafeIntro009Gambler
 }
 Rule C2M3SafeIntro009Gambler
 {
-	criteria ConceptC2M3SafeIntro009 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC2M3SafeIntro009 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response C2M3SafeIntro009Gambler
 }
 
@@ -1825,7 +1825,7 @@ Response C2M3SafeIntro010Gambler
 }
 Rule C2M3SafeIntro010Gambler
 {
-	criteria ConceptC2M3SafeIntro010 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC2M3SafeIntro010 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response C2M3SafeIntro010Gambler
 }
 
@@ -1835,7 +1835,7 @@ Response C2M3SafeIntro012Gambler
 }
 Rule C2M3SafeIntro012Gambler
 {
-	criteria ConceptC2M3SafeIntro012 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC2M3SafeIntro012 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response C2M3SafeIntro012Gambler
 }
 
@@ -1846,7 +1846,7 @@ Response C2M3SafeIntro013Gambler
 }
 Rule C2M3SafeIntro013Gambler
 {
-	criteria ConceptC2M3SafeIntro013 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC2M3SafeIntro013 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response C2M3SafeIntro013Gambler
 }
 
@@ -1939,7 +1939,7 @@ Response C3M2SafeRoomb2Gambler
 }
 Rule C3M2SafeRoomb2Gambler
 {
-	criteria ConceptC3M2SafeRoomb2 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC3M2SafeRoomb2 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response C3M2SafeRoomb2Gambler
 }
 
@@ -1954,7 +1954,7 @@ Response C3M3SafeRoomGambler
 }
 Rule C3M3SafeRoomGambler
 {
-	criteria ConceptTalkIdle IsGambler NotInCombat Ismapc3m3_shantytown IsInStartArea IsNotAlone IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival _auto_IsSafeRoomStart _auto_NotSafeRoomQuiet IsNotSpeakingWeight0
+	criteria ConceptTalkIdle IsGambler NotInCombat Ismapc3m3_shantytown IsInStartArea IsNotAlone AutoIsNotScavenge AutoIsNotSurvival _auto_IsSafeRoomStart _auto_NotSafeRoomQuiet IsNotSpeakingWeight0
 	ApplyContext "_auto_SafeRoomStart:2:0"
 	applycontexttoworld
 	Response C3M3SafeRoomGambler
@@ -2502,7 +2502,7 @@ Response C5M3Bodies02Gambler
 }
 Rule C5M3Bodies02Gambler
 {
-	criteria ConceptC5M3Bodies02 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC5M3Bodies02 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response C5M3Bodies02Gambler
 }
 
@@ -2512,7 +2512,7 @@ Response C5M3Bodies04Gambler
 }
 Rule C5M3Bodies04Gambler
 {
-	criteria ConceptC5M3Bodies04 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC5M3Bodies04 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response C5M3Bodies04Gambler
 }
 
@@ -3300,7 +3300,7 @@ Response C5M5_saferoom001Gambler
 }
 Rule C5M5_saferoom001Gambler
 {
-	criteria ConceptC5M5_saferoom001 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC5M5_saferoom001 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response C5M5_saferoom001Gambler
 }
 
@@ -3312,13 +3312,13 @@ Response C5M5_saferoom003Gambler
 }
 Rule C5M5_saferoom003Gambler
 {
-	criteria ConceptC5M5_saferoom003 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC5M5_saferoom003 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response C5M5_saferoom003Gambler
 }
 
 Rule C5M5_saferoom004Gambler
 {
-	criteria ConceptC5M5_saferoom004 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC5M5_saferoom004 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response C5M5_saferoom003Gambler
 }
 
@@ -3897,7 +3897,7 @@ Response DLC1_C6M2_SafeRoomConvo01bGambler
 }
 Rule DLC1_C6M2_SafeRoomConvo01bGambler
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo01b IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo01b IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo01bGambler
 }
 
@@ -3907,7 +3907,7 @@ Response DLC1_C6M2_SafeRoomConvo02bGambler
 }
 Rule DLC1_C6M2_SafeRoomConvo02bGambler
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo02b IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo02b IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo02bGambler
 }
 
@@ -3920,7 +3920,7 @@ Response DLC1_C6M2_SafeRoomConvo06aGambler
 }
 Rule DLC1_C6M2_SafeRoomConvo06aGambler
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo06a IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo06a IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo06aGambler
 }
 
@@ -3930,7 +3930,7 @@ Response DLC1_C6M2_SafeRoomConvo07aGambler
 }
 Rule DLC1_C6M2_SafeRoomConvo07aGambler
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo07a IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo07a IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo07aGambler
 }
 
@@ -3955,7 +3955,7 @@ Response DLC1_C6M2_SafeRoomConvo08aGambler
 }
 Rule DLC1_C6M2_SafeRoomConvo08aGambler
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo08a IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo08a IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo08aGambler
 }
 
@@ -3966,7 +3966,7 @@ Response DLC1_C6M2_SafeRoomConvo08cGambler
 }
 Rule DLC1_C6M2_SafeRoomConvo08cGambler
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo08c IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo08c IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo08cGambler
 }
 
@@ -3978,7 +3978,7 @@ Response DLC1_C6M2_SafeRoomConvo08eGambler
 }
 Rule DLC1_C6M2_SafeRoomConvo08eGambler
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo08e IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo08e IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo08eGambler
 }
 
@@ -3989,7 +3989,7 @@ Response DLC1_C6M2_SafeRoomConvo09bGambler
 }
 Rule DLC1_C6M2_SafeRoomConvo09bGambler
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo09b IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo09b IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo09bGambler
 }
 
@@ -4011,7 +4011,7 @@ Response DLC1_C6M2_SafeRoomConvo10bGambler
 }
 Rule DLC1_C6M2_SafeRoomConvo10bGambler
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo10b IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo10b IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo10bGambler
 }
 
@@ -4021,7 +4021,7 @@ Response DLC1_C6M2_SafeRoomConvo10dGambler
 }
 Rule DLC1_C6M2_SafeRoomConvo10dGambler
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo10d IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo10d IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo10dGambler
 }
 
@@ -4031,7 +4031,7 @@ Response DLC1_C6M2_SafeRoomConvo11bGambler
 }
 Rule DLC1_C6M2_SafeRoomConvo11bGambler
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo11b IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo11b IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo11bGambler
 }
 
@@ -4042,7 +4042,7 @@ Response DLC1_C6M2_SafeRoomConvo12aGambler
 }
 Rule DLC1_C6M2_SafeRoomConvo12aGambler
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo12a IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo12a IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo12aGambler
 }
 
@@ -4053,7 +4053,7 @@ Response DLC1_C6M2_SafeRoomConvo12cGambler
 }
 Rule DLC1_C6M2_SafeRoomConvo12cGambler
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo12c IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo12c IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo12cGambler
 }
 
@@ -4063,7 +4063,7 @@ Response DLC1_C6M2_SafeRoomConvo13aGambler
 }
 Rule DLC1_C6M2_SafeRoomConvo13aGambler
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo13a IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo13a IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo13aGambler
 }
 
@@ -4073,7 +4073,7 @@ Response DLC1_C6M2_SafeRoomConvo13cGambler
 }
 Rule DLC1_C6M2_SafeRoomConvo13cGambler
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo13c IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo13c IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo13cGambler
 }
 
@@ -4083,7 +4083,7 @@ Response DLC1_C6M2_SafeRoomConvo13cFrancisIntroGambler
 }
 Rule DLC1_C6M2_SafeRoomConvo13cFrancisIntroGambler
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo13c IsGambler IsFrancisIntroActor ChanceToFire50Percent IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo13c IsGambler IsFrancisIntroActor ChanceToFire50Percent AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo13cFrancisIntroGambler
 }
 
@@ -4093,7 +4093,7 @@ Response DLC1_C6M2_SafeRoomConvo14fGambler
 }
 Rule DLC1_C6M2_SafeRoomConvo14fGambler
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo14f IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo14f IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo14fGambler
 }
 
@@ -4103,7 +4103,7 @@ Response DLC1_C6M2_SafeRoomConvo15cGambler
 }
 Rule DLC1_C6M2_SafeRoomConvo15cGambler
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo15c IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo15c IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo15cGambler
 }
 
@@ -4335,7 +4335,7 @@ Response DLC1_C6M3_SafeRoomConvo02bGambler
 }
 Rule DLC1_C6M3_SafeRoomConvo02bGambler
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo02b IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo02b IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo02bGambler
 }
 
@@ -4345,7 +4345,7 @@ Response DLC1_C6M3_SafeRoomConvo02dGambler
 }
 Rule DLC1_C6M3_SafeRoomConvo02dGambler
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo02d IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo02d IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo02dGambler
 }
 
@@ -4355,7 +4355,7 @@ Response DLC1_C6M3_SafeRoomConvo03bGambler
 }
 Rule DLC1_C6M3_SafeRoomConvo03bGambler
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo03b IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo03b IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo03bGambler
 }
 
@@ -4366,7 +4366,7 @@ Response DLC1_C6M3_SafeRoomConvo03dGambler
 }
 Rule DLC1_C6M3_SafeRoomConvo03dGambler
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo03d IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo03d IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo03dGambler
 }
 
@@ -4376,7 +4376,7 @@ Response DLC1_C6M3_SafeRoomConvo04cGambler
 }
 Rule DLC1_C6M3_SafeRoomConvo04cGambler
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo04c IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo04c IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo04cGambler
 }
 
@@ -4399,7 +4399,7 @@ Response DLC1_C6M3_SafeRoomConvo05bGambler
 }
 Rule DLC1_C6M3_SafeRoomConvo05bGambler
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo05b IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo05b IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo05bGambler
 }
 
@@ -4412,7 +4412,7 @@ Response DLC1_C6M3_SafeRoomConvo05dGambler
 }
 Rule DLC1_C6M3_SafeRoomConvo05dGambler
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo05d IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo05d IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo05dGambler
 }
 
@@ -8832,7 +8832,7 @@ Response PlayerRemarkWorldC502NotZombies3Gambler
 }
 Rule PlayerRemarkWorldC502NotZombies3Gambler
 {
-	criteria ConceptWorldC502NotZombies3 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptWorldC502NotZombies3 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerRemarkWorldC502NotZombies3Gambler
 }
 
@@ -10047,55 +10047,15 @@ Rule PlayerNoEllisGambler
 	Response PlayerNoEllisGambler
 }
 
-Response PlayerProfanityGambler
+Response PlayerAnswerLostCallGambler
 {
-	scene "scenes/Gambler/ReactionNegative01.vcd"  //This is all going to hell!
-	scene "scenes/Gambler/ReactionNegative01.vcd"  //This is all going to hell!
-	scene "scenes/Gambler/ReactionNegative02.vcd"  //Damn...
-	scene "scenes/Gambler/ReactionNegative03.vcd"  //Shit!
-	scene "scenes/Gambler/ReactionNegative04.vcd"  //God damn it.
-	scene "scenes/Gambler/ReactionNegative05.vcd"  //Bullshit!
-	scene "scenes/Gambler/ReactionNegative05.vcd"  //Bullshit!
-	scene "scenes/Gambler/ReactionNegative06.vcd"  //Bastards!
-	scene "scenes/Gambler/ReactionNegative07.vcd"  //Holy Shit!
-	scene "scenes/Gambler/ReactionNegative08.vcd"  //Ah, tits!
-	scene "scenes/Gambler/ReactionNegative09.vcd"  //Son of a bitch.
-	scene "scenes/Gambler/ReactionNegative10.vcd"  //Son of a bitch.
-	scene "scenes/Gambler/ReactionNegative11.vcd"  //Oh bullshit!
-	scene "scenes/Gambler/ReactionNegative12.vcd"  //My ass.
-	scene "scenes/Gambler/ReactionNegative13.vcd"  //This is all going to hell!
-	scene "scenes/Gambler/ReactionNegative14.vcd"  //Damn...
-	scene "scenes/Gambler/ReactionNegative15.vcd"  //Shit!
-	scene "scenes/Gambler/ReactionNegative15.vcd"  //Shit!
-	scene "scenes/Gambler/ReactionNegative16.vcd"  //God damn it.
-	scene "scenes/Gambler/ReactionNegative17.vcd"  //Bullshit!
-	scene "scenes/Gambler/ReactionNegative18.vcd"  //Bastards!
-	scene "scenes/Gambler/ReactionNegative19.vcd"  //Shit!
-	scene "scenes/Gambler/ReactionNegative20.vcd"  //Tits!
-	scene "scenes/Gambler/ReactionNegative21.vcd"  //Son of a bitch.
-	scene "scenes/Gambler/ReactionNegative22.vcd"  //Oh bullshit!
-	scene "scenes/Gambler/ReactionNegative23.vcd"  //My ass.
-	scene "scenes/Gambler/ReactionNegative24.vcd"  //Is this some kind of sick joke?
-	scene "scenes/Gambler/ReactionNegative25.vcd"  //Is this some kind of sick joke?
-	scene "scenes/Gambler/ReactionNegative25.vcd"  //Is this some kind of sick joke?
-	scene "scenes/Gambler/ReactionNegative26.vcd"  //I call foul.
-	scene "scenes/Gambler/ReactionNegative27.vcd"  //Kiss my ass.
-	scene "scenes/Gambler/ReactionNegative28.vcd"  //Ass.
-	scene "scenes/Gambler/ReactionNegative29.vcd"  //Asshat.
-	scene "scenes/Gambler/ReactionNegative30.vcd"  //Bitch.
-	scene "scenes/Gambler/ReactionNegative31.vcd"  //Asshole.
-	scene "scenes/Gambler/ReactionNegative32.vcd"  //Assclown.
-	scene "scenes/Gambler/ReactionNegative33.vcd"  //Dumbshit.
-	scene "scenes/Gambler/ReactionNegative34.vcd"  //Screw this.
-	scene "scenes/Gambler/ReactionNegative35.vcd"  //Kiss my ass.
-	scene "scenes/Gambler/ReactionNegative36.vcd"  //Kiss my ass.
-	scene "scenes/Gambler/ReactionNegative37.vcd"  //What an assclown.
-	scene "scenes/Gambler/ReactionNegative38.vcd"  //Dumbshit.
+	scene "scenes/Gambler/ScenarioJoin02.vcd"  //I'm here.
+	scene "scenes/Gambler/ScenarioJoin03.vcd"  //Okay, I'm here.
 }
-Rule PlayerProfanityGambler
+Rule PlayerAnswerLostCallGambler
 {
 	criteria ConceptPlayerAnswerLostCall IsNotCoughing  IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
-	Response PlayerProfanityGambler
+	Response PlayerAnswerLostCallGambler
 }
 
 Response KillStealCalledOutGambler
@@ -10568,6 +10528,20 @@ Rule PlayerHeardTankGambler
 {
 	criteria ConceptPlayerHeardTank IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler isNotmap_c1m1_hotel isNotmap_c1m2_streets _auto_NotSpottedVehicle
 	Response PlayerHeardTankGambler
+}
+
+Response PlayerHeardWitchGambler
+{
+	scene "scenes/Gambler/HeardWitch01.vcd"  //Sounds like a witch.
+	scene "scenes/Gambler/HeardWitch02.vcd"  //Sounds like a witch.
+	scene "scenes/Gambler/HeardWitch03.vcd"  //I think I hear my ex-wife...
+	scene "scenes/Gambler/HeardWitch04.vcd"  //Everybody hear that witch?
+	scene "scenes/Gambler/HeardWitch05.vcd"  //I hear a witch.
+}
+Rule PlayerHeardWitchGambler
+{
+	criteria ConceptPlayerHeardWitch IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler isNotmap_c1m1_hotel isNotmap_c1m2_streets _auto_NotSpottedVehicle
+	Response PlayerHeardWitchGambler
 }
 
 Response PlayerHurrahGambler
@@ -12081,7 +12055,7 @@ Rule SurvivorCoughingGambler
 
 Rule SurvivorCoughingDeathGambler
 {
-	criteria ConceptPlayerDeath IsCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotVersus IsNotSpeaking
+	criteria ConceptPlayerDeath IsCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotVersus
 	Response SurvivorCoughingGambler
 }
 
@@ -12097,7 +12071,7 @@ Response SurvivorDeathGambler
 }
 Rule SurvivorDeathGambler
 {
-	criteria ConceptPlayerDeath IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotVersus IsNotSpeaking
+	criteria ConceptPlayerDeath IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotVersus
 	Response SurvivorDeathGambler
 }
 
@@ -12646,7 +12620,7 @@ Response SurvivorVocalizeWaitHereGambler
 }
 Rule SurvivorVocalizeWaitHereGambler
 {
-	criteria ConceptPlayerWaitHere IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerWaitHere IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
 	Response SurvivorVocalizeWaitHereGambler
 }
 
@@ -14506,7 +14480,7 @@ Response _C4M5_Intro02Gambler
 }
 Rule _C4M5_Intro02Gambler
 {
-	criteria Concept_C4M5_Intro02 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C4M5_Intro02 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response _C4M5_Intro02Gambler
 }
 
@@ -14516,7 +14490,7 @@ Response _C4M5_Intro04Gambler
 }
 Rule _C4M5_Intro04Gambler
 {
-	criteria Concept_C4M5_Intro04 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C4M5_Intro04 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response _C4M5_Intro04Gambler
 }
 
@@ -15034,7 +15008,7 @@ Response C1M4SafeRoom2a2Gambler
 }
 Rule C1M4SafeRoom2a2Gambler
 {
-	criteria ConceptC1M4SafeRoom2a2 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M4SafeRoom2a2 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M4SafeRoom2a2Gambler
 }
 
@@ -15044,7 +15018,7 @@ Response C1M4SafeRoom2a4Gambler
 }
 Rule C1M4SafeRoom2a4Gambler
 {
-	criteria ConceptC1M4SafeRoom2a4 IsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M4SafeRoom2a4 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M4SafeRoom2a4Gambler
 }
 

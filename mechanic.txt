@@ -1402,7 +1402,7 @@ Response _C2M2_Riders02Mechanic
 }
 Rule _C2M2_Riders02Mechanic
 {
-	criteria Concept_C2M2_Riders02 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C2M2_Riders02 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response _C2M2_Riders02Mechanic
 }
 
@@ -1414,7 +1414,7 @@ Response _C2M2_Riders03Mechanic
 }
 Rule _C2M2_Riders03Mechanic
 {
-	criteria Concept_C2M2_Riders03 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C2M2_Riders03 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response _C2M2_Riders03Mechanic
 }
 
@@ -1424,7 +1424,7 @@ Response _C2M2_Riders04Mechanic
 }
 Rule _C2M2_Riders04Mechanic
 {
-	criteria Concept_C2M2_Riders04 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C2M2_Riders04 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response _C2M2_Riders04Mechanic
 }
 
@@ -1434,7 +1434,7 @@ Response _C2M2_Riders06Mechanic
 }
 Rule _C2M2_Riders06Mechanic
 {
-	criteria Concept_C2M2_Riders06 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C2M2_Riders06 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response _C2M2_Riders06Mechanic
 }
 
@@ -1444,7 +1444,7 @@ Response _C2M2_Riders07Mechanic
 }
 Rule _C2M2_Riders07Mechanic
 {
-	criteria Concept_C2M2_Riders07 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C2M2_Riders07 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response _C2M2_Riders07Mechanic
 }
 
@@ -1642,7 +1642,7 @@ Response C2M3SafeIntro006Mechanic
 }
 Rule C2M3SafeIntro006Mechanic
 {
-	criteria ConceptC2M3SafeIntro006 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC2M3SafeIntro006 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C2M3SafeIntro006Mechanic
 }
 
@@ -1652,7 +1652,7 @@ Response C2M3SafeIntro010Mechanic
 }
 Rule C2M3SafeIntro010Mechanic
 {
-	criteria ConceptC2M3SafeIntro010 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC2M3SafeIntro010 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C2M3SafeIntro010Mechanic
 }
 
@@ -1807,7 +1807,7 @@ Response c2m5_intro003Mechanic
 }
 Rule c2m5_intro003Mechanic
 {
-	criteria Conceptc2m5_intro003 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro003 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro003Mechanic
 }
 
@@ -1817,7 +1817,7 @@ Response c2m5_intro005Mechanic
 }
 Rule c2m5_intro005Mechanic
 {
-	criteria Conceptc2m5_intro005 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro005 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro005Mechanic
 }
 
@@ -1828,7 +1828,7 @@ Response c2m5_intro008Mechanic
 }
 Rule c2m5_intro008Mechanic
 {
-	criteria Conceptc2m5_intro008 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro008 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro008Mechanic
 }
 
@@ -1839,7 +1839,7 @@ Response c2m5_intro009Mechanic
 }
 Rule c2m5_intro009Mechanic
 {
-	criteria Conceptc2m5_intro009 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro009 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro009Mechanic
 }
 
@@ -1849,7 +1849,7 @@ Response c2m5_intro011Mechanic
 }
 Rule c2m5_intro011Mechanic
 {
-	criteria Conceptc2m5_intro011 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro011 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro011Mechanic
 }
 
@@ -1859,31 +1859,31 @@ Response c2m5_intro012Mechanic
 }
 Rule c2m5_intro012Mechanic
 {
-	criteria Conceptc2m5_intro012 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro012 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro012Mechanic
 }
 
 Rule c2m5_intro015Mechanic
 {
-	criteria Conceptc2m5_intro015 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro015 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro012Mechanic
 }
 
 Rule c2m5_intro016Mechanic
 {
-	criteria Conceptc2m5_intro016 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro016 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro012Mechanic
 }
 
 Rule c2m5_intro020Mechanic
 {
-	criteria Conceptc2m5_intro020 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro020 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro012Mechanic
 }
 
 Rule c2m5_intro025Mechanic
 {
-	criteria Conceptc2m5_intro025 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro025 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro012Mechanic
 }
 
@@ -1893,7 +1893,7 @@ Response c2m5_intro019Mechanic
 }
 Rule c2m5_intro019Mechanic
 {
-	criteria Conceptc2m5_intro019 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro019 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro019Mechanic
 }
 
@@ -1904,7 +1904,7 @@ Response c2m5_intro024Mechanic
 }
 Rule c2m5_intro024Mechanic
 {
-	criteria Conceptc2m5_intro024 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Conceptc2m5_intro024 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response c2m5_intro024Mechanic
 }
 
@@ -2180,7 +2180,7 @@ Response C3M2SafeRooma2Mechanic
 }
 Rule C3M2SafeRooma2Mechanic
 {
-	criteria ConceptC3M2SafeRooma2 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC3M2SafeRooma2 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C3M2SafeRooma2Mechanic
 }
 
@@ -2190,7 +2190,7 @@ Response C3M2SafeRoomb3Mechanic
 }
 Rule C3M2SafeRoomb3Mechanic
 {
-	criteria ConceptC3M2SafeRoomb3 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC3M2SafeRoomb3 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C3M2SafeRoomb3Mechanic
 }
 
@@ -2264,7 +2264,7 @@ Response C3M3SafeRoom2a2Mechanic
 }
 Rule C3M3SafeRoom2a2Mechanic
 {
-	criteria ConceptC3M3SafeRoom2a2 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC3M3SafeRoom2a2 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C3M3SafeRoom2a2Mechanic
 }
 
@@ -2275,7 +2275,7 @@ Response C3M3SafeRoom2c3Mechanic
 }
 Rule C3M3SafeRoom2c3Mechanic
 {
-	criteria ConceptC3M3SafeRoom2c3 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC3M3SafeRoom2c3 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C3M3SafeRoom2c3Mechanic
 }
 
@@ -2285,7 +2285,7 @@ Response C3M3SafeRoom2d2Mechanic
 }
 Rule C3M3SafeRoom2d2Mechanic
 {
-	criteria ConceptC3M3SafeRoom2d2 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC3M3SafeRoom2d2 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C3M3SafeRoom2d2Mechanic
 }
 
@@ -2787,13 +2787,13 @@ Response C5M3Bodies01Mechanic
 }
 Rule C5M3Bodies01Mechanic
 {
-	criteria ConceptC5M3Bodies01 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC5M3Bodies01 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C5M3Bodies01Mechanic
 }
 
 Rule C5M3Bodies02Mechanic
 {
-	criteria ConceptC5M3Bodies02 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC5M3Bodies02 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C5M3Bodies01Mechanic
 }
 
@@ -3086,7 +3086,7 @@ Response C5M3BeenShotMechanic
 }
 Rule C5M3BeenShotMechanic
 {
-	criteria ConceptC5M3BeenShot IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC5M3BeenShot IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C5M3BeenShotMechanic
 }
 
@@ -3777,7 +3777,7 @@ Response C5M5_saferoom002Mechanic
 }
 Rule C5M5_saferoom002Mechanic
 {
-	criteria ConceptC5M5_saferoom002 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC5M5_saferoom002 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C5M5_saferoom002Mechanic
 }
 
@@ -3787,7 +3787,7 @@ Response C5M5_saferoom004Mechanic
 }
 Rule C5M5_saferoom004Mechanic
 {
-	criteria ConceptC5M5_saferoom004 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC5M5_saferoom004 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C5M5_saferoom004Mechanic
 }
 
@@ -4170,7 +4170,7 @@ Response DLC1_C6M2_SafeRoomConvo02aMechanic
 }
 Rule DLC1_C6M2_SafeRoomConvo02aMechanic
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo02a IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo02a IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo02aMechanic
 }
 
@@ -4193,7 +4193,7 @@ Response DLC1_C6M2_SafeRoomConvo03bMechanic
 }
 Rule DLC1_C6M2_SafeRoomConvo03bMechanic
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo03b IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo03b IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo03bMechanic
 }
 
@@ -4231,7 +4231,7 @@ Response DLC1_C6M2_SafeRoomConvo11aMechanic
 }
 Rule DLC1_C6M2_SafeRoomConvo11aMechanic
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo11a IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo11a IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo11aMechanic
 }
 
@@ -4241,7 +4241,7 @@ Response DLC1_C6M2_SafeRoomConvo14bMechanic
 }
 Rule DLC1_C6M2_SafeRoomConvo14bMechanic
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo14b IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo14b IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo14bMechanic
 }
 
@@ -4251,7 +4251,7 @@ Response DLC1_C6M2_SafeRoomConvo16bMechanic
 }
 Rule DLC1_C6M2_SafeRoomConvo16bMechanic
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo16b IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo16b IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo16bMechanic
 }
 
@@ -4261,7 +4261,7 @@ Response DLC1_C6M2_SafeRoomConvo16dRochelleMechanic
 }
 Rule DLC1_C6M2_SafeRoomConvo16dRochelleMechanic
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo16d IsMechanic FromIsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo16d IsMechanic FromIsProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo16dRochelleMechanic
 }
 
@@ -4271,7 +4271,7 @@ Response DLC1_C6M2_SafeRoomConvo16dCoachMechanic
 }
 Rule DLC1_C6M2_SafeRoomConvo16dCoachMechanic
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo16d IsMechanic FromIsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo16d IsMechanic FromIsCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo16dCoachMechanic
 }
 
@@ -4281,7 +4281,7 @@ Response DLC1_C6M2_SafeRoomConvo17aMechanic
 }
 Rule DLC1_C6M2_SafeRoomConvo17aMechanic
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo17a IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo17a IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo17aMechanic
 }
 
@@ -4291,7 +4291,7 @@ Response DLC1_C6M2_SafeRoomConvo18bMechanic
 }
 Rule DLC1_C6M2_SafeRoomConvo18bMechanic
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo18b IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo18b IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo18bMechanic
 }
 
@@ -4301,7 +4301,7 @@ Response DLC1_C6M2_SafeRoomConvo19aMechanic
 }
 Rule DLC1_C6M2_SafeRoomConvo19aMechanic
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo19a IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo19a IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo19aMechanic
 }
 
@@ -4312,7 +4312,7 @@ Response DLC1_C6M2_SafeRoomConvo19cMechanic
 }
 Rule DLC1_C6M2_SafeRoomConvo19cMechanic
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo19c IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo19c IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo19cMechanic
 }
 
@@ -4322,7 +4322,7 @@ Response DLC1_C6M2_SafeRoomConvo19eMechanic
 }
 Rule DLC1_C6M2_SafeRoomConvo19eMechanic
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo19e IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo19e IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo19eMechanic
 }
 
@@ -4332,7 +4332,7 @@ Response DLC1_C6M2_SafeRoomConvo19gMechanic
 }
 Rule DLC1_C6M2_SafeRoomConvo19gMechanic
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo19g IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo19g IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo19gMechanic
 }
 
@@ -4342,7 +4342,7 @@ Response DLC1_C6M2_SafeRoomConvo21bMechanic
 }
 Rule DLC1_C6M2_SafeRoomConvo21bMechanic
 {
-	criteria ConceptDLC1_C6M2_SafeRoomConvo21b IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M2_SafeRoomConvo21b IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M2_SafeRoomConvo21bMechanic
 }
 
@@ -4499,7 +4499,7 @@ Response DLC1_C6M3_SafeRoomConvo01aMechanic
 }
 Rule DLC1_C6M3_SafeRoomConvo01aMechanic
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo01a IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo01a IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo01aMechanic
 }
 
@@ -4511,7 +4511,7 @@ Response DLC1_C6M3_SafeRoomConvo01cMechanic
 }
 Rule DLC1_C6M3_SafeRoomConvo01cMechanic
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo01c IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo01c IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo01cMechanic
 }
 
@@ -4523,7 +4523,7 @@ Response DLC1_C6M3_SafeRoomConvo02eMechanic
 }
 Rule DLC1_C6M3_SafeRoomConvo02eMechanic
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo02e IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo02e IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo02eMechanic
 }
 
@@ -4534,7 +4534,7 @@ Response DLC1_C6M3_SafeRoomConvo03aMechanic
 }
 Rule DLC1_C6M3_SafeRoomConvo03aMechanic
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo03a IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo03a IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo03aMechanic
 }
 
@@ -4544,7 +4544,7 @@ Response DLC1_C6M3_SafeRoomConvo03cMechanic
 }
 Rule DLC1_C6M3_SafeRoomConvo03cMechanic
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo03c IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo03c IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo03cMechanic
 }
 
@@ -4555,7 +4555,7 @@ Response DLC1_C6M3_SafeRoomConvo04aMechanic
 }
 Rule DLC1_C6M3_SafeRoomConvo04aMechanic
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo04a IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo04a IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo04aMechanic
 }
 
@@ -4565,7 +4565,7 @@ Response DLC1_C6M3_SafeRoomConvo04dMechanic
 }
 Rule DLC1_C6M3_SafeRoomConvo04dMechanic
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo04d IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo04d IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo04dMechanic
 }
 
@@ -4576,7 +4576,7 @@ Response DLC1_C6M3_SafeRoomConvo05aMechanic
 }
 Rule DLC1_C6M3_SafeRoomConvo05aMechanic
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo05a IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo05a IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo05aMechanic
 }
 
@@ -4598,7 +4598,7 @@ Response DLC1_C6M3_SafeRoomConvo06bMechanic
 }
 Rule DLC1_C6M3_SafeRoomConvo06bMechanic
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo06b IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo06b IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo06bMechanic
 }
 
@@ -4608,7 +4608,7 @@ Response DLC1_C6M3_SafeRoomConvo07aMechanic
 }
 Rule DLC1_C6M3_SafeRoomConvo07aMechanic
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo07a IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo07a IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo07aMechanic
 }
 
@@ -4618,7 +4618,7 @@ Response DLC1_C6M3_SafeRoomConvo07cMechanic
 }
 Rule DLC1_C6M3_SafeRoomConvo07cMechanic
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo07c IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo07c IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo07cMechanic
 }
 
@@ -4629,7 +4629,7 @@ Response DLC1_C6M3_SafeRoomConvo08aMechanic
 }
 Rule DLC1_C6M3_SafeRoomConvo08aMechanic
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo08a IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo08a IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo08aMechanic
 }
 
@@ -4640,7 +4640,7 @@ Response DLC1_C6M3_SafeRoomConvo08cMechanic
 }
 Rule DLC1_C6M3_SafeRoomConvo08cMechanic
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo08c IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo08c IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo08cMechanic
 }
 
@@ -4650,7 +4650,7 @@ Response DLC1_C6M3_SafeRoomConvo08dMechanic
 }
 Rule DLC1_C6M3_SafeRoomConvo08dMechanic
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo08d IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo08d IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo08dMechanic
 }
 
@@ -4660,7 +4660,7 @@ Response DLC1_C6M3_SafeRoomConvo08eMechanic
 }
 Rule DLC1_C6M3_SafeRoomConvo08eMechanic
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo08e IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo08e IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo08eMechanic
 }
 
@@ -4670,7 +4670,7 @@ Response DLC1_C6M3_SafeRoomConvo08fMechanic
 }
 Rule DLC1_C6M3_SafeRoomConvo08fMechanic
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo08f IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo08f IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo08fMechanic
 }
 
@@ -4680,7 +4680,7 @@ Response DLC1_C6M3_SafeRoomConvo09aMechanic
 }
 Rule DLC1_C6M3_SafeRoomConvo09aMechanic
 {
-	criteria ConceptDLC1_C6M3_SafeRoomConvo09a IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptDLC1_C6M3_SafeRoomConvo09a IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response DLC1_C6M3_SafeRoomConvo09aMechanic
 }
 
@@ -9469,7 +9469,7 @@ Response PlayerRemarkWorldC502NotZombies2Mechanic
 }
 Rule PlayerRemarkWorldC502NotZombies2Mechanic
 {
-	criteria ConceptWorldC502NotZombies2 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptWorldC502NotZombies2 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerRemarkWorldC502NotZombies2Mechanic
 }
 
@@ -10678,34 +10678,15 @@ Rule PlayerNoMechanic
 	Response PlayerNoMechanic
 }
 
-Response PlayerProfanityMechanic
+Response PlayerAnswerLostCallMechanic
 {
-	scene "scenes/Mechanic/ReactionNegative01.vcd"  //No!
-	scene "scenes/Mechanic/ReactionNegative02.vcd"  //Ahh SHIT!
-	scene "scenes/Mechanic/ReactionNegative02.vcd"  //Ahh SHIT!
-	scene "scenes/Mechanic/ReactionNegative03.vcd"  //God DAMN!
-	scene "scenes/Mechanic/ReactionNegative04.vcd"  //Ah Lord!
-	scene "scenes/Mechanic/ReactionNegative05.vcd"  //Jesus NO, man!
-	scene "scenes/Mechanic/ReactionNegative06.vcd"  //That ain't right!
-	scene "scenes/Mechanic/ReactionNegative07.vcd"  //Oh SHIT!
-	scene "scenes/Mechanic/ReactionNegative08.vcd"  //God DAMN!
-	scene "scenes/Mechanic/ReactionNegative09.vcd"  //Jesus NO!
-	scene "scenes/Mechanic/ReactionNegative10.vcd"  //No thank you!
-	scene "scenes/Mechanic/ReactionNegative11.vcd"  //Shit, that ain't right!
-	scene "scenes/Mechanic/ReactionNegative12.vcd"  //BULLSHIT!
-	scene "scenes/Mechanic/ReactionNegative13.vcd"  //Oh, hogwash, man!
-	scene "scenes/Mechanic/ReactionNegative14.vcd"  //Well piss!
-	scene "scenes/Mechanic/ReactionNegative15.vcd"  //Hogwash!
-	scene "scenes/Mechanic/ReactionNegative16.vcd"  //Ain't that a load of shit.
-	scene "scenes/Mechanic/ReactionNegative17.vcd"  //That's bullshit!
-	scene "scenes/Mechanic/ReactionNegative18.vcd"  //Hogwash!
-	scene "scenes/Mechanic/ReactionNegative19.vcd"  //Well piss!
-	scene "scenes/Mechanic/ReactionNegative20.vcd"  //Ain't that a load of shit.
+	scene "scenes/Mechanic/ScenarioJoin05.vcd"  //Wassup?
+	scene "scenes/Mechanic/ScenarioJoin07.vcd"  //Here I am.
 }
-Rule PlayerProfanityMechanic
+Rule PlayerAnswerLostCallMechanic
 {
 	criteria ConceptPlayerAnswerLostCall IsNotCoughing  IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
-	Response PlayerProfanityMechanic
+	Response PlayerAnswerLostCallMechanic
 }
 
 Response PlayerSorryMechanic
@@ -11113,6 +11094,18 @@ Rule PlayerHeardTankMechanic
 {
 	criteria ConceptPlayerHeardTank IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic isNotmap_c1m1_hotel isNotmap_c1m2_streets _auto_NotSpottedVehicle
 	Response PlayerHeardTankMechanic
+}
+
+Response PlayerHeardWitchMechanic
+{
+	scene "scenes/Mechanic/HeardWitch01.vcd" //That crying girl's around.
+	scene "scenes/Mechanic/HeardWitch02.vcd" //Hey, I hear a witch.
+	scene "scenes/Mechanic/HeardWitch03.vcd" //I hear a witch crying.
+}
+Rule PlayerHeardWitchMechanic
+{
+	criteria ConceptPlayerHeardWitch IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic isNotmap_c1m1_hotel isNotmap_c1m2_streets _auto_NotSpottedVehicle
+	Response PlayerHeardWitchMechanic
 }
 
 Response PlayerHurrahMechanic
@@ -15196,7 +15189,7 @@ Response _c4m3_startsafe02Mechanic
 }
 Rule _c4m3_startsafe02Mechanic
 {
-	criteria Concept_c4m3_startsafe02 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_c4m3_startsafe02 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response _c4m3_startsafe02Mechanic
 }
 
@@ -15206,7 +15199,7 @@ Response _c4m3_startsafe03Mechanic
 }
 Rule _c4m3_startsafe03Mechanic
 {
-	criteria Concept_c4m3_startsafe03 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_c4m3_startsafe03 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response _c4m3_startsafe03Mechanic
 }
 
@@ -15251,7 +15244,7 @@ Response _C4M5_Intro03Mechanic
 }
 Rule _C4M5_Intro03Mechanic
 {
-	criteria Concept_C4M5_Intro03 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C4M5_Intro03 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response _C4M5_Intro03Mechanic
 }
 
@@ -15263,7 +15256,7 @@ Response _C4M5_Intro04Mechanic
 }
 Rule _C4M5_Intro04Mechanic
 {
-	criteria Concept_C4M5_Intro04 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_C4M5_Intro04 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response _C4M5_Intro04Mechanic
 }
 
@@ -15695,7 +15688,7 @@ Response C1M2SafeRooma4Mechanic
 }
 Rule C1M2SafeRooma4Mechanic
 {
-	criteria ConceptC1M2SafeRooma4 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M2SafeRooma4 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M2SafeRooma4Mechanic
 }
 
@@ -15705,7 +15698,7 @@ Response C1M2SafeRooma3Mechanic
 }
 Rule C1M2SafeRooma3Mechanic
 {
-	criteria ConceptC1M2SafeRooma3 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M2SafeRooma3 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M2SafeRooma3Mechanic
 }
 
@@ -15739,7 +15732,7 @@ Response C1M3SafeRoom2dMechanic
 }
 Rule C1M3SafeRoom2dMechanic
 {
-	criteria ConceptC1M3SafeRoom2d IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M3SafeRoom2d IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M3SafeRoom2dMechanic
 }
 
@@ -15787,7 +15780,7 @@ Response C1M4SafeRoom2a1Mechanic
 }
 Rule C1M4SafeRoom2a1Mechanic
 {
-	criteria ConceptC1M4SafeRoom2a1 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M4SafeRoom2a1 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M4SafeRoom2a1Mechanic
 }
 
@@ -15798,7 +15791,7 @@ Response C1M4SafeRoom2b1Mechanic
 }
 Rule C1M4SafeRoom2b1Mechanic
 {
-	criteria ConceptC1M4SafeRoom2b1 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M4SafeRoom2b1 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M4SafeRoom2b1Mechanic
 }
 
@@ -15810,7 +15803,7 @@ Response C1M4SafeRoom2b3Mechanic
 }
 Rule C1M4SafeRoom2b3Mechanic
 {
-	criteria ConceptC1M4SafeRoom2b3 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M4SafeRoom2b3 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M4SafeRoom2b3Mechanic
 }
 
@@ -15821,7 +15814,7 @@ Response C1M4SafeRoom2b4Mechanic
 }
 Rule C1M4SafeRoom2b4Mechanic
 {
-	criteria ConceptC1M4SafeRoom2b4 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M4SafeRoom2b4 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M4SafeRoom2b4Mechanic
 }
 
@@ -15832,7 +15825,7 @@ Response C1M4SafeRoom2a5Mechanic
 }
 Rule C1M4SafeRoom2a5Mechanic
 {
-	criteria ConceptC1M4SafeRoom2a5 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M4SafeRoom2a5 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M4SafeRoom2a5Mechanic
 }
 
@@ -15845,7 +15838,7 @@ Response C1M4SafeRoom2c1Mechanic
 }
 Rule C1M4SafeRoom2c1Mechanic
 {
-	criteria ConceptC1M4SafeRoom2c1 IsMechanic IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M4SafeRoom2c1 IsMechanic AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M4SafeRoom2c1Mechanic
 }
 

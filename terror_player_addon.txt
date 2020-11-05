@@ -595,7 +595,6 @@ criterion "ConceptC5M5_Button2205" "Concept" "C5M5_Button2205" required
 criterion "ConceptC5M5_Button2206" "Concept" "C5M5_Button2206" required
 criterion "ConceptC5M5_Button2207" "Concept" "C5M5_Button2207" required
 criterion "ConceptC3M4Button104Ellis" "Concept" "C3M4Button104Ellis" required
-criterion "ConceptC1M2_GoodLuck01" "Concept" "C1M2_GoodLuck01" required
 criterion "ConceptGasPour20More" "Concept" "GasPour20More" required
 criterion "ConceptGasPour10More" "Concept" "GasPour10More" required
 criterion "ConceptGasPour1More" "Concept" "GasPour1More" required

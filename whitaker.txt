@@ -125,7 +125,7 @@ Response C1M2GoodLuckGettingToTheMall
 {
 	scene "scenes/npcs/Whitaker_MissionCompleted17.vcd"  //Good luck now!
 	scene "scenes/npcs/Whitaker_MissionCompleted20.vcd"  //Good luck to you, gang.
-	scene "scenes/npcs/Whitaker_MissionCompleted21.vcd"  then mechanic C1M2_GoodLuck01 foo:0 0.2 //God watch over you.
+	scene "scenes/npcs/Whitaker_MissionCompleted21.vcd"  //God watch over you.
 	scene "scenes/npcs/Whitaker_MissionCompleted22.vcd"  //Good luck gettin' to that mall.
 	scene "scenes/npcs/Whitaker_MissionCompleted23.vcd"  //Good luck gettin' to that mall.
 }
@@ -533,7 +533,7 @@ Rule C1M2GunRoomDoorDStartWhitaker
 Response C1M2GunRoomDoorCStartWhitaker
 {
 	scene "scenes/npcs/Whitaker_ComeUpStairsLongerC02.vcd"  then orator C1M2GunRoomDoorCDEnd1 foo:0 0.01 //
-	scene "scenes/npcs/Whitaker_ComeUpStairsLongerD03.vcd" fire relay_gunfire Trigger 2.4 then orator C1M2GunRoomDoorCDInterrupt foo:0 1.5 //
+	scene "scenes/npcs/Whitaker_ComeUpStairsLongerD03.vcd" fire relay_o Trigger 2.4 then orator C1M2GunRoomDoorCDInterrupt foo:0 1.5 //
 }
 Rule C1M2GunRoomDoorCStartWhitaker
 {

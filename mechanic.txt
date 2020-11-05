@@ -1161,15 +1161,6 @@ Rule BotReassureNearbyMechanic
 //--------------------------------------------------------------------------------------------------------------
 // C1M2
 //--------------------------------------------------------------------------------------------------------------
-Response C1M2_GoodLuck01Mechanic
-{
-	scene "scenes/Mechanic/WorldC5M4B22.vcd"  //God be with you too sir.
-}
-Rule C1M2_GoodLuck01Mechanic
-{
-	criteria ConceptC1M2_GoodLuck01 IsMechanic IsNotSpeaking IsNotIncapacitated IsTalk NotInCombat ChanceToFire50Percent AutoIsNotScavenge AutoIsNotSurvival
-	Response C1M2_GoodLuck01Mechanic
-}
 
 Response C1M2LeavingSafeRoomMechanic
 {
@@ -6619,7 +6610,7 @@ Response PlayerToTheRescueRosMechanic
 }
 Rule PlayerToTheRescueRosMechanic
 {
-	criteria ConceptPlayerToTheRescue IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotSpeaking
+	criteria ConceptPlayerToTheRescue IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response PlayerToTheRescueRosMechanic
 }
 
@@ -10485,7 +10476,7 @@ Response PlayerHurryUpMechanic
 }
 Rule PlayerHurryUpMechanic
 {
-	criteria ConceptPlayerHurryUp IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotSpeaking
+	criteria ConceptPlayerHurryUp IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response PlayerHurryUpMechanic
 }
 
@@ -10498,7 +10489,7 @@ Response PlayerHurryUpC4M2Mechanic
 }
 Rule PlayerHurryUpC4M2Mechanic
 {
-	criteria ConceptPlayerHurryUp IsMechanic IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkMechanic IsNotSaidSafeSpotAhead ismap_c4m2_sugarmill_a IsNotZombiePresentTank IsWorldTalkMechanic _auto_IsMechanicInWitchville IsNotSpeaking
+	criteria ConceptPlayerHurryUp IsMechanic IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkMechanic IsNotSaidSafeSpotAhead ismap_c4m2_sugarmill_a IsNotZombiePresentTank IsWorldTalkMechanic _auto_IsMechanicInWitchville
 	Response PlayerHurryUpC4M2Mechanic
 }
 
@@ -10525,7 +10516,7 @@ Response PlayerLeadOnMechanic
 }
 Rule PlayerLeadOnMechanic
 {
-	criteria ConceptPlayerLeadOn IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotSpeaking
+	criteria ConceptPlayerLeadOn IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response PlayerLeadOnMechanic
 }
 
@@ -10541,7 +10532,7 @@ Response PlayerMoveOnMechanic
 }
 Rule PlayerMoveOnMechanic
 {
-	criteria ConceptPlayerMoveOn IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotSpeaking
+	criteria ConceptPlayerMoveOn IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response PlayerMoveOnMechanic
 }
 
@@ -10589,7 +10580,7 @@ Response PlayerAskReadyMechanic
 }
 Rule PlayerAskReadyMechanic
 {
-	criteria ConceptPlayerAskReady IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotSpeaking
+	criteria ConceptPlayerAskReady IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response PlayerAskReadyMechanic
 }
 
@@ -10602,7 +10593,7 @@ Response PlayerImWithYouMechanic
 }
 Rule PlayerImWithYouMechanic
 {
-	criteria ConceptPlayerImWithYou IsNotCoughing  IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotSpeaking
+	criteria ConceptPlayerImWithYou IsNotCoughing  IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response PlayerImWithYouMechanic
 }
 
@@ -10628,7 +10619,7 @@ Response PlayerLaughMechanic
 }
 Rule PlayerLaughMechanic
 {
-	criteria ConceptPlayerLaugh IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotVersus IsNotSpeaking
+	criteria ConceptPlayerLaugh IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotVersus
 	Response PlayerLaughMechanic
 }
 
@@ -10641,7 +10632,7 @@ Response PlayerLostCallMechanic
 }
 Rule PlayerLostCallMechanic
 {
-	criteria ConceptPlayerLostCall IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotSpeaking
+	criteria ConceptPlayerLostCall IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response PlayerLostCallMechanic
 }
 
@@ -10662,7 +10653,7 @@ Response PlayerNiceJobResponseMechanic
 }
 Rule PlayerNiceJobResponseMechanic
 {
-	criteria ConceptPlayerNiceJob IsNotCoughing  IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotSpeaking
+	criteria ConceptPlayerNiceJob IsNotCoughing  IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response PlayerNiceJobResponseMechanic
 }
 
@@ -10683,7 +10674,7 @@ Response PlayerNoMechanic
 }
 Rule PlayerNoMechanic
 {
-	criteria ConceptPlayerNo IsNotCoughing  IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotSpeaking
+	criteria ConceptPlayerNo IsNotCoughing  IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response PlayerNoMechanic
 }
 
@@ -10713,7 +10704,7 @@ Response PlayerProfanityMechanic
 }
 Rule PlayerProfanityMechanic
 {
-	criteria ConceptPlayerAnswerLostCall IsNotCoughing  IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotSpeaking
+	criteria ConceptPlayerAnswerLostCall IsNotCoughing  IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response PlayerProfanityMechanic
 }
 
@@ -10742,7 +10733,7 @@ Response PlayerSorryFFMechanic
 }
 Rule PlayerSorryFFMechanic
 {
-	criteria ConceptPlayerSorry IsNotCoughing IsShotTeammateMechanic IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotSpeaking
+	criteria ConceptPlayerSorry IsNotCoughing IsShotTeammateMechanic IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response PlayerSorryFFMechanic
 }
 
@@ -10754,7 +10745,7 @@ Response PlayerThanksMechanic
 }
 Rule PlayerThanksMechanic
 {
-	criteria ConceptPlayerThanks IsNotCoughing  IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotSpeaking
+	criteria ConceptPlayerThanks IsNotCoughing  IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response PlayerThanksMechanic
 }
 
@@ -10942,7 +10933,7 @@ Response PlayerNegativeMechanic
 }
 Rule PlayerNegativeMechanic
 {
-	criteria ConceptPlayerNegative IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotSpeaking
+	criteria ConceptPlayerNegative IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response PlayerNegativeMechanic
 }
 
@@ -10989,7 +10980,7 @@ Response PlayerHeardBoomerMechanic
 }
 Rule PlayerHeardBoomerMechanic
 {
-	criteria ConceptPlayerHeardBoomer IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
+	criteria ConceptPlayerHeardBoomer IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic _auto_NotSpottedVehicle
 	Response PlayerHeardBoomerMechanic
 }
 
@@ -11001,7 +10992,7 @@ Response PlayerHeardHunterMechanic
 }
 Rule PlayerHeardHunterMechanic
 {
-	criteria ConceptPlayerHeardHunter IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
+	criteria ConceptPlayerHeardHunter IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic _auto_NotSpottedVehicle
 	Response PlayerHeardHunterMechanic
 }
 
@@ -11013,8 +11004,100 @@ Response PlayerHeardSmokerMechanic
 }
 Rule PlayerHeardSmokerMechanic
 {
-	criteria ConceptPlayerHeardSmoker IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
+	criteria ConceptPlayerHeardSmoker IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic _auto_NotSpottedVehicle
 	Response PlayerHeardSmokerMechanic
+}
+
+Response PlayerHeardChargerMechanic
+{
+	scene "scenes/Mechanic/HeardCharger01.vcd"  //Charger around.
+	scene "scenes/Mechanic/HeardCharger02.vcd"  //I hear a charger.
+	scene "scenes/Mechanic/HeardCharger03.vcd"  //Hear that charger?
+}
+Rule PlayerHeardChargerMechanic
+{
+	criteria ConceptPlayerHeardCharger IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic _auto_NotSpottedVehicle
+	Response PlayerHeardChargerMechanic
+}
+
+Response PlayerHeardSpitterMechanic
+{
+	scene "scenes/Mechanic/HeardSpitter01.vcd"  //I hear a spitter.
+	scene "scenes/Mechanic/HeardSpitter02.vcd"  //Spitting thing's around.
+	scene "scenes/Mechanic/HeardSpitter03.vcd"  //I hear one of them spitters.
+}
+Rule PlayerHeardSpitterMechanic
+{
+	criteria ConceptPlayerHeardSpitter IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic _auto_NotSpottedVehicle
+	Response PlayerHeardSpitterMechanic
+}
+
+Response PlayerHeardJockeyMechanic
+{
+	scene "scenes/Mechanic/HeardJockey01.vcd"  //I hear one of those back humpers around here.
+	scene "scenes/Mechanic/HeardJockey02.vcd"  //A freaking jockey's around.
+	scene "scenes/Mechanic/HeardJockey03.vcd"  //Hey, watch your back, jockey's around here.
+	scene "scenes/Mechanic/HeardJockey04.vcd"  //I hate them things
+	scene "scenes/Mechanic/HeardJockey05.vcd"  //I hate those jockeys.
+	scene "scenes/Mechanic/HeardJockey06.vcd"  //That is just offensive what they do.
+	scene "scenes/Mechanic/HeardJockey07.vcd"  //Dude,I hear one of those back humpers around.
+	scene "scenes/Mechanic/HeardJockey08.vcd"  //There's a freaking jockey's around here.
+}
+Rule PlayerHeardJockeyMechanic
+{
+	criteria ConceptPlayerHeardJockey IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic _auto_NotSpottedVehicle
+	Response PlayerHeardJockeyMechanic
+}
+
+Response PlayerHeardBoomerC1Mechanic
+{
+	scene "scenes/Mechanic/HeardSpecialC101.vcd"  //I hear one of those strange ones.
+	scene "scenes/Mechanic/HeardSpecialC102.vcd"  //What in the hell is making that noise?
+	scene "scenes/Mechanic/HeardSpecialC103.vcd"  //Dude, I do not like the sound of that.
+	scene "scenes/Mechanic/HeardSpecialC104.vcd"  //That is not a happy noise.
+	scene "scenes/Mechanic/HeardSpecialC105.vcd"  //I hope we don't meet whatever's making that noise.
+	scene "scenes/Mechanic/HeardSpecialC107.vcd"  //What in the hell is making that noise?
+	scene "scenes/Mechanic/HeardSpecialC108.vcd"  //I do not like the sound of that.
+	scene "scenes/Mechanic/HeardSpecialC109.vcd"  //That ain't a happy noise.
+}
+Rule PlayerHeardBoomerC1Mechanic
+{
+	criteria ConceptPlayerHeardBoomer IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic C1M1orC1M2 NoKnowBoomer
+	Response PlayerHeardBoomerC1Mechanic
+}
+
+Rule PlayerHeardHunterC1Mechanic
+{
+	criteria ConceptPlayerHeardHunter IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic C1M1orC1M2 NoKnowHunter
+	Response PlayerHeardBoomerC1Mechanic
+}
+
+Rule PlayerHeardSmokerC1Mechanic
+{
+	criteria ConceptPlayerHeardSmoker IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic C1M1orC1M2 NoKnowSmoker
+	Response PlayerHeardBoomerC1Mechanic
+}
+
+Rule PlayerHeardChargerC1Mechanic
+{
+	criteria ConceptPlayerHeardCharger IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic C1M1orC1M2 NoKnowCharger
+	Response PlayerHeardBoomerC1Mechanic
+}
+
+Rule PlayerHeardSpitterC1Mechanic
+{
+	criteria ConceptPlayerHeardSpitter IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic C1M1orC1M2 NoKnowSpitter
+	Response PlayerHeardBoomerC1Mechanic
+}
+
+Response PlayerHeardJockeyC1Mechanic
+{
+	scene "scenes/Mechanic/HeardJockeyC101.vcd"  //I think that's one of them little things.
+}
+Rule PlayerHeardJockeyC1Mechanic
+{
+	criteria ConceptPlayerHeardJockey IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic C1M1orC1M2 NoKnowJockey
+	Response PlayerHeardJockeyC1Mechanic
 }
 
 Response PlayerHeardTankMechanic
@@ -11028,7 +11111,7 @@ Response PlayerHeardTankMechanic
 }
 Rule PlayerHeardTankMechanic
 {
-	criteria ConceptPlayerHeardTank IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic isNotmap_c1m2_streets
+	criteria ConceptPlayerHeardTank IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic isNotmap_c1m1_hotel isNotmap_c1m2_streets _auto_NotSpottedVehicle
 	Response PlayerHeardTankMechanic
 }
 
@@ -11056,7 +11139,7 @@ Response PlayerHurrahMechanic
 }
 Rule PlayerHurrahMechanic
 {
-	criteria ConceptPlayerHurrah IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotSpeaking
+	criteria ConceptPlayerHurrah IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response PlayerHurrahMechanic
 }
 
@@ -11070,7 +11153,7 @@ Response PlayerWarnCarefulMechanic
 }
 Rule PlayerWarnCarefulMechanic
 {
-	criteria ConceptPlayerWarnCareful IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotSpeaking
+	criteria ConceptPlayerWarnCareful IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response PlayerWarnCarefulMechanic
 }
 
@@ -11305,7 +11388,7 @@ Response GrabbingGasSCMechanic
 Rule GrabbingGasSCMechanic
 {
 	criteria ConceptPlayerEquippedScavengeItem IsMechanic IsTalk IsNotAlone IsClosestSurvivorNear500 IsTalkMechanic IsWorldTalkMechanic NotSaidGrabbingCan
-	ApplyContext "SaidGrabbingCan:1:5"
+	ApplyContext "SaidGrabbingCan:1:8"
 	Response GrabbingGasSCMechanic
 }
 
@@ -12527,7 +12610,7 @@ Rule SurvivorCoughingMechanic
 
 Rule SurvivorCoughingDeathMechanic
 {
-	criteria ConceptPlayerDeath IsCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotVersus IsNotSpeaking
+	criteria ConceptPlayerDeath IsCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotVersus
 	Response SurvivorCoughingMechanic
 }
 
@@ -12542,7 +12625,7 @@ Response SurvivorDeathMechanic
 }
 Rule SurvivorDeathMechanic
 {
-	criteria ConceptPlayerDeath IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotVersus IsNotSpeaking
+	criteria ConceptPlayerDeath IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotVersus
 	Response SurvivorDeathMechanic
 }
 
@@ -13135,7 +13218,7 @@ Response SurvivorVocalizeWaitHereMechanic
 }
 Rule SurvivorVocalizeWaitHereMechanic
 {
-	criteria ConceptPlayerWaitHere IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotSpeaking
+	criteria ConceptPlayerWaitHere IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response SurvivorVocalizeWaitHereMechanic
 }
 

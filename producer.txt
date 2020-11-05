@@ -5707,7 +5707,7 @@ Response PlayerToTheRescueRosProducer
 }
 Rule PlayerToTheRescueRosProducer
 {
-	criteria ConceptPlayerToTheRescue IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotSpeaking
+	criteria ConceptPlayerToTheRescue IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
 	Response PlayerToTheRescueRosProducer
 }
 
@@ -9101,7 +9101,7 @@ Response PlayerHurryUpProducer
 }
 Rule PlayerHurryUpProducer
 {
-	criteria ConceptPlayerHurryUp IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotSpeaking
+	criteria ConceptPlayerHurryUp IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
 	Response PlayerHurryUpProducer
 }
 
@@ -9113,7 +9113,7 @@ Response PlayerHurryUpC4M2Producer
 }
 Rule PlayerHurryUpC4M2Producer
 {
-	criteria ConceptPlayerHurryUp IsNotCoughing IsProducer IsTalk IsTalkProducer ismap_c4m2_sugarmill_a IsNotSaidSafeSpotAhead IsNotZombiePresentTank IsWorldTalkProducer _auto_IsProducerInWitchville IsNotSpeaking
+	criteria ConceptPlayerHurryUp IsNotCoughing IsProducer IsTalk IsTalkProducer ismap_c4m2_sugarmill_a IsNotSaidSafeSpotAhead IsNotZombiePresentTank IsWorldTalkProducer _auto_IsProducerInWitchville
 	Response PlayerHurryUpC4M2Producer
 }
 
@@ -9148,7 +9148,7 @@ Response PlayerLeadOnProducer
 }
 Rule PlayerLeadOnProducer
 {
-	criteria ConceptPlayerLeadOn IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotSpeaking
+	criteria ConceptPlayerLeadOn IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
 	Response PlayerLeadOnProducer
 }
 
@@ -9162,7 +9162,7 @@ Response PlayerMoveOnProducer
 }
 Rule PlayerMoveOnProducer
 {
-	criteria ConceptPlayerMoveOn IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotSpeaking
+	criteria ConceptPlayerMoveOn IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
 	Response PlayerMoveOnProducer
 }
 
@@ -9204,7 +9204,7 @@ Response PlayerAskReadyProducer
 }
 Rule PlayerAskReadyProducer
 {
-	criteria ConceptPlayerAskReady IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotSpeaking
+	criteria ConceptPlayerAskReady IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
 	Response PlayerAskReadyProducer
 }
 
@@ -9219,7 +9219,7 @@ Response PlayerImWithYouProducer
 }
 Rule PlayerImWithYouProducer
 {
-	criteria ConceptPlayerImWithYou IsNotCoughing  IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotSpeaking
+	criteria ConceptPlayerImWithYou IsNotCoughing  IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
 	Response PlayerImWithYouProducer
 }
 
@@ -9245,7 +9245,7 @@ Response PlayerLaughProducer
 }
 Rule PlayerLaughProducer
 {
-	criteria ConceptPlayerLaugh IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotVersus IsNotSpeaking
+	criteria ConceptPlayerLaugh IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotVersus
 	Response PlayerLaughProducer
 }
 
@@ -9259,7 +9259,7 @@ Response PlayerLostCallProducer
 }
 Rule PlayerLostCallProducer
 {
-	criteria ConceptPlayerLostCall IsNotCoughing  IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotSpeaking
+	criteria ConceptPlayerLostCall IsNotCoughing  IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
 	Response PlayerLostCallProducer
 }
 
@@ -9281,7 +9281,7 @@ Response PlayerNiceJobResponseProducer
 }
 Rule PlayerNiceJobResponseProducer
 {
-	criteria ConceptPlayerNiceJob IsNotCoughing  IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotSpeaking
+	criteria ConceptPlayerNiceJob IsNotCoughing  IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
 	Response PlayerNiceJobResponseProducer
 }
 
@@ -9302,7 +9302,7 @@ Response PlayerNoProducer
 }
 Rule PlayerNoProducer
 {
-	criteria ConceptPlayerNo IsNotCoughing  IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotSpeaking
+	criteria ConceptPlayerNo IsNotCoughing  IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
 	Response PlayerNoProducer
 }
 
@@ -9332,7 +9332,7 @@ Response PlayerProfanityProducer
 }
 Rule PlayerProfanityProducer
 {
-	criteria ConceptPlayerAnswerLostCall IsNotCoughing  IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotSpeaking
+	criteria ConceptPlayerAnswerLostCall IsNotCoughing  IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
 	Response PlayerProfanityProducer
 }
 
@@ -9354,7 +9354,7 @@ Response PlayerSorryProducer
 }
 Rule PlayerSorryProducer
 {
-	criteria ConceptPlayerSorry IsNotCoughing IsNotShotTeammateProducer IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotSpeaking
+	criteria ConceptPlayerSorry IsNotCoughing IsNotShotTeammateProducer IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
 	Response PlayerSorryProducer
 }
 
@@ -9366,7 +9366,7 @@ Response PlayerSorryFFProducer
 }
 Rule PlayerSorryFFProducer
 {
-	criteria ConceptPlayerSorry IsNotCoughing IsShotTeammateProducer IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotSpeaking
+	criteria ConceptPlayerSorry IsNotCoughing IsShotTeammateProducer IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
 	Response PlayerSorryFFProducer
 }
 
@@ -9379,7 +9379,7 @@ Response PlayerThanksProducer
 }
 Rule PlayerThanksProducer
 {
-	criteria ConceptPlayerThanks IsNotCoughing  IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotSpeaking
+	criteria ConceptPlayerThanks IsNotCoughing  IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
 	Response PlayerThanksProducer
 }
 
@@ -9548,7 +9548,7 @@ Response PlayerNegativeProducer
 }
 Rule PlayerNegativeProducer
 {
-	criteria ConceptPlayerNegative IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotSpeaking
+	criteria ConceptPlayerNegative IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
 	Response PlayerNegativeProducer
 }
 
@@ -9592,7 +9592,7 @@ Response PlayerHeardBoomerProducer
 }
 Rule PlayerHeardBoomerProducer
 {
-	criteria ConceptPlayerHeardBoomer IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
+	criteria ConceptPlayerHeardBoomer IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer _auto_NotSpottedVehicle
 	Response PlayerHeardBoomerProducer
 }
 
@@ -9607,7 +9607,7 @@ Response PlayerHeardHunterProducer
 }
 Rule PlayerHeardHunterProducer
 {
-	criteria ConceptPlayerHeardHunter IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
+	criteria ConceptPlayerHeardHunter IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer _auto_NotSpottedVehicle
 	Response PlayerHeardHunterProducer
 }
 
@@ -9621,8 +9621,99 @@ Response PlayerHeardSmokerProducer
 }
 Rule PlayerHeardSmokerProducer
 {
-	criteria ConceptPlayerHeardSmoker IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
+	criteria ConceptPlayerHeardSmoker IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer _auto_NotSpottedVehicle
 	Response PlayerHeardSmokerProducer
+}
+
+Response PlayerHeardChargerProducer
+{
+	scene "scenes/Producer/HeardCharger01.vcd"  //Careful there's a charger around.
+	scene "scenes/Producer/HeardCharger02.vcd"  //I hear a charger.
+	scene "scenes/Producer/HeardCharger03.vcd"  //Watch out, charger!
+	scene "scenes/Producer/HeardCharger04.vcd"  //Watch out, charger!
+	scene "scenes/Producer/HeardCharger05.vcd"  //Careful there's a charger around.
+}
+Rule PlayerHeardChargerProducer
+{
+	criteria ConceptPlayerHeardCharger IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer _auto_NotSpottedVehicle
+	Response PlayerHeardChargerProducer
+}
+
+Response PlayerHeardSpitterProducer
+{
+	scene "scenes/Producer/HeardSpitter01.vcd"  //Spitter around.
+	scene "scenes/Producer/HeardSpitter02.vcd"  //I hear a spitter.
+	scene "scenes/Producer/HeardSpitter03.vcd"  //I hear one of those spitter things.
+	scene "scenes/Producer/HeardSpitter04.vcd"  //Spitter around.
+	scene "scenes/Producer/HeardSpitter05.vcd"  //I hear a spitter.
+	scene "scenes/Producer/HeardSpitter06.vcd"  //I hear one of those spitting things.
+}
+Rule PlayerHeardSpitterProducer
+{
+	criteria ConceptPlayerHeardSpitter IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer _auto_NotSpottedVehicle
+	Response PlayerHeardSpitterProducer
+}
+
+Response PlayerHeardJockeyProducer
+{
+	scene "scenes/Producer/HeardJockey01.vcd"  //I hear a jockey.
+	scene "scenes/Producer/HeardJockey02.vcd"  //Oh shit, I hear a jockey.
+	scene "scenes/Producer/HeardJockey03.vcd"  //I hear one of those little things.
+	scene "scenes/Producer/HeardJockey04.vcd"  //Jockey around.
+}
+Rule PlayerHeardJockeyProducer
+{
+	criteria ConceptPlayerHeardJockey IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer _auto_NotSpottedVehicle
+	Response PlayerHeardJockeyProducer
+}
+
+Response PlayerHeardBoomerC1Producer
+{
+	scene "scenes/Producer/HeardSpecialC101.vcd"  //That doesn't sound right.
+	scene "scenes/Producer/HeardSpecialC102.vcd"  //Okay, that doesn't sound right.
+	scene "scenes/Producer/HeardSpecialC103.vcd"  //I don't like the sound of that.
+	scene "scenes/Producer/HeardSpecialC104.vcd"  //Oh what the hell is that!?
+	scene "scenes/Producer/HeardSpecialC105.vcd" speakonce then mechanic Player.C1WorseThanZombies foo:0 0.1 //There were reports of stuff worse than zombies.
+	scene "scenes/Producer/HeardSpecialC106.vcd"  //You hear that? Some of these things mutated.
+}
+Rule PlayerHeardBoomerC1Producer
+{
+	criteria ConceptPlayerHeardBoomer IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer C1M1orC1M2 NoKnowBoomer
+	Response PlayerHeardBoomerC1Producer
+}
+
+Rule PlayerHeardHunterC1Producer
+{
+	criteria ConceptPlayerHeardHunter IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer C1M1orC1M2 NoKnowHunter
+	Response PlayerHeardBoomerC1Producer
+}
+
+Rule PlayerHeardSmokerC1Producer
+{
+	criteria ConceptPlayerHeardSmoker IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer C1M1orC1M2 NoKnowSmoker
+	Response PlayerHeardBoomerC1Producer
+}
+
+Rule PlayerHeardChargerC1Producer
+{
+	criteria ConceptPlayerHeardCharger IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer C1M1orC1M2 NoKnowCharger
+	Response PlayerHeardBoomerC1Producer
+}
+
+Rule PlayerHeardSpitterC1Producer
+{
+	criteria ConceptPlayerHeardSpitter IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer C1M1orC1M2 NoKnowSpitter
+	Response PlayerHeardBoomerC1Producer
+}
+
+Response PlayerHeardJockeyC1Producer
+{
+	scene "scenes/Producer/HeardJockeyC101.vcd"  //Uh oh, I hear one of those, what do you call it? A jockey?
+}
+Rule PlayerHeardJockeyC1Producer
+{
+	criteria ConceptPlayerHeardJockey IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer C1M1orC1M2 NoKnowJockey
+	Response PlayerHeardJockeyC1Producer
 }
 
 Response PlayerHeardTankProducer
@@ -9634,7 +9725,7 @@ Response PlayerHeardTankProducer
 }
 Rule PlayerHeardTankProducer
 {
-	criteria ConceptPlayerHeardTank IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer isNotmap_c1m1_hotel isNotmap_c1m2_streets
+	criteria ConceptPlayerHeardTank IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer isNotmap_c1m1_hotel isNotmap_c1m2_streets _auto_NotSpottedVehicle
 	Response PlayerHeardTankProducer
 }
 
@@ -9658,7 +9749,7 @@ Response PlayerHurrahProducer
 }
 Rule PlayerHurrahProducer
 {
-	criteria ConceptPlayerHurrah IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotSpeaking
+	criteria ConceptPlayerHurrah IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
 	Response PlayerHurrahProducer
 }
 
@@ -9670,7 +9761,7 @@ Response PlayerWarnCarefulProducer
 }
 Rule PlayerWarnCarefulProducer
 {
-	criteria ConceptPlayerWarnCareful IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotSpeaking
+	criteria ConceptPlayerWarnCareful IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
 	Response PlayerWarnCarefulProducer
 }
 
@@ -9891,7 +9982,7 @@ Response GrabbingGasSCProducer
 Rule GrabbingGasSCProducer
 {
 	criteria ConceptPlayerEquippedScavengeItem IsProducer IsTalk IsNotAlone IsClosestSurvivorNear500 IsTalkProducer IsWorldTalkProducer NotSaidGrabbingCan
-	ApplyContext "SaidGrabbingCan:1:5"
+	ApplyContext "SaidGrabbingCan:1:8"
 	Response GrabbingGasSCProducer
 }
 
@@ -11020,7 +11111,7 @@ Rule SurvivorCoughingProducer
 
 Rule SurvivorCoughingDeathProducer
 {
-	criteria ConceptPlayerDeath IsCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotVersus IsNotSpeaking
+	criteria ConceptPlayerDeath IsCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotVersus
 	Response SurvivorCoughingProducer
 }
 
@@ -11031,7 +11122,7 @@ Response SurvivorDeathProducer
 }
 Rule SurvivorDeathProducer
 {
-	criteria ConceptPlayerDeath IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
+	criteria ConceptPlayerDeath IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotVersus
 	Response SurvivorDeathProducer
 }
 
@@ -11577,7 +11668,7 @@ Response SurvivorVocalizeWaitHereProducer
 }
 Rule SurvivorVocalizeWaitHereProducer
 {
-	criteria ConceptPlayerWaitHere IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotSpeaking
+	criteria ConceptPlayerWaitHere IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
 	Response SurvivorVocalizeWaitHereProducer
 }
 
@@ -11885,16 +11976,11 @@ Rule SurvivorPickupcricket_batProducer
 	Response SurvivorPickupcricket_batProducer
 }
 
-Response SurvivorPickupKnifeProducer
-{
-	scene "scenes/Coach/TakeMelee02.vcd"  //Alright now, mm-hm. This is gonna work.
-	scene "scenes/Coach/TakeMelee05.vcd"  //Yeah. This is my kind of weapon.
-}
 Rule SurvivorPickupKnifeProducer
 {
 	criteria ConceptPlayerPickup IsNotCoughing IsProducer IsPickedUpKnife IsNotSpeaking ChanceToFire30Percent NotPickedUpItem IsNotInSafeSpot IsTalk IsTalkProducer IsWorldTalkProducer IsNotInStartArea isNotmap_c1m1_hotel _auto_NotSpottedVehicle
 	ApplyContext "PickedUpItem:1:30"
-	Response SurvivorPickupKnifeProducer
+	Response SurvivorPickupbaseball_batProducer
 }
 
 Response SurvivorPickupCrowBarProducer

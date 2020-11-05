@@ -5937,7 +5937,7 @@ Response PlayerToTheRescueRosCoach
 }
 Rule PlayerToTheRescueRosCoach
 {
-	criteria ConceptPlayerToTheRescue IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerToTheRescue IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
 	Response PlayerToTheRescueRosCoach
 }
 
@@ -6137,7 +6137,6 @@ Rule PlayerReloadingTankC1Coach
 
 Response PlayerWitchChasingCoach
 {
-	scene "scenes/Coach/WarnSpitterC101.vcd"  //Crazy woman!
 	scene "scenes/Coach/WitchChasing01.vcd"  //The bitch is chasing me!
 	scene "scenes/Coach/WitchChasing02.vcd"  //Bitch on my ass!
 	scene "scenes/Coach/WitchChasing03.vcd"  //Run, run, witch coming through!
@@ -9847,7 +9846,7 @@ Response PlayerHurryUpCoach
 }
 Rule PlayerHurryUpCoach
 {
-	criteria ConceptPlayerHurryUp IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerHurryUp IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
 	Response PlayerHurryUpCoach
 }
 
@@ -9859,7 +9858,7 @@ Response PlayerHurryUpC4M2Coach
 }
 Rule PlayerHurryUpC4M2Coach
 {
-	criteria ConceptPlayerHurryUp IsCoach IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkCoach ismap_c4m2_sugarmill_a IsNotSaidSafeSpotAhead IsNotZombiePresentTank IsWorldTalkCoach _auto_IsCoachInWitchville IsNotSpeaking
+	criteria ConceptPlayerHurryUp IsCoach IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkCoach ismap_c4m2_sugarmill_a IsNotSaidSafeSpotAhead IsNotZombiePresentTank IsWorldTalkCoach _auto_IsCoachInWitchville
 	Response PlayerHurryUpC4M2Coach
 }
 
@@ -9887,7 +9886,7 @@ Response PlayerLeadOnCoach
 }
 Rule PlayerLeadOnCoach
 {
-	criteria ConceptPlayerLeadOn IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerLeadOn IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
 	Response PlayerLeadOnCoach
 }
 
@@ -9906,7 +9905,7 @@ Response PlayerMoveOnCoach
 }
 Rule PlayerMoveOnCoach
 {
-	criteria ConceptPlayerMoveOn IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerMoveOn IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
 	Response PlayerMoveOnCoach
 }
 
@@ -9955,7 +9954,7 @@ Response PlayerAskReadyCoach
 }
 Rule PlayerAskReadyCoach
 {
-	criteria ConceptPlayerAskReady IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerAskReady IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
 	Response PlayerAskReadyCoach
 }
 
@@ -9970,7 +9969,7 @@ Response PlayerImWithYouCoach
 }
 Rule PlayerImWithYouCoach
 {
-	criteria ConceptPlayerImWithYou IsNotCoughing  IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerImWithYou IsNotCoughing  IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
 	Response PlayerImWithYouCoach
 }
 
@@ -10002,7 +10001,7 @@ Response PlayerLaughCoach
 }
 Rule PlayerLaughCoach
 {
-	criteria ConceptPlayerLaugh IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotVersus IsNotSpeaking
+	criteria ConceptPlayerLaugh IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotVersus
 	Response PlayerLaughCoach
 }
 
@@ -10014,7 +10013,7 @@ Response PlayerLostCallCoach
 }
 Rule PlayerLostCallCoach
 {
-	criteria ConceptPlayerLostCall IsNotCoughing  IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerLostCall IsNotCoughing  IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
 	Response PlayerLostCallCoach
 }
 
@@ -10038,7 +10037,7 @@ Response PlayerNiceJobResponseCoach
 }
 Rule PlayerNiceJobResponseCoach
 {
-	criteria ConceptPlayerNiceJob IsNotCoughing  IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerNiceJob IsNotCoughing  IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
 	Response PlayerNiceJobResponseCoach
 }
 
@@ -10059,7 +10058,7 @@ Response PlayerNoCoach
 }
 Rule PlayerNoCoach
 {
-	criteria ConceptPlayerNo IsNotCoughing  IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerNo IsNotCoughing  IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
 	Response PlayerNoCoach
 }
 
@@ -10069,7 +10068,7 @@ Response PlayerNoEllisCoach
 }
 Rule PlayerNoEllisCoach
 {
-	criteria ConceptPlayerNo IsNotCoughing IsCoach IsTalk IsTalkCoach SubjectIsMechanic IsSubjectDistNear200 ChanceToFire30Percent IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerNo IsNotCoughing IsCoach IsTalk IsTalkCoach SubjectIsMechanic IsSubjectDistNear200 ChanceToFire30Percent IsWorldTalkCoach
 	Response PlayerNoEllisCoach
 }
 
@@ -10080,13 +10079,13 @@ Response PlayerNoFemaleCoach
 }
 Rule PlayerNoFemaleCoach
 {
-	criteria ConceptPlayerNo IsNotCoughing IsCoach IsTalk IsTalkCoach SubjectIsProducer IsSubjectDistNear200 ChanceToFire30Percent IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerNo IsNotCoughing IsCoach IsTalk IsTalkCoach SubjectIsProducer IsSubjectDistNear200 ChanceToFire30Percent IsWorldTalkCoach
 	Response PlayerNoFemaleCoach
 }
 
 Rule PlayerNoZoeyCoach
 {
-	criteria ConceptPlayerNo IsNotCoughing IsCoach IsTalk IsTalkCoach SubjectIsTeenGirl IsSubjectDistNear200 ChanceToFire30Percent IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerNo IsNotCoughing IsCoach IsTalk IsTalkCoach SubjectIsTeenGirl IsSubjectDistNear200 ChanceToFire30Percent IsWorldTalkCoach
 	Response PlayerNoFemaleCoach
 }
 
@@ -10113,7 +10112,7 @@ Response PlayerProfanityCoach
 }
 Rule PlayerProfanityCoach
 {
-	criteria ConceptPlayerAnswerLostCall IsNotCoughing  IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerAnswerLostCall IsNotCoughing  IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
 	Response PlayerProfanityCoach
 }
 
@@ -10136,7 +10135,7 @@ Response PlayerSorryCoach
 }
 Rule PlayerSorryCoach
 {
-	criteria ConceptPlayerSorry IsNotCoughing IsNotShotTeammateCoach IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerSorry IsNotCoughing IsNotShotTeammateCoach IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
 	Response PlayerSorryCoach
 }
 
@@ -10150,7 +10149,7 @@ Response PlayerSorryFFCoach
 }
 Rule PlayerSorryFFCoach
 {
-	criteria ConceptPlayerSorry IsNotCoughing IsShotTeammateCoach IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerSorry IsNotCoughing IsShotTeammateCoach IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
 	Response PlayerSorryFFCoach
 }
 
@@ -10167,7 +10166,7 @@ Response PlayerThanksCoach
 }
 Rule PlayerThanksCoach
 {
-	criteria ConceptPlayerThanks IsNotCoughing  IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerThanks IsNotCoughing  IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
 	Response PlayerThanksCoach
 }
 
@@ -10338,7 +10337,7 @@ Response PlayerNegativeCoach
 }
 Rule PlayerNegativeCoach
 {
-	criteria ConceptPlayerNegative IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerNegative IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
 	Response PlayerNegativeCoach
 }
 
@@ -10380,7 +10379,7 @@ Response PlayerHeardBoomerCoach
 }
 Rule PlayerHeardBoomerCoach
 {
-	criteria ConceptPlayerHeardBoomer IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
+	criteria ConceptPlayerHeardBoomer IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach _auto_NotSpottedVehicle
 	Response PlayerHeardBoomerCoach
 }
 
@@ -10392,7 +10391,7 @@ Response PlayerHeardHunterCoach
 }
 Rule PlayerHeardHunterCoach
 {
-	criteria ConceptPlayerHeardHunter IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
+	criteria ConceptPlayerHeardHunter IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach _auto_NotSpottedVehicle
 	Response PlayerHeardHunterCoach
 }
 
@@ -10404,8 +10403,99 @@ Response PlayerHeardSmokerCoach
 }
 Rule PlayerHeardSmokerCoach
 {
-	criteria ConceptPlayerHeardSmoker IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
+	criteria ConceptPlayerHeardSmoker IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach _auto_NotSpottedVehicle
 	Response PlayerHeardSmokerCoach
+}
+
+Response PlayerHeardChargerCoach
+{
+	scene "scenes/Coach/HeardCharger01.vcd"  //We gotta Charger round.
+	scene "scenes/Coach/HeardCharger02.vcd"  //Gotta Charger round.
+	scene "scenes/Coach/HeardCharger03.vcd"  //I hear a Charger.
+	scene "scenes/Coach/HeardCharger04.vcd"  //I hear a charger, don't get charged and shit.
+}
+Rule PlayerHeardChargerCoach
+{
+	criteria ConceptPlayerHeardCharger IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach _auto_NotSpottedVehicle
+	Response PlayerHeardChargerCoach
+}
+
+Response PlayerHeardSpitterCoach
+{
+	scene "scenes/Coach/HeardSpitter01.vcd"  //I hear a spitter.
+	scene "scenes/Coach/HeardSpitter02.vcd"  //That sounds like a spitter.
+	scene "scenes/Coach/HeardSpitter03.vcd"  //Spitter's around.
+	scene "scenes/Coach/HeardSpitter04.vcd"  //That fat spittin' bitch is around.
+	scene "scenes/Coach/HeardSpitter05.vcd"  //I hear that fat woman.
+}
+Rule PlayerHeardSpitterCoach
+{
+	criteria ConceptPlayerHeardSpitter IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach _auto_NotSpottedVehicle
+	Response PlayerHeardSpitterCoach
+}
+
+Response PlayerHeardJockeyCoach
+{
+	scene "scenes/Coach/HeardJockey01.vcd"  //I hear a jockey.
+	scene "scenes/Coach/HeardJockey02.vcd"  //One of those little jockeys is around.
+	scene "scenes/Coach/HeardJockey03.vcd"  //That sounds like a little jockey.
+	scene "scenes/Coach/HeardJockey04.vcd"  //One of those leapin' on your back bitches is around.
+	scene "scenes/Coach/HeardJockey05.vcd"  //One of those leapin' on your back bitches is around.
+	scene "scenes/Coach/HeardJockey06.vcd"  //I hear one of those jockeys.  If I see it, I'm gonna shoot the shit out of it.
+}
+Rule PlayerHeardJockeyCoach
+{
+	criteria ConceptPlayerHeardJockey IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach _auto_NotSpottedVehicle
+	Response PlayerHeardJockeyCoach
+}
+
+Response PlayerHeardBoomerC1Coach
+{
+	scene "scenes/Coach/HeardSpecialC101.vcd"  //Ahh what the heck is that?!
+	scene "scenes/Coach/HeardSpecialC102.vcd"  //I don't like the sound of that one bit.
+	scene "scenes/Coach/HeardSpecialC103.vcd"  //Anyone know what that is?
+	scene "scenes/Coach/HeardSpecialC104.vcd"  //From the sounds of it, its about to get a whole lot worse.
+}
+Rule PlayerHeardBoomerC1Coach
+{
+	criteria ConceptPlayerHeardBoomer IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach C1M1orC1M2 NoKnowBoomer
+	Response PlayerHeardBoomerC1Coach
+}
+
+Rule PlayerHeardHunterC1Coach
+{
+	criteria ConceptPlayerHeardHunter IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach C1M1orC1M2 NoKnowHunter
+	Response PlayerHeardBoomerC1Coach
+}
+
+Rule PlayerHeardSmokerC1Coach
+{
+	criteria ConceptPlayerHeardSmoker IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach C1M1orC1M2 NoKnowSmoker
+	Response PlayerHeardBoomerC1Coach
+}
+
+Rule PlayerHeardChargerC1Coach
+{
+	criteria ConceptPlayerHeardCharger IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach C1M1orC1M2 NoKnowCharger
+	Response PlayerHeardBoomerC1Coach
+}
+
+Rule PlayerHeardSpitterC1Coach
+{
+	criteria ConceptPlayerHeardSpitter IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach C1M1orC1M2 NoKnowSpitter
+	Response PlayerHeardBoomerC1Coach
+}
+
+Response PlayerHeardJockeyC1Coach
+{
+	scene "scenes/Coach/HeardJockeyC101.vcd"  //What is that noise?
+	scene "scenes/Coach/HeardJockeyC102.vcd"  //What is that noise?
+	scene "scenes/Coach/HeardJockeyC103.vcd"  //Is that one of those little things?
+}
+Rule PlayerHeardJockeyC1Mechanic
+{
+	criteria ConceptPlayerHeardJockey IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach C1M1orC1M2 NoKnowJockey
+	Response PlayerHeardJockeyC1Mechanic
 }
 
 Response PlayerHeardTankCoach
@@ -10417,7 +10507,7 @@ Response PlayerHeardTankCoach
 }
 Rule PlayerHeardTankCoach
 {
-	criteria ConceptPlayerHeardTank IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach isNotmap_c1m1_hotel isNotmap_c1m2_streets
+	criteria ConceptPlayerHeardTank IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach isNotmap_c1m1_hotel isNotmap_c1m2_streets _auto_NotSpottedVehicle
 	Response PlayerHeardTankCoach
 }
 
@@ -10452,7 +10542,7 @@ Response PlayerHurrahCoach
 }
 Rule PlayerHurrahCoach
 {
-	criteria ConceptPlayerHurrah IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerHurrah IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
 	Response PlayerHurrahCoach
 }
 
@@ -10465,7 +10555,7 @@ Response PlayerWarnCarefulCoach
 }
 Rule PlayerWarnCarefulCoach
 {
-	criteria ConceptPlayerWarnCareful IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotSpeaking
+	criteria ConceptPlayerWarnCareful IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
 	Response PlayerWarnCarefulCoach
 }
 
@@ -10697,7 +10787,7 @@ Response GrabbingGasSCCoach
 Rule GrabbingGasSCCoach
 {
 	criteria ConceptPlayerEquippedScavengeItem IsCoach IsTalk IsTalkCoach IsNotAlone IsClosestSurvivorNear500 IsWorldTalkCoach NotSaidGrabbingCan
-	ApplyContext "SaidGrabbingCan:1:5"
+	ApplyContext "SaidGrabbingCan:1:8"
 	Response GrabbingGasSCCoach
 }
 

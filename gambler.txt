@@ -6043,7 +6043,7 @@ Response PlayerToTheRescueRosGambler
 }
 Rule PlayerToTheRescueRosGambler
 {
-	criteria ConceptPlayerToTheRescue IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerToTheRescue IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
 	Response PlayerToTheRescueRosGambler
 }
 
@@ -9803,7 +9803,7 @@ Response PlayerHurryUpGambler
 }
 Rule PlayerHurryUpGambler
 {
-	criteria ConceptPlayerHurryUp IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerHurryUp IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
 	Response PlayerHurryUpGambler
 }
 
@@ -9817,7 +9817,7 @@ Response PlayerHurryUpC4M2Gambler
 }
 Rule PlayerHurryUpC4M2Gambler
 {
-	criteria ConceptPlayerHurryUp IsGambler IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkGambler ismap_c4m2_sugarmill_a IsNotSaidSafeSpotAhead IsNotZombiePresentTank IsWorldTalkGambler _auto_IsGamblerInWitchville IsNotSpeaking
+	criteria ConceptPlayerHurryUp IsGambler IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkGambler ismap_c4m2_sugarmill_a IsNotSaidSafeSpotAhead IsNotZombiePresentTank IsWorldTalkGambler _auto_IsGamblerInWitchville
 	Response PlayerHurryUpC4M2Gambler
 }
 
@@ -9847,7 +9847,7 @@ Response PlayerLeadOnGambler
 }
 Rule PlayerLeadOnGambler
 {
-	criteria ConceptPlayerLeadOn IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerLeadOn IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
 	Response PlayerLeadOnGambler
 }
 
@@ -9861,7 +9861,7 @@ Response PlayerMoveOnGambler
 }
 Rule PlayerMoveOnGambler
 {
-	criteria ConceptPlayerMoveOn IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerMoveOn IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
 	Response PlayerMoveOnGambler
 }
 
@@ -9909,7 +9909,7 @@ Response PlayerAskReadyGambler
 }
 Rule PlayerAskReadyGambler
 {
-	criteria ConceptPlayerAskReady IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerAskReady IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
 	Response PlayerAskReadyGambler
 }
 
@@ -9921,7 +9921,7 @@ Response PlayerAskReadyC1Gambler
 }
 Rule PlayerAskReadyC1Gambler
 {
-	criteria ConceptPlayerAskReady IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler ismap_c1m1_hotelC1 NoKnowNames IsNotSpeaking
+	criteria ConceptPlayerAskReady IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler ismap_c1m1_hotelC1 NoKnowNames
 	Response PlayerAskReadyC1Gambler
 }
 
@@ -9935,7 +9935,7 @@ Response PlayerImWithYouGambler
 }
 Rule PlayerImWithYouGambler
 {
-	criteria ConceptPlayerImWithYou IsNotCoughing  IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerImWithYou IsNotCoughing  IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
 	Response PlayerImWithYouGambler
 }
 
@@ -9961,7 +9961,7 @@ Response PlayerLaughGambler
 }
 Rule PlayerLaughGambler
 {
-	criteria ConceptPlayerLaugh IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotVersus IsNotSpeaking
+	criteria ConceptPlayerLaugh IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotVersus
 	Response PlayerLaughGambler
 }
 
@@ -9975,7 +9975,7 @@ Response PlayerLostCallGambler
 }
 Rule PlayerLostCallGambler
 {
-	criteria ConceptPlayerLostCall IsNotCoughing  IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerLostCall IsNotCoughing  IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
 	Response PlayerLostCallGambler
 }
 
@@ -9994,7 +9994,7 @@ Response PlayerNiceJobResponseGambler
 }
 Rule PlayerNiceJobResponseGambler
 {
-	criteria ConceptPlayerNiceJob IsNotCoughing  IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerNiceJob IsNotCoughing  IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
 	Response PlayerNiceJobResponseGambler
 }
 
@@ -10015,7 +10015,7 @@ Response PlayerNoGambler
 }
 Rule PlayerNoGambler
 {
-	criteria ConceptPlayerNo IsNotCoughing  IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerNo IsNotCoughing  IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
 	Response PlayerNoGambler
 }
 
@@ -10026,13 +10026,13 @@ Response PlayerNoFemaleGambler
 }
 Rule PlayerNoFemaleGambler
 {
-	criteria ConceptPlayerNo IsNotCoughing IsGambler IsTalk IsTalkGambler SubjectIsProducer IsSubjectDistNear200 ChanceToFire30Percent IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerNo IsNotCoughing IsGambler IsTalk IsTalkGambler SubjectIsProducer IsSubjectDistNear200 ChanceToFire30Percent IsWorldTalkGambler
 	Response PlayerNoFemaleGambler
 }
 
 Rule PlayerNoZoeyGambler
 {
-	criteria ConceptPlayerNo IsNotCoughing IsGambler IsTalk IsTalkGambler SubjectIsTeenGirl IsSubjectDistNear200 ChanceToFire30Percent IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerNo IsNotCoughing IsGambler IsTalk IsTalkGambler SubjectIsTeenGirl IsSubjectDistNear200 ChanceToFire30Percent IsWorldTalkGambler
 	Response PlayerNoFemaleGambler
 }
 
@@ -10043,7 +10043,7 @@ Response PlayerNoEllisGambler
 }
 Rule PlayerNoEllisGambler
 {
-	criteria ConceptPlayerNo IsNotCoughing IsGambler IsTalk IsTalkGambler SubjectIsMechanic IsSubjectDistNear200 ChanceToFire30Percent IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerNo IsNotCoughing IsGambler IsTalk IsTalkGambler SubjectIsMechanic IsSubjectDistNear200 ChanceToFire30Percent IsWorldTalkGambler
 	Response PlayerNoEllisGambler
 }
 
@@ -10094,7 +10094,7 @@ Response PlayerProfanityGambler
 }
 Rule PlayerProfanityGambler
 {
-	criteria ConceptPlayerAnswerLostCall IsNotCoughing  IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerAnswerLostCall IsNotCoughing  IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
 	Response PlayerProfanityGambler
 }
 
@@ -10118,7 +10118,7 @@ Response PlayerSorryGambler
 }
 Rule PlayerSorryGambler
 {
-	criteria ConceptPlayerSorry IsNotCoughing IsNotShotTeammateGambler IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerSorry IsNotCoughing IsNotShotTeammateGambler IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
 	Response PlayerSorryGambler
 }
 
@@ -10133,7 +10133,7 @@ Response PlayerSorryFFGambler
 }
 Rule PlayerSorryFFGambler
 {
-	criteria ConceptPlayerSorry IsNotCoughing IsShotTeammateGambler IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerSorry IsNotCoughing IsShotTeammateGambler IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
 	Response PlayerSorryFFGambler
 }
 
@@ -10146,7 +10146,7 @@ Response PlayerThanksGambler
 }
 Rule PlayerThanksGambler
 {
-	criteria ConceptPlayerThanks IsNotCoughing  IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerThanks IsNotCoughing  IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
 	Response PlayerThanksGambler
 }
 
@@ -10268,7 +10268,7 @@ Response YouAreWelcomeProducerGambler
 }
 Rule YouAreWelcomeProducerGambler
 {
-	criteria ConceptYouAreWelcome IsNotCoughing IsNotSpeaking IsGambler IsTalk IsTalkGambler FromIsProducer TimeSinceGroupInCombat05 ChanceToFire30Percent IsWorldTalkGambler
+	criteria ConceptYouAreWelcome IsNotCoughing IsNotSpeaking IsGambler IsTalk IsTalkGambler FromIsProducer TimeSinceGroupInCombat05 ChanceToFire30Percent IsWorldTalkGambler isNotmap_c1m1_hotel isNotmap_c1m2_streets
 	Response YouAreWelcomeProducerGambler
 }
 
@@ -10369,7 +10369,7 @@ Response PlayerNegativeGambler
 }
 Rule PlayerNegativeGambler
 {
-	criteria ConceptPlayerNegative IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerNegative IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
 	Response PlayerNegativeGambler
 }
 
@@ -10422,7 +10422,7 @@ Response PlayerHeardBoomerGambler
 }
 Rule PlayerHeardBoomerGambler
 {
-	criteria ConceptPlayerHeardBoomer IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
+	criteria ConceptPlayerHeardBoomer IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler _auto_NotSpottedVehicle
 	Response PlayerHeardBoomerGambler
 }
 
@@ -10434,7 +10434,7 @@ Response PlayerHeardHunterGambler
 }
 Rule PlayerHeardHunterGambler
 {
-	criteria ConceptPlayerHeardHunter IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
+	criteria ConceptPlayerHeardHunter IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler _auto_NotSpottedVehicle
 	Response PlayerHeardHunterGambler
 }
 
@@ -10447,8 +10447,112 @@ Response PlayerHeardSmokerGambler
 }
 Rule PlayerHeardSmokerGambler
 {
-	criteria ConceptPlayerHeardSmoker IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
+	criteria ConceptPlayerHeardSmoker IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler _auto_NotSpottedVehicle
 	Response PlayerHeardSmokerGambler
+}
+
+Response PlayerHeardChargerGambler
+{
+	scene "scenes/Gambler/HeardCharger01.vcd"  //Keep your eyes peeled, I hear a charger.
+	scene "scenes/Gambler/HeardCharger02.vcd"  //I hear a charger.
+	scene "scenes/Gambler/HeardCharger03.vcd"  //Charger around, get ready.
+	scene "scenes/Gambler/HeardCharger04.vcd"  //Charger around, get ready.
+	scene "scenes/Gambler/HeardCharger05.vcd"  //Do you hear that charger?
+	scene "scenes/Gambler/HeardCharger06.vcd"  //I hear a charger.
+	scene "scenes/Gambler/HeardCharger07.vcd"  //You hear that charger?
+}
+Rule PlayerHeardChargerGambler
+{
+	criteria ConceptPlayerHeardCharger IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler _auto_NotSpottedVehicle
+	Response PlayerHeardChargerGambler
+}
+
+Response PlayerHeardSpitterGambler
+{
+	scene "scenes/Gambler/HeardSpitter01.vcd"  //Spitter around.
+	scene "scenes/Gambler/HeardSpitter02.vcd"  //I hear a spitter.
+	scene "scenes/Gambler/HeardSpitter03.vcd"  //There's a spitter around.
+	scene "scenes/Gambler/HeardSpitter04.vcd"  //There's a spitter around.
+	scene "scenes/Gambler/HeardSpitter05.vcd"  //I hear a spitter.
+	scene "scenes/Gambler/HeardSpitter06.vcd"  //There's a spitter around.
+}
+Rule PlayerHeardSpitterGambler
+{
+	criteria ConceptPlayerHeardSpitter IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler _auto_NotSpottedVehicle
+	Response PlayerHeardSpitterGambler
+}
+
+Response PlayerHeardJockeyGambler
+{
+	scene "scenes/Gambler/HeardJockey01.vcd"  //I can hear a jockey.
+	scene "scenes/Gambler/HeardJockey02.vcd"  //Jockey's around.
+	scene "scenes/Gambler/HeardJockey03.vcd"  //One of those little jockey bastards is around.
+	scene "scenes/Gambler/HeardJockey04.vcd"  //I can hear a jockey.
+	scene "scenes/Gambler/HeardJockey05.vcd"  //Jockey's around.
+	scene "scenes/Gambler/HeardJockey06.vcd"  //One of those little jockey bastards is around.
+}
+Rule PlayerHeardJockeyGambler
+{
+	criteria ConceptPlayerHeardJockey IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler _auto_NotSpottedVehicle
+	Response PlayerHeardJockeyGambler
+}
+
+Response PlayerHeardBoomerC1Gambler
+{
+	scene "scenes/Gambler/HeardSpecialC101.vcd"  //Is someone beating a horse?
+	scene "scenes/Gambler/HeardSpecialC102.vcd"  //What is that? Is somebody beating a horse or what?
+	scene "scenes/Gambler/HeardSpecialC103.vcd"  //What in the hell is that noise?
+	scene "scenes/Gambler/HeardSpecialC104.vcd"  //You hear that? I guess zombies weren't bad enough.
+	scene "scenes/Gambler/HeardSpecialC105.vcd"  //You hear that?
+	scene "scenes/Gambler/HeardSpecialC106.vcd"  //Can you hear that?
+	scene "scenes/Gambler/HeardSpecialC107.vcd"  //What is that noise?
+	scene "scenes/Gambler/HeardSpecialC108.vcd"  //I have no idea what that noise is.
+	scene "scenes/Gambler/HeardSpecialC109.vcd"  //Something we're gonna have to kill.
+}
+Rule PlayerHeardBoomerC1Gambler
+{
+	criteria ConceptPlayerHeardBoomer IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler C1M1orC1M2 NoKnowBoomer
+	Response PlayerHeardBoomerC1Gambler
+}
+
+Rule PlayerHeardHunterC1Gambler
+{
+	criteria ConceptPlayerHeardHunter IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler C1M1orC1M2 NoKnowHunter
+	Response PlayerHeardBoomerC1Gambler
+}
+
+Rule PlayerHeardSmokerC1Gambler
+{
+	criteria ConceptPlayerHeardSmoker IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler C1M1orC1M2 NoKnowSmoker
+	Response PlayerHeardBoomerC1Gambler
+}
+
+Rule PlayerHeardChargerC1Gambler
+{
+	criteria ConceptPlayerHeardCharger IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler C1M1orC1M2 NoKnowCharger
+	Response PlayerHeardBoomerC1Gambler
+}
+
+Rule PlayerHeardSpitterC1Gambler
+{
+	criteria ConceptPlayerHeardSpitter IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler C1M1orC1M2 NoKnowSpitter
+	Response PlayerHeardBoomerC1Gambler
+}	
+
+Response PlayerHeardJockeyC1Gambler
+{
+	scene "scenes/Gambler/HeardSpecialC103.vcd"  //What in the hell is that noise?
+	scene "scenes/Gambler/HeardSpecialC104.vcd"  //You hear that? I guess zombies weren't bad enough.
+	scene "scenes/Gambler/HeardSpecialC105.vcd"  //You hear that?
+	scene "scenes/Gambler/HeardSpecialC106.vcd"  //Can you hear that?
+	scene "scenes/Gambler/HeardSpecialC107.vcd"  //What is that noise?
+	scene "scenes/Gambler/HeardSpecialC108.vcd"  //I have no idea what that noise is.
+	scene "scenes/Gambler/HeardSpecialC109.vcd"  //Something we're gonna have to kill.
+}
+Rule PlayerHeardJockeyC1Gambler
+{
+	criteria ConceptPlayerHeardJockey IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler C1M1orC1M2 NoKnowJockey
+	Response PlayerHeardJockeyC1Gambler
 }
 
 Response PlayerHeardTankGambler
@@ -10462,7 +10566,7 @@ Response PlayerHeardTankGambler
 }
 Rule PlayerHeardTankGambler
 {
-	criteria ConceptPlayerHeardTank IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler isNotmap_c1m2_streets
+	criteria ConceptPlayerHeardTank IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler isNotmap_c1m1_hotel isNotmap_c1m2_streets _auto_NotSpottedVehicle
 	Response PlayerHeardTankGambler
 }
 
@@ -10481,7 +10585,7 @@ Response PlayerHurrahGambler
 }
 Rule PlayerHurrahGambler
 {
-	criteria ConceptPlayerHurrah IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerHurrah IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
 	Response PlayerHurrahGambler
 }
 
@@ -10493,7 +10597,7 @@ Response PlayerWarnCarefulGambler
 }
 Rule PlayerWarnCarefulGambler
 {
-	criteria ConceptPlayerWarnCareful IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotSpeaking
+	criteria ConceptPlayerWarnCareful IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
 	Response PlayerWarnCarefulGambler
 }
 
@@ -10723,7 +10827,7 @@ Response GrabbingGasSCGambler
 Rule GrabbingGasSCGambler
 {
 	criteria ConceptPlayerEquippedScavengeItem IsGambler IsTalk IsNotAlone IsClosestSurvivorNear500 IsTalkGambler IsWorldTalkGambler NotSaidGrabbingCan
-	ApplyContext "SaidGrabbingCan:1:5"
+	ApplyContext "SaidGrabbingCan:1:8"
 	Response GrabbingGasSCGambler
 }
 

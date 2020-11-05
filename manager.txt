@@ -2734,7 +2734,7 @@ Rule SurvivorSpottedLaserSightsManager
 
 Rule SurvivorSpottedLaserSightsAutoManager
 {
-	criteria ConceptPlayerSpotWeapon IsNotCoughing IsManager IsTalk IsTalkManager IsSmartLookAuto IsNotInSafeSpot IsNotAlone IsNotSaidSpotAdrenaline IsNotSaidSpot IsLaserSights IsWorldTalkManager IsNotSpeakingWeight0
+	criteria ConceptPlayerSpotWeapon IsNotCoughing IsManager IsTalk IsTalkManager IsSmartLookAuto IsNotInSafeSpot IsNotAlone IsNotSaidSpotWeapons IsNotSaidSpot IsLaserSights IsWorldTalkManager IsNotSpeakingWeight0
 	ApplyContext "SaidSpotWeapons:1:5,SaidSpot:1:20"
 	applycontexttoworld
 	Response SurvivorSpottedAdrenalineManager
@@ -5282,7 +5282,7 @@ Response L4D1PlayerHurryUpManager
 }
 Rule L4D1PlayerHurryUpManager
 {
-	criteria ConceptPlayerHurryUp IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotSpeaking
+	criteria ConceptPlayerHurryUp IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager
 	Response L4D1PlayerHurryUpManager
 }
 
@@ -5310,7 +5310,7 @@ Response L4D1PlayerLeadOnManager
 }
 Rule L4D1PlayerLeadOnManager
 {
-	criteria ConceptPlayerLeadOn IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotSpeaking
+	criteria ConceptPlayerLeadOn IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager
 	Response L4D1PlayerLeadOnManager
 }
 
@@ -5327,7 +5327,7 @@ Response L4D1PlayerMoveOnManager
 }
 Rule L4D1PlayerMoveOnManager
 {
-	criteria ConceptPlayerMoveOn IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotSpeaking
+	criteria ConceptPlayerMoveOn IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager
 	Response L4D1PlayerMoveOnManager
 }
 
@@ -5376,7 +5376,7 @@ Response L4D1PlayerAskReadyManager
 }
 Rule L4D1PlayerAskReadyManager
 {
-	criteria ConceptPlayerAskReady IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotSpeaking
+	criteria ConceptPlayerAskReady IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager
 	Response L4D1PlayerAskReadyManager
 }
 
@@ -5388,7 +5388,7 @@ Response L4D1PlayerImWithYouManager
 }
 Rule L4D1PlayerImWithYouManager
 {
-	criteria ConceptPlayerImWithYou IsNotCoughing  IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotSpeaking
+	criteria ConceptPlayerImWithYou IsNotCoughing  IsManager IsTalk IsTalkManager IsWorldTalkManager
 	Response L4D1PlayerImWithYouManager
 }
 
@@ -5418,7 +5418,7 @@ Response L4D1PlayerLaughManager
 }
 Rule L4D1PlayerLaughManager
 {
-	criteria ConceptPlayerLaugh IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotVersus IsNotSpeaking
+	criteria ConceptPlayerLaugh IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotVersus
 	Response L4D1PlayerLaughManager
 }
 
@@ -5432,7 +5432,7 @@ Response L4D1PlayerLostCallManager
 }
 Rule L4D1PlayerLostCallManager
 {
-	criteria ConceptPlayerLostCall IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotSpeaking
+	criteria ConceptPlayerLostCall IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager
 	Response L4D1PlayerLostCallManager
 }
 
@@ -5448,7 +5448,7 @@ Response L4D1PlayerNiceJobResponseManager
 }
 Rule L4D1PlayerNiceJobResponseManager
 {
-	criteria ConceptPlayerNiceJob IsNotCoughing  IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotSpeaking
+	criteria ConceptPlayerNiceJob IsNotCoughing  IsManager IsTalk IsTalkManager IsWorldTalkManager
 	Response L4D1PlayerNiceJobResponseManager
 }
 
@@ -5464,7 +5464,7 @@ Response L4D1PlayerNoManager
 }
 Rule L4D1PlayerNoManager
 {
-	criteria ConceptPlayerNo IsNotCoughing  IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotSpeaking
+	criteria ConceptPlayerNo IsNotCoughing  IsManager IsTalk IsTalkManager IsWorldTalkManager
 	Response L4D1PlayerNoManager
 }
 
@@ -5483,7 +5483,7 @@ Response L4D1PlayerProfanityManager
 }
 Rule L4D1PlayerProfanityManager
 {
-	criteria ConceptPlayerAnswerLostCall IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotSpeaking
+	criteria ConceptPlayerAnswerLostCall IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager
 	Response L4D1PlayerProfanityManager
 }
 
@@ -5494,7 +5494,7 @@ Response L4D1PlayerSorryManager
 }
 Rule L4D1PlayerSorryManager
 {
-	criteria ConceptPlayerSorry IsNotCoughing IsNotShotTeammateManager IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotSpeaking
+	criteria ConceptPlayerSorry IsNotCoughing IsNotShotTeammateManager IsManager IsTalk IsTalkManager IsWorldTalkManager
 	Response L4D1PlayerSorryManager
 }
 
@@ -5508,7 +5508,7 @@ Response L4D1PlayerSorryFFManager
 }
 Rule L4D1PlayerSorryFFManager
 {
-	criteria ConceptPlayerSorry IsNotCoughing IsManager IsTalk IsTalkManager IsShotTeammateManager IsWorldTalkManager IsNotSpeaking
+	criteria ConceptPlayerSorry IsNotCoughing IsManager IsTalk IsTalkManager IsShotTeammateManager IsWorldTalkManager
 	Response L4D1PlayerSorryFFManager
 }
 
@@ -5530,7 +5530,7 @@ Response L4D1PlayerThanksManager
 }
 Rule L4D1PlayerThanksManager
 {
-	criteria ConceptPlayerThanks IsNotCoughing  IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotSpeaking
+	criteria ConceptPlayerThanks IsNotCoughing  IsManager IsTalk IsTalkManager IsWorldTalkManager
 	Response L4D1PlayerThanksManager
 }
 
@@ -5545,7 +5545,7 @@ Response L4D1PlayerYesManager
 }
 Rule L4D1PlayerYesManager
 {
-	criteria ConceptPlayerYes IsNotCoughing  IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotSpeaking
+	criteria ConceptPlayerYes IsNotCoughing  IsManager IsTalk IsTalkManager IsWorldTalkManager
 	Response L4D1PlayerYesManager
 }
 
@@ -5577,7 +5577,7 @@ Response PlayerYellRunManager
 }
 Rule PlayerYellRunManager
 {
-	criteria ConceptPlayerYellRun IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotSpeaking
+	criteria ConceptPlayerYellRun IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager
 	Response PlayerYellRunManager
 }
 
@@ -5600,7 +5600,7 @@ Response L4D1PlayerNegativeManager
 }
 Rule L4D1PlayerNegativeManager
 {
-	criteria ConceptPlayerNegative IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotSpeaking
+	criteria ConceptPlayerNegative IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager
 	Response L4D1PlayerNegativeManager
 }
 
@@ -5650,7 +5650,7 @@ Response PlayerHurrahManager
 }
 Rule PlayerHurrahManager
 {
-	criteria ConceptPlayerHurrah IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotSpeaking
+	criteria ConceptPlayerHurrah IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager
 	Response PlayerHurrahManager
 }
 
@@ -5669,7 +5669,7 @@ Response PlayerWarnCarefulManager
 }
 Rule PlayerWarnCarefulManager
 {
-	criteria ConceptPlayerWarnCareful IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotSpeaking
+	criteria ConceptPlayerWarnCareful IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager
 	Response PlayerWarnCarefulManager
 }
 
@@ -5732,7 +5732,7 @@ Response GrabbingGasSCManager
 Rule GrabbingGasSCManager
 {
 	criteria ConceptPlayerEquippedScavengeItem IsManager IsTalk IsNotAlone IsClosestSurvivorNear500 IsTalkManager IsWorldTalkManager NotSaidGrabbingCan 
-	ApplyContext "SaidGrabbingCan:1:5"
+	ApplyContext "SaidGrabbingCan:1:8"
 	Response GrabbingGasSCManager
 }
 
@@ -6239,6 +6239,12 @@ Rule L4D1PlayerWarnHeardBoomerManager
 	Response L4D1PlayerWarnHeardBoomerManager
 }
 
+Rule PlayerHeardBoomerManager
+{
+	criteria ConceptPlayerHeardBoomer IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager _auto_NotSpottedVehicle
+	Response L4D1PlayerWarnHeardBoomerManager
+}
+
 Response L4D1PlayerWarnHeardHunterManager
 {
 	scene "scenes/Manager/HeardHunter01.vcd"  //Watch your back, I hear a Hunter.
@@ -6260,6 +6266,12 @@ Rule L4D1PlayerWarnHeardHunterManager
 	Response L4D1PlayerWarnHeardHunterManager
 }
 
+Rule PlayerHeardHunterManager
+{
+	criteria ConceptPlayerHeardHunter IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager _auto_NotSpottedVehicle
+	Response L4D1PlayerWarnHeardHunterManager
+}
+
 Response L4D1PlayerWarnHeardSmokerManager
 {
 	scene "scenes/Manager/HeardSmoker01.vcd"  //There's a Smoker around here.
@@ -6276,6 +6288,12 @@ Rule L4D1PlayerWarnHeardSmokerManager
 	criteria ConceptPlayerWarnHearZombie IsSmokerClass IsNotCoughing IsNotAlone IsClosestSurvivorNear1200 IsNotInCheckpoint IsNotInSafeSpot IsManager IsNotWarnHeardSmoker NotInCombat IsNotSaidSpecialWarn IsTalk IsTalkManager IsWorldTalkManager _auto_NotSpottedVehicle
 	ApplyContext "WarnHeardSmoker:1:300,SaidSpecialWarn:1:30"
 	applycontexttoworld
+	Response L4D1PlayerWarnHeardSmokerManager
+}
+
+Rule PlayerHeardSmokerManager
+{
+	criteria ConceptPlayerHeardSmoker IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager _auto_NotSpottedVehicle
 	Response L4D1PlayerWarnHeardSmokerManager
 }
 
@@ -6410,7 +6428,7 @@ Rule L4D1SurvivorCoughingManager
 
 Rule L4D1SurvivorCoughingDeathManager
 {
-	criteria ConceptPlayerDeath IsCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotVersus IsNotSpeaking
+	criteria ConceptPlayerDeath IsCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotVersus
 	Response L4D1SurvivorCoughingManager
 }
 
@@ -6429,7 +6447,7 @@ Response L4D1SurvivorDeathManager
 }
 Rule L4D1SurvivorDeathManager
 {
-	criteria ConceptPlayerDeath IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotVersus IsNotSpeaking
+	criteria ConceptPlayerDeath IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotVersus
 	Response L4D1SurvivorDeathManager
 }
 
@@ -7798,6 +7816,27 @@ Rule SurvivorSpottedM60AutoManager
 	ApplyContext "SaidSpotWeapons:1:5,SaidSpot:1:20"
 	applycontexttoworld
 	Response SurvivorSpottedM60Manager
+}
+
+Response SurvivorSpottedChainsawManager
+{
+	scene "scenes/Manager/GenericResponses16.vcd"  //Hell yes.
+	scene "scenes/Manager/GenericResponses23.vcd"  //Works for me.
+}
+Rule SurvivorSpottedChainsawManager
+{
+	criteria ConceptPlayerSpotWeapon IsNotCoughing IsManager IsTalk IsTalkManager IsNotSaidSomeoneDied IsNotSmartLookAuto IsChainsaw IsWorldTalkManager _auto_NotSpottedVehicle
+	ApplyContext "SaidSpotWeapons:1:5,SaidSpot:1:20"
+	applycontexttoworld
+	Response SurvivorSpottedChainsawManager
+}
+
+Rule SurvivorSpottedChainsawAutoManager
+{
+	criteria ConceptPlayerSpotWeapon IsNotCoughing IsManager IsTalk IsTalkManager IsNotSaidSomeoneDied IsSmartLookAuto IsNotInSafeSpot IsNotAlone IsNotSaidSpotWeapons IsNotSaidSpot IsChainsaw IsWorldTalkManager IsNotSpeakingWeight0 _auto_NotSpottedVehicle
+	ApplyContext "SaidSpotWeapons:1:5,SaidSpot:1:20"
+	applycontexttoworld
+	Response SurvivorSpottedChainsawManager
 }
 
 //--------------------------------------------------------------------------------------------------------------

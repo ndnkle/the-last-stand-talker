@@ -3599,7 +3599,7 @@ Rule SurvivorSpottedLaserSightsBiker
 
 Rule SurvivorSpottedLaserSightsAutoBiker
 {
-	criteria ConceptPlayerSpotWeapon IsNotCoughing IsBiker IsTalk IsTalkBiker IsSmartLookAuto IsNotInSafeSpot IsNotAlone IsNotSaidSpotAdrenaline IsNotSaidSpot IsLaserSights IsWorldTalkBiker IsNotSpeakingWeight0
+	criteria ConceptPlayerSpotWeapon IsNotCoughing IsBiker IsTalk IsTalkBiker IsSmartLookAuto IsNotInSafeSpot IsNotAlone IsNotSaidSpotWeapons IsNotSaidSpot IsLaserSights IsWorldTalkBiker IsNotSpeakingWeight0
 	ApplyContext "SaidSpotWeapons:1:5,SaidSpot:1:20"
 	applycontexttoworld
 	Response SurvivorSpottedAdrenalineBiker
@@ -4146,7 +4146,7 @@ Response PlayerToTheRescueRosBiker
 }
 Rule PlayerToTheRescueRosBiker
 {
-	criteria ConceptPlayerToTheRescue IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerToTheRescue IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
 	Response PlayerToTheRescueRosBiker
 }
 
@@ -6556,7 +6556,7 @@ Response L4D1PlayerHurryUpBiker
 }
 Rule L4D1PlayerHurryUpBiker
 {
-	criteria ConceptPlayerHurryUp IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerHurryUp IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
 	Response L4D1PlayerHurryUpBiker
 }
 
@@ -6591,7 +6591,7 @@ Response L4D1PlayerLeadOnBiker
 }
 Rule L4D1PlayerLeadOnBiker
 {
-	criteria ConceptPlayerLeadOn IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerLeadOn IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
 	Response L4D1PlayerLeadOnBiker
 }
 
@@ -6611,7 +6611,7 @@ Response L4D1PlayerMoveOnBiker
 }
 Rule L4D1PlayerMoveOnBiker
 {
-	criteria ConceptPlayerMoveOn IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerMoveOn IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
 	Response L4D1PlayerMoveOnBiker
 }
 
@@ -6666,7 +6666,7 @@ Response L4D1PlayerAskReadyBiker
 }
 Rule L4D1PlayerAskReadyBiker
 {
-	criteria ConceptPlayerAskReady IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerAskReady IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
 	Response L4D1PlayerAskReadyBiker
 }
 
@@ -6685,7 +6685,7 @@ Response L4D1PlayerImWithYouBiker
 }
 Rule L4D1PlayerImWithYouBiker
 {
-	criteria ConceptPlayerImWithYou IsNotCoughing  IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerImWithYou IsNotCoughing  IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
 	Response L4D1PlayerImWithYouBiker
 }
 
@@ -6705,7 +6705,7 @@ Response L4D1PlayerLaughBiker
 }
 Rule L4D1PlayerLaughBiker
 {
-	criteria ConceptPlayerLaugh IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotVersus IsNotSpeaking
+	criteria ConceptPlayerLaugh IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotVersus
 	Response L4D1PlayerLaughBiker
 }
 
@@ -6718,7 +6718,7 @@ Response L4D1PlayerLostCallBiker
 }
 Rule L4D1PlayerLostCallBiker
 {
-	criteria ConceptPlayerLostCall IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerLostCall IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
 	Response L4D1PlayerLostCallBiker
 }
 
@@ -6746,7 +6746,7 @@ Response L4D1PlayerNiceJobResponseBiker
 }
 Rule L4D1PlayerNiceJobResponseBiker
 {
-	criteria ConceptPlayerNiceJob IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerNiceJob IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
 	Response L4D1PlayerNiceJobResponseBiker
 }
 
@@ -6772,7 +6772,7 @@ Response L4D1PlayerNoBiker
 }
 Rule L4D1PlayerNoBiker
 {
-	criteria ConceptPlayerNo IsNotCoughing  IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerNo IsNotCoughing  IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
 	Response L4D1PlayerNoBiker
 }
 
@@ -6794,7 +6794,7 @@ Response L4D1PlayerProfanityBiker
 }
 Rule L4D1PlayerProfanityBiker
 {
-	criteria ConceptPlayerAnswerLostCall IsNotCoughing  IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerAnswerLostCall IsNotCoughing  IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
 	Response L4D1PlayerProfanityBiker
 }
 
@@ -6808,7 +6808,7 @@ Response L4D1PlayerSorryBiker
 }
 Rule L4D1PlayerSorryBiker
 {
-	criteria ConceptPlayerSorry IsNotCoughing IsNotShotTeammateBiker IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerSorry IsNotCoughing IsNotShotTeammateBiker IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
 	Response L4D1PlayerSorryBiker
 }
 
@@ -6829,7 +6829,7 @@ Response L4D1PlayerSorryFFBiker
 }
 Rule L4D1PlayerSorryFFBiker
 {
-	criteria ConceptPlayerSorry IsNotCoughing IsShotTeammateBiker IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerSorry IsNotCoughing IsShotTeammateBiker IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
 	Response L4D1PlayerSorryFFBiker
 }
 
@@ -6851,7 +6851,7 @@ Response L4D1PlayerThanksBiker
 }
 Rule L4D1PlayerThanksBiker
 {
-	criteria ConceptPlayerThanks IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerThanks IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
 	Response L4D1PlayerThanksBiker
 }
 
@@ -6866,7 +6866,7 @@ Response L4D1PlayerYesBiker
 }
 Rule L4D1PlayerYesBiker
 {
-	criteria ConceptPlayerYes IsNotCoughing  IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerYes IsNotCoughing  IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
 	Response L4D1PlayerYesBiker
 }
 
@@ -6887,7 +6887,7 @@ Response L4D1PlayerYouAreWelcomeBiker
 }
 Rule L4D1PlayerYouAreWelcomeBiker
 {
-	criteria ConceptPlayerYouAreWelcome IsNotCoughing  IsBiker IsTalk IsTalkBiker IsNotSpeaking IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerYouAreWelcome IsNotCoughing  IsBiker IsTalk IsTalkBiker IsNotSpeaking IsWorldTalkBiker
 	Response L4D1PlayerYouAreWelcomeBiker
 }
 
@@ -6904,7 +6904,7 @@ Response PlayerYellRunBiker
 }
 Rule PlayerYellRunBiker
 {
-	criteria ConceptPlayerYellRun IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerYellRun IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
 	Response PlayerYellRunBiker
 }
 
@@ -6926,7 +6926,7 @@ Response L4D1PlayerNegativeBiker
 }
 Rule L4D1PlayerNegativeBiker
 {
-	criteria ConceptPlayerNegative IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerNegative IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
 	Response L4D1PlayerNegativeBiker
 }
 
@@ -6987,7 +6987,7 @@ Response PlayerHurrahBiker
 }
 Rule PlayerHurrahBiker
 {
-	criteria ConceptPlayerHurrah IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerHurrah IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker 
 	Response PlayerHurrahBiker
 }
 
@@ -7005,7 +7005,7 @@ Response PlayerWarnCarefulBiker
 }
 Rule PlayerWarnCarefulBiker
 {
-	criteria ConceptPlayerWarnCareful IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerWarnCareful IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
 	Response PlayerWarnCarefulBiker
 }
 
@@ -7070,7 +7070,7 @@ Response GrabbingGasSCBiker
 Rule GrabbingGasSCBiker
 {
 	criteria ConceptPlayerEquippedScavengeItem IsBiker IsTalk IsNotAlone IsClosestSurvivorNear500 IsTalkBiker IsWorldTalkBiker NotSaidGrabbingCan 
-	ApplyContext "SaidGrabbingCan:1:5"
+	ApplyContext "SaidGrabbingCan:1:8"
 	Response GrabbingGasSCBiker
 }
 
@@ -7547,6 +7547,12 @@ Rule L4D1PlayerWarnHeardBoomerBiker
 	Response L4D1PlayerWarnHeardBoomerBiker
 }
 
+Rule PlayerHeardBoomerBiker
+{
+	criteria ConceptPlayerHeardBoomer IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker _auto_NotSpottedVehicle
+	Response L4D1PlayerWarnHeardBoomerBiker
+}
+
 Response L4D1PlayerWarnHeardCanadianBoomerBiker
 {
 	scene "scenes/Biker/DLC2CanadaSpecial01.vcd"  //I HEAR A BOOMER! And it sounded Canadian!
@@ -7579,6 +7585,12 @@ Rule L4D1PlayerWarnHeardHunterBiker
 	Response L4D1PlayerWarnHeardHunterBiker
 }
 
+Rule PlayerHeardHunterBiker
+{
+	criteria ConceptPlayerHeardHunter IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker _auto_NotSpottedVehicle
+	Response L4D1PlayerWarnHeardHunterBiker
+}
+
 Response L4D1PlayerWarnHeardSmokerBiker
 {
 	scene "scenes/Biker/HeardSmoker01.vcd"  //Man, there's a Smoker around here.
@@ -7594,6 +7606,12 @@ Rule L4D1PlayerWarnHeardSmokerBiker
 	criteria ConceptPlayerWarnHearZombie IsSmokerClass IsNotCoughing IsNotAlone IsClosestSurvivorNear1200 IsNotInCheckpoint IsNotInSafeSpot IsBiker IsNotWarnHeardSmoker NotInCombat IsNotSaidSpecialWarn IsTalk IsTalkBiker IsWorldTalkBiker _auto_NotSpottedVehicle
 	ApplyContext "WarnHeardSmoker:1:300,SaidSpecialWarn:1:30"
 	applycontexttoworld
+	Response L4D1PlayerWarnHeardSmokerBiker
+}
+
+Rule PlayerHeardSmokerBiker
+{
+	criteria ConceptPlayerHeardSmoker IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker _auto_NotSpottedVehicle
 	Response L4D1PlayerWarnHeardSmokerBiker
 }
 
@@ -7732,7 +7750,7 @@ Rule L4D1SurvivorCoughingBiker
 
 Rule L4D1SurvivorCoughingDeathBiker
 {
-	criteria ConceptPlayerDeath IsCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotVersus IsNotSpeaking
+	criteria ConceptPlayerDeath IsCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotVersus
 	Response L4D1SurvivorCoughingBiker
 }
 
@@ -7751,7 +7769,7 @@ Response L4D1SurvivorDeathBiker
 }
 Rule L4D1SurvivorDeathBiker
 {
-	criteria ConceptPlayerDeath IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotVersus IsNotSpeaking
+	criteria ConceptPlayerDeath IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotVersus
 	Response L4D1SurvivorDeathBiker
 }
 
@@ -7943,7 +7961,7 @@ Response L4D1SurvivorVocalizeWaitHereBiker
 }
 Rule L4D1SurvivorVocalizeWaitHereBiker
 {
-	criteria ConceptPlayerWaitHere IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker IsNotSpeaking
+	criteria ConceptPlayerWaitHere IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
 	Response L4D1SurvivorVocalizeWaitHereBiker
 }
 
@@ -9144,6 +9162,29 @@ Rule PlayerLostCallBiker
 	Response PlayerLostCallBiker
 }
 
+//--------------------------------------------------------------------------------------------------------------
+// Spotted Weapons (Specific Lines)
+//--------------------------------------------------------------------------------------------------------------
+
+Response SurvivorSpottedChainsawBiker
+{
+	scene "scenes/Biker/Generic63.vcd"  //Groovy.
+}
+Rule SurvivorSpottedChainsawBiker
+{
+	criteria ConceptPlayerSpotWeapon IsNotCoughing IsBiker IsTalk IsTalkBiker IsNotSaidSomeoneDied IsNotSmartLookAuto IsChainsaw IsWorldTalkBiker _auto_NotSpottedVehicle
+	ApplyContext "SaidSpotWeapons:1:5,SaidSpot:1:20"
+	applycontexttoworld
+	Response SurvivorSpottedChainsawBiker
+}
+
+Rule SurvivorSpottedChainsawAutoBiker
+{
+	criteria ConceptPlayerSpotWeapon IsNotCoughing IsBiker IsTalk IsTalkBiker IsNotSaidSomeoneDied IsSmartLookAuto IsNotInSafeSpot IsNotAlone IsNotSaidSpotWeapons IsNotSaidSpot IsChainsaw IsWorldTalkBiker IsNotSpeakingWeight0 _auto_NotSpottedVehicle
+	ApplyContext "SaidSpotWeapons:1:5,SaidSpot:1:20"
+	applycontexttoworld
+	Response SurvivorSpottedChainsawBiker
+}
 
 //--------------------------------------------------------------------------------------------------------------
 // Spotted Firearms (Generic Lines)

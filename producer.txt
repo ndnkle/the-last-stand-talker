@@ -661,6 +661,8 @@ Response PlayerGivenItemProducer
 	scene "scenes/Producer/Thanks02.vcd" predelay "2,2.5" //Hey, thanks!
 	scene "scenes/Producer/Thanks03.vcd" predelay "2,2.5" //Thanks!
 	scene "scenes/Producer/Thanks04.vcd" predelay "2,2.5" //Thanks I owe you one.
+	scene "scenes/Producer/Thanks05.vcd" predelay "2,2.5" //Thanks!
+	scene "scenes/Producer/Thanks07.vcd" odds 5 predelay "2,2.5" //I honestly appreciate it.
 }
 Rule PlayerGivenItemProducer
 {
@@ -816,6 +818,7 @@ Response ReviveThanksProducer
 	scene "scenes/Producer/Thanks02.vcd" predelay ".2,.5" then subject YouAreWelcome foo:0 0 //Hey, thanks!
 	scene "scenes/Producer/Thanks03.vcd" predelay ".2,.5" then subject YouAreWelcome foo:0 0 //Thanks!
 	scene "scenes/Producer/Thanks04.vcd" predelay ".2,.5" then subject YouAreWelcome foo:0 0 //Thanks I owe you one.
+	scene "scenes/Producer/Thanks07.vcd" predelay ".2,.5" then subject YouAreWelcome foo:0 0 //Phew, thanks.
 }
 Rule ReviveThanksProducer
 {
@@ -5052,6 +5055,7 @@ Response SurvivorSpottedHunterC1M2Producer
 {
 	scene "scenes/Producer/WorldGenericProducer82.vcd" then any Player.KnowHunter foo:0 0.1 //They called them Hunters on the news…
 	scene "scenes/Producer/WarnHunterC1P01.vcd" then any Player.KnowHunter foo:0 0.1 //Saw a report on those things, they're called Hunters.
+	scene "scenes/Producer/WarnHunterC1P02.vcd" then any Player.KnowHunter foo:0 0.1 //They call them Hunters.
 }
 Rule SurvivorSpottedHunterC1M2Producer
 {
@@ -5450,7 +5454,7 @@ Rule SurvivorSpottedWitchProducer
 	Response SurvivorSpottedWitchProducer
 }
 
-Rule SurvivorAlsoSpottedWitchProducer
+Rule SurvivorSpottedWitch2Producer
 {
 	criteria ConceptPlayerWarnWitch IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotIncapacitated _auto_NotSpottedVehicle
 	Response SurvivorSpottedWitchProducer
@@ -5472,7 +5476,7 @@ Rule SurvivorSpottedWitchC1Producer
 
 Rule SurvivorAlsoSpottedWitchC1Producer
 {
-	criteria ConceptPlayerWarnWitch IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotIncapacitated C1M1orC1M2 IsNotSurvival
+	criteria ConceptPlayerWarnWitch IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer IsNotIncapacitated IsNotSaidWitchStartAttack C1M1orC1M2 IsNotSurvival
 	Response SurvivorSpottedWitchC1Producer
 }
 
@@ -6116,7 +6120,7 @@ Response PlayerHelpIncappedProducer
 }
 Rule PlayerHelpIncappedProducer
 {
-	criteria ConceptPlayerHelp IsProducer IsTalk IsTalkProducer IsIncappedStarted IsIncappedStarted2 IsIncapacitated NotCalledForHelpRecently IsWorldTalkProducer
+	criteria ConceptPlayerHelp IsProducer IsNotCoughing IsTalk IsTalkProducer IsIncappedStarted IsIncappedStarted2 IsIncapacitated NotCalledForHelpRecently IsWorldTalkProducer
 	ApplyContext "CalledForHelp:1:7.5"
 	Response PlayerHelpIncappedProducer
 }
@@ -6129,7 +6133,7 @@ Response PlayerHelpIncappedBleedingProducer
 }
 Rule PlayerHelpIncappedBleedingProducer
 {
-	criteria ConceptPlayerHelp IsProducer IsTalk IsTalkProducer IsIncappedBleeding1 IsIncappedBleeding2 IsIncapacitated NotCalledForHelpRecently IsWorldTalkProducer
+	criteria ConceptPlayerHelp IsProducer IsNotCoughing IsTalk IsTalkProducer IsIncappedBleeding1 IsIncappedBleeding2 IsIncapacitated NotCalledForHelpRecently IsWorldTalkProducer
 	ApplyContext "CalledForHelp:1:15"
 	Response PlayerHelpIncappedBleedingProducer
 }
@@ -6142,7 +6146,7 @@ Response PlayerHelpIncappedLethargicProducer
 }
 Rule PlayerHelpIncappedLethargicProducer
 {
-	criteria ConceptPlayerHelp IsProducer IsTalk IsTalkProducer IsIncappedLethargic IsIncapacitated NotCalledForHelpRecently IsWorldTalkProducer
+	criteria ConceptPlayerHelp IsProducer IsNotCoughing IsTalk IsTalkProducer IsIncappedLethargic IsIncapacitated NotCalledForHelpRecently IsWorldTalkProducer
 	ApplyContext "CalledForHelp:1:30"
 	Response PlayerHelpIncappedLethargicProducer
 }
@@ -9083,7 +9087,7 @@ Response PlayerHelpProducer
 }
 Rule PlayerHelpProducer
 {
-	criteria ConceptPlayerHelp IsProducer IsNotIncapacitated IsTalk IsTalkProducer IsWorldTalkProducer
+	criteria ConceptPlayerHelp IsProducer IsNotCoughing IsNotIncapacitated IsTalk IsTalkProducer IsWorldTalkProducer
 	Response PlayerHelpProducer
 }
 
@@ -9303,8 +9307,11 @@ Rule PlayerNoProducer
 
 Response PlayerAnswerLostCallProducer
 {
-	scene "scenes/Producer/ScenarioJoin01.vcd"  //What's up?
-	scene "scenes/Producer/ScenarioJoin04.vcd"  //Hey.
+	scene "scenes/Producer/ScenarioJoin05.vcd"  //Hey, I'm here.
+	scene "scenes/Producer/ScenarioJoin06.vcd"  //Hey, I'm here.
+	scene "scenes/Producer/ScenarioJoin07.vcd"  //I'm here!
+	scene "scenes/Producer/ScenarioJoin08.vcd"  //Hey, I'm here.
+	scene "scenes/Producer/ScenarioJoin09.vcd"  //I'm here!
 }
 Rule PlayerAnswerLostCallProducer
 {
@@ -9336,9 +9343,11 @@ Rule PlayerSorryProducer
 
 Response PlayerSorryFFProducer
 {
+	scene "scenes/Producer/Sorry02.vcd"  //You can lay that blame on me.
 	scene "scenes/Producer/Sorry03.vcd"  //Sorry about that.
 	scene "scenes/Producer/Sorry04.vcd"  //Okay that was a mistake.
 	scene "scenes/Producer/Sorry06.vcd"  //Guilty, sorry!
+	scene "scenes/Producer/Sorry08.vcd"  //Sorry.
 }
 Rule PlayerSorryFFProducer
 {
@@ -9511,7 +9520,6 @@ Response PlayerNegativeProducer
 	scene "scenes/Producer/ReactionNegative10.vcd"  //Blarg!
 	scene "scenes/Producer/ReactionNegative11.vcd"  //Can just one goddamn thing go right?
 	scene "scenes/Producer/ReactionNegative12.vcd"  //We are in some deep shit!
-	scene "scenes/Producer/ReactionNegative13.vcd"  //Holy shit!
 	scene "scenes/Producer/ReactionNegative13.vcd"  //Holy shit!
 	scene "scenes/Producer/ReactionNegative14.vcd"  //We are in some deep shit!
 	scene "scenes/Producer/ReactionNegative15.vcd"  //Could this really get any worse?  I don't think so.
@@ -10576,7 +10584,7 @@ Response PlayerStayTogetherInsideProducer
 }
 Rule PlayerStayTogetherInsideProducer
 {
-	criteria ConceptPlayerStayTogether IsNotCoughing IsProducer IsInSafeSpot IsTalk IsTalkProducer SomeoneOutsideSafeSpot IsWorldTalkProducer
+	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsProducer IsInSafeSpot IsTalk IsTalkProducer SomeoneOutsideSafeSpot IsWorldTalkProducer
 	Response PlayerStayTogetherInsideProducer
 }
 
@@ -10947,6 +10955,12 @@ Rule PlayerWarnHeardWitchC1Producer
 	criteria ConceptPlayerWarnHearZombie IsWitchClass IsNotCoughing IsProducer IsNotAlone IsClosestSurvivorNear1200 IsNotWarnHeardWitch NotInCombat IsNotSaidSpecialWarn IsTalk IsTalkProducer IsWorldTalkProducer C1M1orC1M2
 	ApplyContext "WarnHeardWitch:1:300,SaidSpecialWarn:1:30"
 	applycontexttoworld
+	Response PlayerWarnHeardWitchC1Producer
+}
+
+Rule PlayerHeardWitchC1Producer
+{
+	criteria ConceptPlayerHeardWitch IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer C1M1orC1M2 IsNotSurvival _auto_NotSpottedVehicle
 	Response PlayerWarnHeardWitchC1Producer
 }
 
@@ -11547,20 +11561,6 @@ Rule SurvivorVocalizeEmphaticGoProducer
 {
 	criteria ConceptPlayerEmphaticGo IsProducer IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkProducer IsWorldTalkProducer
 	Response SurvivorVocalizeEmphaticGoProducer
-}
-
-Response SurvivorVocalizeFollowMeProducer
-{
-	scene "scenes/Producer/FollowMe01.vcd"  //Hey, c'mon, this way!
-	scene "scenes/Producer/FollowMe02.vcd"  //Come on, this way!
-	scene "scenes/Producer/FollowMe03.vcd"  //This way!
-	scene "scenes/Producer/FollowMe04.vcd"  //Follow me this way.
-	scene "scenes/Producer/FollowMe05.vcd"  //Follow me.
-}
-Rule SurvivorVocalizeFollowMeProducer
-{
-	criteria ConceptPlayerFollowMe IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
-	Response SurvivorVocalizeFollowMeProducer
 }
 
 Response SurvivorVocalizeGoingToDieProducer
@@ -12494,6 +12494,7 @@ Rule SurvivorPickupVomitJarAlwaysC1Producer
 //--------------------------------------------------------------------------------------------------------------
 Response PlayerGettingRevivedProducer
 {
+	scene "scenes/Producer/GettingRevived02.vcd"  then From ReviveFriendDownFinal foo:0 -3.840 //Give it to me straight, doc... am I going to make it?
 	scene "scenes/Producer/GettingRevived02.vcd"  then From ReviveFriendDownFinal foo:0 -1.860 //Uh, yeah, yeah, I'm okay.
 	scene "scenes/Producer/GettingRevived03.vcd"  then From ReviveFriendDownFinal foo:0 -0.909 //I think I'm okay.
 	scene "scenes/Producer/GettingRevived04.vcd"  then From ReviveFriendDownFinal foo:0 -1.412 //Guess I feel all right.
@@ -12561,7 +12562,7 @@ Response PlayerLedgeSaveProducer
 }
 Rule PlayerLedgeSaveProducer
 {
-	criteria ConceptPlayerLedgeSave IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer
+	criteria ConceptPlayerLedgeSave IsNotCoughing IsProducer IsTalk IsTalkProducer IsWorldTalkProducer _auto_NotSpottedVehicle
 	ApplyContext "TalkProducer:1:5"
 	Response PlayerLedgeSaveProducer
 }
@@ -12587,6 +12588,7 @@ Response PlayerReviveFriendProducer
 	scene "scenes/Producer/ReviveFriendA03.vcd"  then Subject ReviveFriendDown foo:0 -0.661 //Can you make it?
 	scene "scenes/Producer/ReviveFriendA04.vcd"  then Subject ReviveFriendDown foo:0 -0.883 //How bad is it?
 	scene "scenes/Producer/ReviveFriendA05.vcd"  then Subject ReviveFriendDown foo:0 -0.573 //What's up?
+	scene "scenes/Producer/ReviveFriendA06.vcd"  then Subject ReviveFriendDown foo:0 -1.225 //Can you move your legs?
 	scene "scenes/Producer/ReviveFriendA07.vcd"  then Subject ReviveFriendDown foo:0 -1.501 //Are you done laying around now?
 	scene "scenes/Producer/ReviveFriendA08.vcd"  then Subject ReviveFriendDown foo:0 -0.811 //Ready to get up?
 	scene "scenes/Producer/ReviveFriendA09.vcd"  then Subject ReviveFriendDown foo:0 -1.017 //What's up with that?
@@ -14345,7 +14347,7 @@ Rule Player.LostCallC6M3Producer
 	Response Player.LostCallC6M3Producer
 }
 
-Response PlayerLostCallProducer
+Response AutoPlayerLostCallProducer
 {
 	scene "scenes/Producer/LostCall01.vcd"  //Helloooo?
 	scene "scenes/Producer/LostCall01.vcd"  //Helloooo?
@@ -14354,12 +14356,12 @@ Response PlayerLostCallProducer
 	scene "scenes/Producer/LostCall04.vcd"  //Can  you guys here me?
 	scene "scenes/Producer/LostCall05.vcd"  //Where is everyone?
 }
-Rule PlayerLostCallProducer
+Rule AutoPlayerLostCallProducer
 {
 	criteria ConceptTalkIdle IsProducer IsClosestSurvivorFar3000 IsNotAlone IsNotSaidPlayerLostCall _auto_NotNoLostCall IsNotSpeakingWeight0 _auto_NotSpottedVehicle
 	ApplyContext "SaidPlayerLostCall:1:50"
 	applycontexttoworld
-	Response PlayerLostCallProducer
+	Response AutoPlayerLostCallProducer
 }
 
 

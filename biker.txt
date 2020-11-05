@@ -166,7 +166,6 @@ Response PlayerRelaxedSighBiker
 {
 	scene "scenes/Biker/PainReliefSigh02.vcd"  //ah
 	scene "scenes/Biker/PainReliefSigh03.vcd"  //ah
-	scene "scenes/Biker/PainReliefSigh03.vcd"  //ah
 	scene "scenes/Biker/PainReliefSigh04.vcd"  //ohh
 }
 Rule PlayerRelaxedSighBiker
@@ -177,8 +176,6 @@ Rule PlayerRelaxedSighBiker
 
 Response PlayerUseAdrenalineBiker
 {
-	scene "scenes/Biker/PainReliefSigh01.vcd" predelay "1.2" //Ahhh
-	scene "scenes/Biker/PainReliefSigh01.vcd" predelay "1.2" //Ahhh
 	scene "scenes/Biker/PainReliefSigh01.vcd" predelay "1.2" //Ahhh
 	scene "scenes/Biker/PainReliefSigh05.vcd" predelay "1.2" //ohh
 }
@@ -1092,7 +1089,7 @@ Response C6M3VocalizeLookOutBiker
 }
 Rule C6M3VocalizeLookOutBiker
 {
-	criteria ConceptPlayerLookOut IsNotCoughing IsBiker IsC6M3_Port IsTalk IsTalkBiker IsWorldTalkBiker
+	criteria ConceptPlayerLookOut IsNotCoughing IsBiker IsC6M3_Port IsTalk IsTalkBiker IsWorldTalkBiker _auto_NotSpottedVehicle
 	Response C6M3VocalizeLookOutBiker
 }
 
@@ -3834,15 +3831,10 @@ Response L4D1SurvivorSpottedInfectedBiker
 {
 	scene "scenes/Biker/Incoming01.vcd"  //Here they come!
 	scene "scenes/Biker/Incoming02.vcd"  //Holy shit, here they come!
-	scene "scenes/Biker/Incoming02.vcd"  //Holy shit, here they come!
-	scene "scenes/Biker/Incoming03.vcd"  //They're coming!
 	scene "scenes/Biker/Incoming03.vcd"  //They're coming!
 	scene "scenes/Biker/Incoming04.vcd"  //Incoming!
-	scene "scenes/Biker/Incoming04.vcd"  //Incoming!
-	scene "scenes/Biker/Incoming05.vcd"  //Get ready ladies!
 	scene "scenes/Biker/Incoming05.vcd"  //Get ready ladies!
 	scene "scenes/Biker/Incoming06.vcd"  //INCOMING!
-	scene "scenes/Biker/Incoming07.vcd"  //This is gonna be good.
 	scene "scenes/Biker/Incoming07.vcd"  //This is gonna be good.
 	scene "scenes/Biker/Incoming08.vcd"  //Shit, Get ready!
 }
@@ -4371,7 +4363,7 @@ Response L4D1PlayerHelpIncappedBiker
 }
 Rule L4D1PlayerHelpIncappedBiker
 {
-	criteria ConceptPlayerHelp IsBiker IsTalk IsTalkBiker IsIncapacitated IsIncappedStarted IsIncappedStarted2 NotCalledForHelpRecently IsWorldTalkBiker
+	criteria ConceptPlayerHelp IsBiker IsNotCoughing IsTalk IsTalkBiker IsIncapacitated IsIncappedStarted IsIncappedStarted2 NotCalledForHelpRecently IsWorldTalkBiker
 	ApplyContext "CalledForHelp:1:15"
 	Response L4D1PlayerHelpIncappedBiker
 }
@@ -4403,7 +4395,7 @@ Response L4D1PlayerHelpIncappedBleedingBiker
 }
 Rule L4D1PlayerHelpIncappedBleedingBiker
 {
-	criteria ConceptPlayerHelp IsBiker IsTalk IsTalkBiker IsIncapacitated IsIncappedBleeding1 IsIncappedBleeding2 NotCalledForHelpRecently IsWorldTalkBiker
+	criteria ConceptPlayerHelp IsBiker IsNotCoughing IsTalk IsTalkBiker IsIncapacitated IsIncappedBleeding1 IsIncappedBleeding2 NotCalledForHelpRecently IsWorldTalkBiker
 	ApplyContext "CalledForHelp:1:30"
 	Response L4D1PlayerHelpIncappedBleedingBiker
 }
@@ -4415,7 +4407,7 @@ Response L4D1PlayerHelpIncappedLethargicBiker
 }
 Rule L4D1PlayerHelpIncappedLethargicBiker
 {
-	criteria ConceptPlayerHelp IsBiker IsTalk IsTalkBiker IsIncapacitated IsIncappedLethargic NotCalledForHelpRecently IsWorldTalkBiker
+	criteria ConceptPlayerHelp IsBiker IsNotCoughing IsTalk IsTalkBiker IsIncapacitated IsIncappedLethargic NotCalledForHelpRecently IsWorldTalkBiker
 	ApplyContext "CalledForHelp:1:60"
 	Response L4D1PlayerHelpIncappedLethargicBiker
 }
@@ -6500,6 +6492,7 @@ Response L4D1PlayerFollowMeBiker
 	scene "scenes/Biker/FollowMe05.vcd"  //This way.
 	scene "scenes/Biker/FollowMe06.vcd"  //I got the lead - follow me.
 	scene "scenes/Biker/FollowMe07.vcd"  //I got the lead.
+	scene "scenes/Biker/FollowMe08.vcd"  //Well, hell, let's all follow me.
 	scene "scenes/Biker/FollowMe09.vcd"  //This way, kids.
 }
 Rule L4D1PlayerFollowMeBiker
@@ -6526,7 +6519,7 @@ Response L4D1PlayerHelpBiker
 }
 Rule L4D1PlayerHelpBiker
 {
-	criteria ConceptPlayerHelp IsBiker IsTalk IsNotIncapacitated IsTalkBiker IsWorldTalkBiker
+	criteria ConceptPlayerHelp IsBiker IsNotCoughing IsTalk IsNotIncapacitated IsTalkBiker IsWorldTalkBiker
 	Response L4D1PlayerHelpBiker
 }
 
@@ -6799,7 +6792,7 @@ Response L4D1PlayerSorryFFBiker
 	scene "scenes/Biker/Sorry10.vcd"  //Sorry, man. Shit happens.
 	scene "scenes/Biker/Sorry12.vcd"  //My bad.
 	scene "scenes/Biker/Sorry13.vcd"  //Whoopsie.
-	scene "scenes/Biker/Sorry15.vcd"  //Sorry.
+	scene "scenes/Biker/Sorry14.vcd"  //Uh, yeah, sorry.
 	scene "scenes/Biker/Sorry16.vcd"  //oopsy daisy
 	scene "scenes/Biker/Sorry17.vcd"  //That was my fault.
 	scene "scenes/Biker/Sorry18.vcd"  //My bad.
@@ -6891,12 +6884,12 @@ Rule PlayerYellRunBiker
 //--------------------------------------------------------------------------------------------------------------
 Response L4D1PlayerNegativeBiker
 {
+	scene "scenes/Biker/ReactionNegative02.vcd"  //That's bad.
 	scene "scenes/Biker/ReactionNegative03.vcd"  //Damn.
 	scene "scenes/Biker/ReactionNegative04.vcd"  //Holy Jesus.
 	scene "scenes/Biker/ReactionNegative05.vcd"  //Shit.
 	scene "scenes/Biker/ReactionNegative06.vcd"  //Ah shit.
 	scene "scenes/Biker/ReactionNegative09.vcd"  //Ahhhhh.
-	scene "scenes/Biker/ReactionNegative05.vcd"  //Shit.
 	scene "scenes/Biker/ReactionNegative07.vcd"  //Damnit.
 	scene "scenes/Biker/ReactionNegative08.vcd"  //Damnit.
 	scene "scenes/Biker/ReactionNegative10.vcd"  //Effin hell.
@@ -7399,7 +7392,7 @@ Response L4D1PlayerStayTogetherInsideBiker
 }
 Rule L4D1PlayerStayTogetherInsideBiker
 {
-	criteria ConceptPlayerStayTogether IsNotCoughing IsBiker IsInSafeSpot IsTalk IsTalkBiker SomeoneOutsideSafeSpot IsWorldTalkBiker
+	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsBiker IsInSafeSpot IsTalk IsTalkBiker SomeoneOutsideSafeSpot IsWorldTalkBiker
 	Response L4D1PlayerStayTogetherInsideBiker
 }
 
@@ -7770,7 +7763,6 @@ Rule L4D1SurvivorDeathBiker
 Response L4D1SurvivorGrabbedByTongueBiker
 {
 	scene "scenes/Biker/GrabbedBySmoker01a.vcd"  //no, No, NO, NOOOOOOO!!!!!!!!!
-	scene "scenes/Biker/GrabbedBySmoker01a.vcd"  //no, No, NO, NOOOOOOO!!!!!!!!!
 	scene "scenes/Biker/GrabbedBySmoker02a.vcd"  //no, No, NO, NOOOOOOO!!!!!!!!!
 	scene "scenes/Biker/GrabbedBySmoker03.vcd"  //no, No, NO, NO!!!
 }
@@ -7821,23 +7813,6 @@ Rule L4D1SurvivorVocalizeEmphaticGoBiker
 {
 	criteria ConceptPlayerEmphaticGo IsBiker  IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkBiker IsWorldTalkBiker
 	Response L4D1SurvivorVocalizeEmphaticGoBiker
-}
-
-Response L4D1SurvivorVocalizeFollowMeBiker
-{
-	scene "scenes/Biker/FollowMe01.vcd"  //Come on, this way.
-	scene "scenes/Biker/FollowMe02.vcd"  //Follow me!
-	scene "scenes/Biker/FollowMe03.vcd"  //Follow me.
-	scene "scenes/Biker/FollowMe04.vcd"  //This way.
-	scene "scenes/Biker/FollowMe05.vcd"  //This way.
-	scene "scenes/Biker/FollowMe06.vcd"  //I got the lead - follow me.
-	scene "scenes/Biker/FollowMe07.vcd"  //I got the lead.
-	scene "scenes/Biker/FollowMe09.vcd"  //This way, kids.
-}
-Rule L4D1SurvivorVocalizeFollowMeBiker
-{
-	criteria ConceptPlayerFollowMe IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
-	Response L4D1SurvivorVocalizeFollowMeBiker
 }
 
 Response L4D1SurvivorVocalizeGoingToDieBiker
@@ -7922,7 +7897,7 @@ Response L4D1SurvivorVocalizeLookOutBiker
 }
 Rule L4D1SurvivorVocalizeLookOutBiker
 {
-	criteria ConceptPlayerLookOut IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker
+	criteria ConceptPlayerLookOut IsNotCoughing IsBiker IsTalk IsTalkBiker IsWorldTalkBiker _auto_NotSpottedVehicle
 	Response L4D1SurvivorVocalizeLookOutBiker
 }
 
@@ -9141,19 +9116,19 @@ Rule L4D1PlayerCoverMeHealBiker
 //--------------------------------------------------------------------------------------------------------------
 // Volcalize
 //--------------------------------------------------------------------------------------------------------------
-Response PlayerLostCallBiker
+Response AutoPlayerLostCallBiker
 {
 	scene "scenes/Biker/LostCall01.vcd"  //Hello
 	scene "scenes/Biker/LostCall04.vcd"  //Is anyone there?
 	scene "scenes/Biker/LostCall05.vcd"  //Marco!
 	scene "scenes/Biker/LostCall08.vcd"  //Hello? Where dija go?
 }
-Rule PlayerLostCallBiker
+Rule AutoPlayerLostCallBiker
 {
 	criteria ConceptTalkIdle IsBiker IsClosestSurvivorFar3000 IsNotAlone IsNotSaidPlayerLostCall _auto_NotNoLostCall IsNotSpeakingWeight0 _auto_NotSpottedVehicle
 	ApplyContext "SaidPlayerLostCall:1:50"
 	applycontexttoworld
-	Response PlayerLostCallBiker
+	Response AutoPlayerLostCallBiker
 }
 
 //--------------------------------------------------------------------------------------------------------------
@@ -10073,17 +10048,17 @@ Rule L4D1C14M2PowerOutAgainBiker
 	Response L4D1C14M2PowerOutAgainBiker
 }
 
-Response L4D1SurvivorFinalVehicleSpottedBoatBiker
+Response L4D1SurvivorFinalVehicleSpottedBoatC14M2Biker
 {
 	scene "scenes/Biker/ArriveBoatInitial01.vcd" predelay "12" then any EmphaticArriveRun foo:0 -14.601 //Our boat's here, all aboard!
 	scene "scenes/Biker/ArriveBoatInitial02.vcd" predelay "12" then any EmphaticArriveRun foo:0 -14.601 //Our boat's here! Let's go!
 }
-Rule L4D1SurvivorFinalVehicleSpottedBoatBiker
+Rule L4D1SurvivorFinalVehicleSpottedBoatC14M2Biker
 {
 	criteria ConceptFinalVehicleSpotted IsBiker IsLastStand2 _auto_IsFinaleStarted
 	ApplyContext "_auto_TimerLockA:1:10,_auto_TimerLockBiker:1:30,_auto_Finale:2:0"
 	applycontexttoworld
-	Response L4D1SurvivorFinalVehicleSpottedBoatBiker
+	Response L4D1SurvivorFinalVehicleSpottedBoatC14M2Biker
 }
 
 Rule L4D1SurvivorFinalVehicleBoatC14M2Biker

@@ -155,8 +155,6 @@ Response PlayerRelaxedSighTeenGirl
 {
 	scene "scenes/TeenGirl/PainReliefSigh01.vcd"  //Ahhh
 	scene "scenes/TeenGirl/PainReliefSigh10.vcd"  //Ahhh
-	scene "scenes/TeenGirl/PainReliefSigh10.vcd"  //Ahhh
-	scene "scenes/TeenGirl/PainReliefSigh11.vcd"  //Ahhh
 	scene "scenes/TeenGirl/PainReliefSigh11.vcd"  //Ahhh
 }
 Rule PlayerRelaxedSighTeenGirl
@@ -3206,14 +3204,9 @@ Rule L4D1SpottedSpitter2TeenGirl
 Response L4D1SurvivorSpottedInfectedTeenGirl
 {
 	scene "scenes/TeenGirl/Incoming02.vcd"  //Incoming!
-	scene "scenes/TeenGirl/Incoming02.vcd"  //Incoming!
-	scene "scenes/TeenGirl/Incoming04.vcd"  //They're coming!
 	scene "scenes/TeenGirl/Incoming04.vcd"  //They're coming!
 	scene "scenes/TeenGirl/Incoming05.vcd"  //Here they come!
-	scene "scenes/TeenGirl/Incoming05.vcd"  //Here they come!
 	scene "scenes/TeenGirl/Incoming06.vcd"  //Get ready!
-	scene "scenes/TeenGirl/Incoming06.vcd"  //Get ready!
-	scene "scenes/TeenGirl/Incoming07.vcd"  //Oh god, get ready, here they come!
 	scene "scenes/TeenGirl/Incoming07.vcd"  //Oh god, get ready, here they come!
 	scene "scenes/TeenGirl/Incoming12.vcd"  //They're coming!
 	scene "scenes/TeenGirl/Incoming13.vcd"  //Here they come!
@@ -3547,9 +3540,7 @@ Response L4D1PlayerChokeResponseTeenGirl
 {
 	scene "scenes/TeenGirl/Choke01.vcd"  //[Choking]
 	scene "scenes/TeenGirl/Choke02.vcd"  //[Choking]
-	scene "scenes/TeenGirl/Choke02.vcd"  //[Choking]
 	scene "scenes/TeenGirl/Choke03.vcd"  //[Choking]
-	scene "scenes/TeenGirl/Choke04.vcd"  //[Choking]
 	scene "scenes/TeenGirl/Choke04.vcd"  //[Choking]
 }
 Rule L4D1PlayerChokeResponseTeenGirl
@@ -3681,7 +3672,7 @@ Response SurvivorJockeyHurtMajorTeenGirl
 	scene "scenes/TeenGirl/HurtMinor02.vcd"  then all commentjockey foo:0 -0.298 //[pain noise - short minor pain]
 	scene "scenes/TeenGirl/HurtMinor03.vcd"  then all commentjockey foo:0 -0.381 //[pain noise - short minor pain]
 	scene "scenes/TeenGirl/NegativeNoise13.vcd"  then all commentjockey foo:0 -1.104 //[Improv non-verbal displeasure sounds]
-	scene "scenes/TeenGirl/SCREAMWHILEPOUNCED03.WAV"  then all commentjockey foo:0 -1.101 //Get it off!
+	//scene "scenes/TeenGirl/ScreamWhilePounced03.vcd"  then all commentjockey foo:0 -1.101 //Get it off!
 	scene "scenes/TeenGirl/ScreamWhilePounced01.vcd"  then all commentjockey foo:0 -1.659 //GET IT OFF ME!
 	scene "scenes/TeenGirl/ScreamWhilePounced02.vcd"  then all commentjockey foo:0 -2.384 //GET IT GET IT OFF GET IT OFF!
 	scene "scenes/TeenGirl/ScreamWhilePounced04.vcd"  then all commentjockey foo:0 -2.730 //GET IT GET IT OFF GET IT OFF!
@@ -3720,7 +3711,7 @@ Response L4D1PlayerHelpIncappedTeenGirl
 }
 Rule L4D1PlayerHelpIncappedTeenGirl
 {
-	criteria ConceptPlayerHelp IsTeenGirl IsTalk IsTalkTeenGirl IsIncapacitated IsIncappedStarted IsIncappedStarted2 NotCalledForHelpRecently IsWorldTalkTeenGirl
+	criteria ConceptPlayerHelp IsTeenGirl IsNotCoughing IsTalk IsTalkTeenGirl IsIncapacitated IsIncappedStarted IsIncappedStarted2 NotCalledForHelpRecently IsWorldTalkTeenGirl
 	ApplyContext "CalledForHelp:1:7.5"
 	Response L4D1PlayerHelpIncappedTeenGirl
 }
@@ -3741,7 +3732,7 @@ Response L4D1PlayerHelpIncappedBleedingTeenGirl
 }
 Rule L4D1PlayerHelpIncappedBleedingTeenGirl
 {
-	criteria ConceptPlayerHelp IsTeenGirl IsTalk IsTalkTeenGirl IsIncapacitated IsIncappedBleeding1 IsIncappedBleeding2 NotCalledForHelpRecently IsWorldTalkTeenGirl
+	criteria ConceptPlayerHelp IsTeenGirl IsNotCoughing IsTalk IsTalkTeenGirl IsIncapacitated IsIncappedBleeding1 IsIncappedBleeding2 NotCalledForHelpRecently IsWorldTalkTeenGirl
 	ApplyContext "CalledForHelp:1:15"
 	Response L4D1PlayerHelpIncappedBleedingTeenGirl
 }
@@ -3760,7 +3751,7 @@ Response L4D1PlayerHelpIncappedLethargicTeenGirl
 }
 Rule L4D1PlayerHelpIncappedLethargicTeenGirl
 {
-	criteria ConceptPlayerHelp IsTeenGirl IsTalk IsTalkTeenGirl IsIncapacitated IsIncappedLethargic NotCalledForHelpRecently IsWorldTalkTeenGirl
+	criteria ConceptPlayerHelp IsTeenGirl IsNotCoughing IsTalk IsTalkTeenGirl IsIncapacitated IsIncappedLethargic NotCalledForHelpRecently IsWorldTalkTeenGirl
 	ApplyContext "CalledForHelp:1:30"
 	Response L4D1PlayerHelpIncappedLethargicTeenGirl
 }
@@ -5527,7 +5518,7 @@ Response L4D1PlayerHelpTeenGirl
 }
 Rule L4D1PlayerHelpTeenGirl
 {
-	criteria ConceptPlayerHelp IsTeenGirl IsNotIncapacitated IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl
+	criteria ConceptPlayerHelp IsTeenGirl IsNotCoughing IsNotIncapacitated IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl
 	Response L4D1PlayerHelpTeenGirl
 }
 
@@ -5784,7 +5775,6 @@ Response L4D1PlayerNoTeenGirl
 {
 	scene "scenes/TeenGirl/No01.vcd"  //Uh, no
 	scene "scenes/TeenGirl/No07.vcd"  //Seriously, no
-	scene "scenes/TeenGirl/No07.vcd"  //Seriously, no
 	scene "scenes/TeenGirl/No08.vcd"  //NO!
 	scene "scenes/TeenGirl/No09.vcd"  //Yeah... right!
 	scene "scenes/TeenGirl/No10.vcd"  //No!
@@ -5827,7 +5817,6 @@ Rule L4D1PlayerAnswerLostCallTeenGirl
 Response L4D1PlayerNegativeTeenGirl
 {
 	scene "scenes/TeenGirl/ReactionNegative01.vcd"  //Uh oh
-	scene "scenes/TeenGirl/ReactionNegative01.vcd"  //Uh oh
 	scene "scenes/TeenGirl/ReactionNegative02.vcd"  //This is so messed up
 	scene "scenes/TeenGirl/ReactionNegative03.vcd"  //This sucks
 	scene "scenes/TeenGirl/ReactionNegative04.vcd"  //This sucks big time
@@ -5861,7 +5850,6 @@ Rule L4D1PlayerNegativeTeenGirl
 
 Response L4D1PlayerSorryTeenGirl
 {
-	scene "scenes/TeenGirl/Sorry04.vcd"  //Oops, sorry
 	scene "scenes/TeenGirl/Sorry07.vcd"  //Sorry
 	scene "scenes/TeenGirl/Sorry08.vcd"  //I am really sorry
 	scene "scenes/TeenGirl/Sorry10.vcd"  //I am so sorry
@@ -6547,7 +6535,7 @@ Response L4D1PlayerStayTogetherInsideTeenGirl
 }
 Rule L4D1PlayerStayTogetherInsideTeenGirl
 {
-	criteria ConceptPlayerStayTogether IsNotCoughing IsTeenGirl IsInSafeSpot IsTalk IsTalkTeenGirl SomeoneOutsideSafeSpot IsWorldTalkTeenGirl
+	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsTeenGirl IsInSafeSpot IsTalk IsTalkTeenGirl SomeoneOutsideSafeSpot IsWorldTalkTeenGirl
 	Response L4D1PlayerStayTogetherInsideTeenGirl
 }
 
@@ -7036,35 +7024,6 @@ Rule L4D1SurvivorVocalizeEmphaticGoTeenGirl
 	Response L4D1SurvivorVocalizeEmphaticGoTeenGirl
 }
 
-Response L4D1SurvivorVocalizeFollowMeTeenGirl
-{
-	scene "scenes/TeenGirl/FollowMe01.vcd"  //Come on, this way!
-	scene "scenes/TeenGirl/FollowMe02.vcd"  //This way, guys!
-	scene "scenes/TeenGirl/FollowMe03.vcd"  //Follow me!
-	scene "scenes/TeenGirl/FollowMe05.vcd"  //This way!
-	scene "scenes/TeenGirl/FollowMe07.vcd"  //I think we should go this way.
-	scene "scenes/TeenGirl/FollowMe10.vcd"  //I'll go first.
-	scene "scenes/TeenGirl/FollowMe11.vcd"  //Follow me!
-	scene "scenes/TeenGirl/FollowMe12.vcd"  //Come on, this way!
-	scene "scenes/TeenGirl/FollowMe14.vcd"  //Follow me!
-	scene "scenes/TeenGirl/FollowMe15.vcd"  //Over here, this way!
-	scene "scenes/TeenGirl/FollowMe16.vcd"  //Okay, I'll go first.
-	scene "scenes/TeenGirl/FollowMe17.vcd"  //I think we should go this way.
-	scene "scenes/TeenGirl/FollowMe18.vcd"  //We need to go this way.
-	scene "scenes/TeenGirl/FollowMe20.vcd"  //Come on, this way!
-	scene "scenes/TeenGirl/FollowMe22.vcd"  //Follow me!
-	scene "scenes/TeenGirl/FollowMe23.vcd"  //This way!
-	scene "scenes/TeenGirl/FollowMe24.vcd"  //Over here, this way!
-	scene "scenes/TeenGirl/FollowMe25.vcd"  //I'll go first.
-	scene "scenes/TeenGirl/FollowMe27.vcd"  //We need to go this way.
-	scene "scenes/TeenGirl/FollowMe28.vcd"  //Follow me! I know where I'm going. Come on!
-}
-Rule L4D1SurvivorVocalizeFollowMeTeenGirl
-{
-	criteria ConceptPlayerFollowMe IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl
-	Response L4D1SurvivorVocalizeFollowMeTeenGirl
-}
-
 Response L4D1SurvivorVocalizeGoingToDieTeenGirl
 {
 	scene "scenes/TeenGirl/GoingToDie01.vcd"  //I don't feel so hot
@@ -7322,7 +7281,7 @@ Response PlayerGrabbedByJockeyTeenGirl
 	scene "scenes/TeenGirl/HurtMinor02.vcd"  //[pain noise - short minor pain]
 	scene "scenes/TeenGirl/HurtMinor03.vcd"  //[pain noise - short minor pain]
 	scene "scenes/TeenGirl/NegativeNoise13.vcd"  //[Improv non-verbal displeasure sounds]
-	scene "scenes/TeenGirl/SCREAMWHILEPOUNCED03.WAV"  //Get it off!
+	//scene "scenes/TeenGirl/ScreamWhilePounced03.vcd"  //Get it off!
 	scene "scenes/TeenGirl/ScreamWhilePounced01.vcd"  //GET IT OFF ME!
 	scene "scenes/TeenGirl/ScreamWhilePounced02.vcd"  //GET IT GET IT OFF GET IT OFF!
 	scene "scenes/TeenGirl/ScreamWhilePounced04.vcd"  //GET IT GET IT OFF GET IT OFF!
@@ -7340,8 +7299,6 @@ Rule PlayerGrabbedByJockeyTeenGirl
 Response PlayerRevivedByDefibrillatorTeenGirl
 {
 	scene "scenes/TeenGirl/ReactionStartled11.vcd"  //(gasp)
-	scene "scenes/TeenGirl/ReactionStartled11.vcd"  //(gasp)
-	scene "scenes/TeenGirl/ReactionStartled17.vcd"  //(gasp)
 	scene "scenes/TeenGirl/ReactionStartled17.vcd"  //(gasp)
 }
 Rule PlayerRevivedByDefibrillatorTeenGirl
@@ -7367,7 +7324,7 @@ Response PlayerRevivedByDefibrillator2TeenGirl
 }
 Rule PlayerRevivedByDefibrillator2TeenGirl
 {
-	criteria ConceptRevivedByDefibrillatorDelayed IsTeenGirl _auto_NotSpottedVehicle
+	criteria ConceptRevivedByDefibrillatorDelayed IsTeenGirl
 	ApplyContext "TalkTeenGirl:1:3"
 	applycontexttoworld
 	Response PlayerRevivedByDefibrillator2TeenGirl
@@ -7381,7 +7338,7 @@ Response PlayerUsingDefibrillatorTeenGirl
 }
 Rule PlayerUsingDefibrillatorTeenGirl
 {
-	criteria ConceptPlayerUsingDefibrillator IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl _auto_NotSpottedVehicle
+	criteria ConceptPlayerUsingDefibrillator IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl
 	Response PlayerUsingDefibrillatorTeenGirl
 }
 
@@ -7436,6 +7393,7 @@ Response SurvivorPouncedByHunterTeenGirl
 {
 	scene "scenes/TeenGirl/ScreamWhilePounced01.vcd"  //GET IT OFF ME!
 	scene "scenes/TeenGirl/ScreamWhilePounced02.vcd"  //GET IT OFF GET IT OFF!
+	//scene "scenes/TeenGirl/ScreamWhilePounced03.vcd"  //Get it off!
 	scene "scenes/TeenGirl/ScreamWhilePounced04.vcd"  //GET IT GET IT OFF GET IT OFF!
 	scene "scenes/TeenGirl/ScreamWhilePounced06.vcd"  //GET IT OFF ME!
 }
@@ -8133,7 +8091,7 @@ Response L4D1PlayerHealOtherCombatTeenGirl
 }
 Rule L4D1PlayerHealOtherCombatTeenGirl
 {
-	criteria ConceptPlayerHealingOther IsNotCoughing  IsTeenGirl IsTalk IsTalkTeenGirl IntensityOver50 IsWorldTalkTeenGirl
+	criteria ConceptPlayerHealingOther IsNotCoughing  IsTeenGirl IsTalk IsTalkTeenGirl IntensityOver50 IsWorldTalkTeenGirl _auto_NotSpottedVehicle
 	ApplyContext "TalkTeenGirl:1:5"
 	Response L4D1PlayerHealOtherCombatTeenGirl
 }
@@ -8417,7 +8375,7 @@ Rule L4D1PlayerCoverMeHealTeenGirl
 //--------------------------------------------------------------------------------------------------------------
 // Volcalize
 //--------------------------------------------------------------------------------------------------------------
-Response PlayerLostCallTeenGirl
+Response AutoPlayerLostCallTeenGirl
 {
 	scene "scenes/TeenGirl/LostCall01.vcd"  //Hello?
 	scene "scenes/TeenGirl/LostCall010.vcd"  //Where are you guys?
@@ -8427,12 +8385,12 @@ Response PlayerLostCallTeenGirl
 	scene "scenes/TeenGirl/LostCall09.vcd"  //Hey guys, where are you?
 	scene "scenes/TeenGirl/LostCall13.vcd"  //Guys?
 }
-Rule PlayerLostCallTeenGirl
+Rule AutoPlayerLostCallTeenGirl
 {
 	criteria ConceptTalkIdle IsTeenGirl IsClosestSurvivorFar3000 IsNotAlone IsNotSaidPlayerLostCall _auto_NotNoLostCall IsNotSpeakingWeight0
 	ApplyContext "SaidPlayerLostCall:1:50"
 	applycontexttoworld
-	Response PlayerLostCallTeenGirl
+	Response AutoPlayerLostCallTeenGirl
 }
 
 //--------------------------------------------------------------------------------------------------------------

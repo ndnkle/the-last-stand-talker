@@ -5635,7 +5635,7 @@ Rule SurvivorSpottedWitchC1M2Coach
 
 Rule SurvivorSpottedWitch2C1Coach
 {
-	criteria ConceptPlayerWarnWitch IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotIncapacitated C1M1orC1M2
+	criteria ConceptPlayerWarnWitch IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach IsNotIncapacitated IsNotSaidWitchStartAttack C1M1orC1M2 IsNotSurvival
 	Response SurvivorSpottedWitchC1M2Coach
 }
 
@@ -5697,6 +5697,7 @@ Response PlayerFriendlyFireCoach
 	scene "scenes/Coach/FriendlyFire04.vcd"  //Watch where you're shooting!
 	scene "scenes/Coach/FriendlyFire05.vcd"  //Cut that shit out!
 	scene "scenes/Coach/FriendlyFire06.vcd"  //I swear to god you can't shoot worth shit.
+	scene "scenes/Coach/FriendlyFire07.vcd"  //There's gonna be some biblical shit happening to you if you do that again.
 	scene "scenes/Coach/FriendlyFire08.vcd"  //Shoot me again, and you gonna be meetin' your maker right soon.
 	scene "scenes/Coach/FriendlyFire09.vcd"  //Let's not all start shootin' each other now.
 	scene "scenes/Coach/FriendlyFire11.vcd"  //Man, I swear to god you can't shoot worth shit.
@@ -5712,6 +5713,8 @@ Response PlayerFriendlyFireCoach
 	scene "scenes/Coach/FriendlyFire23.vcd"  //Stop shooting me.
 	scene "scenes/Coach/FriendlyFire24.vcd"  //Don't be shooting me.
 	scene "scenes/Coach/FriendlyFire25.vcd"  //You are shooting me!
+	scene "scenes/Coach/FriendlyFire26.vcd"  //That's some bullshit.
+	scene "scenes/Coach/FriendlyFire27.vcd"  //Do that again and I'll come back on you.
 	scene "scenes/Coach/FriendlyFire28.vcd"  //You shot me!
 	scene "scenes/Coach/FriendlyFire29.vcd"  //Man, you shot me?
 }
@@ -6390,7 +6393,7 @@ Response PlayerHelpIncappedCoach
 }
 Rule PlayerHelpIncappedCoach
 {
-	criteria ConceptPlayerHelp IsCoach IsTalk IsTalkCoach IsIncapacitated IsIncappedStarted IsIncappedStarted2 NotCalledForHelpRecently IsWorldTalkCoach
+	criteria ConceptPlayerHelp IsCoach IsNotCoughing IsTalk IsTalkCoach IsIncapacitated IsIncappedStarted IsIncappedStarted2 NotCalledForHelpRecently IsWorldTalkCoach
 	ApplyContext "CalledForHelp:1:7.5"
 	Response PlayerHelpIncappedCoach
 }
@@ -6405,7 +6408,7 @@ Response PlayerHelpIncappedBleedingCoach
 }
 Rule PlayerHelpIncappedBleedingCoach
 {
-	criteria ConceptPlayerHelp IsCoach IsTalk IsTalkCoach IsIncapacitated IsIncappedBleeding1 IsIncappedBleeding2 NotCalledForHelpRecently IsWorldTalkCoach
+	criteria ConceptPlayerHelp IsCoach IsNotCoughing IsTalk IsTalkCoach IsIncapacitated IsIncappedBleeding1 IsIncappedBleeding2 NotCalledForHelpRecently IsWorldTalkCoach
 	ApplyContext "CalledForHelp:1:15"
 	Response PlayerHelpIncappedBleedingCoach
 }
@@ -6417,7 +6420,7 @@ Response PlayerHelpIncappedLethargicCoach
 }
 Rule PlayerHelpIncappedLethargicCoach
 {
-	criteria ConceptPlayerHelp IsCoach IsTalk IsTalkCoach IsIncapacitated IsIncappedLethargic NotCalledForHelpRecently IsWorldTalkCoach
+	criteria ConceptPlayerHelp IsCoach IsNotCoughing IsTalk IsTalkCoach IsIncapacitated IsIncappedLethargic NotCalledForHelpRecently IsWorldTalkCoach
 	ApplyContext "CalledForHelp:1:30"
 	Response PlayerHelpIncappedLethargicCoach
 }
@@ -9828,7 +9831,7 @@ Response PlayerHelpCoach
 }
 Rule PlayerHelpCoach
 {
-	criteria ConceptPlayerHelp IsCoach IsNotIncapacitated IsTalk IsTalkCoach IsWorldTalkCoach
+	criteria ConceptPlayerHelp IsCoach IsNotCoughing IsNotIncapacitated IsTalk IsTalkCoach IsWorldTalkCoach
 	Response PlayerHelpCoach
 }
 
@@ -11062,14 +11065,9 @@ Response PlayerGrabbedByJockeyCoach
 	scene "scenes/Coach/GrabbedByJockey07.vcd"  //OH SHIT GET THIS THING OFF ME!
 	scene "scenes/Coach/GrabbedByJockey08.vcd"  //Gah, get this thing off my back!
 	scene "scenes/Coach/HurtCritical05.vcd"  //[Pain noise - loud major pain]
-	scene "scenes/Coach/HurtCritical05.vcd"  //[Pain noise - loud major pain]
-	scene "scenes/Coach/HurtMajor05.vcd"  //[Pain noise - ugh]
 	scene "scenes/Coach/HurtMajor05.vcd"  //[Pain noise - ugh]
 	scene "scenes/Coach/HurtMajor08.vcd"  //[Pain noise - ugh]
-	scene "scenes/Coach/HurtMajor08.vcd"  //[Pain noise - ugh]
 	scene "scenes/Coach/ScreamWhilePounced01.vcd"  //GET IT OFF! [angry]
-	scene "scenes/Coach/ScreamWhilePounced01.vcd"  //GET IT OFF! [angry]
-	scene "scenes/Coach/ScreamWhilePounced04.vcd"  //GET IT OFF!
 	scene "scenes/Coach/ScreamWhilePounced04.vcd"  //GET IT OFF!
 }
 Rule PlayerGrabbedByJockeyCoach
@@ -11481,7 +11479,7 @@ Response PlayerStayTogetherInsideCoach
 }
 Rule PlayerStayTogetherInsideCoach
 {
-	criteria ConceptPlayerStayTogether IsNotCoughing IsCoach IsInSafeSpot IsTalk IsTalkCoach SomeoneOutsideSafeSpot IsWorldTalkCoach
+	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsCoach IsInSafeSpot IsTalk IsTalkCoach SomeoneOutsideSafeSpot IsWorldTalkCoach
 	Response PlayerStayTogetherInsideCoach
 }
 
@@ -11864,6 +11862,12 @@ Rule PlayerWarnHeardWitchC1Coach
 	criteria ConceptPlayerWarnHearZombie IsWitchClass IsNotCoughing IsCoach IsNotAlone IsClosestSurvivorNear1200 IsNotWarnHeardWitch NotInCombat IsNotSaidSpecialWarn IsTalk IsTalkCoach  IsWorldTalkCoach  C1M1orC1M2
 	ApplyContext "WarnHeardWitch:1:300,SaidSpecialWarn:1:30"
 	applycontexttoworld
+	Response PlayerWarnHeardWitchC1Coach
+}
+
+Rule PlayerHeardWitchC1Coach
+{
+	criteria ConceptPlayerHeardWitch IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach C1M1orC1M2 IsNotSurvival _auto_NotSpottedVehicle
 	Response PlayerWarnHeardWitchC1Coach
 }
 
@@ -15319,18 +15323,18 @@ Rule Player.LostCallC6M3Coach
 	Response Player.LostCallC6M3Coach
 }
 
-Response PlayerLostCallCoach
+Response AutoPlayerLostCallCoach
 {
 	scene "scenes/Coach/LostCall01.vcd"  //Where you all at?
 	scene "scenes/Coach/LostCall02.vcd"  //Hey! Anyone out there?
 	scene "scenes/Coach/LostCall03.vcd"  //Holler back at me folks!
 }
-Rule PlayerLostCallCoach
+Rule AutoPlayerLostCallCoach
 {
 	criteria ConceptTalkIdle IsCoach IsClosestSurvivorFar3000 IsNotAlone IsNotSaidPlayerLostCall _auto_NotNoLostCall IsNotSpeakingWeight0 _auto_NotSpottedVehicle
 	ApplyContext "SaidPlayerLostCall:1:50"
 	applycontexttoworld
-	Response PlayerLostCallCoach
+	Response AutoPlayerLostCallCoach
 }
 
 

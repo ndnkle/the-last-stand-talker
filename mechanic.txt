@@ -847,6 +847,7 @@ Rule ItemDonorProducerMechanic
 
 Response ItemDonorCoachMechanic
 {
+	scene "scenes/Mechanic/Thanks01.vcd" predelay "2,2.5" then Coach YouAreWelcome foo:0 0 //Hey, thanks, man.
 	scene "scenes/Mechanic/ThanksCoach01.vcd" predelay "2,2.5" then coach YouAreWelcome foo:0 0 //Thanks, Coach.
 	scene "scenes/Mechanic/ThanksCoach02.vcd" predelay "2,2.5" then coach YouAreWelcome foo:0 0 //Thanks, Coach.
 	scene "scenes/Mechanic/ThanksCoach04.vcd" predelay "2,2.5" then coach YouAreWelcome foo:0 0 //Thanks, Coach.
@@ -861,6 +862,7 @@ Rule ItemDonorCoachMechanic
 
 Response ItemDonorGamblerMechanic
 {
+	scene "scenes/Mechanic/Thanks01.vcd" predelay "2,2.5" then gambler YouAreWelcome foo:0 0 //Hey, thanks, man.
 	scene "scenes/Mechanic/ThanksGambler01.vcd" predelay "2,2.5" then gambler YouAreWelcome foo:0 0 //Thanks, Nick.
 	scene "scenes/Mechanic/ThanksGambler02.vcd" predelay "2,2.5" then gambler YouAreWelcome foo:0 0 //Hey, thanks, Nick.
 	scene "scenes/Mechanic/ThanksGambler03.vcd" predelay "2,2.5" then gambler YouAreWelcome foo:0 0 //Appreciate it, Nick.
@@ -1002,6 +1004,7 @@ Rule ReviveThanksMechanic
 
 Response ReviveThanksCoachMechanic
 {
+	scene "scenes/Mechanic/Thanks01.vcd" predelay "2,2.5" then Subject YouAreWelcome foo:0 0 //Hey, thanks, man.
 	scene "scenes/Mechanic/ThanksCoach01.vcd" predelay ".2,.5" then subject YouAreWelcome foo:0 0 //Thanks, Coach.
 	scene "scenes/Mechanic/ThanksCoach02.vcd" predelay ".2,.5" then subject YouAreWelcome foo:0 0 //Thanks, Coach.
 	scene "scenes/Mechanic/ThanksCoach04.vcd" predelay ".2,.5" then subject YouAreWelcome foo:0 0 //Thanks, Coach.
@@ -1026,6 +1029,7 @@ Rule ReviveThanksCoachC1Mechanic
 
 Response ReviveThanksGamblerMechanic
 {
+	scene "scenes/Mechanic/Thanks01.vcd" predelay "2,2.5" then Subject YouAreWelcome foo:0 0 //Hey, thanks, man.
 	scene "scenes/Mechanic/ThanksGambler01.vcd" predelay ".2,.5"  then subject YouAreWelcome foo:0 0 //Thanks, Nick.
 	scene "scenes/Mechanic/ThanksGambler02.vcd" predelay ".2,.5"  then subject YouAreWelcome foo:0 0 //Hey, thanks, Nick.
 	scene "scenes/Mechanic/ThanksGambler03.vcd" predelay ".2,.5"  then subject YouAreWelcome foo:0 0 //Appreciate it, Nick.
@@ -6233,6 +6237,7 @@ Response SurvivorSpottedTankMechanic
 	scene "scenes/Mechanic/WarnTank01.vcd"  //TANK!
 	scene "scenes/Mechanic/WarnTank02.vcd"  //TANK!
 	scene "scenes/Mechanic/WarnTank03.vcd"  //TANK, TANK, TANK!
+	scene "scenes/Mechanic/WarnTank04.vcd"  //TANK RIGHT AHEAD!
 }
 Rule SurvivorSpottedTankMechanic
 {
@@ -6330,7 +6335,7 @@ Rule SurvivorSpottedWitchC1Mechanic
 
 Rule SurvivorSpottedWitch2C1Mechanic
 {
-	criteria ConceptPlayerWarnWitch IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotIncapacitated IsNotSaidWitchStartAttack C1M1orC1M2
+	criteria ConceptPlayerWarnWitch IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic IsNotIncapacitated IsNotSaidWitchStartAttack C1M1orC1M2 IsNotSurvival
 	Response SurvivorSpottedWitchC1Mechanic
 }
 
@@ -6471,6 +6476,8 @@ Response PlayerFriendlyFireFromGamblerMechanic
 {
 	scene "scenes/Mechanic/FriendlyFireC1Gambler01.vcd"  //Nick! Did you mean to do that?
 	scene "scenes/Mechanic/FriendlyFireC1Gambler02.vcd"  //Nick! I know that was you shootin' me.
+	scene "scenes/Mechanic/FriendlyFireGambler01.vcd"  //Nick, I know you shot me.
+	scene "scenes/Mechanic/FriendlyFireGambler02.vcd"  //Nick, NICK! Don't shoot me.
 }
 Rule PlayerFriendlyFireFromGamblerMechanic
 {
@@ -6619,6 +6626,7 @@ Response SurvivorTauntResponseMechanic
 	scene "scenes/Mechanic/Taunt03.vcd"  //We knocked the piss out of them
 	scene "scenes/Mechanic/Taunt04.vcd"  //Haha! We whipped the dogshit out of them!
 	scene "scenes/Mechanic/Taunt05.vcd"  //That's right, you can't kill us!
+	scene "scenes/Mechanic/Taunt06.vcd"  //Man, we learned your asses!
 	scene "scenes/Mechanic/Taunt07.vcd"  //Yo! Whose your daddy!?!?
 	scene "scenes/Mechanic/Taunt08.vcd"  //Uh oh. My trigger finger got tired!
 }
@@ -7038,7 +7046,7 @@ Response PlayerHelpIncappedMechanic
 }
 Rule PlayerHelpIncappedMechanic
 {
-	criteria ConceptPlayerHelp IsMechanic IsTalk IsTalkMechanic IsIncappedStarted IsIncappedStarted2 IsIncapacitated NotCalledForHelpRecently IsWorldTalkMechanic
+	criteria ConceptPlayerHelp IsMechanic IsNotCoughing IsTalk IsTalkMechanic IsIncappedStarted IsIncappedStarted2 IsIncapacitated NotCalledForHelpRecently IsWorldTalkMechanic
 	ApplyContext "CalledForHelp:1:7.5"
 	Response PlayerHelpIncappedMechanic
 }
@@ -7054,7 +7062,7 @@ Response PlayerHelpIncappedBleeingMechanic
 }
 Rule PlayerHelpIncappedBleeingMechanic
 {
-	criteria ConceptPlayerHelp IsMechanic IsTalk IsTalkMechanic IsIncappedBleeding1 IsIncappedBleeding2 IsIncapacitated NotCalledForHelpRecently IsWorldTalkMechanic
+	criteria ConceptPlayerHelp IsMechanic IsNotCoughing IsTalk IsTalkMechanic IsIncappedBleeding1 IsIncappedBleeding2 IsIncapacitated NotCalledForHelpRecently IsWorldTalkMechanic
 	ApplyContext "CalledForHelp:1:15"
 	Response PlayerHelpIncappedBleeingMechanic
 }
@@ -7068,7 +7076,7 @@ Response PlayerHelpIncappedLethargicMechanic
 }
 Rule PlayerHelpIncappedLethargicMechanic
 {
-	criteria ConceptPlayerHelp IsMechanic IsTalk IsTalkMechanic IsIncappedLethargic IsIncapacitated NotCalledForHelpRecently IsWorldTalkMechanic
+	criteria ConceptPlayerHelp IsMechanic IsNotCoughing IsTalk IsTalkMechanic IsIncappedLethargic IsIncapacitated NotCalledForHelpRecently IsWorldTalkMechanic
 	ApplyContext "CalledForHelp:1:30"
 	Response PlayerHelpIncappedLethargicMechanic
 }
@@ -10458,7 +10466,7 @@ Response PlayerHelpMechanic
 }
 Rule PlayerHelpMechanic
 {
-	criteria ConceptPlayerHelp IsMechanic IsTalk IsNotIncapacitated IsTalkMechanic IsWorldTalkMechanic
+	criteria ConceptPlayerHelp IsMechanic IsNotCoughing IsTalk IsNotIncapacitated IsTalkMechanic IsWorldTalkMechanic
 	Response PlayerHelpMechanic
 }
 
@@ -10703,7 +10711,6 @@ Response PlayerSorryFFMechanic
 {
 	scene "scenes/Mechanic/Sorry02.vcd"  //Sorry 'bout that.
 	scene "scenes/Mechanic/Sorry03.vcd"  //You can lay that blame on me.
-	scene "scenes/Mechanic/Sorry05.vcd"  //Yeah, I'm sorry about that one.
 	scene "scenes/Mechanic/Sorry04.vcd"  //That coulda happened to anyone.
 	scene "scenes/Mechanic/Sorry05.vcd"  //Yeah, I'm sorry about that one.
 	scene "scenes/Mechanic/Sorry06.vcd"  //Sorry, sun was in my eyes.
@@ -10889,7 +10896,6 @@ Rule BotNoteHumanAttentionMechanic
 Response PlayerNegativeMechanic
 {
 	scene "scenes/Mechanic/ReactionNegative01.vcd"  //No!
-	scene "scenes/Mechanic/ReactionNegative02.vcd"  //Ahh SHIT!
 	scene "scenes/Mechanic/ReactionNegative02.vcd"  //Ahh SHIT!
 	scene "scenes/Mechanic/ReactionNegative03.vcd"  //God DAMN!
 	scene "scenes/Mechanic/ReactionNegative04.vcd"  //Ah Lord!
@@ -11667,7 +11673,6 @@ Response PlayerGrabbedByJockeyMechanic
 	scene "scenes/Mechanic/ScreamWhilePounced05.vcd"  //GET HIM OFF!
 	scene "scenes/Mechanic/ScreamWhilePounced05b.vcd"  //GET HIM OFF!
 	scene "scenes/Mechanic/ScreamWhilePounced07.vcd"  //OW! GET...!
-	scene "scenes/Mechanic/ScreamWhilePounced07.vcd"  //OW! GET...!
 }
 Rule PlayerGrabbedByJockeyMechanic
 {
@@ -12049,7 +12054,7 @@ Response PlayerStayTogetherInsideMechanic
 }
 Rule PlayerStayTogetherInsideMechanic
 {
-	criteria ConceptPlayerStayTogether IsNotCoughing IsMechanic IsInSafeSpot IsTalk IsTalkMechanic SomeoneOutsideSafeSpot IsWorldTalkMechanic
+	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsMechanic IsInSafeSpot IsTalk IsTalkMechanic SomeoneOutsideSafeSpot IsWorldTalkMechanic
 	Response PlayerStayTogetherInsideMechanic
 }
 
@@ -12459,6 +12464,12 @@ Rule PlayerWarnHeardWitchC1Mechanic
 	criteria ConceptPlayerWarnHearZombie IsWitchClass IsNotCoughing IsNotAlone IsClosestSurvivorNear1200 IsMechanic IsNotInCheckpoint IsNotInSafeSpot IsNotWarnHeardWitch NotInCombat IsNotSaidSpecialWarn IsTalk IsTalkMechanic  IsWorldTalkMechanic  C1M1orC1M2
 	ApplyContext "WarnHeardWitch:1:300,SaidSpecialWarn:1:30"
 	applycontexttoworld
+	Response PlayerWarnHeardWitchC1Mechanic
+}
+
+Rule PlayerHeardWitchC1Mechanic
+{
+	criteria ConceptPlayerHeardWitch IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic C1M1orC1M2 IsNotSurvival _auto_NotSpottedVehicle
 	Response PlayerWarnHeardWitchC1Mechanic
 }
 
@@ -13112,19 +13123,6 @@ Rule SurvivorVocalizeEmphaticGoMechanic
 {
 	criteria ConceptPlayerEmphaticGo IsMechanic  IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkMechanic IsWorldTalkMechanic
 	Response SurvivorVocalizeEmphaticGoMechanic
-}
-
-Response SurvivorVocalizeFollowMeMechanic
-{
-	scene "scenes/Mechanic/FollowMe01.vcd"  //Follow me.
-	scene "scenes/Mechanic/FollowMe02.vcd"  //Come on, stick with me y'all.
-	scene "scenes/Mechanic/FollowMe03.vcd"  //Follow me this way.
-	scene "scenes/Mechanic/FollowMe04.vcd"  //This way, guys!
-}
-Rule SurvivorVocalizeFollowMeMechanic
-{
-	criteria ConceptPlayerFollowMe IsNotCoughing IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic
-	Response SurvivorVocalizeFollowMeMechanic
 }
 
 Response SurvivorVocalizeGoingToDieMechanic
@@ -14180,7 +14178,7 @@ Response PlayerHealOtherC1Mechanic
 }
 Rule PlayerHealOtherC1Mechanic
 {
-	criteria ConceptPlayerHealingOther IsNotCoughing  IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic ismap_c1m1_hotelC1
+	criteria ConceptPlayerHealingOther IsNotCoughing  IsMechanic IsTalk IsTalkMechanic IsWorldTalkMechanic ismap_c1m1_hotelC1 NoKnowNames
 	ApplyContext "TalkMechanic:1:5"
 	Response PlayerHealOtherC1Mechanic
 }
@@ -16330,19 +16328,19 @@ Rule Player.LostCallC6M3Mechanic
 	Response Player.LostCallC6M3Mechanic
 }
 
-Response PlayerLostCallMechanic
+Response AutoPlayerLostCallMechanic
 {
 	scene "scenes/Mechanic/LostCall01.vcd"  //Anyone?
 	scene "scenes/Mechanic/LostCall02.vcd"  //Where is everyone?!
 	scene "scenes/Mechanic/LostCall03.vcd"  //Not funny man, where are you guys?
 	scene "scenes/Mechanic/LostCall04.vcd"  //Anyone?
 }
-Rule PlayerLostCallMechanic
+Rule AutoPlayerLostCallMechanic
 {
 	criteria ConceptTalkIdle IsMechanic IsClosestSurvivorFar3000 IsNotAlone IsNotSaidPlayerLostCall _auto_NotNoLostCall IsNotSpeakingWeight0 _auto_NotSpottedVehicle
 	ApplyContext "SaidPlayerLostCall:1:50"
 	applycontexttoworld
-	Response PlayerLostCallMechanic
+	Response AutoPlayerLostCallMechanic
 }
 
 
@@ -17176,7 +17174,7 @@ Response C13M1IntroStartMechanic
 Rule C13M1IntroStartMechanic
 {
 	criteria ConceptIntroC13M1 IsMechanic IsNotSaidCXM1Intro AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "IsNotSaidCXM1Intro:1:0"
+	ApplyContext "CXM1Intro:1:0"
 	applycontexttoworld
 	Response C13M1IntroStartMechanic
 }
@@ -17218,13 +17216,11 @@ Rule C13M1IntroLastMechanic
 
 Response C13M1IntroLocationLastMechanic
 {
-	scene "scenes/Mechanic/WorldC1M1B29.vcd"  //Weapons up and let's go. C13M1EllisNotPanicking
+	scene "scenes/Mechanic/WorldC1M1B29.vcd"  //Weapons up and let's go.
 }
 Rule C13M1IntroLocationLastMechanic
 {
-	criteria ConceptC13M1IntroLocationLast IsMechanic AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:6"
-	applycontexttoworld
+	criteria ConceptC13M1IntroLocationLast IsMechanic C13M1EllisNotPanicking AutoIsNotScavenge AutoIsNotSurvival
 	Response C13M1IntroLocationLastMechanic
 }
 

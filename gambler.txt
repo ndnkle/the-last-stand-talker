@@ -6484,7 +6484,7 @@ Response PlayerHelpIncappedGambler
 }
 Rule PlayerHelpIncappedGambler
 {
-	criteria ConceptPlayerHelp IsGambler IsTalk IsTalkGambler IsIncappedStarted IsIncappedStarted2 IsIncapacitated NotCalledForHelpRecently IsWorldTalkGambler
+	criteria ConceptPlayerHelp IsGambler IsNotCoughing IsTalk IsTalkGambler IsIncappedStarted IsIncappedStarted2 IsIncapacitated NotCalledForHelpRecently IsWorldTalkGambler
 	ApplyContext "CalledForHelp:1:7.5"
 	Response PlayerHelpIncappedGambler
 }
@@ -6497,7 +6497,7 @@ Response PlayerHelpIncappedBleedingGambler
 }
 Rule PlayerHelpIncappedBleedingGambler
 {
-	criteria ConceptPlayerHelp IsGambler IsTalk IsTalkGambler IsIncappedBleeding1 IsIncappedBleeding2 IsIncapacitated NotCalledForHelpRecently IsWorldTalkGambler
+	criteria ConceptPlayerHelp IsGambler IsNotCoughing IsTalk IsTalkGambler IsIncappedBleeding1 IsIncappedBleeding2 IsIncapacitated NotCalledForHelpRecently IsWorldTalkGambler
 	ApplyContext "CalledForHelp:1:15"
 	Response PlayerHelpIncappedBleedingGambler
 }
@@ -6509,7 +6509,7 @@ Response PlayerHelpIncappedLethargicGambler
 }
 Rule PlayerHelpIncappedLethargicGambler
 {
-	criteria ConceptPlayerHelp IsGambler IsTalk IsTalkGambler IsIncappedLethargic IsIncapacitated NotCalledForHelpRecently IsWorldTalkGambler
+	criteria ConceptPlayerHelp IsGambler IsNotCoughing IsTalk IsTalkGambler IsIncappedLethargic IsIncapacitated NotCalledForHelpRecently IsWorldTalkGambler
 	ApplyContext "CalledForHelp:1:30"
 	Response PlayerHelpIncappedLethargicGambler
 }
@@ -9791,7 +9791,7 @@ Response PlayerHelpGambler
 }
 Rule PlayerHelpGambler
 {
-	criteria ConceptPlayerHelp IsGambler IsTalk IsNotIncapacitated IsTalkGambler IsWorldTalkGambler
+	criteria ConceptPlayerHelp IsGambler IsNotCoughing IsTalk IsNotIncapacitated IsTalkGambler IsWorldTalkGambler
 	Response PlayerHelpGambler
 }
 
@@ -10287,11 +10287,9 @@ Rule BotNoteHumanAttentionGambler
 Response PlayerNegativeGambler
 {
 	scene "scenes/Gambler/ReactionNegative01.vcd"  //This is all going to hell!
-	scene "scenes/Gambler/ReactionNegative01.vcd"  //This is all going to hell!
 	scene "scenes/Gambler/ReactionNegative02.vcd"  //Damn...
 	scene "scenes/Gambler/ReactionNegative03.vcd"  //Shit!
 	scene "scenes/Gambler/ReactionNegative04.vcd"  //God damn it.
-	scene "scenes/Gambler/ReactionNegative05.vcd"  //Bullshit!
 	scene "scenes/Gambler/ReactionNegative05.vcd"  //Bullshit!
 	scene "scenes/Gambler/ReactionNegative06.vcd"  //Bastards!
 	scene "scenes/Gambler/ReactionNegative07.vcd"  //Holy Shit!
@@ -10303,7 +10301,6 @@ Response PlayerNegativeGambler
 	scene "scenes/Gambler/ReactionNegative13.vcd"  //This is all going to hell!
 	scene "scenes/Gambler/ReactionNegative14.vcd"  //Damn...
 	scene "scenes/Gambler/ReactionNegative15.vcd"  //Shit!
-	scene "scenes/Gambler/ReactionNegative15.vcd"  //Shit!
 	scene "scenes/Gambler/ReactionNegative16.vcd"  //God damn it.
 	scene "scenes/Gambler/ReactionNegative17.vcd"  //Bullshit!
 	scene "scenes/Gambler/ReactionNegative18.vcd"  //Bastards!
@@ -10313,7 +10310,6 @@ Response PlayerNegativeGambler
 	scene "scenes/Gambler/ReactionNegative22.vcd"  //Oh bullshit!
 	scene "scenes/Gambler/ReactionNegative23.vcd"  //My ass.
 	scene "scenes/Gambler/ReactionNegative24.vcd"  //Is this some kind of sick joke?
-	scene "scenes/Gambler/ReactionNegative25.vcd"  //Is this some kind of sick joke?
 	scene "scenes/Gambler/ReactionNegative25.vcd"  //Is this some kind of sick joke?
 	scene "scenes/Gambler/ReactionNegative26.vcd"  //I call foul.
 	scene "scenes/Gambler/ReactionNegative27.vcd"  //Kiss my ass.
@@ -10557,6 +10553,7 @@ Response PlayerHurrahGambler
 	scene "scenes/Gambler/Hurrah07.vcd"  //I'm starting to like you guys.
 	scene "scenes/Gambler/Hurrah08.vcd"  //We're makin' it look EASY!
 	scene "scenes/Gambler/Hurrah09.vcd"  //And THAT is how you do that!
+	scene "scenes/Gambler/Hurrah10.vcd"  //We're the four riders of the goddamn apocalypse!
 	scene "scenes/Gambler/Hurrah11.vcd"  //And THAT is how you do it!
 }
 Rule PlayerHurrahGambler
@@ -11043,14 +11040,9 @@ Response PlayerGrabbedByJockeyGambler
 	scene "scenes/Gambler/GrabbedByJockey05.vcd"  //Jockey! Jockey!
 	scene "scenes/Gambler/GrabbedByJockey06.vcd"  //Shoot this thing off my back!
 	scene "scenes/Gambler/HurtCritical07.vcd"  //[pain noise - loud major pain]
-	scene "scenes/Gambler/HurtCritical07.vcd"  //[pain noise - loud major pain]
-	scene "scenes/Gambler/HurtMajor03.vcd"  //[pain noise - oy]
 	scene "scenes/Gambler/HurtMajor03.vcd"  //[pain noise - oy]
 	scene "scenes/Gambler/HurtMajor05.vcd"  //[pain noise - ugh]
-	scene "scenes/Gambler/HurtMajor05.vcd"  //[pain noise - ugh]
 	scene "scenes/Gambler/ScreamWhilePounced04.vcd"  //GET IT OFF!
-	scene "scenes/Gambler/ScreamWhilePounced04.vcd"  //GET IT OFF!
-	scene "scenes/Gambler/ScreamWhilePounced06.vcd"  //GET IT OFF ME!
 	scene "scenes/Gambler/ScreamWhilePounced06.vcd"  //GET IT OFF ME!
 }
 Rule PlayerGrabbedByJockeyGambler
@@ -11398,7 +11390,7 @@ Response PlayerStayTogetherInsideGambler
 }
 Rule PlayerStayTogetherInsideGambler
 {
-	criteria ConceptPlayerStayTogether IsNotCoughing IsGambler IsInSafeSpot IsTalk IsTalkGambler SomeoneOutsideSafeSpot IsWorldTalkGambler
+	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsGambler IsInSafeSpot IsTalk IsTalkGambler SomeoneOutsideSafeSpot IsWorldTalkGambler
 	Response PlayerStayTogetherInsideGambler
 }
 
@@ -11888,6 +11880,12 @@ Rule PlayerWarnHeardWitchC1Gambler
 	criteria ConceptPlayerWarnHearZombie IsWitchClass IsNotCoughing IsGambler IsNotAlone IsClosestSurvivorNear1200 IsNotWarnHeardWitch NotInCombat IsNotSaidSpecialWarn IsTalk IsTalkGambler IsWorldTalkGambler C1M1orC1M2 IsNotSurvival
 	ApplyContext "WarnHeardWitch:1:300,SaidSpecialWarn:1:30"
 	applycontexttoworld
+	Response PlayerWarnHeardWitchC1Gambler
+}
+
+Rule PlayerHeardWitchC1Gambler
+{
+	criteria ConceptPlayerHeardWitch IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler C1M1orC1M2 IsNotSurvival _auto_NotSpottedVehicle
 	Response PlayerWarnHeardWitchC1Gambler
 }
 
@@ -12505,28 +12503,6 @@ Rule SurvivorVocalizeEmphaticGoGambler
 {
 	criteria ConceptPlayerEmphaticGo IsGambler  IsNotInSafeSpot IsNotInCheckpoint IsTalk IsTalkGambler IsWorldTalkGambler
 	Response SurvivorVocalizeEmphaticGoGambler
-}
-
-Response SurvivorVocalizeFollowMeGambler
-{
-	scene "scenes/Gambler/FollowMe01.vcd"  //This way!
-	scene "scenes/Gambler/FollowMe02.vcd"  //Over here.
-	scene "scenes/Gambler/FollowMe03.vcd"  //Follow me.
-	scene "scenes/Gambler/FollowMe04.vcd"  //Follow me.
-	scene "scenes/Gambler/FollowMe05.vcd"  //Come on, this way!
-	scene "scenes/Gambler/FollowMe06.vcd"  //Keep up.
-	scene "scenes/Gambler/FollowMe07.vcd"  //Keep up.
-	scene "scenes/Gambler/FollowMe08.vcd"  //Come on, this way!
-	scene "scenes/Gambler/FollowMe09.vcd"  //Okay this way!
-	scene "scenes/Gambler/FollowMe10.vcd"  //This way!
-	scene "scenes/Gambler/FollowMe11.vcd"  //Over here.
-	scene "scenes/Gambler/FollowMe12.vcd"  //Follow me.
-	scene "scenes/Gambler/FollowMe13.vcd"  //Keep up.
-}
-Rule SurvivorVocalizeFollowMeGambler
-{
-	criteria ConceptPlayerFollowMe IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
-	Response SurvivorVocalizeFollowMeGambler
 }
 
 Response SurvivorVocalizeGoingToDieGambler
@@ -13656,7 +13632,7 @@ Response PlayerLedgeSaveGambler
 }
 Rule PlayerLedgeSaveGambler
 {
-	criteria ConceptPlayerLedgeSave IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler
+	criteria ConceptPlayerLedgeSave IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler _auto_NotSpottedVehicle
 	ApplyContext "TalkGambler:1:5"
 	Response PlayerLedgeSaveGambler
 }
@@ -13723,6 +13699,28 @@ Rule PlayerReviveFriendBGambler
 {
 	criteria ConceptReviveFriendDownFinal IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotReviveInterrupt
 	Response PlayerReviveFriendBGambler
+}
+
+Response PlayerReviveFriendBCoachGambler
+{
+	scene "scenes/Gambler/ReviveFriendBCoach01.vcd"  //Get up. You aren't leaving me with those two.
+	scene "scenes/Gambler/ReviveFriendBCoach02.vcd"  //Get up, please? You aren't leaving me with those two.
+}
+Rule PlayerReviveFriendBCoachGambler
+{
+	criteria ConceptReviveFriendDownFinal IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotReviveInterrupt FromIsCoach ChanceToFire10Percent isNotmap_c1m1_hotel isNotmap_c1m2_streets
+	Response PlayerReviveFriendBCoachGambler
+}
+
+Response PlayerReviveFriendBEllisGambler
+{
+	scene "scenes/Gambler/ReviveFriendBEllis01.vcd"  //Come on,  still lots to be done.
+	scene "scenes/Gambler/ReviveFriendBEllis02.vcd"  //Rise and shine!
+}
+Rule PlayerReviveFriendBEllisGambler
+{
+	criteria ConceptReviveFriendDownFinal IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotReviveInterrupt FromIsEllis ChanceToFire10Percent isNotmap_c1m1_hotel isNotmap_c1m2_streets
+	Response PlayerReviveFriendBEllisGambler
 }
 
 Response PlayerReviveFriendCriticalGambler
@@ -13812,8 +13810,6 @@ Response _C1M1_ElevatorHelloGambler
 Rule _C1M1_ElevatorHelloGambler
 {
 	criteria Concept_C1M1_ElevatorHello IsGambler AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:7.019"
-	applycontexttoworld
 	Response _C1M1_ElevatorHelloGambler
 }
 
@@ -15556,7 +15552,7 @@ Rule Player.LostCallC6M3Gambler
 	Response Player.LostCallC6M3Gambler
 }
 
-Response PlayerLostCallGambler
+Response AutoPlayerLostCallGambler
 {
 	scene "scenes/Gambler/LostCall01.vcd"  //Helloooo?
 	scene "scenes/Gambler/LostCall02.vcd"  //Heyyy ooooo!
@@ -15564,12 +15560,12 @@ Response PlayerLostCallGambler
 	scene "scenes/Gambler/LostCall04.vcd"  //Can you guys hear me?
 	scene "scenes/Gambler/LostCall05.vcd"  //Helloooo?
 }
-Rule PlayerLostCallGambler
+Rule AutoPlayerLostCallGambler
 {
 	criteria ConceptTalkIdle IsGambler IsClosestSurvivorFar3000 IsNotAlone IsNotSaidPlayerLostCall _auto_NotNoLostCall IsNotSpeakingWeight0 _auto_NotSpottedVehicle
 	ApplyContext "SaidPlayerLostCall:1:50"
 	applycontexttoworld
-	Response PlayerLostCallGambler
+	Response AutoPlayerLostCallGambler
 }
 
 

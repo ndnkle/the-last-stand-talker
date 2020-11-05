@@ -2992,10 +2992,7 @@ Rule L4D1SpottedSpitter2Manager
 Response L4D1SurvivorSpottedInfectedManager
 {
 	scene "scenes/Manager/Incoming01.vcd"  //Here they come!
-	scene "scenes/Manager/Incoming01.vcd"  //Here they come!
 	scene "scenes/Manager/Incoming02.vcd"  //They're comin'!
-	scene "scenes/Manager/Incoming02.vcd"  //They're comin'!
-	scene "scenes/Manager/Incoming03.vcd"  //Incoming!
 	scene "scenes/Manager/Incoming03.vcd"  //Incoming!
 	scene "scenes/Manager/Incoming04.vcd" odds 2 //Oh shit, here they come!
 }
@@ -3019,11 +3016,9 @@ Rule SurvivorSpottedTankManager
 	Response SurvivorSpottedTankManager
 }
 
-Rule SurvivorAlsoSpottedTankManager
+Rule SurvivorSpottedTank2Manager
 {
 	criteria ConceptPlayerWarnTank IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotIncapacitated _auto_NotSpottedVehicle
-	ApplyContext "SaidTankWarn:1:20,SaidTankWarn2:1:60"
-	applycontexttoworld
 	Response SurvivorSpottedTankManager
 }
 
@@ -3066,11 +3061,9 @@ Rule SurvivorSpottedWitchManager
 	Response SurvivorSpottedWitchManager
 }
 
-Rule SurvivorAlsoSpottedWitchManager
+Rule SurvivorSpottedWitch2Manager
 {
 	criteria ConceptPlayerWarnWitch IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotIncapacitated IsNotSaidWitchStartAttack _auto_NotSpottedVehicle
-	ApplyContext "SaidWitchWarn:1:20"
-	applycontexttoworld
 	Response SurvivorSpottedWitchManager
 }
 
@@ -3285,7 +3278,7 @@ Response PlayerToTheRescueRosManager
 }
 Rule PlayerToTheRescueRosManager
 {
-	criteria ConceptPlayerToTheRescue IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager IsNotSpeaking
+	criteria ConceptPlayerToTheRescue IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager
 	Response PlayerToTheRescueRosManager
 }
 
@@ -3488,7 +3481,7 @@ Response L4D1PlayerHelpIncappedManager
 }
 Rule L4D1PlayerHelpIncappedManager
 {
-	criteria ConceptPlayerHelp IsManager IsTalk IsTalkManager IsIncappedStarted IsIncappedStarted2 IsIncapacitated NotCalledForHelpRecently IsWorldTalkManager
+	criteria ConceptPlayerHelp IsManager IsNotCoughing IsTalk IsTalkManager IsIncappedStarted IsIncappedStarted2 IsIncapacitated NotCalledForHelpRecently IsWorldTalkManager
 	ApplyContext "CalledForHelp:1:7.5"
 	Response L4D1PlayerHelpIncappedManager
 }
@@ -3502,7 +3495,7 @@ Response L4D1PlayerHelpIncappedBleedingManager
 }
 Rule L4D1PlayerHelpIncappedBleedingManager
 {
-	criteria ConceptPlayerHelp IsManager IsTalk IsTalkManager IsIncappedBleeding1 IsIncappedBleeding2 IsIncapacitated NotCalledForHelpRecently IsWorldTalkManager
+	criteria ConceptPlayerHelp IsManager IsNotCoughing IsTalk IsTalkManager IsIncappedBleeding1 IsIncappedBleeding2 IsIncapacitated NotCalledForHelpRecently IsWorldTalkManager
 	ApplyContext "CalledForHelp:1:15"
 	Response L4D1PlayerHelpIncappedBleedingManager
 }
@@ -3517,7 +3510,7 @@ Response L4D1PlayerHelpIncappedLethargicManager
 }
 Rule L4D1PlayerHelpIncappedLethargicManager
 {
-	criteria ConceptPlayerHelp IsManager IsTalk IsTalkManager IsIncappedLethargic IsIncapacitated NotCalledForHelpRecently IsWorldTalkManager
+	criteria ConceptPlayerHelp IsManager IsNotCoughing IsTalk IsTalkManager IsIncappedLethargic IsIncapacitated NotCalledForHelpRecently IsWorldTalkManager
 	ApplyContext "CalledForHelp:1:30"
 	Response L4D1PlayerHelpIncappedLethargicManager
 }
@@ -5260,7 +5253,7 @@ Response L4D1PlayerHelpManager
 }
 Rule L4D1PlayerHelpManager
 {
-	criteria ConceptPlayerHelp IsManager IsNotIncapacitated IsTalk IsTalkManager IsWorldTalkManager
+	criteria ConceptPlayerHelp IsManager IsNotCoughing IsNotIncapacitated IsTalk IsTalkManager IsWorldTalkManager
 	Response L4D1PlayerHelpManager
 }
 
@@ -5494,7 +5487,6 @@ Response L4D1PlayerSorryFFManager
 {
 	scene "scenes/Manager/Sorry03.vcd"  //Sorry about that!
 	scene "scenes/Manager/Sorry04.vcd"  //Aww, man, sorry.
-	scene "scenes/Manager/Sorry05.vcd"  //Ah hell, that was my fault.
 	scene "scenes/Manager/Sorry06.vcd"  //My bad.
 	scene "scenes/Manager/Sorry07.vcd"  //100% my fault
 }
@@ -5648,6 +5640,7 @@ Rule PlayerHurrahManager
 
 Response PlayerWarnCarefulManager
 {
+	scene "scenes/Manager/WarnCareful01.vcd"  //Be very damn careful....
 	scene "scenes/Manager/WarnCareful02.vcd"  //Caarefullll...
 	scene "scenes/Manager/WarnCareful03.vcd"  //Careful...
 	scene "scenes/Manager/WarnCareful04.vcd"  //Be careful...
@@ -6076,7 +6069,7 @@ Response L4D1PlayerStayTogetherInsideManager
 }
 Rule L4D1PlayerStayTogetherInsideManager
 {
-	criteria ConceptPlayerStayTogether IsNotCoughing IsManager IsInSafeSpot IsTalk IsTalkManager SomeoneOutsideSafeSpot IsWorldTalkManager
+	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsManager IsInSafeSpot IsTalk IsTalkManager SomeoneOutsideSafeSpot IsWorldTalkManager
 	Response L4D1PlayerStayTogetherInsideManager
 }
 
@@ -6519,20 +6512,6 @@ Rule L4D1SurvivorVocalizeEmphaticGoManager
 	Response L4D1SurvivorVocalizeEmphaticGoManager
 }
 
-Response L4D1SurvivorVocalizeFollowMeManager
-{
-	scene "scenes/Manager/FollowMe01.vcd"  //Come on this way.
-	scene "scenes/Manager/FollowMe02.vcd"  //Follow me.
-	scene "scenes/Manager/FollowMe03.vcd"  //Follow me!
-	scene "scenes/Manager/FollowMe04.vcd"  //This way.
-	scene "scenes/Manager/FollowMe05.vcd"  //Come on man, this way.
-}
-Rule L4D1SurvivorVocalizeFollowMeManager
-{
-	criteria ConceptPlayerFollowMe IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager
-	Response L4D1SurvivorVocalizeFollowMeManager
-}
-
 Response L4D1SurvivorVocalizeGoingToDieManager
 {
 	scene "scenes/Manager/GoingToDie01.vcd"  //I don't feel so good
@@ -6609,7 +6588,7 @@ Response L4D1SurvivorVocalizeLookOutManager
 }
 Rule L4D1SurvivorVocalizeLookOutManager
 {
-	criteria ConceptPlayerLookOut IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager
+	criteria ConceptPlayerLookOut IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager _auto_NotSpottedVehicle
 	Response L4D1SurvivorVocalizeLookOutManager
 }
 
@@ -6744,8 +6723,6 @@ Rule PlayerGrabbedByJockeyManager
 Response PlayerRevivedByDefibrillatorManager
 {
 	scene "scenes/Manager/ReactionStartled01.vcd"  //AHHHH!
-	scene "scenes/Manager/ReactionStartled01.vcd"  //AHHHH!
-	scene "scenes/Manager/ReactionStartled02.vcd"  //Whoah!
 	scene "scenes/Manager/ReactionStartled02.vcd"  //Whoah!
 	scene "scenes/Manager/ReactionStartled04.vcd"  //Ah ah!
 }
@@ -6818,8 +6795,6 @@ Rule SurvivorGooedBySpitterManager
 Response SurvivorPouncedByHunterManager
 {
 	scene "scenes/Manager/ScreamWhilePounced02.vcd"  //GET IT GET IT OFF GET IT OFF!
-	scene "scenes/Manager/ScreamWhilePounced02.vcd"  //GET IT GET IT OFF GET IT OFF!
-	scene "scenes/Manager/ScreamWhilePounced03.vcd"  //GET IT GET IT OFF GET IT OFF!
 	scene "scenes/Manager/ScreamWhilePounced03.vcd"  //GET IT GET IT OFF GET IT OFF!
 }
 Rule SurvivorPouncedByHunterManager
@@ -7646,14 +7621,14 @@ Response PlayerLedgeSaveManager
 Rule PlayerLedgeSaveManager
 {
 	criteria ConceptPlayerLedgeSave IsNotCoughing IsManager IsTalk IsTalkManager IsWorldTalkManager _auto_NotSpottedVehicle
-	ApplyContext "TalkManager:1:2"
+	ApplyContext "TalkManager:1:5"
 	Response PlayerLedgeSaveManager
 }
 
 Rule L4D1PlayerLedgeSaveCriticalManager
 {
 	criteria ConceptPlayerLedgeSaveCritical IsNotCoughing  IsManager IsTalk IsTalkManager IsWorldTalkManager _auto_NotSpottedVehicle
-	ApplyContext "TalkManager:1:2"
+	ApplyContext "TalkManager:1:5"
 	Response PlayerLedgeSaveManager
 }
 
@@ -7732,7 +7707,7 @@ Rule L4D1PlayerCoverMeHealManager
 //--------------------------------------------------------------------------------------------------------------
 // Volcalize
 //--------------------------------------------------------------------------------------------------------------
-Response PlayerLostCallManager
+Response AutoPlayerLostCallManager
 {
 	scene "scenes/Manager/LostCall01.vcd"  //Hello?
 	scene "scenes/Manager/LostCall03.vcd"  //Where is everyone?
@@ -7740,12 +7715,12 @@ Response PlayerLostCallManager
 	scene "scenes/Manager/LostCall05.vcd"  //Where'd everyone get to?
 	scene "scenes/Manager/LostCall06.vcd"  //Can anyone hear me?
 }
-Rule PlayerLostCallManager
+Rule AutoPlayerLostCallManager
 {
 	criteria ConceptTalkIdle IsManager IsClosestSurvivorFar3000 IsNotAlone IsNotSaidPlayerLostCall _auto_NotNoLostCall IsNotSpeakingWeight0
 	ApplyContext "SaidPlayerLostCall:1:50"
 	applycontexttoworld
-	Response PlayerLostCallManager
+	Response AutoPlayerLostCallManager
 }
 
 //--------------------------------------------------------------------------------------------------------------

@@ -180,8 +180,6 @@ Rule PlayerRelaxedSighNamVet
 Response PlayerUseAdrenalineNamVet
 {
 	scene "scenes/NamVet/PainReliefSigh02.vcd" predelay "1.2" //ah
-	scene "scenes/NamVet/PainReliefSigh02.vcd" predelay "1.2" //ah
-	scene "scenes/NamVet/PainReliefSigh03.vcd" predelay "1.2" //ah
 	scene "scenes/NamVet/PainReliefSigh03.vcd" predelay "1.2" //ah
 }
 Rule PlayerUseAdrenalineNamVet
@@ -1362,7 +1360,6 @@ Rule C7M3WaveOverGen2NamVet
 Response L4D1PlayerCallForRescueNamVet
 {
 	speak "Player.NamVet_CallForRescue01" noscene  //Anybody out there?
-	speak "Player.NamVet_CallForRescue01" noscene  //Anybody out there?
 	speak "Player.NamVet_CallForRescue02" noscene  //Come on people, let me out!
 	speak "Player.NamVet_CallForRescue05" noscene  //Can anyone hear me?
 	speak "Player.NamVet_CallForRescue06" noscene  //Let me out!
@@ -2518,8 +2515,6 @@ Rule SurvivorSpottedTankNamVet
 Rule SurvivorSpottedTank2NamVet
 {
 	criteria ConceptPlayerWarnTank IsNotCoughing IsNamVet IsTalk IsTalkNamVet IsWorldTalkNamVet IsNotIncapacitated _auto_NotSpottedVehicle
-	ApplyContext "SaidTankWarn:1:20,SaidTankWarn2:1:60"
-	applycontexttoworld
 	Response SurvivorSpottedTankNamVet
 }
 
@@ -2541,8 +2536,6 @@ Rule SurvivorSpottedWitchNamVet
 Rule SurvivorSpottedWitch2NamVet
 {
 	criteria ConceptPlayerWarnWitch IsNotCoughing IsNamVet IsTalk IsTalkNamVet IsWorldTalkNamVet IsNotIncapacitated IsNotSaidWitchStartAttack _auto_NotSpottedVehicle
-	ApplyContext "SaidWitchWarn:1:20"
-	applycontexttoworld
 	Response SurvivorSpottedWitchNamVet
 }
 
@@ -2958,7 +2951,7 @@ Response L4D1PlayerHelpIncappedNamVet
 }
 Rule L4D1PlayerHelpIncappedNamVet
 {
-	criteria ConceptPlayerHelp IsNamVet IsTalk IsTalkNamVet IsIncappedStarted IsIncappedStarted2 IsIncapacitated NotCalledForHelpRecently IsWorldTalkNamVet
+	criteria ConceptPlayerHelp IsNamVet IsNotCoughing IsTalk IsTalkNamVet IsIncappedStarted IsIncappedStarted2 IsIncapacitated NotCalledForHelpRecently IsWorldTalkNamVet
 	ApplyContext "CalledForHelp:1:7.5"
 	Response L4D1PlayerHelpIncappedNamVet
 }
@@ -2977,7 +2970,7 @@ Response L4D1PlayerHelpIncapped2NamVet
 }
 Rule L4D1PlayerHelpIncapped2NamVet
 {
-	criteria ConceptPlayerHelp IsNamVet IsTalk IsTalkNamVet IsIncapacitated IsIncappedBleeding1 IsIncappedBleeding2 NotCalledForHelpRecently IsWorldTalkNamVet
+	criteria ConceptPlayerHelp IsNamVet IsNotCoughing IsTalk IsTalkNamVet IsIncapacitated IsIncappedBleeding1 IsIncappedBleeding2 NotCalledForHelpRecently IsWorldTalkNamVet
 	ApplyContext "CalledForHelp:1:15"
 	Response L4D1PlayerHelpIncapped2NamVet
 }
@@ -2993,7 +2986,7 @@ Response L4D1PlayerHelpIncapped3NamVet
 }
 Rule L4D1PlayerHelpIncapped3NamVet
 {
-	criteria ConceptPlayerHelp IsNamVet IsTalk IsTalkNamVet IsIncapacitated IsIncappedLethargic NotCalledForHelpRecently IsWorldTalkNamVet
+	criteria ConceptPlayerHelp IsNamVet IsNotCoughing IsTalk IsTalkNamVet IsIncapacitated IsIncappedLethargic NotCalledForHelpRecently IsWorldTalkNamVet
 	ApplyContext "CalledForHelp:1:30"
 	Response L4D1PlayerHelpIncapped3NamVet
 }
@@ -4777,7 +4770,7 @@ Response L4D1PlayerHelpNamVet
 }
 Rule L4D1PlayerHelpNamVet
 {
-	criteria ConceptPlayerHelp IsNamVet IsTalk IsNotIncapacitated IsTalkNamVet IsWorldTalkNamVet
+	criteria ConceptPlayerHelp IsNamVet IsNotCoughing IsTalk IsNotIncapacitated IsTalkNamVet IsWorldTalkNamVet
 	Response L4D1PlayerHelpNamVet
 }
 
@@ -4862,6 +4855,7 @@ Response L4D1PlayerStayTogetherNamVet
 	scene "scenes/NamVet/StayTogether08.vcd"  //Don't get split up.
 	scene "scenes/NamVet/StayTogether09.vcd"  //Stay together.
 	scene "scenes/NamVet/StayTogether10.vcd"  //Stick together, people.
+	scene "scenes/NamVet/StayTogether11.vcd"  //We've got to stay together.
 }
 Rule L4D1PlayerStayTogetherNamVet
 {
@@ -5115,7 +5109,6 @@ Response L4D1PlayerNegativeNamVet
 	scene "scenes/NamVet/ReactionNegative04.vcd"  //[Frustration sound]
 	scene "scenes/NamVet/ReactionNegative03.vcd"  //Gee-zus
 	scene "scenes/NamVet/ReactionNegative10.vcd"  //Dammit
-	scene "scenes/NamVet/ReactionNegative10.vcd"  //Dammit
 	scene "scenes/NamVet/SwearCoupdeGrace02.vcd"  //Go to hell.
 	scene "scenes/NamVet/Swears05.vcd"  //Mother. Humper.
 	scene "scenes/NamVet/Swears07.vcd"  //Ah hell.
@@ -5163,6 +5156,7 @@ Rule L4D1SurvivorSpottedWorldFarNamVet
 
 Response PlayerHurrahNamVet
 {
+	scene "scenes/NamVet/Hurrah02.vcd"  //We're doing pretty goddamn good. Don't let it go to your head.
 	scene "scenes/NamVet/Hurrah03.vcd"  then Any HurrahAlso foo:0 -1.730 //GREAT JOB, PEOPLE!
 	scene "scenes/NamVet/Hurrah05.vcd"  //We're going to be okay.
 	scene "scenes/NamVet/Hurrah20.vcd"  then Any HurrahAlso foo:0 -1.801 //You people are gettin' good.
@@ -5380,13 +5374,7 @@ Response L4D1PlayerGetInsideCheckPointNamVet
 }
 Rule L4D1PlayerGetInsideCheckPointNamVet
 {
-	criteria ConceptPlayerGetInsideCheckPoint  IsNotCoughing IsNamVet IsInSafeSpot IsTalk IsTalkNamVet SomeoneOutsideSafeSpot IsWorldTalkNamVet
-	Response L4D1PlayerGetInsideCheckPointNamVet
-}
-
-Rule L4D1PlayerStayTogetherInsideNamVet
-{
-	criteria ConceptPlayerStayTogether IsNotCoughing IsNamVet IsInSafeSpot IsTalk IsTalkNamVet SomeoneOutsideSafeSpot IsWorldTalkNamVet
+	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsNamVet IsInSafeSpot IsTalk IsTalkNamVet SomeoneOutsideSafeSpot IsWorldTalkNamVet
 	Response L4D1PlayerGetInsideCheckPointNamVet
 }
 
@@ -5563,7 +5551,7 @@ Response L4D1PlayerSuggestHealthLouisNamVet
 }
 Rule L4D1PlayerSuggestHealthLouisNamVet
 {
-	criteria ConceptPlayerSuggestHealth IsNamVet IssuerReallyClose IsNotBeingHealed IsTalk IsTalkNamVet IsNotIncapacitated TimeSinceGroupInCombat20 IsNotSpeakingWeight0 FromIsManager ChanceToFire50Percent IsWorldTalkNamVet
+	criteria ConceptPlayerSuggestHealth IsNamVet IssuerReallyClose IsNotBeingHealed IsTalk IsTalkNamVet IsNotIncapacitated TimeSinceGroupInCombat20 IsNotSpeakingWeight0 ChanceToFire50Percent IsWorldTalkNamVet
 	ApplyContext "SuggestedHealth:1:120"
 	applycontexttoworld
 	Response L4D1PlayerSuggestHealthLouisNamVet
@@ -5920,24 +5908,6 @@ Rule L4D1SurvivorVocalizeEmphaticGoNamVet
 	Response L4D1SurvivorVocalizeEmphaticGoNamVet
 }
 
-Response L4D1SurvivorVocalizeFollowMeNamVet
-{
-	scene "scenes/NamVet/FollowMe01.vcd"  //Come on, this way.
-	scene "scenes/NamVet/FollowMe02.vcd"  //I'll take the lead.
-	scene "scenes/NamVet/FollowMe03.vcd"  //Follow me!
-	scene "scenes/NamVet/FollowMe04.vcd"  //This way, people!
-	scene "scenes/NamVet/FollowMe05.vcd"  //This way.
-	scene "scenes/NamVet/FollowMe06.vcd"  //I'm on point.
-	scene "scenes/NamVet/FollowMe07.vcd"  //This way!
-	scene "scenes/NamVet/FollowMe08.vcd"  //Fall in behind me.
-	scene "scenes/NamVet/FollowMe09.vcd"  //Follow me.
-}
-Rule L4D1SurvivorVocalizeFollowMeNamVet
-{
-	criteria ConceptPlayerFollowMe IsNotCoughing IsNamVet IsTalk IsTalkNamVet IsWorldTalkNamVet
-	Response L4D1SurvivorVocalizeFollowMeNamVet
-}
-
 Response L4D1SurvivorVocalizeGoingToDieNamVet
 {
 	scene "scenes/NamVet/GoingToDie01.vcd"  //I don't feel so good.
@@ -6013,7 +5983,7 @@ Response L4D1SurvivorVocalizeLookOutNamVet
 }
 Rule L4D1SurvivorVocalizeLookOutNamVet
 {
-	criteria ConceptPlayerLookOut IsNotCoughing IsNamVet IsTalk IsTalkNamVet IsWorldTalkNamVet
+	criteria ConceptPlayerLookOut IsNotCoughing IsNamVet IsTalk IsTalkNamVet IsWorldTalkNamVet _auto_NotSpottedVehicle
 	Response L4D1SurvivorVocalizeLookOutNamVet
 }
 
@@ -6193,7 +6163,7 @@ Response PlayerRevivedByDefibrillator2NamVet
 }
 Rule PlayerRevivedByDefibrillator2NamVet
 {
-	criteria ConceptRevivedByDefibrillatorDelayed IsNamVet _auto_NotSpottedVehicle
+	criteria ConceptRevivedByDefibrillatorDelayed IsNamVet
 	ApplyContext "TalkNamVet:1:3"
 	applycontexttoworld
 	Response PlayerRevivedByDefibrillator2NamVet
@@ -6847,10 +6817,7 @@ Rule L4D1PlayerGettingRevivedNamVet
 Response L4D1PlayerHealOtherNamVet
 {
 	scene "scenes/NamVet/HealOther01.vcd"  //Let me heal you up
-	scene "scenes/NamVet/HealOther01.vcd"  //Let me heal you up
 	scene "scenes/NamVet/HealOther02.vcd"  //Hold still, I can heal you
-	scene "scenes/NamVet/HealOther02.vcd"  //Hold still, I can heal you
-	scene "scenes/NamVet/HealOther03.vcd"  //Hold on, let me patch you up
 	scene "scenes/NamVet/HealOther03.vcd"  //Hold on, let me patch you up
 	scene "scenes/NamVet/HealOther04.vcd"  //Lemme heal ya up.
 	scene "scenes/NamVet/HealOther05.vcd"  //Hold up, I'll heal ya.
@@ -7168,7 +7135,7 @@ Rule L4D1PlayerCoverMeHealNamVet
 //--------------------------------------------------------------------------------------------------------------
 // Volcalize
 //--------------------------------------------------------------------------------------------------------------
-Response PlayerLostCallNamVet
+Response AutoPlayerLostCallNamVet
 {
 	scene "scenes/NamVet/LostCall01.vcd"  //Hello?
 	scene "scenes/NamVet/LostCall02.vcd"  //Where are you?
@@ -7179,12 +7146,12 @@ Response PlayerLostCallNamVet
 	scene "scenes/NamVet/LostCall08.vcd"  //Anybody out there?
 	scene "scenes/NamVet/LostCall09.vcd"  //Is anyone out there?
 }
-Rule PlayerLostCallNamVet
+Rule AutoPlayerLostCallNamVet
 {
 	criteria ConceptTalkIdle IsNamVet IsClosestSurvivorFar3000 IsNotAlone IsNotSaidPlayerLostCall _auto_NotNoLostCall IsNotSpeakingWeight0 _auto_NotSpottedVehicle
 	ApplyContext "SaidPlayerLostCall:1:50"
 	applycontexttoworld
-	Response PlayerLostCallNamVet
+	Response AutoPlayerLostCallNamVet
 }
 
 //--------------------------------------------------------------------------------------------------------------

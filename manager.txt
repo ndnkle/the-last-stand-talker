@@ -6657,7 +6657,7 @@ Response SacrificeSuccessfulManager
 }
 Rule SacrificeSuccessfulManager
 {
-	criteria ConceptPlayerIncapacitated IsNotCoughing IsManager IsTalk IsTalkManager ismapc7m3_port _auto_IsSaidC7M3BridgeLeap _auto_IsC7M3FinalPress
+	criteria ConceptPlayerIncapacitated IsNotCoughing IsManager IsTalk IsTalkManager IsLastGenerator ismapc7m3_port _auto_IsSaidC7M3BridgeLeap _auto_IsC7M3FinalPress
 	ApplyContext "TalkManager:1:15"
 	Response SacrificeSuccessfulManager
 }

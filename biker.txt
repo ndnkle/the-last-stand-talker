@@ -7948,7 +7948,7 @@ Response SacrificeSuccessfulBiker
 }
 Rule SacrificeSuccessfulBiker
 {
-	criteria ConceptPlayerIncapacitated IsBiker IsLastGenerator IsTalk IsTalkBiker Ismapc7m3_port _auto_IsSaidC7M3BridgeLeap _auto_IsC7M3FinalPress
+	criteria ConceptPlayerIncapacitated IsNotCoughing IsBiker IsTalk IsTalkBiker IsLastGenerator Ismapc7m3_port _auto_IsSaidC7M3BridgeLeap _auto_IsC7M3FinalPress
 	ApplyContext "TalkBiker:1:15"
 	Response SacrificeSuccessfulBiker
 }

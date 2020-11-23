@@ -8083,7 +8083,7 @@ Response L4D1PlayerHealOtherCombatTeenGirl
 }
 Rule L4D1PlayerHealOtherCombatTeenGirl
 {
-	criteria ConceptPlayerHealingOther IsNotCoughing  IsTeenGirl IsTalk IsTalkTeenGirl IntensityOver50 IsWorldTalkTeenGirl _auto_NotSpottedVehicle
+	criteria ConceptPlayerHealingOther IsNotCoughing  IsTeenGirl IsTalk IsTalkTeenGirl IntensityOver50 IsWorldTalkTeenGirl
 	ApplyContext "TalkTeenGirl:1:5"
 	Response L4D1PlayerHealOtherCombatTeenGirl
 }

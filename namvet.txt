@@ -4915,6 +4915,7 @@ Response L4D1PlayerLaughNamVet
 	scene "scenes/NamVet/Laughter04.vcd"  //<Hearty Laugh>
 	scene "scenes/NamVet/Laughter09.vcd"  //<Hearty Laugh>
 	scene "scenes/NamVet/Laughter10.vcd"  //<Short laugh>
+	scene "scenes/NamVet/Laughter11.vcd"  //<Laughter>
 	scene "scenes/NamVet/Laughter12.vcd"  //<Short laugh>
 	scene "scenes/NamVet/Laughter14.vcd"  //<Hearty Laugh>
 }
@@ -5528,7 +5529,7 @@ Response L4D1PlayerSuggestHealthNamVet
 }
 Rule L4D1PlayerSuggestHealthNamVet
 {
-	criteria ConceptPlayerSuggestHealth IsNamVet IssuerReallyClose IsNotBeingHealed IsTalk IsTalkNamVet IsNotIncapacitated TimeSinceGroupInCombat20 IsNotSpeakingWeight0 FromIsManager ChanceToFire50Percent IsWorldTalkNamVet
+	criteria ConceptPlayerSuggestHealth IsNamVet IssuerReallyClose IsNotBeingHealed IsTalk IsTalkNamVet IsNotIncapacitated TimeSinceGroupInCombat20 IsNotSpeakingWeight0 IsWorldTalkNamVet
 	ApplyContext "SuggestedHealth:1:120"
 	applycontexttoworld
 	Response L4D1PlayerSuggestHealthNamVet

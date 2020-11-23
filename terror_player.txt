@@ -1863,35 +1863,35 @@ Criterion "IsProfanity" "worldNoProfanity" "!=1" "required" weight 0
 
 criterion "ConceptEllisInterrupt"   "Concept" "EllisInterrupt"	  required
 
-Criterion "IsNotmap_c4m2"       "map" "!=c4m2_sugarmill_a" required 
-Criterion "IsNotc6m1_riverbank" "map" "!=c6m1_riverbank"   required 
+//Saferoom door open 
 
-
-//Map Switchs
-Criterion "IsCampaignl4d2_1" "campaign" "l4d2_1" "required"
-Criterion "ismap_c1m1_hotel" "map" "c1m1_hotel" "required"
-Criterion "ismap_c1m1_hotelC1" "map" "c1m1_hotel" "required" weight 100
-Criterion "ismap_c1m2_streets" "map" "c1m2_streets" "required"
-Criterion "ismap_c1m2_streetsC1" "map" "c1m2_streets" "required" weight 100
-Criterion "ismap_c1m3_mall" "map" "c1m3_mall" "required" weight 100
-Criterion "ismap_c1m4_atrium" "map" "c1m4_atrium" "required" weight 100
 criterion "Conceptopen_safedoor"   "Concept" "open_safedoor"	  required  //Trigger_multiple just outside starting safe doors (needs to be placed manually in maps)
 
-criterion "C1M1orC1M2" { ismap_c1m1_hotel ismap_c1m2_streets } required weight 10
-Criterion "isNotmap_c1m1_hotel" "map" "!=c1m1_hotel" "required" weight 50
-Criterion "isNotmap_c1m2_streets" "map" "!=c1m2_streets" "required"
+//Map related criterias
 
-//C1
+//C1M1
+Criterion "ismap_c1m1_hotel" "map" "c1m1_hotel" "required" weight 100
+Criterion "isNotmap_c1m1_hotel" "map" "!=c1m1_hotel" "required"
 criterion "ConceptIntroC1M1"   "Concept" "introC1M1"	  required
 
+//C1M2
+Criterion "ismap_c1m2_streets" "map" "c1m2_streets" "required" weight 100
+Criterion "isNotmap_c1m2_streets" "map" "!=c1m2_streets" "required"
+
+//C1M3
+Criterion "ismap_c1m3_mall" "map" "c1m3_mall" "required" weight 100
 
 //C1M4
+Criterion "ismap_c1m4_atrium" "map" "c1m4_atrium" "required" weight 100
 Criterion "ElevatorTimeUp" "worldElevatorTimer" "!=1" "required" weight 1
 Criterion "ElevatorTimeNotUp" "worldElevatorTimer" "1" "required" weight 1
 
+//C1 Special Criterion
+criterion "C1M1orC1M2" { ismap_c1m1_hotel ismap_c1m2_streets } required weight 10
+criterion "ConceptNickC1Attitude"	"Concept" "NickC1Attitude"		required
+
 //C2
 criterion "ConceptEndOfWavWindow5"   "Concept" "EndOfWavWindow5"	  required
-
 
 //C2M1
 Criterion "ismap_c2m1" "map" "c2m1_highway" "required" weight 100
@@ -1899,13 +1899,13 @@ criterion "ConceptIntroC2M1"   "Concept" "introC2M1"	  required
 criterion "ConceptC2M1Falling"   "Concept" "C2M1Falling"	  required
 criterion "ConceptC2M1DoneFalling"   "Concept" "C2M1DoneFalling"	  required
 
-//C2m2
+//C2M2
 Criterion "ismap_c2m2" "map" "c2m2_fairgrounds" "required" weight 100
 criterion "Conceptc2m2CarouselStart"   "Concept" "c2m2CarouselStart"	  required
 criterion "Conceptc2m2CarouselEnd"   "Concept" "c2m2CarouselEnd"	  required
 Criterion "EllisNotTall" "worldEllisTallJoke" "1" "required" weight 1
 
-//C2m3
+//C2M3
 Criterion "ismap_c2m3" "map" "c2m3_coaster" "required" weight 100
 criterion "Conceptc2m3CoasterStart"   "Concept" "c2m3CoasterStart"	  required
 criterion "Conceptc2m3CoasterEnd"   "Concept" "c2m3CoasterEnd"	  required
@@ -1917,7 +1917,7 @@ criterion "ConceptC2M3CoasterRun"   "Concept" "C2M3CoasterRun"	  required
 criterion "ConceptC2M3CoasterRunGo"   "Concept" "C2M3CoasterRunGo"	  required
 criterion "ConceptC2M3CloseToSafeHouse"   "Concept" "C2M3CloseToSafeHouse"	  required
 
-//c2m4
+//C2M4
 Criterion "ismap_c2m4" "map" "c2m4_barns" "required" weight 100
 criterion "Conceptc2m4SeeChopper"   "Concept" "C2M4SeeChopper"	  required
 criterion "Conceptc2m4NearGate"   "Concept" "c2m4NearGate"	  required
@@ -1926,7 +1926,7 @@ criterion "Conceptc2m4GateOpen"   "Concept" "c2m4GateOpen"	  required
 criterion "ConceptC2M4GateOpenCallout"   "Concept" "C2M4GateOpenCallout"	  required
 criterion "ConceptC2M4ButtonPressed"   "Concept" "C2M4ButtonPressed"	  required
 
-//c2m5
+//C2M5
 Criterion "ismap_c2m5" "map" "c2m5_concert" "required" weight 100
 criterion "Conceptc2m5Button1"   "Concept" "c2m5Button1"	  required
 criterion "Conceptc2m5Button2"   "Concept" "c2m5Button2"	  required
@@ -1940,7 +1940,6 @@ Criterion "NickOCD" "worldNickOCD" "!=1" required
 criterion "ConceptC2M5Outro"  "concept" "C2M5Outro" required
 
 //C3M1
-
 criterion "ismap_c3m1_plankcountry"   "map" "c3m1_plankcountry" required weight 100
 criterion "ConceptIntroC3M1"   "Concept" "introC3M1"	  required
 
@@ -1950,12 +1949,9 @@ criterion "ismapc3m2_swamp" "map" "c3m2_swamp" required weight 100
 
 //C3M3
 criterion "ConceptC3M3BridgeButton"   "Concept" "C3M3BridgeButton"	  required
-criterion "ConceptOratorTest"   "Concept" "OratorTest"	  required
 criterion "ismapc3m3_shantytown"   "map" "c3m3_shantytown"	  required weight 100
 criterion "IsNotSaidC3M3BridgeButton"   "worldSaidC3M3BridgeButton" "!=1"	  required
 criterion "IsSaidC3M3BridgeButton"   "worldSaidC3M3BridgeButton" "1"	  required
-
-Criterion "IsInSwamp" { ismapc3m2_swamp ismapc3m3_shantytown } required weight 100
 
 //C3M4
 criterion "ismapc3m4_plantation"   "map" "c3m4_plantation"	  "required" weight 100
@@ -1964,7 +1960,8 @@ criterion "ConceptC3M4Button1"   "Concept" "C3M4Button1"	  required
 criterion "ConceptC3M4Button2"   "Concept" "C3M4Button2"	  required
 criterion "ConceptC3M4Outro"   "Concept" "C3M4Outro"	  required
 
-
+//C3 Special Criteria
+Criterion "IsInSwamp" { ismapc3m2_swamp ismapc3m3_shantytown } required weight 100
 
 //C4
 criterion "Conceptc4_storm_start"   "Concept" "c4_storm_start"	  required
@@ -1983,6 +1980,7 @@ Criterion "IsNotSaidc4m1_rainresponse" "worldSaidc4m1_rainresponse" "!=1" requir
 
 //C4M2
 Criterion "ismap_c4m2_sugarmill_a" "map" "c4m2_sugarmill_a" "required" weight 100
+Criterion "IsNotmap_c4m2" "map" "!=c4m2_sugarmill_a" required 
 criterion "Conceptc4m2_enter_canefield"   "Concept" "c4m2_enter_canefield"	  required
 criterion "Conceptc4m2_exit_canefield"   "Concept" "c4m2_exit_canefield"	  required
 criterion "Conceptc4m2_elevator_top_button"   "Concept" "c4m2_elevator_top_button"	  required
@@ -1993,7 +1991,6 @@ Criterion "Isc4m2_PastStart" "worldc4m2_PastStart" "1" "required" weight 1
 Criterion "IsNotc4m2_PastPuddle" "worldc4m2_PastPuddle" "<1" "required" weight 1
 criterion "Conceptc4m2_enter_witchville"   "Concept" "c4m2_enter_witchville"	  required
 Criterion "NotSaidLotsOfWitches" "worldSaidLotsOfWitches" "<1" "required" weight 1
-
 
 //C4M3
 Criterion "isc4m3" "map" "c4m3_sugarmill_b" "required" weight 100
@@ -2009,9 +2006,8 @@ criterion "ConceptC4BoatArrived"   "Concept" "C4BoatArrived"	  required
 criterion "ConceptC4BoatArrived2"   "Concept" "C4BoatArrived2"	  required
 criterion "ConceptC4M5Outro"  "concept" "C4M5Outro" required
 
+//C4 Special Criterias
 Criterion "isCampaign4" { isc4m3 isc4m4 isc4m5 } "required" weight 100
-
-//C5
 
 //C5M1
 Criterion "ismap_c5m1_waterfront" "map" "c5m1_waterfront" "required"
@@ -2037,13 +2033,10 @@ criterion "ConceptC5M3Jets3"  "concept" "C5M3Jets3" required
 criterion "ConceptC5M3StopZombies"  "concept" "C5M3StopZombies" required
 criterion "ConceptC5M3BridgeCondition"  "concept" "C5M3BridgeCondition" required
 
-
-//c5m4
+//C5M4
 criterion "IsMapc5m4_quarter"  "map" "c5m4_quarter" required weight 100
 criterion "Conceptc5m4bombingexterior"  "concept" "c5m4bombingexterior" required
 criterion "Conceptc5m4bombinginterior"  "concept" "c5m4bombinginterior" required
-
-
 
 //C5M5
 criterion "IsMapc5m5_bridge"  "map" "c5m5_bridge" required weight 100
@@ -2060,16 +2053,15 @@ criterion "ConceptC5M5BridgeDestroyed"  "concept" "C5M5BridgeDestroyed" required
 criterion "ConceptC5M5BridgeDestroyed2"  "concept" "C5M5BridgeDestroyed2" required
 criterion "ConceptC5M5SurvivorOutroEnable"  "concept" "C5M5SurvivorOutroEnable" required
 Criterion "CanSpeakC5M5SurvivorOutro" "worldC5M5SurvivorOutro" "1" required
-
 Criterion "IsNotSaidGoingToDieC5M5" "SaidGoingToDieC5M5" "!=1" required
 
+//C5 Special Criteria
 Criterion "isCampaign5" { IsMapc5m2_park IsMapc5m3_cemetery IsMapc5m4_quarter } "required" weight 100
 
+//Orator Test Concept
+criterion "ConceptOratorTest"   "Concept" "OratorTest"	  required
 
-
-Criterion "IsCampaignl4d2_2" "campaign" "l4d2_2" "required"
-
-
+//Generic Outro Criteria
 Criterion "NotSaidOutro" "worldSaidOutro" "!=1" required
 
 //Finale Gates
@@ -2440,4 +2432,3 @@ criterion "IsNotSrcGrp_ELLISSTORY" "worldSrcGrp_ELLISSTORY" "<1" required
 #include "talker/namvet.txt"
 #include "talker/teengirl.txt"
 #include "talker/requires_dlc1.txt"
-

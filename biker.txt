@@ -285,7 +285,7 @@ Response ItemDonorMechanicBiker
 }
 Rule ItemDonorMechanicBiker
 {
-	criteria ConceptPlayerPickup IsBiker IsDonorMechanic ChanceToFire30Percent IsNotc6m3_portHeavy IsPickedUpValidHealingItem
+	criteria ConceptPlayerPickup IsBiker IsDonorMechanic ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkBiker:1:3"
 	applycontexttoworld
 	Response ItemDonorMechanicBiker
@@ -3072,7 +3072,7 @@ Response L4D1SurvivorFinalVehicleSpottedRooftopBiker
 {
 	scene "scenes/Biker/ArriveChopperInitial01.vcd"  then any EmphaticArriveRun foo:0 -1.997 //The chopper's here! Let's go!
 	scene "scenes/Biker/ArriveChopperInitial02.vcd"  then any EmphaticArriveRun foo:0 -2.680 //The chopper's here! About time, too...
-	scene "scenes/Biker/Blank.vcd" then pilot HospitalRadioChopperHere foo:0 0 //
+	print " " then pilot HospitalRadioChopperHere foo:0 0 //
 }
 Rule L4D1SurvivorFinalVehicleSpottedRooftopBiker
 {
@@ -3455,7 +3455,7 @@ Response SurvivorSpottedVomitJarBiker
 Rule SurvivorSpottedVomitJarBiker
 {
 	criteria ConceptPlayerSpotWeapon IsNotCoughing IsBiker IsTalk IsTalkBiker IsNotSmartLookAuto IsVomitjar IsWorldTalkBiker
-	ApplyContext "SaidSpotMolotov:1:5,SaidSpot:1:20"
+	ApplyContext "SaidSpotVomitJar:1:5,SaidSpot:1:20"
 	applycontexttoworld
 	Response SurvivorSpottedVomitJarBiker
 }
@@ -3463,7 +3463,7 @@ Rule SurvivorSpottedVomitJarBiker
 Rule SurvivorSpottedVomitJarAutoBiker
 {
 	criteria ConceptPlayerSpotWeapon IsNotCoughing IsBiker IsTalk IsTalkBiker IsSmartLookAuto IsNotInSafeSpot IsNotAlone IsNotSaidSpotMolotov IsNotSaidSpot IsVomitjar IsWorldTalkBiker IsNotSpeakingWeight0
-	ApplyContext "SaidSpotMolotov:1:5,SaidSpot:1:20"
+	ApplyContext "SaidSpotVomitJar:1:5,SaidSpot:1:20"
 	applycontexttoworld
 	Response SurvivorSpottedVomitJarBiker
 }
@@ -3475,7 +3475,7 @@ Response SurvivorSpottedPillsBiker
 Rule SurvivorSpottedPillsBiker
 {
 	criteria ConceptPlayerSpotWeapon IsNotCoughing IsBiker IsTalk IsTalkBiker IsNotSmartLookAuto IsPainPills IsWorldTalkBiker
-	ApplyContext "SaidSpotPIlls:1:5,SaidSpot:1:20"
+	ApplyContext "SaidSpotPills:1:5,SaidSpot:1:20"
 	applycontexttoworld
 	Response SurvivorSpottedPillsBiker
 }

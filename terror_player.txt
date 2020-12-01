@@ -1860,14 +1860,14 @@ Criterion "IsNoProfanity" "worldNoProfanity" "1" "required" weight 0
 Criterion "IsProfanity" "worldNoProfanity" "!=1" "required" weight 0
 
 //Ellis Story criteria
-
 criterion "ConceptEllisInterrupt"   "Concept" "EllisInterrupt"	  required
 
 //Saferoom door open 
-
 criterion "Conceptopen_safedoor"   "Concept" "open_safedoor"	  required  //Trigger_multiple just outside starting safe doors (needs to be placed manually in maps)
 
 //Map related criterias
+
+//Dead Center
 
 //C1M1
 Criterion "ismap_c1m1_hotel" "map" "c1m1_hotel" "required" weight 100
@@ -1886,12 +1886,11 @@ Criterion "ismap_c1m4_atrium" "map" "c1m4_atrium" "required" weight 100
 Criterion "ElevatorTimeUp" "worldElevatorTimer" "!=1" "required" weight 1
 Criterion "ElevatorTimeNotUp" "worldElevatorTimer" "1" "required" weight 1
 
-//C1 Special Criterion
-criterion "C1M1orC1M2" { ismap_c1m1_hotel ismap_c1m2_streets } required weight 10
+//C1 Special Criteria
+criterion "C1M1orC1M2" { ismap_c1m1_hotel ismap_c1m2_streets } required weight 100
 criterion "ConceptNickC1Attitude"	"Concept" "NickC1Attitude"		required
 
-//C2
-criterion "ConceptEndOfWavWindow5"   "Concept" "EndOfWavWindow5"	  required
+//Dark Carnival
 
 //C2M1
 Criterion "ismap_c2m1" "map" "c2m1_highway" "required" weight 100
@@ -1939,6 +1938,8 @@ Criterion "CoachMadAtRiders" "worldCoachMadAtRiders" "1" required
 Criterion "NickOCD" "worldNickOCD" "!=1" required
 criterion "ConceptC2M5Outro"  "concept" "C2M5Outro" required
 
+//Swamp Fever
+
 //C3M1
 criterion "ismap_c3m1_plankcountry"   "map" "c3m1_plankcountry" required weight 100
 criterion "ConceptIntroC3M1"   "Concept" "introC3M1"	  required
@@ -1963,10 +1964,7 @@ criterion "ConceptC3M4Outro"   "Concept" "C3M4Outro"	  required
 //C3 Special Criteria
 Criterion "IsInSwamp" { ismapc3m2_swamp ismapc3m3_shantytown } required weight 100
 
-//C4
-criterion "Conceptc4_storm_start"   "Concept" "c4_storm_start"	  required
-criterion "ConceptC4EnterCover"   "Concept" "C4EnterCover"	  required
-criterion "ConceptC4ExitCover"   "Concept" "C4ExitCover"	  required
+//Hard Rain
 
 //C4M1
 Criterion "ismap_c4m1_milltown_a" "map" "c4m1_milltown_a" "required" weight 100
@@ -2008,16 +2006,19 @@ criterion "ConceptC4M5Outro"  "concept" "C4M5Outro" required
 
 //C4 Special Criterias
 Criterion "isCampaign4" { isc4m3 isc4m4 isc4m5 } "required" weight 100
+criterion "Conceptc4_storm_start"   "Concept" "c4_storm_start"	  required
+criterion "ConceptC4EnterCover"   "Concept" "C4EnterCover"	  required
+criterion "ConceptC4ExitCover"   "Concept" "C4ExitCover"	  required
+
+//The Parish
 
 //C5M1
 Criterion "ismap_c5m1_waterfront" "map" "c5m1_waterfront" "required"
 criterion "ConceptIntroC5M1"   "concept" "introC5M1"	  required
 criterion "ConceptC5M1Flyby"  "concept" "C5M1Flyby" required
 
-
 //C5M2
 criterion "IsMapc5m2_park"  "map" "c5m2_park" weight 100 required
-
 
 //C5M3
 criterion "IsMapc5m3_cemetery"  "map" "c5m3_cemetery" required weight 100
@@ -2060,6 +2061,9 @@ Criterion "isCampaign5" { IsMapc5m2_park IsMapc5m3_cemetery IsMapc5m4_quarter } 
 
 //Orator Test Concept
 criterion "ConceptOratorTest"   "Concept" "OratorTest"	  required
+
+//Post fall
+criterion "ConceptEndOfWavWindow5"   "Concept" "EndOfWavWindow5"	  required
 
 //Generic Outro Criteria
 Criterion "NotSaidOutro" "worldSaidOutro" "!=1" required

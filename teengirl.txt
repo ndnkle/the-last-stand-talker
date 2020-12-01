@@ -2483,7 +2483,7 @@ Response L4D1SurvivorFinalVehicleSpottedRooftopTeenGirl
 {
 	scene "scenes/TeenGirl/ArriveChopperInitial01.vcd"  then any EmphaticArriveRun foo:0 -2.255 //Guys, the helicopter's here. Let's go!
 	scene "scenes/TeenGirl/ArriveChopperInitial02.vcd"  then any EmphaticArriveRun foo:0 -1.700 //The helicopter's here! Come on, let's go!
-	scene "scenes/TeenGirl/Blank.vcd"  then pilot HospitalRadioChopperHere foo:0 0 //
+	print " " then pilot HospitalRadioChopperHere foo:0 0 //
 }
 Rule L4D1SurvivorFinalVehicleSpottedRooftopTeenGirl
 {
@@ -2871,7 +2871,7 @@ Response SurvivorSpottedVomitJarTeenGirl
 Rule SurvivorSpottedVomitJarTeenGirl
 {
 	criteria ConceptPlayerSpotWeapon IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGirl IsNotSmartLookAuto IsVomitjar IsWorldTalkTeenGirl _auto_NotSpottedVehicle
-	ApplyContext "SaidSpotMolotov:1:5,SaidSpot:1:20"
+	ApplyContext "SaidSpotVomitJar:1:5,SaidSpot:1:20"
 	applycontexttoworld
 	Response SurvivorSpottedVomitJarTeenGirl
 }
@@ -2879,7 +2879,7 @@ Rule SurvivorSpottedVomitJarTeenGirl
 Rule SurvivorSpottedVomitJarAutoTeenGirl
 {
 	criteria ConceptPlayerSpotWeapon IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGirl IsSmartLookAuto IsNotInSafeSpot IsNotAlone IsNotSaidSpotMolotov IsNotSaidSpot IsVomitjar IsWorldTalkTeenGirl IsNotSpeakingWeight0 _auto_NotSpottedVehicle
-	ApplyContext "SaidSpotMolotov:1:5,SaidSpot:1:20"
+	ApplyContext "SaidSpotVomitJar:1:5,SaidSpot:1:20"
 	applycontexttoworld
 	Response SurvivorSpottedVomitJarTeenGirl
 }
@@ -2894,7 +2894,7 @@ Response SurvivorSpottedPillsTeenGirl
 Rule SurvivorSpottedPillsTeenGirl
 {
 	criteria ConceptPlayerSpotWeapon IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGirl IsNotSmartLookAuto IsPainPills IsWorldTalkTeenGirl _auto_NotSpottedVehicle
-	ApplyContext "SaidSpotPIlls:1:5,SaidSpot:1:20"
+	ApplyContext "SaidSpotPills:1:5,SaidSpot:1:20"
 	applycontexttoworld
 	Response SurvivorSpottedPillsTeenGirl
 }

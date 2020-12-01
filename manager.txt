@@ -259,7 +259,7 @@ Response ItemDonorMechanicManager
 }
 Rule ItemDonorMechanicManager
 {
-	criteria ConceptPlayerPickup IsManager IsDonorMechanic ChanceToFire30Percent IsNotc6m3_portHeavy IsPickedUpValidHealingItem
+	criteria ConceptPlayerPickup IsManager IsDonorMechanic ChanceToFire30Percent IsPickedUpValidHealingItem
 	ApplyContext "TalkManager:1:3"
 	applycontexttoworld
 	Response ItemDonorMechanicManager
@@ -2294,7 +2294,7 @@ Response L4D1SurvivorFinalVehicleSpottedRooftopManager
 {
 	scene "scenes/Manager/ArriveChopperInitial01.vcd"  then any EmphaticArriveRun foo:0 -2.269 //The heli's here. Let's go!
 	scene "scenes/Manager/ArriveChopperInitial02.vcd"  then any EmphaticArriveRun foo:0 -2.699 //The helicopter's here! Let's go!
-	scene "scenes/Manager/Blank.vcd" then pilot HospitalRadioChopperHere foo:0 0 //
+	print " " then pilot HospitalRadioChopperHere foo:0 0 //
 }
 Rule L4D1SurvivorFinalVehicleSpottedRooftopManager
 {
@@ -2619,7 +2619,7 @@ Response SurvivorSpottedVomitJarManager
 Rule SurvivorSpottedVomitJarManager
 {
 	criteria ConceptPlayerSpotWeapon IsNotCoughing IsManager IsTalk IsTalkManager IsNotSmartLookAuto IsVomitjar IsWorldTalkManager
-	ApplyContext "SaidSpotMolotov:1:5,SaidSpot:1:20"
+	ApplyContext "SaidSpotVomitJar:1:5,SaidSpot:1:20"
 	applycontexttoworld
 	Response SurvivorSpottedVomitJarManager
 }
@@ -2627,7 +2627,7 @@ Rule SurvivorSpottedVomitJarManager
 Rule SurvivorSpottedVomitJarAutoManager
 {
 	criteria ConceptPlayerSpotWeapon IsNotCoughing IsManager IsTalk IsTalkManager IsSmartLookAuto IsNotInSafeSpot IsNotAlone IsNotSaidSpotMolotov IsNotSaidSpot IsVomitjar IsWorldTalkManager IsNotSpeakingWeight0
-	ApplyContext "SaidSpotMolotov:1:5,SaidSpot:1:20"
+	ApplyContext "SaidSpotVomitJar:1:5,SaidSpot:1:20"
 	applycontexttoworld
 	Response SurvivorSpottedVomitJarManager
 }
@@ -2639,7 +2639,7 @@ Response SurvivorSpottedPillsManager
 Rule SurvivorSpottedPillsManager
 {
 	criteria ConceptPlayerSpotWeapon IsNotCoughing IsManager IsTalk IsTalkManager IsNotSmartLookAuto IsPainPills IsWorldTalkManager
-	ApplyContext "SaidSpotPIlls:1:5,SaidSpot:1:20"
+	ApplyContext "SaidSpotPills:1:5,SaidSpot:1:20"
 	applycontexttoworld
 	Response SurvivorSpottedPillsManager
 }
@@ -5986,7 +5986,7 @@ Response L4D1PlayerKillTankConfirmationBillManager
 }
 Rule L4D1PlayerKillTankConfirmationBillManager
 {
-	criteria ConceptKilledZombie IsNotCoughing IsManager IsTalk IsTalkManager SubjectIsTank NotNamVetAlive IsNotc6m3_portHeavy IsNotSaidTankDead IsNotAlone IsNotIncapacitated IsWorldTalkManager _auto_NotFinaleStarted
+	criteria ConceptKilledZombie IsNotCoughing IsManager IsTalk IsTalkManager SubjectIsTank NotNamVetAlive IsNotc6m3_port IsNotSaidTankDead IsNotAlone IsNotIncapacitated IsWorldTalkManager _auto_NotFinaleStarted
 	ApplyContext "SaidTankDead:1:60,TalkManager:1:5"
 	applycontexttoworld
 	Response L4D1PlayerKillTankConfirmationBillManager

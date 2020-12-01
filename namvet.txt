@@ -2154,7 +2154,7 @@ Response SurvivorSpottedVomitJarNamVet
 Rule SurvivorSpottedVomitJarNamVet
 {
 	criteria ConceptPlayerSpotWeapon IsNotCoughing IsNamVet IsTalk IsTalkNamVet IsNotSmartLookAuto IsVomitJar IsWorldTalkNamVet
-	ApplyContext "SaidSpotMolotov:1:5,SaidSpot:1:20"
+	ApplyContext "SaidSpotVomitJar:1:5,SaidSpot:1:20"
 	applycontexttoworld
 	Response SurvivorSpottedVomitJarNamVet
 }
@@ -2162,7 +2162,7 @@ Rule SurvivorSpottedVomitJarNamVet
 Rule SurvivorSpottedVomitJarAutoNamVet
 {
 	criteria ConceptPlayerSpotWeapon IsNotCoughing IsNamVet IsTalk IsTalkNamVet IsSmartLookAuto IsNotInSafeSpot IsNotAlone IsNotSaidSpotMolotov IsNotSaidSpot IsVomitJar IsWorldTalkNamVet IsNotSpeakingWeight0
-	ApplyContext "SaidSpotMolotov:1:5,SaidSpot:1:20"
+	ApplyContext "SaidSpotVomitJar:1:5,SaidSpot:1:20"
 	applycontexttoworld
 	Response SurvivorSpottedVomitJarNamVet
 }
@@ -2174,7 +2174,7 @@ Response SurvivorSpottedPillsNamVet
 Rule SurvivorSpottedPillsNamVet
 {
 	criteria ConceptPlayerSpotWeapon IsNotCoughing IsNamVet IsTalk IsTalkNamVet IsNotSmartLookAuto IsPainPills IsWorldTalkNamVet
-	ApplyContext "SaidSpotPIlls:1:5,SaidSpot:1:20"
+	ApplyContext "SaidSpotPills:1:5,SaidSpot:1:20"
 	applycontexttoworld
 	Response SurvivorSpottedPillsNamVet
 }

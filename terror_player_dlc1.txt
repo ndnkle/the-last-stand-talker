@@ -117,7 +117,7 @@ Criterion "IsNotc6m1_riverbank" "map" "!=c6m1_riverbank"   required
 Criterion "isc6m2_bedlam"  "map"  "c6m2_bedlam" required weight 100
 
 Criterion "Isc6m3_port"  "map"  "c6m3_port" required weight 100
-Criterion "IsNotc6m3_portHeavy"  "map"  "!=c6m3_port" required
+Criterion "IsNotc6m3_port"  "map"  "!=c6m3_port" required
 
 Criterion "IsNotSaidInCapBounce"  "worldSaidInCapBounce"  "!=1" required
 Criterion "ConceptInCapBounce2"  "Concept"  "InCapBounce2" required

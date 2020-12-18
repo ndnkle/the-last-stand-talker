@@ -12055,7 +12055,7 @@ Response SurvivorchargerpoundC6M3Gambler
 }
 Rule SurvivorchargerpoundC6M3Gambler
 {
-	criteria Conceptchargerpound IsNotCoughing IsGambler IsTalk IsTalkGambler Isc6m3_portHeavy ChanceToFire5Percent IsWorldTalkGambler
+	criteria Conceptchargerpound IsNotCoughing IsGambler IsTalk IsTalkGambler isc6m3_port ChanceToFire5Percent IsWorldTalkGambler
 	ApplyContext "TalkGambler:1:5"
 	Response SurvivorchargerpoundC6M3Gambler
 }
@@ -13726,7 +13726,7 @@ Response PlayerReviveFriendBEllisGambler
 }
 Rule PlayerReviveFriendBEllisGambler
 {
-	criteria ConceptReviveFriendDownFinal IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotReviveInterrupt FromIsEllis ChanceToFire10Percent isNotmap_c1m1_hotel isNotmap_c1m2_streets
+	criteria ConceptReviveFriendDownFinal IsNotCoughing IsGambler IsTalk IsTalkGambler IsWorldTalkGambler IsNotReviveInterrupt FromIsMechanic ChanceToFire10Percent isNotmap_c1m1_hotel isNotmap_c1m2_streets
 	Response PlayerReviveFriendBEllisGambler
 }
 

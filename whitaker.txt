@@ -533,7 +533,7 @@ Rule C1M2GunRoomDoorDStartWhitaker
 Response C1M2GunRoomDoorCStartWhitaker
 {
 	scene "scenes/npcs/Whitaker_ComeUpStairsLongerC02.vcd"  then orator C1M2GunRoomDoorCDEnd1 foo:0 0.01 //
-	scene "scenes/npcs/Whitaker_ComeUpStairsLongerD03.vcd" fire relay_o Trigger 2.4 then orator C1M2GunRoomDoorCDInterrupt foo:0 1.5 //
+	scene "scenes/npcs/Whitaker_ComeUpStairsLongerD03.vcd" fire relay_gunfire Trigger 2.4 then orator C1M2GunRoomDoorCDInterrupt foo:0 1.5 //
 }
 Rule C1M2GunRoomDoorCStartWhitaker
 {

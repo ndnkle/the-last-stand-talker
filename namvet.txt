@@ -5580,7 +5580,7 @@ Rule L4D1PlayerSuggestHealthZoeyNamVet
 
 Response L4D1PlayerSuggestMeHealthNamVet
 {
-	print " "  then Any PlayerSuggestHealthNamVet foo:0 0 //
+	print " "  then Any PlayerSuggestHealth foo:0 0 //
 }
 Rule L4D1PlayerSuggestMeHealthNamVet
 {

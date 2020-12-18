@@ -2283,7 +2283,7 @@ Criterion "IsNotRemarkedC13M2DownHere" "worldRemarkedC13M2DownHere" "<1" require
 Criterion "IsNotRemarkedC13M2UpLadder" "worldRemarkedC13M2UpLadder" "<1" required
 Criterion "IsNotRemarkedC13M2UpStairs" "worldRemarkedC13M2UpStairs" "<1" required
 
-criterion "ismapc13m3_memorialbrige"  "map" "c13m3_memorialbrige" required weight 100
+criterion "ismapc13m3_memorialbridge"  "map" "c13m3_memorialbridge" required weight 100
 
 criterion "ConceptC13M3ApproachingTanker"   "Concept" "C13M3ApproachingTanker"	  required
 criterion "ConceptC13M3Tanker1"   "Concept" "C13M3Tanker1"	  required

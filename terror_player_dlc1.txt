@@ -100,6 +100,8 @@ criterion "FromIsNotNamVet"        "From"     "!=NamVet"        required
 criterion "FromIsNotTeenGirl"        "From"     "!=TeenGirl"        required
 criterion "FromIsNotManager"        "From"     "!=Manager"        required
 
+criterion "FromSet1" { FromIsCoach FromIsAnOrator } required
+
 criterion "Iswitch_aggro_onManager"	"witch_aggro_on"     "Manager"		required
 criterion "Iswitch_aggro_onNamVet"	"witch_aggro_on"     "NamVet"		required
 criterion "Iswitch_aggro_onTeenGirl"	"witch_aggro_on"     "TeenGirl"		required
@@ -110,6 +112,7 @@ Criterion "IsNotSaidBeenJockeyedNamVet" "worldSaidBeenJockeyedNamVet" "!=1" "req
 Criterion "IsNotSaidBeenJockeyedTeenGirl" "worldSaidBeenJockeyedTeenGirl" "!=1" "required" weight 0
 Criterion "IsNotSaidBeenJockeyedBiker" "worldSaidBeenJockeyedBiker" "!=1" "required" weight 0
 
+Criterion "ThePassing" "campaign" "l4d2_6" "required"
 
 Criterion "Isc6m1_riverbank"  "map"  "c6m1_riverbank" required weight 100
 Criterion "IsNotc6m1_riverbank" "map" "!=c6m1_riverbank"   required 

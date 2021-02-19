@@ -715,6 +715,7 @@ criterion "ConceptWorldC6M1_WeddingWarn03d" "Concept" "WorldC6M1_WeddingWarn03d"
 criterion "ConceptWorldC6M1_WeddingWarn04a" "Concept" "WorldC6M1_WeddingWarn04a" required
 criterion "ConceptWeddingWitchDead01" "Concept" "WeddingWitchDead01" required
 criterion "ConceptWeddingWitchDead02" "Concept" "WeddingWitchDead02" required
+criterion "ConceptWeddingWitchDead02a" "Concept" "WeddingWitchDead02a" required
 criterion "ConceptWeddingWitchDead03" "Concept" "WeddingWitchDead03" required
 criterion "ConceptWeddingWitchDead04" "Concept" "WeddingWitchDead04" required
 criterion "ConceptWorldC6M1_PostWedding01a" "Concept" "WorldC6M1_PostWedding01a" required

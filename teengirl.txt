@@ -6395,7 +6395,7 @@ Response L4D1PlayerKillConfirmationTeenGirl
 }
 Rule L4D1PlayerKillConfirmationTeenGirl
 {
-	criteria ConceptKilledZombie IsNotCoughing IsTeenGirl SubjectIsNotTank IsTalk IsTalkTeenGirl IsSubjectFar300 ChanceToFire40Percent IsWorldTalkTeenGirl IsNotSpeakingWeight0 _auto_NotSpottedVehicle
+	criteria ConceptKilledZombie IsNotCoughing IsTeenGirl SubjectIsNotTank SubjectIsNotAWitch IsTalk IsTalkTeenGirl IsSubjectFar300 ChanceToFire40Percent IsWorldTalkTeenGirl IsNotSpeakingWeight0 _auto_NotSpottedVehicle
 	Response L4D1PlayerKillConfirmationTeenGirl
 }
 
@@ -6433,6 +6433,20 @@ Rule L4D1PlayerKillTankNotHealthyTeenGirl
 	ApplyContext "SaidTankDead:1:60,TalkTeenGirl:1:5"
 	applycontexttoworld
 	Response L4D1PlayerKillTankNotHealthyTeenGirl
+}
+
+Rule PlayerCr0wnedWitchTeenGirl
+{
+	criteria ConceptKilledZombie IsTeenGirl SubjectIsAWitch IsNotWitchAggro
+	Response NoResponse
+}
+
+Rule PlayerKilledStartledWitchTeenGirl
+{
+	criteria ConceptKilledZombie IsTeenGirl SubjectIsAWitch IsWitchAggro
+	ApplyContext "WitchAggro:--1"
+	applycontexttoworld
+	Response NoResponse
 }
 
 Response PlayerRemarkremark_caralarmTeenGirl
@@ -6938,15 +6952,13 @@ Response L4D1PlayerWitchChasingTeenGirl
 }
 Rule L4D1PlayerWitchChasingTeenGirl
 {
-	criteria ConceptPlayerExertionMinor IsTeenGirl IsNotSpeaking IsWitchPresent SubjectIsNotWitch IsNotSaidWitchChasing IsTalkTeenGirl IsSaidWitchAttacking
+	criteria ConceptPlayerExertionMinor IsTeenGirl IsNotSpeaking IsWitchPresent SubjectIsNotWitch IsNotSaidWitchChasing IsTalkTeenGirl IsSaidWitchAttacking IsWitchAggro
 	ApplyContext "SaidWitchChasing:1:5,TalkTeenGirl:1:2"
 	Response L4D1PlayerWitchChasingTeenGirl
 }
 
 Response L4D1PlayerWitchStartAttackTeenGirl
 {
-	scene "scenes/TeenGirl/C6DLC3JUMPINGOFFBRIDGE09.vcd"  //Oh god, I am so screwed.
-	scene "scenes/TeenGirl/C6DLC3JUMPINGOFFBRIDGE10.vcd"  //Oh god, I am so screwed.
 	scene "scenes/TeenGirl/Fallshort02.vcd"  //Ohhh nooooo!
 	scene "scenes/TeenGirl/HordeAttack14.vcd"  //Dammit.
 	scene "scenes/TeenGirl/ReactionNegative25.vcd"  //Crap!
@@ -6957,6 +6969,14 @@ Rule L4D1PlayerWitchStartAttackTeenGirl
 	criteria IsFaultConcept IsTeenGirl IsFaultWitchHarassment
 	ApplyContext "SaidWitchAttacking:1:15,TalkTeenGirl:1:2,SaidWitchStartAttack:1:15"
 	Response L4D1PlayerWitchStartAttackTeenGirl
+}
+
+Rule WitchAggroTeenGirl
+{
+	criteria ConceptWitchStartAttack IsTeenGirl Iswitch_aggro_onTeenGirl
+	ApplyContext "WitchAggro:++1"
+	applycontexttoworld
+	Response NoResponse
 }
 
 Response L4D1SurvivorTankPoundTeenGirl
@@ -7218,6 +7238,12 @@ Rule Player.C7M3BridgeLeapLouisTeenGirl
 	Response Player.C7M3BridgeLeapLouisTeenGirl
 }
 
+Rule SacrificeSuccessfulNotTeenGirl
+{
+	criteria ConceptPlayerIncapacitated IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGirl IsLastGenerator NotSacrificedTeenGirl ismapc7m3_port _auto_IsSaidC7M3BridgeLeap _auto_IsC7M3FinalPress
+	Response NoResponse
+}
+
 Response SacrificeSuccessfulTeenGirl
 {
 	scene "scenes/TeenGirl/DeathScream06.vcd"  //[Short quick death scream]
@@ -7228,8 +7254,9 @@ Response SacrificeSuccessfulTeenGirl
 }
 Rule SacrificeSuccessfulTeenGirl
 {
-	criteria ConceptPlayerIncapacitated IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGirl IsLastGenerator ismapc7m3_port _auto_IsSaidC7M3BridgeLeap _auto_IsC7M3FinalPress
-	ApplyContext "TalkTeenGirl:1:5"
+	criteria ConceptPlayerIncapacitated IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGirl IsLastGenerator SacrificedTeenGirl ismapc7m3_port _auto_IsSaidC7M3BridgeLeap _auto_IsC7M3FinalPress
+	ApplyContext "Talk:1:0"
+	applycontexttoworld
 	Response SacrificeSuccessfulTeenGirl
 }
 
@@ -7470,7 +7497,7 @@ Response L4D1SurvivorFirstDeathTeenGirl
 }
 Rule L4D1SurvivorFirstDeathTeenGirl
 {
-	criteria ConceptSurvivorDied IsNotCoughing IsTeenGirl IsEveryoneAlive IsNotSaidSomeoneDied IsNotSaidFaultFriendlyFireGeneral IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl
+	criteria ConceptSurvivorDied IsNotCoughing SurvivorDiedNearEnough IsSurvivor IsTeenGirl IsEveryoneAlive IsNotSaidSomeoneDied IsNotSaidFaultFriendlyFireGeneral IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl
 	ApplyContext "SaidSomeoneDied:1:10"
 	applycontexttoworld
 	Response L4D1SurvivorFirstDeathTeenGirl
@@ -7482,7 +7509,7 @@ Response L4D1DoubleDeathTeenGirl
 }
 Rule L4D1DoubleDeathTeenGirl
 {
-	criteria ConceptSurvivorDied IsNotCoughing IsSurvivor IsTeenGirl IsTalk IsTalkTeenGirl IsNotSaidSomeoneDied IsNotSaidFaultFriendlyFireGeneral IsWithOnlyThree IsNotIncapacitated IsWorldTalkTeenGirl
+	criteria ConceptSurvivorDied IsNotCoughing SurvivorDiedNearEnough IsSurvivor IsTeenGirl IsTalk IsTalkTeenGirl IsNotSaidSomeoneDied IsNotSaidFaultFriendlyFireGeneral IsWithOnlyThree IsNotIncapacitated IsWorldTalkTeenGirl
 	ApplyContext "SaidSomeoneDied:1:10"
 	applycontexttoworld
 	Response L4D1DoubleDeathTeenGirl
@@ -7494,7 +7521,7 @@ Response L4D1DeathOneTeenGirl
 }
 Rule L4D1DeathOneTeenGirl
 {
-	criteria ConceptSurvivorDied IsNotCoughing IsSurvivor IsTeenGirl IsTalk IsTalkTeenGirl IsNotSaidFaultFriendlyFireGeneral IsWithTwo IsNotIncapacitated IsWorldTalkTeenGirl
+	criteria ConceptSurvivorDied IsNotCoughing SurvivorDiedNearEnough IsSurvivor IsTeenGirl IsTalk IsTalkTeenGirl IsNotSaidFaultFriendlyFireGeneral IsWithTwo IsNotIncapacitated IsWorldTalkTeenGirl
 	Response L4D1DeathOneTeenGirl
 }
 
@@ -7507,7 +7534,7 @@ Response L4D1TeamKillTeenGirl
 }
 Rule L4D1TeamKillTeenGirl
 {
-	criteria ConceptSurvivorDied IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGirl IsNotSaidSomeoneDied IsSaidFaultFriendlyFireGeneral IsNotSaidFaultFriendlyFireTeenGirl IsNotIncapacitated IsWorldTalkTeenGirl
+	criteria ConceptSurvivorDied IsNotCoughing SurvivorDiedReallyClose IsTeenGirl IsTalk IsTalkTeenGirl IsNotSaidSomeoneDied IsSaidFaultFriendlyFireGeneral IsNotSaidFaultFriendlyFireTeenGirl IsNotIncapacitated IsWorldTalkTeenGirl
 	ApplyContext "SaidSomeoneDied:1:10"
 	applycontexttoworld
 	Response L4D1TeamKillTeenGirl
@@ -8061,7 +8088,7 @@ Response L4D1PlayerHealOtherTeenGirl
 }
 Rule L4D1PlayerHealOtherTeenGirl
 {
-	criteria ConceptPlayerHealingOther IsNotCoughing  IsTeenGirl IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl
+	criteria ConceptPlayerHealingOther IsNotCoughing  IsTeenGirl IsTalk IsTalkTeenGirl NotInIntenseCombat IsWorldTalkTeenGirl
 	ApplyContext "TalkTeenGirl:1:5"
 	Response L4D1PlayerHealOtherTeenGirl
 }
@@ -8083,8 +8110,16 @@ Response L4D1PlayerHealOtherCombatTeenGirl
 }
 Rule L4D1PlayerHealOtherCombatTeenGirl
 {
-	criteria ConceptPlayerHealingOther IsNotCoughing  IsTeenGirl IsTalk IsTalkTeenGirl IntensityOver50 IsWorldTalkTeenGirl
+	criteria ConceptPlayerHealingOther IsNotCoughing  IsTeenGirl IsTalk IsTalkTeenGirl InIntenseCombat IsWorldTalkTeenGirl
 	ApplyContext "TalkTeenGirl:1:5"
+	Response L4D1PlayerHealOtherCombatTeenGirl
+}
+
+Rule L4D1PlayerHealOtherTankTeenGirl
+{
+	criteria ConceptPlayerHealingOther IsNotCoughing  IsTeenGirl IsTalk IsTalkTeenGirl IsZombiePresentTank IsSaidTankWarn2 IsWorldTalkTeenGirl
+	ApplyContext "TalkTeenGirl:1:5"
+	forceweight 30
 	Response L4D1PlayerHealOtherCombatTeenGirl
 }
 
@@ -8124,7 +8159,7 @@ Response L4D1PlayerReviveFriendTeenGirl
 }
 Rule L4D1PlayerReviveFriendTeenGirl
 {
-	criteria ConceptPlayerReviveFriend IsNotCoughing  IsTeenGirl IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriend IsNotCoughing  IsTeenGirl IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl NotInIntenseCombat _auto_NotSpottedVehicle
 	ApplyContext "TalkTeenGirl:1:2"
 	Response L4D1PlayerReviveFriendTeenGirl
 }
@@ -8141,7 +8176,7 @@ Response L4D1PlayerReviveFriendCriticalTeenGirl
 }
 Rule L4D1PlayerReviveFriendCriticalTeenGirl
 {
-	criteria ConceptPlayerReviveFriendCritical IsNotCoughing  IsTeenGirl IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriendCritical IsNotCoughing  IsTeenGirl IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl NotInIntenseCombat _auto_NotSpottedVehicle
 	ApplyContext "TalkTeenGirl:1:5"
 	Response L4D1PlayerReviveFriendCriticalTeenGirl
 }
@@ -8156,8 +8191,31 @@ Response L4D1PlayerReviveFriendLoudTeenGirl
 }
 Rule L4D1PlayerReviveFriendLoudTeenGirl
 {
-	criteria ConceptPlayerReviveFriend IsNotCoughing  IsTeenGirl IntensityOver50 IsTalk IsTalkTeenGirl ChanceToFire30Percent IsWorldTalkTeenGirl _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriend IsNotCoughing  IsTeenGirl InIntenseCombat IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl _auto_NotSpottedVehicle
 	ApplyContext "TalkTeenGirl:1:5"
+	Response L4D1PlayerReviveFriendLoudTeenGirl
+}
+
+Rule L4D1PlayerReviveFriendLoud2TeenGirl
+{
+	criteria ConceptPlayerReviveFriend IsNotCoughing IsTeenGirl IsZombiePresentTank IsSaidTankWarn2 IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl _auto_NotSpottedVehicle
+	ApplyContext "TalkTeenGirl:1:5"
+	forceweight 30
+	Response L4D1PlayerReviveFriendLoudTeenGirl
+}
+
+Rule L4D1PlayerReviveFriendLoudCritTeenGirl
+{
+	criteria ConceptPlayerReviveFriendCritical IsNotCoughing IsTeenGirl InIntenseCombat IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl _auto_NotSpottedVehicle
+	ApplyContext "TalkTeenGirl:1:5"
+	Response L4D1PlayerReviveFriendLoudTeenGirl
+}
+
+Rule L4D1PlayerReviveFriendLoudCrit2TeenGirl
+{
+	criteria ConceptPlayerReviveFriendCritical IsNotCoughing IsTeenGirl IsZombiePresentTank IsSaidTankWarn2 IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl _auto_NotSpottedVehicle
+	ApplyContext "TalkTeenGirl:1:5"
+	forceweight 30
 	Response L4D1PlayerReviveFriendLoudTeenGirl
 }
 
@@ -8170,7 +8228,7 @@ Response L4D1PlayerReviveFriendLoudBillTeenGirl
 }
 Rule L4D1PlayerReviveFriendLoudBillTeenGirl
 {
-	criteria ConceptPlayerReviveFriend IsNotCoughing  IsTeenGirl IntensityOver50 IsTalk IsTalkTeenGirl ChanceToFire30Percent SubjectIsNamVet IsWorldTalkTeenGirl _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriend IsNotCoughing  IsTeenGirl InIntenseCombat IsTalk IsTalkTeenGirl ChanceToFire30Percent SubjectIsNamVet IsWorldTalkTeenGirl _auto_NotSpottedVehicle
 	ApplyContext "TalkTeenGirl:1:5"
 	Response L4D1PlayerReviveFriendLoudBillTeenGirl
 }
@@ -8182,7 +8240,7 @@ Response L4D1PlayerReviveFriendLoudFrancisTeenGirl
 }
 Rule L4D1PlayerReviveFriendLoudFrancisTeenGirl
 {
-	criteria ConceptPlayerReviveFriend IsNotCoughing  IsTeenGirl IntensityOver50 IsTalk IsTalkTeenGirl ChanceToFire30Percent SubjectIsBiker IsWorldTalkTeenGirl _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriend IsNotCoughing  IsTeenGirl InIntenseCombat IsTalk IsTalkTeenGirl ChanceToFire30Percent SubjectIsBiker IsWorldTalkTeenGirl _auto_NotSpottedVehicle
 	ApplyContext "TalkTeenGirl:1:5"
 	Response L4D1PlayerReviveFriendLoudFrancisTeenGirl
 }
@@ -8194,7 +8252,7 @@ Response L4D1PlayerReviveFriendLoudLouisTeenGirl
 }
 Rule L4D1PlayerReviveFriendLoudLouisTeenGirl
 {
-	criteria ConceptPlayerReviveFriend IsNotCoughing  IsTeenGirl IntensityOver50 IsTalk IsTalkTeenGirl ChanceToFire30Percent SubjectIsManager IsWorldTalkTeenGirl _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriend IsNotCoughing  IsTeenGirl InIntenseCombat IsTalk IsTalkTeenGirl ChanceToFire30Percent SubjectIsManager IsWorldTalkTeenGirl _auto_NotSpottedVehicle
 	ApplyContext "TalkTeenGirl:1:5"
 	Response L4D1PlayerReviveFriendLoudLouisTeenGirl
 }

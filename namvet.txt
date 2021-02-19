@@ -2782,7 +2782,7 @@ Response L4D1PlayerWitchChasingNamVet
 }
 Rule L4D1PlayerWitchChasingNamVet
 {
-	criteria ConceptPlayerExertionMinor IsNamVet IsWitchPresent SubjectIsNotWitch IsNotSaidWitchChasing IsSaidWitchAttacking IsTalkNamVet
+	criteria ConceptPlayerExertionMinor IsNamVet IsWitchPresent SubjectIsNotWitch IsNotSaidWitchChasing IsSaidWitchAttacking IsTalkNamVet IsWitchAggro
 	ApplyContext "SaidWitchChasing:1:5,TalkNamVet:1:2"
 	Response L4D1PlayerWitchChasingNamVet
 }
@@ -2802,6 +2802,14 @@ Rule L4D1PlayerWitchStartAttackNamVet
 	criteria IsFaultConcept IsNamVet IsFaultWitchHarassment
 	ApplyContext "SaidWitchAttacking:1:15,TalkNamVet:1:2,SaidWitchStartAttack:1:15"
 	Response L4D1PlayerWitchStartAttackNamVet
+}
+
+Rule WitchAggroNamVet
+{
+	criteria ConceptWitchStartAttack IsNamVet Iswitch_aggro_onNamVet
+	ApplyContext "WitchAggro:++1"
+	applycontexttoworld
+	Response NoResponse
 }
 
 Response L4D1SurvivorCriticalHurtNamVet
@@ -5437,7 +5445,7 @@ Response L4D1PlayerKillConfirmationNamVet
 }
 Rule L4D1PlayerKillConfirmationNamVet
 {
-	criteria ConceptKilledZombie IsNotCoughing IsNamVet SubjectIsNotTank IsTalk IsTalkNamVet IsSubjectFar300 ChanceToFire40Percent IsWorldTalkNamVet IsNotSpeakingWeight0 _auto_NotSpottedVehicle
+	criteria ConceptKilledZombie IsNotCoughing IsNamVet SubjectIsNotTank SubjectIsNotAWitch IsTalk IsTalkNamVet IsSubjectFar300 ChanceToFire40Percent IsWorldTalkNamVet IsNotSpeakingWeight0 _auto_NotSpottedVehicle
 	Response L4D1PlayerKillConfirmationNamVet
 }
 
@@ -5479,10 +5487,24 @@ Rule L4D1PlayerKillTankNotHealthyNamVet
 	Response L4D1PlayerKillTankNotHealthyNamVet
 }
 
-Rule L4D1C9M2KillTankManager
+Rule L4D1C9M2KillTankNamVet
 {
 	criteria ConceptKilledZombie IsNamVet IsCrashCourse2 SubjectIsTank IsTalk IsTalkNamVet IsNotSaidTankDead IsWorldTalkNamVet _auto_IsFinaleStarted
 	ApplyContext "SaidTankDead:1:0"
+	applycontexttoworld
+	Response NoResponse
+}
+
+Rule PlayerCr0wnedWitchNamVet
+{
+	criteria ConceptKilledZombie IsNamVet SubjectIsAWitch IsNotWitchAggro
+	Response NoResponse
+}
+
+Rule PlayerKilledStartledWitchNamVet
+{
+	criteria ConceptKilledZombie IsNamVet SubjectIsAWitch IsWitchAggro
+	ApplyContext "WitchAggro:--1"
 	applycontexttoworld
 	Response NoResponse
 }
@@ -6060,6 +6082,12 @@ Rule Player.C7M3BridgeLeapNamVet
 	Response Player.C7M3BridgeLeapNamVet
 }
 
+Rule SacrificeSuccessfulNotNamVet
+{
+	criteria ConceptPlayerIncapacitated IsNotCoughing IsNamVet IsTalk IsTalkNamVet IsLastGenerator NotSacrificedNamVet ismapc7m3_port _auto_IsSaidC7M3BridgeLeap _auto_IsC7M3FinalPress
+	Response NoResponse
+}
+
 Response SacrificeSuccessfulNamVet
 {
 	scene "scenes/NamVet/C6DLC3MOVIELINE01.vcd"  //My job's done. Have at me, you bastards.
@@ -6085,8 +6113,9 @@ Response SacrificeSuccessfulNamVet
 }
 Rule SacrificeSuccessfulNamVet
 {
-	criteria ConceptPlayerIncapacitated IsNotCoughing IsNamVet IsTalk IsTalkNamVet IsLastGenerator ismapc7m3_port _auto_IsSaidC7M3BridgeLeap _auto_IsC7M3FinalPress
-	ApplyContext "TalkNamVet:1:15"
+	criteria ConceptPlayerIncapacitated IsNotCoughing IsNamVet IsTalk IsTalkNamVet IsLastGenerator SacrificedNamVet ismapc7m3_port _auto_IsSaidC7M3BridgeLeap _auto_IsC7M3FinalPress
+	ApplyContext "Talk:1:0"
+	applycontexttoworld
 	Response SacrificeSuccessfulNamVet
 }
 
@@ -6312,7 +6341,7 @@ Response L4D1SurvivorFirstDeathNamVet
 }
 Rule L4D1SurvivorFirstDeathNamVet
 {
-	criteria ConceptSurvivorDied IsNotCoughing IsNamVet IsEveryoneAlive IsNotSaidSomeoneDied IsTalk IsTalkNamVet IsWorldTalkNamVet
+	criteria ConceptSurvivorDied IsNotCoughing SurvivorDiedNearEnough IsSurvivor IsNamVet IsEveryoneAlive IsNotSaidSomeoneDied IsTalk IsTalkNamVet IsWorldTalkNamVet
 	ApplyContext "SaidSomeoneDied:1:10"
 	applycontexttoworld
 	Response L4D1SurvivorFirstDeathNamVet
@@ -6324,7 +6353,7 @@ Response L4D1DoubleDeathNamVet
 }
 Rule L4D1DoubleDeath2NamVet
 {
-	criteria ConceptSurvivorDied IsNotCoughing IsNamVet IsTalk IsTalkNamVet IsWithOnlyThree IsNotIncapacitated IsWorldTalkNamVet
+	criteria ConceptSurvivorDied IsNotCoughing SurvivorDiedNearEnough IsSurvivor IsNamVet IsTalk IsTalkNamVet IsWithOnlyThree IsNotIncapacitated IsWorldTalkNamVet
 	ApplyContext "SaidSomeoneDied:1:10"
 	applycontexttoworld
 	Response L4D1DoubleDeathNamVet
@@ -6336,7 +6365,7 @@ Response L4D1DeathOneNamVet
 }
 Rule L4D1DeathOneNamVet
 {
-	criteria ConceptSurvivorDied IsNotCoughing IsNamVet IsTalk IsTalkNamVet IsWithTwo IsNotSaidFaultFriendlyFireGeneral IsNotIncapacitated IsWorldTalkNamVet
+	criteria ConceptSurvivorDied IsNotCoughing SurvivorDiedNearEnough IsSurvivor IsNamVet IsTalk IsTalkNamVet IsWithTwo IsNotSaidFaultFriendlyFireGeneral IsNotIncapacitated IsWorldTalkNamVet
 	Response L4D1DeathOneNamVet
 }
 
@@ -6347,7 +6376,7 @@ Response L4D1TeamKillNamVet
 }
 Rule L4D1TeamKillNamVet
 {
-	criteria ConceptSurvivorDied IsNotCoughing IsNamVet IsTalk IsTalkNamVet IsNotSaidSomeoneDied IsSaidFaultFriendlyFireGeneral IsNotSaidFaultFriendlyFireNamVet IsNotIncapacitated IsWorldTalkNamVet
+	criteria ConceptSurvivorDied IsNotCoughing SurvivorDiedReallyClose IsNamVet IsTalk IsTalkNamVet IsNotSaidSomeoneDied IsSaidFaultFriendlyFireGeneral IsNotSaidFaultFriendlyFireNamVet IsNotIncapacitated IsWorldTalkNamVet
 	ApplyContext "SaidSomeoneDied:1:10"
 	applycontexttoworld
 	Response L4D1TeamKillNamVet
@@ -6834,7 +6863,7 @@ Response L4D1PlayerHealOtherNamVet
 }
 Rule L4D1PlayerHealOtherNamVet
 {
-	criteria ConceptPlayerHealingOther IsNotCoughing  IsNamVet IsTalk IsTalkNamVet IsWorldTalkNamVet
+	criteria ConceptPlayerHealingOther IsNotCoughing  IsNamVet IsTalk IsTalkNamVet NotInIntenseCombat IsWorldTalkNamVet
 	ApplyContext "TalkNamVet:1:5"
 	Response L4D1PlayerHealOtherNamVet
 }
@@ -6847,8 +6876,16 @@ Response L4D1PlayerHealOtherCombatNamVet
 }
 Rule L4D1PlayerHealOtherCombatNamVet
 {
-	criteria ConceptPlayerHealingOther IsNotCoughing  IsNamVet IsTalk IsTalkNamVet IntensityOver50 IsWorldTalkNamVet
+	criteria ConceptPlayerHealingOther IsNotCoughing  IsNamVet IsTalk IsTalkNamVet InIntenseCombat IsWorldTalkNamVet
 	ApplyContext "TalkNamVet:1:5"
+	Response L4D1PlayerHealOtherCombatNamVet
+}
+
+Rule L4D1PlayerHealOtherTankNamVet
+{
+	criteria ConceptPlayerHealingOther IsNotCoughing  IsNamVet IsTalk IsTalkNamVet IsZombiePresentTank IsSaidTankWarn2 IsWorldTalkNamVet
+	ApplyContext "TalkNamVet:1:5"
+	forceweight 30
 	Response L4D1PlayerHealOtherCombatNamVet
 }
 
@@ -6877,7 +6914,7 @@ Response L4D1PlayerReviveFriendNamVet
 }
 Rule L4D1PlayerReviveFriendNamVet
 {
-	criteria ConceptPlayerReviveFriend IsNotCoughing  IsNamVet IsTalk IsTalkNamVet IsWorldTalkNamVet _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriend IsNotCoughing  IsNamVet IsTalk IsTalkNamVet IsWorldTalkNamVet NotInIntenseCombat _auto_NotSpottedVehicle
 	ApplyContext "TalkNamVet:1:2"
 	Response L4D1PlayerReviveFriendNamVet
 }
@@ -6894,7 +6931,7 @@ Response L4D1PlayerReviveFriendCriticalNamVet
 }
 Rule L4D1PlayerReviveFriendCriticalNamVet
 {
-	criteria ConceptPlayerReviveFriendCritical IsNotCoughing  IsNamVet IsTalk IsTalkNamVet IsWorldTalkNamVet _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriendCritical IsNotCoughing  IsNamVet IsTalk IsTalkNamVet IsWorldTalkNamVet NotInIntenseCombat _auto_NotSpottedVehicle
 	ApplyContext "TalkNamVet:1:5"
 	Response L4D1PlayerReviveFriendCriticalNamVet
 }
@@ -6914,8 +6951,31 @@ Response L4D1PlayerReviveFriendLoudNamVet
 }
 Rule L4D1PlayerReviveFriendLoudNamVet
 {
-	criteria ConceptPlayerReviveFriend IsNotCoughing IsNamVet IntensityOver50 IsTalk IsTalkNamVet IsWorldTalkNamVet _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriend IsNotCoughing IsNamVet InIntenseCombat IsTalk IsTalkNamVet IsWorldTalkNamVet _auto_NotSpottedVehicle
 	ApplyContext "TalkNamVet:1:5"
+	Response L4D1PlayerReviveFriendLoudNamVet
+}
+
+Rule L4D1PlayerReviveFriendLoud2NamVet
+{
+	criteria ConceptPlayerReviveFriend IsNotCoughing IsNamVet IsZombiePresentTank IsSaidTankWarn2 IsTalk IsTalkNamVet IsWorldTalkNamVet _auto_NotSpottedVehicle
+	ApplyContext "TalkNamVet:1:5"
+	forceweight 30
+	Response L4D1PlayerReviveFriendLoudNamVet
+}
+
+Rule L4D1PlayerReviveFriendLoudCritNamVet
+{
+	criteria ConceptPlayerReviveFriendCritical IsNotCoughing IsNamVet InIntenseCombat IsTalk IsTalkNamVet IsWorldTalkNamVet _auto_NotSpottedVehicle
+	ApplyContext "TalkNamVet:1:5"
+	Response L4D1PlayerReviveFriendLoudNamVet
+}
+
+Rule L4D1PlayerReviveFriendLoudCrit2NamVet
+{
+	criteria ConceptPlayerReviveFriendCritical IsNotCoughing IsNamVet IsZombiePresentTank IsSaidTankWarn2 IsTalk IsTalkNamVet IsWorldTalkNamVet _auto_NotSpottedVehicle
+	ApplyContext "TalkNamVet:1:5"
+	forceweight 30
 	Response L4D1PlayerReviveFriendLoudNamVet
 }
 

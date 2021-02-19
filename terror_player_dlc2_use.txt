@@ -24,23 +24,32 @@ criterion "IsSmallTownBarricadeTeenGirl"   "worldSmallTownBarricadeTeenGirl" "!=
 
 
 //Locational
+Criterion "NoMercy" "campaign" "l4d2_8" "required"
 Criterion "IsNoMercy1" "map" "c8m1_apartment" "required" weight 100
 Criterion "IsNoMercy2" "map" "c8m2_subway" "required" weight 100
 Criterion "IsNoMercy3" "map" "c8m3_sewers" "required" weight 100
 Criterion "IsNoMercy4" "map" "c8m4_interior" "required" weight 100
 Criterion "IsNoMercy5" "map" "c8m5_rooftop" "required" weight 100
+
+Criterion "CrashCourse" "campaign" "l4d2_9" "required"
 Criterion "IsCrashCourse1" "map" "c9m1_alleys" "required" weight 100
 Criterion "IsCrashCourse2" "map" "c9m2_lots" "required" weight 100
+
+Criterion "DeathToll" "campaign" "l4d2_10" "required"
 Criterion "IsDeathToll1" "map" "c10m1_caves" "required" weight 100
 Criterion "IsDeathToll2" "map" "c10m2_drainage" "required" weight 100
 Criterion "IsDeathToll3" "map" "c10m3_ranchhouse" "required" weight 100
 Criterion "IsDeathToll4" "map" "c10m4_mainstreet" "required" weight 100
 Criterion "IsDeathToll5" "map" "c10m5_houseboat" "required" weight 100
+
+Criterion "DeadAir" "campaign" "l4d2_11" "required"
 Criterion "IsDeadAir1" "map" "c11m1_greenhouse" "required" weight 100
 Criterion "IsDeadAir2" "map" "c11m2_offices" "required" weight 100
 Criterion "IsDeadAir3" "map" "c11m3_garage" "required" weight 100
 Criterion "IsDeadAir4" "map" "c11m4_terminal" "required" weight 100
 Criterion "IsDeadAir5" "map" "c11m5_runway" "required" weight 100
+
+Criterion "BloodHarvest" "campaign" "l4d2_12" "required"
 Criterion "IsBloodHarvest1" "map" "c12m1_hilltop" "required" weight 100
 Criterion "IsBloodHarvest2" "map" "c12m2_traintunnel" "required" weight 100
 Criterion "IsBloodHarvest3" "map" "c12m3_bridge" "required" weight 100

@@ -262,6 +262,42 @@ Rule C3M1FerryEndOrator
 //--------------------------------------------------------------------------------------------------------------
 // C3M4
 //--------------------------------------------------------------------------------------------------------------
+Response C3M4ButtonOrator
+{
+	scene "scenes/npcs/orator_blank.vcd"  then any C3M4Button1A foo:0 0 //
+}
+Rule C3M4ButtonCOrator
+{
+	criteria ConceptC3M4Button1 PanicEventCoach AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "Talk:1:1.765,_auto_Button1:1:0,_auto_Button1Coach:1:0,_auto_NoLostCall:1:0"
+	applycontexttoworld
+	Response C3M4ButtonOrator
+}
+
+Rule C3M4ButtonGOrator
+{
+	criteria ConceptC3M4Button1 PanicEventGambler AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "Talk:1:1.497,_auto_Button1:1:0,_auto_TalkingGambler:1:0,_auto_NoLostCall:1:0"
+	applycontexttoworld
+	Response C3M4ButtonOrator
+}
+
+Rule C3M4ButtonMOrator
+{
+	criteria ConceptC3M4Button1 PanicEventMechanic AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "Talk:1:0.850,_auto_Button1:1:0,_auto_TalkingMechanic:1:0,_auto_NoLostCall:1:0"
+	applycontexttoworld
+	Response C3M4ButtonOrator
+}
+
+Rule C3M4ButtonPOrator
+{
+	criteria ConceptC3M4Button1 PanicEventProducer AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "Talk:1:1.605,_auto_Button1:1:0,_auto_TalkingProducer:1:0,_auto_NoLostCall:1:0"
+	applycontexttoworld
+	Response C3M4ButtonOrator
+}
+
 Response C3M4Button2Orator
 {
 	scene "scenes/npcs/orator_blank.vcd"  then any C3M4Button201 foo:0 0 //
@@ -643,6 +679,54 @@ Rule c5m4floatendOrator
 //--------------------------------------------------------------------------------------------------------------
 // C5M5
 //--------------------------------------------------------------------------------------------------------------
+Response C5M5ButtonGamblerOrator
+{
+	scene "scenes/npcs/orator_blank.vcd"  then gambler C5M5Button1 foo:0 0.01 //
+}
+Rule C5M5ButtonGamblerOrator
+{
+	criteria ConceptC5M5Button PanicEventGambler AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "Talk:1:0,_auto_TalkingGambler:1:0,_auto_Button1:1:0,_auto_NoLostCall:1:0"
+	applycontexttoworld
+	Response C5M5ButtonGamblerOrator
+}
+
+Response C5M5ButtonCoachOrator
+{
+	scene "scenes/npcs/orator_blank.vcd"  then coach C5M5Button1 foo:0 0.01 //
+}
+Rule C5M5ButtonCoachOrator
+{
+	criteria ConceptC5M5Button PanicEventCoach AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "Talk:1:0,_auto_TalkingCoach:1:0,_auto_Button1:1:0,_auto_NoLostCall:1:0"
+	applycontexttoworld
+	Response C5M5ButtonCoachOrator
+}
+
+Response C5M5ButtonProducerOrator
+{
+	scene "scenes/npcs/orator_blank.vcd"  then producer C5M5Button1 foo:0 0.01 //
+}
+Rule C5M5ButtonProducerOrator
+{
+	criteria ConceptC5M5Button PanicEventProducer AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "Talk:1:0,_auto_TalkingProducer:1:0,_auto_Button1:1:0,_auto_NoLostCall:1:0"
+	applycontexttoworld
+	Response C5M5ButtonProducerOrator
+}
+
+Response C5M5ButtonEllisOrator
+{
+	scene "scenes/npcs/orator_blank.vcd"  then mechanic C5M5Button1 foo:0 0.01 //
+}
+Rule C5M5ButtonEllisOrator
+{
+	criteria ConceptC5M5Button PanicEventMechanic AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "Talk:1:0,_auto_TalkingMechanic:1:0,_auto_Button1:1:0,_auto_NoLostCall:1:0"
+	applycontexttoworld
+	Response C5M5ButtonEllisOrator
+}
+
 Response C5M5Button2GamblerOrator
 {
 	scene "scenes/npcs/orator_blank.vcd"  then gambler C5M5_Button2 foo:0 0.01 //

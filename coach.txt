@@ -260,8 +260,6 @@ Response _C1M1_ElevatorHelloStartAllAliveCoach
 Rule _C1M1_ElevatorHelloStartAllAliveCoach
 {
 	criteria Concept_C1M1_ElevatorHelloStart IsCoach AutoIsNotScavenge AutoIsNotSurvival IsEveryoneAlive
-	ApplyContext "CoachIntroduced:1:0"
-	applycontexttoworld
 	Response _C1M1_ElevatorHelloStartAllAliveCoach
 }
 
@@ -436,7 +434,7 @@ Response PlayerC1M2FirstOutsideResponseCoach
 }
 Rule PlayerC1M2FirstOutsideResponseCoach
 { 
-	criteria ConceptC1M2FirstOutsideResponse IsCoach IsNotSaidC1M2AlarmSetoff AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M2FirstOutsideResponse IsCoach FromIsAnOrator IsNotSaidC1M2AlarmSetoff AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerC1M2FirstOutsideResponseCoach
 }
 
@@ -446,7 +444,7 @@ Response PlayerC1M2FirstOutsideResponse3aCoach
 }
 Rule PlayerC1M2FirstOutsideResponse3aCoach
 {
-	criteria ConceptC1M2FirstOutsideResponse3a IsCoach IsNotSaidC1M2AlarmSetoff AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M2FirstOutsideResponse3a IsCoach FromIsAnOrator IsNotSaidC1M2AlarmSetoff AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerC1M2FirstOutsideResponse3aCoach
 }
 
@@ -456,7 +454,7 @@ Response C1M2FirstOutsideResponse8aCoach
 }
 Rule C1M2FirstOutsideResponse8aCoach
 {
-	criteria ConceptC1M2FirstOutsideResponse8a IsCoach IsNotSaidC1M2AlarmSetoff AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M2FirstOutsideResponse8a IsCoach FromIsAnOrator IsNotSaidC1M2AlarmSetoff AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M2FirstOutsideResponse8aCoach
 }
 
@@ -466,7 +464,7 @@ Response C1M2FirstOutsideResponse8bCoach
 }
 Rule C1M2FirstOutsideResponse8bCoach
 {
-	criteria ConceptC1M2FirstOutsideResponse8b IsCoach IsNotSaidC1M2AlarmSetoff AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC1M2FirstOutsideResponse8b IsCoach FromIsGambler IsNotSaidC1M2AlarmSetoff AutoIsNotScavenge AutoIsNotSurvival
 	Response C1M2FirstOutsideResponse8bCoach
 }
 
@@ -2228,18 +2226,16 @@ Rule C3M4InBoatNagsCoach
 	Response C3M4InBoatNagsCoach
 }
 
-Response C3M4Button1Coach
+Response C3M4Button1ACoach
 {
 	scene "scenes/Coach/WorldC3M405.vcd"  then self C3M4Button1B foo:0 1 //I'm gonna try calling someone.
 	scene "scenes/Coach/WorldC3M406.vcd"  then orator C3M4Button101 foo:0 0.3 //Anyone out there?
 	scene "scenes/Coach/WorldC3M407.vcd"  then orator C3M4Button101 foo:0 0.3 //Can anyone here me?
 }
-Rule C3M4Button1Coach
+Rule C3M4Button1ACoach
 {
-	criteria ConceptC3M4Button1 IsCoach AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:1.765,_auto_Button1:1:0,_auto_TalkingCoach:1:0,_auto_NoLostCall:1:0"
-	applycontexttoworld
-	Response C3M4Button1Coach
+	criteria ConceptC3M4Button1A IsCoach FromIsAnOrator _auto_IsTalkingCoach AutoIsNotScavenge AutoIsNotSurvival
+	Response C3M4Button1ACoach
 }
 
 Response C3M4Button1BCoach
@@ -2249,7 +2245,7 @@ Response C3M4Button1BCoach
 }
 Rule C3M4Button1BCoach
 {
-	criteria ConceptC3M4Button1B IsCoach _auto_IsTalkingCoach AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC3M4Button1B IsCoach FromIsCoach _auto_IsTalkingCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response C3M4Button1BCoach
 }
 
@@ -2262,7 +2258,7 @@ Response C3M4ButtonHowManyAnswer4Coach
 }
 Rule C3M4ButtonHowManyAnswer4Coach
 {
-	criteria ConceptC3M4ButtonHowManyAnswer IsCoach IsEveryoneAlive _auto_IsTalkingCoach AutoIsNotScavenge AutoIsNotSurvival _auto_NotFinaleStarted
+	criteria ConceptC3M4ButtonHowManyAnswer IsCoach FromIsAnOrator IsEveryoneAlive _auto_IsTalkingCoach AutoIsNotScavenge AutoIsNotSurvival _auto_NotFinaleStarted
 	Response C3M4ButtonHowManyAnswer4Coach
 }
 
@@ -2273,7 +2269,7 @@ Response C3M4ButtonHowManyAnswer3Coach
 }
 Rule C3M4ButtonHowManyAnswer3Coach
 {
-	criteria ConceptC3M4ButtonHowManyAnswer IsCoach IsWithOnlyThree _auto_IsTalkingCoach AutoIsNotScavenge AutoIsNotSurvival _auto_NotFinaleStarted
+	criteria ConceptC3M4ButtonHowManyAnswer IsCoach FromIsAnOrator IsWithOnlyThree _auto_IsTalkingCoach AutoIsNotScavenge AutoIsNotSurvival _auto_NotFinaleStarted
 	Response C3M4ButtonHowManyAnswer3Coach
 }
 
@@ -2285,7 +2281,7 @@ Response C3M4ButtonHowManyAnswer2Coach
 }
 Rule C3M4ButtonHowManyAnswer2Coach
 {
-	criteria ConceptC3M4ButtonHowManyAnswer IsCoach IsWithTwo _auto_IsTalkingCoach AutoIsNotScavenge AutoIsNotSurvival _auto_NotFinaleStarted
+	criteria ConceptC3M4ButtonHowManyAnswer IsCoach FromIsAnOrator IsWithTwo _auto_IsTalkingCoach AutoIsNotScavenge AutoIsNotSurvival _auto_NotFinaleStarted
 	Response C3M4ButtonHowManyAnswer2Coach
 }
 
@@ -2296,7 +2292,7 @@ Response C3M4ButtonHowManyAnswer1Coach
 }
 Rule C3M4ButtonHowManyAnswer1Coach
 {
-	criteria ConceptC3M4ButtonHowManyAnswer IsCoach IsAlone _auto_IsTalkingCoach AutoIsNotScavenge AutoIsNotSurvival _auto_NotFinaleStarted
+	criteria ConceptC3M4ButtonHowManyAnswer IsCoach FromIsAnOrator IsAlone _auto_IsTalkingCoach AutoIsNotScavenge AutoIsNotSurvival _auto_NotFinaleStarted
 	Response C3M4ButtonHowManyAnswer1Coach
 }
 
@@ -2306,7 +2302,7 @@ Response C3M4ButtonAnswerEllisCoach
 }
 Rule C3M4ButtonAnswerEllisCoach
 {
-	criteria ConceptC3M4ButtonAnswerEllis IsCoach AutoIsNotScavenge AutoIsNotSurvival _auto_NotFinaleStarted
+	criteria ConceptC3M4ButtonAnswerEllis IsCoach FromIsMechanic AutoIsNotScavenge AutoIsNotSurvival _auto_NotFinaleStarted
 	Response C3M4ButtonAnswerEllisCoach
 }
 
@@ -2317,7 +2313,7 @@ Response C3M4Button201Coach
 }
 Rule C3M4Button201Coach
 {
-	criteria ConceptC3M4Button201 IsCoach AutoIsNotScavenge AutoIsNotSurvival _auto_IsTalkingCoach
+	criteria ConceptC3M4Button201 IsCoach FromIsAnOrator AutoIsNotScavenge AutoIsNotSurvival _auto_IsTalkingCoach
 	ApplyContext "Talk:1:2.948"
 	applycontexttoworld
 	Response C3M4Button201Coach
@@ -2336,7 +2332,7 @@ Response C3M4Button202Coach
 }
 Rule C3M4Button202Coach
 {
-	criteria ConceptC3M4Button202 _auto_IsTalkingCoach IsCoach AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC3M4Button202 FromIsAnOrator _auto_IsTalkingCoach IsCoach AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "Talk:1:3.424"
 	applycontexttoworld
 	Response C3M4Button202Coach
@@ -2351,7 +2347,7 @@ Response C3M4GateBlow01Coach
 }
 Rule C3M4GateBlow01Coach
 {
-	criteria ConceptC3M4GateBlow01 IsCoach IsTalk AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptC3M4GateBlow01 IsCoach FromIsAnOrator IsTalk AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "_auto_TimerLockA:1:3"
 	applycontexttoworld
 	Response C3M4GateBlow01Coach
@@ -3363,7 +3359,7 @@ Response C5M5_SurvivorConv01Coach
 }
 Rule C5M5_SurvivorConv01Coach
 {
-	criteria ConceptC5M5_SurvivorConv01 IsCoach AutoIsNotScavenge AutoIsNotSurvival _auto_IsTalkingCoach _auto_NotButton2
+	criteria ConceptC5M5_SurvivorConv01 IsCoach FromIsAnOrator AutoIsNotScavenge AutoIsNotSurvival _auto_IsTalkingCoach _auto_NotButton2
 	Response C5M5_SurvivorConv01Coach
 }
 
@@ -3373,7 +3369,7 @@ Response C5M5_SurvivorConv02Coach
 }
 Rule C5M5_SurvivorConv02Coach
 {
-	criteria ConceptC5M5_SurvivorConv02 IsCoach AutoIsNotScavenge AutoIsNotSurvival _auto_IsTalkingCoach _auto_NotButton2
+	criteria ConceptC5M5_SurvivorConv02 IsCoach FromIsAnOrator AutoIsNotScavenge AutoIsNotSurvival _auto_IsTalkingCoach _auto_NotButton2
 	Response C5M5_SurvivorConv02Coach
 }
 
@@ -3384,7 +3380,7 @@ Response C5M5_SurvivorConv03Coach
 }
 Rule C5M5_SurvivorConv03Coach
 {
-	criteria ConceptC5M5_SurvivorConv03 IsCoach AutoIsNotScavenge AutoIsNotSurvival _auto_IsTalkingCoach _auto_NotButton2
+	criteria ConceptC5M5_SurvivorConv03 IsCoach FromIsAnOrator AutoIsNotScavenge AutoIsNotSurvival _auto_IsTalkingCoach _auto_NotButton2
 	Response C5M5_SurvivorConv03Coach
 }
 
@@ -3397,7 +3393,7 @@ Response C5M5_SurvivorConv04Coach
 }
 Rule C5M5_SurvivorConv04Coach
 {
-	criteria ConceptC5M5_SurvivorConv04 IsCoach AutoIsNotScavenge AutoIsNotSurvival _auto_IsTalkingCoach _auto_NotButton2
+	criteria ConceptC5M5_SurvivorConv04 IsCoach FromIsAnOrator AutoIsNotScavenge AutoIsNotSurvival _auto_IsTalkingCoach _auto_NotButton2
 	Response C5M5_SurvivorConv04Coach
 }
 
@@ -3410,7 +3406,7 @@ Response C5M5_SurvivorConv05Coach
 }
 Rule C5M5_SurvivorConv05Coach
 {
-	criteria ConceptC5M5_SurvivorConv05 IsCoach AutoIsNotScavenge AutoIsNotSurvival _auto_IsTalkingCoach _auto_NotButton2
+	criteria ConceptC5M5_SurvivorConv05 IsCoach FromIsAnOrator AutoIsNotScavenge AutoIsNotSurvival _auto_IsTalkingCoach _auto_NotButton2
 	Response C5M5_SurvivorConv05Coach
 }
 
@@ -3435,9 +3431,7 @@ Response C5M5Button1Coach
 }
 Rule C5M5Button1Coach
 {
-	criteria ConceptC5M5Button1 IsCoach AutoIsNotScavenge AutoIsNotSurvival _auto_NotButton2
-	ApplyContext "Talk:1:0,_auto_TalkingCoach:1:0,_auto_Button1:1:0,_auto_NoLostCall:1:0"
-	applycontexttoworld
+	criteria ConceptC5M5Button1 IsCoach FromIsAnOrator AutoIsNotScavenge AutoIsNotSurvival _auto_IsTalkingCoach _auto_NotButton2
 	Response C5M5Button1Coach
 }
 
@@ -3449,9 +3443,7 @@ Response C5M5Button1BuzzardRunCoach
 }
 Rule C5M5Button1BuzzardRunCoach
 {
-	criteria ConceptC5M5Button1 IsCoach AutoIsNotScavenge AutoIsNotSurvival _auto_NotButton2 _auto_IsBuzzardRunMentioned
-	ApplyContext "Talk:1:0,_auto_TalkingCoach:1:0,_auto_Button1:1:0,_auto_NoLostCall:1:0"
-	applycontexttoworld
+	criteria ConceptC5M5Button1 IsCoach FromIsAnOrator AutoIsNotScavenge AutoIsNotSurvival _auto_NotButton2 _auto_IsTalkingCoach _auto_IsBuzzardRunMentioned
 	Response C5M5Button1BuzzardRunCoach
 }
 
@@ -4183,15 +4175,11 @@ Rule C6M3_BridgeGettoCarCoach
 	Response C6M3_BridgeGettoCarCoach
 }
 
-Response C6M3_elevatorCancelCoach
-{
-	scene "scenes/Coach/blank.vcd"  //
-}
 Rule C6M3_elevatorCancelCoach
 {
 	criteria ConceptC6M3_ElevatorCancel IsCoach IsC6M3_port AutoIsNotScavenge AutoIsNotSurvival
 	forceweight 1
-	Response C6M3_elevatorCancelCoach
+	Response _PlayerInfoRemarkableBlankCoach
 }
 
 Response C6M3_elevatorCoach
@@ -5634,7 +5622,7 @@ Response PlayerAlertGiveItemCoach
 }
 Rule PlayerAlertGiveItemCoach
 {
-	criteria ConceptPlayerAlertGiveItem IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
+	criteria ConceptPlayerAlertGiveItem IsNotCoughing IsCoach IsTalk IsTalkCoach NotInIntenseCombat IsWorldTalkCoach
 	Response PlayerAlertGiveItemCoach
 }
 
@@ -5646,7 +5634,7 @@ Response PlayerAlertGiveItemC1Coach
 }
 Rule PlayerAlertGiveItemC1Coach
 {
-	criteria ConceptPlayerAlertGiveItem IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach NoKnowNames ismap_c1m1_hotel
+	criteria ConceptPlayerAlertGiveItem IsNotCoughing IsCoach IsTalk IsTalkCoach NotInIntenseCombat IsWorldTalkCoach NoKnowNames ismap_c1m1_hotel
 	Response PlayerAlertGiveItemC1Coach
 }
 
@@ -5660,7 +5648,13 @@ Response PlayerAlertGiveItemCombatCoach
 }
 Rule PlayerAlertGiveItemCombatCoach
 {
-	criteria ConceptPlayerAlertGiveItem IsNotCoughing IsCoach IsTalk IsTalkCoach IntensityOver50 IsWorldTalkCoach
+	criteria ConceptPlayerAlertGiveItem IsNotCoughing IsCoach IsTalk IsTalkCoach InIntenseCombat IsWorldTalkCoach
+	Response PlayerAlertGiveItemCombatCoach
+}
+
+Rule PlayerAlertGiveItemTankCoach
+{
+	criteria ConceptPlayerAlertGiveItem IsNotCoughing IsCoach IsTalk IsTalkCoach IsZombiePresentTank IsSaidTankWarn2 IsWorldTalkCoach
 	Response PlayerAlertGiveItemCombatCoach
 }
 
@@ -6131,7 +6125,7 @@ Response PlayerWitchChasingCoach
 }
 Rule PlayerWitchChasingCoach
 {
-	criteria ConceptPlayerExertionMinor IsCoach IsWitchPresent SubjectIsNotWitch IsNotSaidWitchChasing IsSaidWitchAttacking IsTalkCoach IsNotmap_c4m2 IsNotc6m1_riverbank
+	criteria ConceptPlayerExertionMinor IsCoach IsWitchPresent SubjectIsNotWitch IsNotSaidWitchChasing IsSaidWitchAttacking IsTalkCoach IsNotmap_c4m2 IsNotc6m1_riverbank IsWitchAggro
 	ApplyContext "SaidWitchChasing:1:5,TalkCoach:1:2"
 	Response PlayerWitchChasingCoach
 }
@@ -6143,7 +6137,7 @@ Response PlayerWitchChasingC6M1Coach
 }
 Rule PlayerWitchChasingC6M1Coach
 {
-	criteria ConceptPlayerExertionMinor IsCoach IsWitchPresent SubjectIsNotWitch IsNotSaidWitchChasing IsSaidWitchAttacking IsTalkCoach isc6m1_riverbank
+	criteria ConceptPlayerExertionMinor IsCoach IsWitchPresent SubjectIsNotWitch IsNotSaidWitchChasing IsSaidWitchAttacking IsTalkCoach isc6m1_riverbank IsWitchAggro
 	ApplyContext "SaidWitchChasing:1:15,TalkCoach:1:2"
 	forceweight 20
 	Response PlayerWitchChasingC6M1Coach
@@ -6174,6 +6168,14 @@ Rule PlayerWitchStartAttackC6M1Coach
 	criteria IsFaultConcept IsCoach IsFaultWitchHarassment isc6m1_riverbank
 	ApplyContext "SaidWitchAttacking:1:15,TalkCoach:1:2,SaidWitchStartAttack:1:15"
 	Response PlayerWitchStartAttackC6M1Coach
+}
+
+Rule WitchAggroCoach
+{
+	criteria ConceptWitchStartAttack IsCoach Iswitch_aggro_onCoach
+	ApplyContext "WitchAggro:++1"
+	applycontexttoworld
+	Response NoResponse
 }
 
 Response SurvivorCriticalHurtCoach
@@ -6324,7 +6326,7 @@ Response SurvivorReloadingCoach
 }
 Rule SurvivorReloadingCoach
 {
-	criteria ConceptPlayerReloading IsSurvivor IsNotSpeaking IsCoach IsNotIncapacitated IsTalk IsTalkCoach RecentGroupInCombat10 HasNotgrenadelauncher IsWorldTalkCoach ChanceToFire50Percent IsNotZombiePresentTank _auto_NotCoachInWitchville _auto_NotAlarmV2 _auto_ConcertNotLive _auto_NotSpottedVehicle
+	criteria ConceptPlayerReloading IsSurvivor IsNotSpeaking IsCoach IsNotIncapacitated IsTalk IsTalkCoach RecentGroupInCombat10 HasNotgrenadelauncher IsWorldTalkCoach ChanceToFire50Percent IsNotZombiePresentTank NotInIntenseCombat _auto_NotCoachInWitchville _auto_NotAlarmV2 _auto_ConcertNotLive _auto_NotSpottedVehicle
 	Response SurvivorReloadingCoach
 }
 
@@ -6341,7 +6343,7 @@ Response SurvivorReloadingIntenseCoach
 }
 Rule SurvivorReloadingIntenseCoach
 {
-	criteria ConceptPlayerReloading IsSurvivor IsNotSpeaking IsCoach IsNotIncapacitated IsTalk IsTalkCoach RecentGroupInCombat10 HasNotgrenadelauncher IsWorldTalkCoach ChanceToFire50Percent IsNotZombiePresentTank IntensityOver75 _auto_NotCoachInWitchville _auto_NotAlarmV2 _auto_ConcertNotLive _auto_NotSpottedVehicle
+	criteria ConceptPlayerReloading IsSurvivor IsNotSpeaking IsCoach IsNotIncapacitated IsTalk IsTalkCoach RecentGroupInCombat10 HasNotgrenadelauncher IsWorldTalkCoach ChanceToFire50Percent IsNotZombiePresentTank InIntenseCombat _auto_NotCoachInWitchville _auto_NotAlarmV2 _auto_ConcertNotLive _auto_NotSpottedVehicle
 	Response SurvivorReloadingIntenseCoach
 }
 
@@ -11182,7 +11184,7 @@ Response PlayerKillConfirmationCoach
 }
 Rule PlayerKillConfirmationCoach
 {
-	criteria ConceptKilledZombie IsNotCoughing IsCoach IsTalk IsTalkCoach SubjectIsNotTank IsSubjectFar300 ChanceToFire40Percent isNotmap_c1m1_hotel IsWorldTalkCoach IsNotSpeakingWeight0 _auto_NotSpottedVehicle
+	criteria ConceptKilledZombie IsNotCoughing IsCoach IsTalk IsTalkCoach SubjectIsNotTank SubjectIsNotAWitch IsSubjectFar300 ChanceToFire40Percent isNotmap_c1m1_hotel IsWorldTalkCoach IsNotSpeakingWeight0 _auto_NotSpottedVehicle
 	Response PlayerKillConfirmationCoach
 }
 
@@ -11264,7 +11266,7 @@ Response PlayerKillConfirmationEllisCloseCoach
 }
 Rule PlayerKillConfirmationEllisCloseCoach
 {
-	criteria ConceptKilledZombie IsNotCoughing IsCoach IsTalk IsTalkCoach SubjectIsNotTank IsSubjectFar300 IsMechanicAlive IsMechanicNear400 IsEllisAlsoWarn ChanceToFire5Percent IsRocking IsNotAlone IsNotIncapacitated IsWorldTalkCoach _auto_NotFinaleStarted _auto_NotSpottedVehicle
+	criteria ConceptKilledZombie IsNotCoughing IsCoach IsTalk IsTalkCoach SubjectIsNotTank SubjectIsNotAWitch IsSubjectFar300 IsMechanicAlive IsMechanicNear400 IsEllisAlsoWarn ChanceToFire5Percent IsRocking IsNotAlone IsNotIncapacitated IsWorldTalkCoach _auto_NotFinaleStarted _auto_NotSpottedVehicle
 	forceweight 100
 	Response PlayerKillConfirmationEllisCloseCoach
 }
@@ -11297,6 +11299,20 @@ Rule PlayerKillTankConfirmationC1M2Coach
 	ApplyContext "SaidTankDead:1:0,Talk:1:12"
 	applycontexttoworld
 	Response PlayerKillTankConfirmationC1M2Coach
+}
+
+Rule PlayerCr0wnedWitchCoach
+{
+	criteria ConceptKilledZombie IsCoach SubjectIsAWitch IsNotWitchAggro
+	Response NoResponse
+}
+
+Rule PlayerKilledStartledWitchCoach
+{
+	criteria ConceptKilledZombie IsCoach SubjectIsAWitch IsWitchAggro
+	ApplyContext "WitchAggro:--1"
+	applycontexttoworld
+	Response NoResponse
 }
 
 Response PlayerLockTheDoorCheckPointCoach
@@ -12727,7 +12743,7 @@ Response SurvivorFirstDeathCoach
 }
 Rule SurvivorFirstDeathCoach
 {
-	criteria ConceptSurvivorDied IsNotCoughing IsCoach IsNotSaidSomeoneDied IsEveryoneAlive IsTalk IsTalkCoach IsNotSaidFaultFriendlyFireGeneral IsWorldTalkCoach
+	criteria ConceptSurvivorDied IsNotCoughing SurvivorDiedNearEnough IsCoach IsNotSaidSomeoneDied IsEveryoneAlive IsTalk IsTalkCoach IsNotSaidFaultFriendlyFireGeneral IsWorldTalkCoach
 	ApplyContext "SaidSomeoneDied:1:10"
 	applycontexttoworld
 	Response SurvivorFirstDeathCoach
@@ -12740,7 +12756,7 @@ Response DeathOneCoach
 }
 Rule DeathOneCoach
 {
-	criteria ConceptSurvivorDied IsNotCoughing IsCoach IsNotSaidSomeoneDied IsWithTwo IsNotSaidFaultFriendlyFireGeneral IsTalk IsTalkCoach IsWorldTalkCoach
+	criteria ConceptSurvivorDied IsNotCoughing SurvivorDiedNearEnough IsCoach IsNotSaidSomeoneDied IsWithTwo IsNotSaidFaultFriendlyFireGeneral IsTalk IsTalkCoach IsWorldTalkCoach
 	ApplyContext "SaidSomeoneDied:1:10"
 	applycontexttoworld
 	Response DeathOneCoach
@@ -12756,7 +12772,7 @@ Response DoubleDeathCoach
 }
 Rule DoubleDeathCoach
 {
-	criteria ConceptSurvivorDied IsNotCoughing IsCoach IsTalk IsTalkCoach IsNotSaidSomeoneDied IsClosestSurvivorNear400 IsWithOnlyThree IsNotIncapacitated IsNotSaidFaultFriendlyFireGeneral IsWorldTalkCoach
+	criteria ConceptSurvivorDied IsNotCoughing SurvivorDiedNearEnough IsCoach IsTalk IsTalkCoach IsNotSaidSomeoneDied IsClosestSurvivorNear400 IsWithOnlyThree IsNotIncapacitated IsNotSaidFaultFriendlyFireGeneral IsWorldTalkCoach
 	ApplyContext "SaidSomeoneDied:1:10"
 	applycontexttoworld
 	Response DoubleDeathCoach
@@ -12772,7 +12788,7 @@ Response TeamKillCoach
 }
 Rule TeamKillCoach
 {
-	criteria ConceptSurvivorDied IsNotCoughing IsCoach IsTalk IsTalkCoach IsNotSaidSomeoneDied IsSaidFaultFriendlyFireGeneral IsNotSaidFaultFriendlyFireCoach IsWorldTalkCoach
+	criteria ConceptSurvivorDied IsNotCoughing SurvivorDiedReallyClose IsCoach IsTalk IsTalkCoach IsNotSaidSomeoneDied IsSaidFaultFriendlyFireGeneral IsNotSaidFaultFriendlyFireCoach IsWorldTalkCoach
 	ApplyContext "SaidSomeoneDied:1:10,TalkCoach:1:5"
 	applycontexttoworld
 	Response TeamKillCoach
@@ -12784,7 +12800,7 @@ Response TeamKillFromMechanicCoach
 }
 Rule TeamKillFromMechanicCoach
 {
-	criteria ConceptSurvivorDied IsNotCoughing IsCoach IsTalk IsTalkCoach IsNotSaidSomeoneDied IsSaidFaultFriendlyFireGeneral IsSaidFaultFriendlyFireMechanic ChanceToFire50Percent IsWorldTalkCoach
+	criteria ConceptSurvivorDied IsNotCoughing SurvivorDiedReallyClose IsCoach IsTalk IsTalkCoach IsNotSaidSomeoneDied IsSaidFaultFriendlyFireGeneral IsSaidFaultFriendlyFireMechanic ChanceToFire50Percent IsWorldTalkCoach
 	ApplyContext "SaidSomeoneDied:1:10,TalkCoach:1:4"
 	applycontexttoworld
 	Response TeamKillFromMechanicCoach
@@ -12796,7 +12812,7 @@ Response TeamKillFromProducerCoach
 }
 Rule TeamKillFromProducerCoach
 {
-	criteria ConceptSurvivorDied IsNotCoughing IsCoach IsTalk IsTalkCoach IsNotSaidSomeoneDied IsSaidFaultFriendlyFireGeneral IsSaidFaultFriendlyFireProducer ChanceToFire50Percent IsWorldTalkCoach
+	criteria ConceptSurvivorDied IsNotCoughing SurvivorDiedReallyClose IsCoach IsTalk IsTalkCoach IsNotSaidSomeoneDied IsSaidFaultFriendlyFireGeneral IsSaidFaultFriendlyFireProducer ChanceToFire50Percent IsWorldTalkCoach
 	ApplyContext "SaidSomeoneDied:1:10,TalkCoach:1:2"
 	applycontexttoworld
 	Response TeamKillFromProducerCoach
@@ -12804,7 +12820,7 @@ Rule TeamKillFromProducerCoach
 
 Rule TeamKillFromTeenGirlCoach
 {
-	criteria ConceptSurvivorDied IsNotCoughing IsCoach IsTalk IsTalkCoach IsNotSaidSomeoneDied IsSaidFaultFriendlyFireGeneral IsSaidFaultFriendlyFireTeenGirl ChanceToFire50Percent IsWorldTalkCoach
+	criteria ConceptSurvivorDied IsNotCoughing SurvivorDiedReallyClose IsCoach IsTalk IsTalkCoach IsNotSaidSomeoneDied IsSaidFaultFriendlyFireGeneral IsSaidFaultFriendlyFireTeenGirl ChanceToFire50Percent IsWorldTalkCoach
 	ApplyContext "SaidSomeoneDied:1:10,TalkCoach:1:2"
 	applycontexttoworld
 	Response TeamKillFromProducerCoach
@@ -13462,7 +13478,7 @@ Response PlayerHealOtherCoach
 }
 Rule PlayerHealOtherCoach
 {
-	criteria ConceptPlayerHealingOther IsNotCoughing  IsCoach IsTalk IsTalkCoach IsWorldTalkCoach
+	criteria ConceptPlayerHealingOther IsNotCoughing  IsCoach IsTalk IsTalkCoach NotInIntenseCombat IsWorldTalkCoach
 	ApplyContext "TalkCoach:1:5"
 	Response PlayerHealOtherCoach
 }
@@ -13475,7 +13491,7 @@ Response PlayerHealOtherC1Coach
 }
 Rule PlayerHealOtherC1Coach
 {
-	criteria ConceptPlayerHealingOther IsNotCoughing  IsCoach IsTalk IsTalkCoach  IsWorldTalkCoach ismap_c1m1_hotel
+	criteria ConceptPlayerHealingOther IsNotCoughing  IsCoach IsTalk IsTalkCoach NotInIntenseCombat IsWorldTalkCoach ismap_c1m1_hotel
 	ApplyContext "TalkCoach:1:5"
 	Response PlayerHealOtherC1Coach
 }
@@ -13491,8 +13507,16 @@ Response PlayerHealOtherCombatCoach
 }
 Rule PlayerHealOtherCombatCoach
 {
-	criteria ConceptPlayerHealingOther IsNotCoughing IsCoach IsTalk IsTalkCoach IntensityOver50 IsWorldTalkCoach
+	criteria ConceptPlayerHealingOther IsNotCoughing IsCoach IsTalk IsTalkCoach InIntenseCombat IsWorldTalkCoach
 	ApplyContext "TalkCoach:1:5"
+	Response PlayerHealOtherCombatCoach
+}
+
+Rule PlayerHealOtherTankCoach
+{
+	criteria ConceptPlayerHealingOther IsNotCoughing IsCoach IsTalk IsTalkCoach IsZombiePresentTank IsSaidTankWarn2 IsWorldTalkCoach
+	ApplyContext "TalkCoach:1:5"
+	forceweight 30
 	Response PlayerHealOtherCombatCoach
 }
 
@@ -13502,7 +13526,7 @@ Response PlayerHealMechanicCombatCoach
 }
 Rule PlayerHealMechanicCombatCoach
 {
-	criteria ConceptPlayerHealingOther IsNotCoughing IsCoach IsTalk IsTalkCoach IntensityOver50 SubjectIsMechanic ChanceToFire30Percent IsWorldTalkCoach
+	criteria ConceptPlayerHealingOther IsNotCoughing IsCoach IsTalk IsTalkCoach InIntenseCombat SubjectIsMechanic ChanceToFire30Percent IsWorldTalkCoach
 	ApplyContext "TalkCoach:1:5"
 	Response PlayerHealMechanicCombatCoach
 }
@@ -13549,7 +13573,7 @@ Response PlayerReviveFriendCoach
 }
 Rule PlayerReviveFriendCoach
 {
-	criteria ConceptPlayerReviveFriend IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriend IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach NotInIntenseCombat _auto_NotSpottedVehicle
 	ApplyContext "TalkCoach:1:2"
 	Response PlayerReviveFriendCoach
 }
@@ -13562,7 +13586,7 @@ Response PlayerReviveFriendFFCoach
 }
 Rule PlayerReviveFriendFFCoach
 {
-	criteria ConceptPlayerReviveFriend IsNotCoughing IsCoach IsTalk IsTalkCoach IsShotTeammateCoach IsWorldTalkCoach _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriend IsNotCoughing IsCoach IsTalk IsTalkCoach IsShotTeammateCoach IsWorldTalkCoach NotInIntenseCombat _auto_NotSpottedVehicle
 	ApplyContext "TalkCoach:1:5"
 	forceweight 20
 	Response PlayerReviveFriendFFCoach
@@ -13570,7 +13594,7 @@ Rule PlayerReviveFriendFFCoach
 
 Rule PlayerReviveFriendCriticalFFCoach
 {
-	criteria ConceptPlayerReviveFriendCritical IsNotCoughing IsCoach IsTalk IsTalkCoach IsShotTeammateCoach IsWorldTalkCoach _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriendCritical IsNotCoughing IsCoach IsTalk IsTalkCoach IsShotTeammateCoach IsWorldTalkCoach NotInIntenseCombat _auto_NotSpottedVehicle
 	ApplyContext "TalkCoach:1:5"
 	forceweight 20
 	Response PlayerReviveFriendFFCoach
@@ -13642,7 +13666,7 @@ Response PlayerReviveFriendCriticalCoach
 }
 Rule PlayerReviveFriendCriticalCoach
 {
-	criteria ConceptPlayerReviveFriendCritical IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriendCritical IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach NotInIntenseCombat _auto_NotSpottedVehicle
 	ApplyContext "TalkCoach:1:5"
 	Response PlayerReviveFriendCriticalCoach
 }
@@ -13659,14 +13683,15 @@ Response PlayerReviveFriendLoudCoach
 }
 Rule PlayerReviveFriendLoudCoach
 {
-	criteria ConceptPlayerReviveFriend IsNotCoughing  IsCoach IsZombiePresentTank IsTalk IsTalkCoach IsWorldTalkCoach _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriend IsNotCoughing  IsCoach IsZombiePresentTank IsSaidTankWarn2 IsTalk IsTalkCoach IsWorldTalkCoach _auto_NotSpottedVehicle
 	ApplyContext "TalkCoach:1:5"
+	forceweight 30
 	Response PlayerReviveFriendLoudCoach
 }
 
 Rule PlayerLedgeSaveCriticalCoach
 {
-	criteria ConceptPlayerLedgeSaveCritical IsNotCoughing  IsCoach IsTalk IsTalkCoach IsWorldTalkCoach _auto_NotSpottedVehicle
+	criteria ConceptPlayerLedgeSaveCritical IsNotCoughing IsCoach IsTalk IsTalkCoach IsWorldTalkCoach _auto_NotSpottedVehicle
 	ApplyContext "TalkCoach:1:5"
 	Response PlayerLedgeSaveCoach
 }
@@ -13677,15 +13702,23 @@ Rule PlayerLedgeSaveCriticalCoach
 //--------------------------------------------------------------------------------------------------------------
 Rule PlayerReviveFriendLoud2Coach
 {
-	criteria ConceptPlayerReviveFriend IsNotCoughing  IsCoach IntensityHigh IsTalk IsTalkCoach IsWorldTalkCoach _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriend IsNotCoughing  IsCoach InIntenseCombat IsTalk IsTalkCoach IsWorldTalkCoach _auto_NotSpottedVehicle
 	ApplyContext "TalkCoach:1:5"
 	Response PlayerReviveFriendLoudCoach
 }
 
 Rule PlayerReviveFriendLoudCritCoach
 {
-	criteria ConceptPlayerReviveFriendCritical IsNotCoughing  IsCoach IntensityHigh IsTalk IsTalkCoach IsWorldTalkCoach _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriendCritical IsNotCoughing  IsCoach InIntenseCombat IsTalk IsTalkCoach IsWorldTalkCoach _auto_NotSpottedVehicle
 	ApplyContext "TalkCoach:1:5"
+	Response PlayerReviveFriendLoudCoach
+}
+
+Rule PlayerReviveFriendLoudCrit2Coach
+{
+	criteria ConceptPlayerReviveFriendCritical IsNotCoughing  IsCoach IsZombiePresentTank IsSaidTankWarn2 IsTalk IsTalkCoach IsWorldTalkCoach _auto_NotSpottedVehicle
+	ApplyContext "TalkCoach:1:5"
+	forceweight 30
 	Response PlayerReviveFriendLoudCoach
 }
 
@@ -15172,6 +15205,17 @@ Rule PlayerShotGasCanCoach
 	Response PlayerShotGasCanCoach
 }
 
+Response PlayerCr0wnedBrideCoach
+{
+	scene "scenes/Coach/DLC1_C6M1_WeddingWitchDead02.vcd" predelay "3" then gambler WeddingWitchDead03 foo:0 3.1 //Mm, now that's a shotgun wedding.
+}
+Rule PlayerCr0wnedBrideCoach
+{
+	criteria ConceptKilledZombie IsNotCoughing IsCoach SubjectIsAWitch KilledByCr0wn IsNotWitchAggro ChanceToFire100Percent IsTalk IsTalkCoach isc6m1_riverbank IsWorldTalkCoach
+	forceweight 101
+	Response PlayerCr0wnedBrideCoach
+}
+
 Response WeddingWitchDead01Coach
 {
 	scene "scenes/Coach/DLC1_C6M1_WeddingWitchDead01.vcd"  //You got problems boy. Deep down problems.
@@ -15184,7 +15228,7 @@ Rule WeddingWitchDead01Coach
 
 Response WeddingWitchDead02Coach
 {
-	scene "scenes/Coach/DLC1_C6M1_WeddingWitchDead03.vcd"  //Yeah, that shit was creeping me out.
+	scene "scenes/Coach/DLC1_C6M1_WeddingWitchDead03.vcd" then producer WeddingWitchDead02a foo:0 0.1 //Yeah, that shit was creeping me out.
 }
 Rule WeddingWitchDead02Coach
 {

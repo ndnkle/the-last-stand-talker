@@ -3326,7 +3326,7 @@ Response L4D1PlayerWitchChasingManager
 }
 Rule L4D1PlayerWitchChasingManager
 {
-	criteria ConceptPlayerExertionMinor IsManager IsNotSpeaking IsWitchPresent SubjectIsNotWitch IsNotSaidWitchChasing IsTalkManager IsSaidWitchAttacking
+	criteria ConceptPlayerExertionMinor IsManager IsNotSpeaking IsWitchPresent SubjectIsNotWitch IsNotSaidWitchChasing IsTalkManager IsSaidWitchAttacking IsWitchAggro
 	ApplyContext "SaidWitchChasing:1:5,TalkManager:1:2"
 	Response L4D1PlayerWitchChasingManager
 }
@@ -3342,6 +3342,14 @@ Rule L4D1PlayerWitchStartAttackManager
 	criteria IsFaultConcept IsManager IsFaultWitchHarassment
 	ApplyContext "SaidWitchAttacking:1:15,TalkManager:1:2,SaidWitchStartAttack:1:15"
 	Response L4D1PlayerWitchStartAttackManager
+}
+
+Rule WitchAggroManager
+{
+	criteria ConceptWitchStartAttack IsManager Iswitch_aggro_onManager
+	ApplyContext "WitchAggro:++1"
+	applycontexttoworld
+	Response NoResponse
 }
 
 Response L4D1SurvivorCriticalHurtManager
@@ -5943,7 +5951,7 @@ Response L4D1PlayerKillConfirmationManager
 }
 Rule L4D1PlayerKillConfirmationManager
 {
-	criteria ConceptKilledZombie IsNotCoughing IsManager SubjectIsNotTank IsTalk IsTalkManager IsSubjectFar300 ChanceToFire40Percent IsWorldTalkManager IsNotSpeakingWeight0 _auto_NotSpottedVehicle
+	criteria ConceptKilledZombie IsNotCoughing IsManager SubjectIsNotTank SubjectIsNotAWitch IsTalk IsTalkManager IsSubjectFar300 ChanceToFire40Percent IsWorldTalkManager IsNotSpeakingWeight0 _auto_NotSpottedVehicle
 	Response L4D1PlayerKillConfirmationManager
 }
 
@@ -5990,6 +5998,20 @@ Rule L4D1PlayerKillTankConfirmationBillManager
 	ApplyContext "SaidTankDead:1:60,TalkManager:1:5"
 	applycontexttoworld
 	Response L4D1PlayerKillTankConfirmationBillManager
+}
+
+Rule PlayerCr0wnedWitchManager
+{
+	criteria ConceptKilledZombie IsManager SubjectIsAWitch IsNotWitchAggro
+	Response NoResponse
+}
+
+Rule PlayerKilledStartledWitchManager
+{
+	criteria ConceptKilledZombie IsManager SubjectIsAWitch IsWitchAggro
+	ApplyContext "WitchAggro:--1"
+	applycontexttoworld
+	Response NoResponse
 }
 
 Response PlayerRemarkremark_caralarmManager
@@ -6646,6 +6668,12 @@ Rule Player.C7M3BridgeLeapManager
 	Response Player.C7M3BridgeLeapManager
 }
 
+Rule SacrificeSuccessfulNotManager
+{
+	criteria ConceptPlayerIncapacitated IsNotCoughing IsManager IsTalk IsTalkManager IsLastGenerator ismapc7m3_port NotSacrificedManager _auto_IsSaidC7M3BridgeLeap _auto_IsC7M3FinalPress
+	Response NoResponse
+}
+
 Response SacrificeSuccessfulManager
 {
 	scene "scenes/Manager/DeathScream02.vcd"  //
@@ -6657,8 +6685,9 @@ Response SacrificeSuccessfulManager
 }
 Rule SacrificeSuccessfulManager
 {
-	criteria ConceptPlayerIncapacitated IsNotCoughing IsManager IsTalk IsTalkManager IsLastGenerator ismapc7m3_port _auto_IsSaidC7M3BridgeLeap _auto_IsC7M3FinalPress
-	ApplyContext "TalkManager:1:15"
+	criteria ConceptPlayerIncapacitated IsNotCoughing IsManager IsTalk IsTalkManager IsLastGenerator ismapc7m3_port SacrificedManager _auto_IsSaidC7M3BridgeLeap _auto_IsC7M3FinalPress
+	ApplyContext "Talk:1:0"
+	applycontexttoworld
 	Response SacrificeSuccessfulManager
 }
 
@@ -6874,7 +6903,7 @@ Response L4D1SurvivorFirstDeathManager
 }
 Rule L4D1SurvivorFirstDeathManager
 {
-	criteria ConceptSurvivorDied IsNotCoughing IsManager IsWithThree IsNotSaidSomeoneDied IsTalk IsTalkManager IsWorldTalkManager
+	criteria ConceptSurvivorDied IsNotCoughing SurvivorDiedNearEnough IsSurvivor IsManager IsWithThree IsNotSaidSomeoneDied IsTalk IsTalkManager IsWorldTalkManager
 	ApplyContext "SaidSomeoneDied:1:10"
 	applycontexttoworld
 	Response L4D1SurvivorFirstDeathManager
@@ -6887,7 +6916,7 @@ Response L4D1DeathAloneManager
 }
 Rule L4D1DeathAloneManager
 {
-	criteria ConceptSurvivorDied IsNotCoughing IsManager IsSurvivor IsWithTwo IsNotSaidFaultFriendlyFireGeneral IsTalk IsTalkManager IsWorldTalkManager
+	criteria ConceptSurvivorDied IsNotCoughing SurvivorDiedNearEnough IsSurvivor IsManager IsWithTwo IsNotSaidFaultFriendlyFireGeneral IsTalk IsTalkManager IsWorldTalkManager
 	Response L4D1DeathAloneManager
 }
 
@@ -6900,7 +6929,7 @@ Response L4D1TeamKillManager
 }
 Rule L4D1TeamKillManager
 {
-	criteria ConceptSurvivorDied IsNotCoughing IsManager IsTalk IsTalkManager IsNotSaidSomeoneDied IsSaidFaultFriendlyFireGeneral IsNotSaidFaultFriendlyFireNamVet IsWorldTalkManager
+	criteria ConceptSurvivorDied IsNotCoughing SurvivorDiedReallyClose IsManager IsTalk IsTalkManager IsNotSaidSomeoneDied IsSaidFaultFriendlyFireGeneral IsNotSaidFaultFriendlyFireNamVet IsWorldTalkManager
 	ApplyContext "SaidSomeoneDied:1:10"
 	applycontexttoworld
 	Response L4D1TeamKillManager
@@ -7493,7 +7522,7 @@ Response L4D1PlayerReviveFriendManager
 }
 Rule L4D1PlayerReviveFriendManager
 {
-	criteria ConceptPlayerReviveFriend IsNotCoughing  IsManager IsTalk IsTalkManager IsWorldTalkManager _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriend IsNotCoughing  IsManager IsTalk IsTalkManager IsWorldTalkManager NotInIntenseCombat _auto_NotSpottedVehicle
 	ApplyContext "TalkManager:1:2"
 	Response L4D1PlayerReviveFriendManager
 }
@@ -7508,7 +7537,7 @@ Response L4D1PlayerReviveFriendCriticalManager
 }
 Rule L4D1PlayerReviveFriendCriticalManager
 {
-	criteria ConceptPlayerReviveFriendCritical IsNotCoughing  IsManager IsTalk IsTalkManager IsWorldTalkManager _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriendCritical IsNotCoughing  IsManager IsTalk IsTalkManager IsWorldTalkManager NotInIntenseCombat _auto_NotSpottedVehicle
 	ApplyContext "TalkManager:1:2"
 	Response L4D1PlayerReviveFriendCriticalManager
 }
@@ -7526,8 +7555,31 @@ Response L4D1PlayerReviveFriendLoudManager
 }
 Rule L4D1PlayerReviveFriendLoudManager
 {
-	criteria ConceptPlayerReviveFriend IsNotCoughing  IsManager IntensityOver50 IsTalk IsTalkManager IsWorldTalkManager _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriend IsNotCoughing  IsManager InIntenseCombat IsTalk IsTalkManager IsWorldTalkManager _auto_NotSpottedVehicle
 	ApplyContext "TalkManager:1:2"
+	Response L4D1PlayerReviveFriendLoudManager
+}
+
+Rule L4D1PlayerReviveFriendLoud2Manager
+{
+	criteria ConceptPlayerReviveFriend IsNotCoughing IsManager IsZombiePresentTank IsSaidTankWarn2 IsTalk IsTalkManager IsWorldTalkManager _auto_NotSpottedVehicle
+	ApplyContext "TalkManager:1:2"
+	forceweight 30
+	Response L4D1PlayerReviveFriendLoudManager
+}
+
+Rule L4D1PlayerReviveFriendLoudCritManager
+{
+	criteria ConceptPlayerReviveFriendCritical IsNotCoughing IsManager InIntenseCombat IsTalk IsTalkManager IsWorldTalkManager _auto_NotSpottedVehicle
+	ApplyContext "TalkManager:1:2"
+	Response L4D1PlayerReviveFriendLoudManager
+}
+
+Rule L4D1PlayerReviveFriendLoudCrit2Manager
+{
+	criteria ConceptPlayerReviveFriendCritical IsNotCoughing IsManager IsZombiePresentTank IsSaidTankWarn2 IsTalk IsTalkManager IsWorldTalkManager _auto_NotSpottedVehicle
+	ApplyContext "TalkManager:1:2"
+	forceweight 30
 	Response L4D1PlayerReviveFriendLoudManager
 }
 
@@ -7538,7 +7590,7 @@ Response L4D1PlayerReviveFriendLoudFrancisManager
 }
 Rule L4D1PlayerReviveFriendLoudFrancisManager
 {
-	criteria ConceptPlayerReviveFriend IsNotCoughing  IsManager IntensityOver50 IsTalk IsTalkManager ChanceToFire10Percent SubjectIsBiker IsWorldTalkManager _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriend IsNotCoughing  IsManager InIntenseCombat IsTalk IsTalkManager ChanceToFire10Percent SubjectIsBiker IsWorldTalkManager _auto_NotSpottedVehicle
 	ApplyContext "TalkManager:1:2"
 	Response L4D1PlayerReviveFriendLoudFrancisManager
 }
@@ -7549,7 +7601,7 @@ Response L4D1PlayerReviveFriendLoudZoeyManager
 }
 Rule L4D1PlayerReviveFriendLoudZoeyManager
 {
-	criteria ConceptPlayerReviveFriend IsNotCoughing  IsManager IntensityOver50 IsTalk IsTalkManager ChanceToFire10Percent SubjectIsTeenGirl IsWorldTalkManager _auto_NotSpottedVehicle
+	criteria ConceptPlayerReviveFriend IsNotCoughing  IsManager InIntenseCombat IsTalk IsTalkManager ChanceToFire10Percent SubjectIsTeenGirl IsWorldTalkManager _auto_NotSpottedVehicle
 	ApplyContext "TalkManager:1:2"
 	Response L4D1PlayerReviveFriendLoudZoeyManager
 }

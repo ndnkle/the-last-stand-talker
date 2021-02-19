@@ -198,6 +198,9 @@ criterion "ConceptIntroSmallTownEasterEgg2"   "Concept" "introSmallTownEasterEgg
 criterion "InCombat"	"InCombat" "1"          required
 criterion "NotInCombat"      "InCombat" "0"          required
 
+criterion "InIntenseCombat"	"InCombatMusic" "1"          required
+criterion "NotInIntenseCombat"      "InCombatMusic" "0"          required
+
 criterion "TimeSinceGroupInCombatNot0"      "TimeSinceGroupInCombat" ">0"          required
 criterion "TimeSinceGroupInCombat02"      "TimeSinceGroupInCombat" ">2"          required
 criterion "TimeSinceGroupInCombat04"      "TimeSinceGroupInCombat" ">4"          required
@@ -334,6 +337,10 @@ criterion "IsProducerFar1000" "DistToProducer" ">600" required
 criterion "IsMechanicFar1000" "DistToMechanic" ">600" required      
 criterion "IsGamblerFar1000" "DistToGambler" ">600" required      
 
+//Dead Survivor Distance
+
+criterion "SurvivorDiedReallyClose" "distancetoactor" "<400" required
+criterion "SurvivorDiedNearEnough" "distancetoactor" "<600" required
 
 // Events worth speaking of
 criterion "ConceptKilledZombie"	"Concept"	"KilledZombie"	required
@@ -906,6 +913,9 @@ criterion "IsSaidTankWarn2"        "worldSaidTankWarn2"     "1"        required
 
 criterion "IsZombiePresentWitch"        "ZombiePresentWitch"     "1"        required
 
+criterion "NotKilledByCr0wn" "oneshot" "<1" required
+criterion "KilledByCr0wn" "oneshot" "1" required
+
 
 criterion "IsSmokerClass"      "zombieclass"     "Smoker"      required
 criterion "IsSpitterClass"      "zombieclass"     "Spitter"      required
@@ -1034,6 +1044,9 @@ Criterion "IsNotSaidWitchChasing" "SaidWitchChasing" "!=1" "required" weight 0
 Criterion "IsSaidWitchAttacking" "SaidWitchAttacking" "1" "required" weight 0
 
 Criterion "IsNotSaidWitchStartAttack" "SaidWitchStartAttack" "!=1" "required" weight 0
+
+Criterion "IsNotWitchAggro" "worldWitchAggro" "<1" "required" weight 0
+Criterion "IsWitchAggro" "worldWitchAggro" ">=1" "required" weight 0
 
 Criterion "IsNotSaidBeenJockeyedCoach" "worldSaidBeenJockeyedCoach" "!=1" "required" weight 0
 Criterion "IsNotSaidBeenJockeyedGambler" "worldSaidBeenJockeyedGambler" "!=1" "required" weight 0
@@ -1869,6 +1882,8 @@ criterion "Conceptopen_safedoor"   "Concept" "open_safedoor"	  required  //Trigg
 
 //Dead Center
 
+Criterion "DeadCenter" "campaign" "l4d2_1" "required"
+
 //C1M1
 Criterion "ismap_c1m1_hotel" "map" "c1m1_hotel" "required" weight 100
 Criterion "isNotmap_c1m1_hotel" "map" "!=c1m1_hotel" "required"
@@ -1891,6 +1906,8 @@ criterion "C1M1orC1M2" { ismap_c1m1_hotel ismap_c1m2_streets } required weight 1
 criterion "ConceptNickC1Attitude"	"Concept" "NickC1Attitude"		required
 
 //Dark Carnival
+
+Criterion "DarkCarnival" "campaign" "l4d2_2" "required"
 
 //C2M1
 Criterion "ismap_c2m1" "map" "c2m1_highway" "required" weight 100
@@ -1940,6 +1957,8 @@ criterion "ConceptC2M5Outro"  "concept" "C2M5Outro" required
 
 //Swamp Fever
 
+Criterion "SwampFever" "campaign" "l4d2_3" "required"
+
 //C3M1
 criterion "ismap_c3m1_plankcountry"   "map" "c3m1_plankcountry" required weight 100
 criterion "ConceptIntroC3M1"   "Concept" "introC3M1"	  required
@@ -1958,6 +1977,7 @@ criterion "IsSaidC3M3BridgeButton"   "worldSaidC3M3BridgeButton" "1"	  required
 criterion "ismapc3m4_plantation"   "map" "c3m4_plantation"	  "required" weight 100
 criterion "Conceptc3m4GateExplosion"   "Concept" "c3m4GateExplosion"	  required
 criterion "ConceptC3M4Button1"   "Concept" "C3M4Button1"	  required
+criterion "ConceptC3M4Button1A"   "Concept" "C3M4Button1A"	  required
 criterion "ConceptC3M4Button2"   "Concept" "C3M4Button2"	  required
 criterion "ConceptC3M4Outro"   "Concept" "C3M4Outro"	  required
 
@@ -1965,6 +1985,8 @@ criterion "ConceptC3M4Outro"   "Concept" "C3M4Outro"	  required
 Criterion "IsInSwamp" { ismapc3m2_swamp ismapc3m3_shantytown } required weight 100
 
 //Hard Rain
+
+Criterion "HardRain" "campaign" "l4d2_4" "required"
 
 //C4M1
 Criterion "ismap_c4m1_milltown_a" "map" "c4m1_milltown_a" "required" weight 100
@@ -2012,6 +2034,8 @@ criterion "ConceptC4ExitCover"   "Concept" "C4ExitCover"	  required
 
 //The Parish
 
+Criterion "TheParish" "campaign" "l4d2_5" "required"
+
 //C5M1
 Criterion "ismap_c5m1_waterfront" "map" "c5m1_waterfront" "required"
 criterion "ConceptIntroC5M1"   "concept" "introC5M1"	  required
@@ -2041,6 +2065,7 @@ criterion "Conceptc5m4bombinginterior"  "concept" "c5m4bombinginterior" required
 
 //C5M5
 criterion "IsMapc5m5_bridge"  "map" "c5m5_bridge" required weight 100
+criterion "ConceptC5M5Button"  "concept" "C5M5Button" required
 criterion "ConceptC5M5Button1"  "concept" "C5M5Button1" required
 criterion "ConceptC5M5Button2"  "concept" "C5M5Button2" required
 criterion "ConceptC5M5GateOpen"  "concept" "C5M5GateOpen" required
@@ -2223,12 +2248,14 @@ rule Airport04PathClearVan
 }
 
 //DLC 3 Take along
+Criterion "TheSacrifice" "campaign" "l4d2_7" "required"
 criterion "ismapc7m1_docks"  "map" "c7m1_docks" required weight 100
 criterion "ismapc7m2_barge"  "map" "c7m2_barge" required weight 100 
 criterion "ismapc7m3_port"  "map" "c7m3_port" required weight 100
 
 
 //Cold Stream
+Criterion "ColdStream" "campaign" "l4d2_13" "required"
 criterion "ConceptIntroC13M1"   "Concept" "introC13M1"	  required
 criterion "ismapc13m1_alpinecreek"  "map" "c13m1_alpinecreek" required weight 100
 
@@ -2326,6 +2353,7 @@ Criterion "IsNotNoticedC13M4Helicopter" "worldNoticedC13M4Helicopter" "<1" requi
 Criterion "IsNotC13M4AlmostThere" "worldC13M4AlmostThere" "<1" required
 
 //The Last Stand
+Criterion "TheLastStand" "campaign" "l4d2_14" "required"
 criterion "IsLastStand1"  "map" "c14m1_junkyard" required weight 100
 criterion "ConceptIntroLighthouse"   "Concept" "introLighthouse"	  required
 

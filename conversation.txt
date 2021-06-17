@@ -50,7 +50,7 @@ criterion "ConceptC1M3SafeRoom2a" "Concept" "C1M3SafeRoom2a" required
 criterion "ConceptC1M3SafeRoom2b" "Concept" "C1M3SafeRoom2b" required
 criterion "ConceptC1M3SafeRoom2c" "Concept" "C1M3SafeRoom2c" required
 criterion "ConceptC1M3SafeRoom2d" "Concept" "C1M3SafeRoom2d" required
-
+criterion "ConceptC1M3SafeRoom2e" "Concept" "C1M3SafeRoom2e" required
 
 
 criterion "ConceptC1M3AlarmOff" "Concept" "C1M3AlarmOff" required

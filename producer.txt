@@ -1042,7 +1042,7 @@ Rule C1M2SafeRooma4Producer
 
 Response C1M2SafeRoomb3Producer
 {
-	scene "scenes/Producer/WorldGenericProducer09.vcd"  //Okay, Nick. Being an asshole may have worked before. But you can change that tune now, if you want.
+	scene "scenes/Producer/WorldGenericProducer09.vcd" then self IntroEnd foo:0 0.1 //Okay, Nick. Being an asshole may have worked before. But you can change that tune now, if you want.
 }
 Rule C1M2SafeRoomb3Producer
 {
@@ -1052,10 +1052,10 @@ Rule C1M2SafeRoomb3Producer
 
 Response C1M2SafeRoomd2Producer
 {
-	scene "scenes/Producer/WorldC1M1B31.vcd"  //I agree.
-	scene "scenes/Producer/WorldC1M1B32.vcd"  //That's a good point.
-	scene "scenes/Producer/WorldC1M1B34.vcd"  //I'm gonna have to agree.
-	scene "scenes/Producer/WorldC1M1B36.vcd"  //I bet you're right.
+	scene "scenes/Producer/WorldC1M1B31.vcd" then self IntroEnd foo:0 0.1 //I agree.
+	scene "scenes/Producer/WorldC1M1B32.vcd" then self IntroEnd foo:0 0.1 //That's a good point.
+	scene "scenes/Producer/WorldC1M1B34.vcd" then self IntroEnd foo:0 0.1 //I'm gonna have to agree.
+	scene "scenes/Producer/WorldC1M1B36.vcd" then self IntroEnd foo:0 0.1 //I bet you're right.
 }
 Rule C1M2SafeRoomd2Producer
 {
@@ -1065,7 +1065,7 @@ Rule C1M2SafeRoomd2Producer
 
 Response C1M2SafeRoomd2aProducer
 {
-	scene "scenes/Producer/WorldC1M2B01.vcd"  //A gun STORE? For the first time in my life, that sounds good.
+	scene "scenes/Producer/WorldC1M2B01.vcd" then self IntroEnd foo:0 0.1 //A gun STORE? For the first time in my life, that sounds good.
 }
 Rule C1M2SafeRoomd2aProducer
 {
@@ -1221,12 +1221,12 @@ Rule GasPourDoneC1M4Producer
 //--------------------------------------------------------------------------------------------------------------
 Response _C2M2_Riders03Producer
 {
-	scene "scenes/Producer/WorldC2M2B05.vcd"  //I hate classic rock.
-	scene "scenes/Producer/WorldC2M2B06.vcd"  //Who?
-	scene "scenes/Producer/WorldC2M2B07.vcd"  //Midnight Riders? Is this one of those old guy bands?
-	scene "scenes/Producer/WorldC2M2B04.vcd"  //'The Midnight Riders'. So… they RIDE midnight? Or they ride AT midnight? I don't know. I hate classic rock.
-	scene "scenes/Producer/WorldC2M2B02.vcd"  //'The Midnight Riders'. Yeah, I think my dad liked them, back in the eighteenth century.
-	scene "scenes/Producer/WorldC2M2B10.vcd"  //Midnight Riders. Yeah, they must be a pretty big deal if they're playing at the fairgrounds.
+	scene "scenes/Producer/WorldC2M2B05.vcd" then self IntroEnd foo:0 0.1 //I hate classic rock.
+	scene "scenes/Producer/WorldC2M2B06.vcd" then self IntroEnd foo:0 0.1 //Who?
+	scene "scenes/Producer/WorldC2M2B07.vcd" then self IntroEnd foo:0 0.1 //Midnight Riders? Is this one of those old guy bands?
+	scene "scenes/Producer/WorldC2M2B04.vcd" then self IntroEnd foo:0 0.1 //'The Midnight Riders'. So… they RIDE midnight? Or they ride AT midnight? I don't know. I hate classic rock.
+	scene "scenes/Producer/WorldC2M2B02.vcd" then self IntroEnd foo:0 0.1 //'The Midnight Riders'. Yeah, I think my dad liked them, back in the eighteenth century.
+	scene "scenes/Producer/WorldC2M2B10.vcd" then self IntroEnd foo:0 0.1 //Midnight Riders. Yeah, they must be a pretty big deal if they're playing at the fairgrounds.
 }
 Rule _C2M2_Riders03Producer
 {
@@ -1236,7 +1236,7 @@ Rule _C2M2_Riders03Producer
 
 Response _C2M2_Riders06Producer
 {
-	scene "scenes/Producer/WorldC2M2B09.vcd"  //Every lady present's getting a headache.
+	scene "scenes/Producer/WorldC2M2B09.vcd" then self IntroEnd foo:0 0.1 //Every lady present's getting a headache.
 }
 Rule _C2M2_Riders06Producer
 {
@@ -1246,7 +1246,7 @@ Rule _C2M2_Riders06Producer
 
 Response _C2M2_Riders07Producer
 {
-	scene "scenes/Producer/WorldC2M2B08.vcd"  //STAY on that mountain? That doesn't sound like very good advice.
+	scene "scenes/Producer/WorldC2M2B08.vcd" then self IntroEnd foo:0 0.1 //STAY on that mountain? That doesn't sound like very good advice.
 }
 Rule _C2M2_Riders07Producer
 {
@@ -1427,7 +1427,7 @@ Rule c2m5_intro003Producer
 
 Response c2m5_intro019Producer
 {
-	scene "scenes/Producer/WorldC2M5B02.vcd"  //And that'll signal the chopper pilot! Coach, that's brilliant! I'm sorry about all the bad stuff I said about your crappy band.
+	scene "scenes/Producer/WorldC2M5B02.vcd" then self IntroEnd foo:0 0.1 //And that'll signal the chopper pilot! Coach, that's brilliant! I'm sorry about all the bad stuff I said about your crappy band.
 }
 Rule c2m5_intro019Producer
 {
@@ -1641,8 +1641,8 @@ Rule C2M5_ChoppercomingProducer
 //--------------------------------------------------------------------------------------------------------------
 Response C2M3SaferoomProducer
 {
-	scene "scenes/Producer/WorldC2M2B33.vcd"  //This is the most RELAXING safe room I've ever been in.
-	scene "scenes/Producer/WorldC2M2B34.vcd"  //Gee, my bedroom was painted like this when I was a kid. [beat] Baby blue. I think my dad wanted a boy.
+	scene "scenes/Producer/WorldC2M2B33.vcd" then self IntroEnd foo:0 0.1 //This is the most RELAXING safe room I've ever been in.
+	scene "scenes/Producer/WorldC2M2B34.vcd" then self IntroEnd foo:0 0.1 //Gee, my bedroom was painted like this when I was a kid. [beat] Baby blue. I think my dad wanted a boy.
 }
 Rule C2M3SaferoomProducer
 {
@@ -1655,7 +1655,7 @@ Rule C2M3SaferoomProducer
 Response C2M3SafeIntro005Producer
 {
 	scene "scenes/Producer/WorldC2M3B10.vcd"  then gambler C2M3SafeIntro009 foo:0 0.3 //So, Coach was on the football team. What were you on, Nick? Debate team? Varsity suit wearing?
-	scene "scenes/Producer/WorldC2M3B01.vcd"  //Damn, Coach. Sounded like you used to be on a diet of cheerleaders.
+	scene "scenes/Producer/WorldC2M3B01.vcd" then self IntroEnd foo:0 0.1 //Damn, Coach. Sounded like you used to be on a diet of cheerleaders.
 }
 Rule C2M3SafeIntro005Producer
 {
@@ -1676,8 +1676,8 @@ Rule C2M3SafeIntro006Producer
 
 Response C2M3SafeIntro009Producer
 {
-	scene "scenes/Producer/WorldC2M3B02.vcd"  //I never liked the Tunnel of Love. Sitting in a big plastic swan in a half-foot of water? That ain't romantic, that's just stupid.
-	scene "scenes/Producer/WorldC2M3B03.vcd"  //I have never gone to a Tunnel of Love. In my neighborhood we just had the underpass of unwanted advances.
+	scene "scenes/Producer/WorldC2M3B02.vcd" then self IntroEnd foo:0 0.1 //I never liked the Tunnel of Love. Sitting in a big plastic swan in a half-foot of water? That ain't romantic, that's just stupid.
+	scene "scenes/Producer/WorldC2M3B03.vcd" then self IntroEnd foo:0 0.1 //I have never gone to a Tunnel of Love. In my neighborhood we just had the underpass of unwanted advances.
 }
 Rule C2M3SafeIntro009Producer
 {
@@ -1771,7 +1771,7 @@ Rule C3M2SafeRoomProducer
 
 Response C3M2SafeRoom2Producer
 {
-	scene "scenes/Producer/WorldC3M143.vcd"  //We have to find the main river.
+	scene "scenes/Producer/WorldC3M143.vcd" then self IntroEnd foo:0 0.1 //We have to find the main river.
 }
 Rule C3M2SafeRoom2Producer
 {
@@ -1845,8 +1845,8 @@ Rule C3M3SafeRoomProducer
 
 Response C3M3SafeRoom2a3Producer
 {
-	scene "scenes/Producer/WorldC3M305.vcd"  //Oh zombie swamp people, I'm sorry I gotta shoot you.
-	scene "scenes/Producer/WorldC3M306.vcd"  //I so wanted to make friends with the swamp people.
+	scene "scenes/Producer/WorldC3M305.vcd" then self IntroEnd foo:0 0.1 //Oh zombie swamp people, I'm sorry I gotta shoot you.
+	scene "scenes/Producer/WorldC3M306.vcd" then self IntroEnd foo:0 0.1 //I so wanted to make friends with the swamp people.
 }
 Rule C3M3SafeRoom2a3Producer
 {
@@ -2130,7 +2130,7 @@ Rule C5M1_intro005Producer
 
 Response C5M1_intro010Producer
 {
-	scene "scenes/Producer/World03.vcd" //With our luck, that's just a bridge monster.
+	scene "scenes/Producer/World03.vcd" then self IntroEnd foo:0 0.1 //With our luck, that's just a bridge monster.
 }
 Rule C5M1_intro010Producer
 {
@@ -2961,14 +2961,12 @@ Rule C6M1Intro_05cProducer
 
 Response C6M1Intro_05eProducer
 {
-	scene "scenes/Producer/DLC1_C6M1_InitialMeeting04.vcd"  //Great. All right.
-	scene "scenes/Producer/DLC1_C6M1_InitialMeeting05.vcd"  //Great. Can't help us with directions, probably can't shoot a gun.
+	scene "scenes/Producer/DLC1_C6M1_InitialMeeting04.vcd" then self IntroEnd foo:0 0.1 //Great. All right.
+	scene "scenes/Producer/DLC1_C6M1_InitialMeeting05.vcd" then self IntroEnd foo:0 0.1 //Great. Can't help us with directions, probably can't shoot a gun.
 }
 Rule C6M1Intro_05eProducer
 {
 	criteria ConceptC6M1Intro_05e IsProducer IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:4"
-	applycontexttoworld
 	Response C6M1Intro_05eProducer
 }
 
@@ -2994,26 +2992,22 @@ Rule C6M1Intro_06dProducer
 
 Response C6M1Intro_07bProducer
 {
-	scene "scenes/Producer/DLC1_C6M1_InitialMeeting10.vcd"  //OKAY!
+	scene "scenes/Producer/DLC1_C6M1_InitialMeeting10.vcd" then self IntroEnd foo:0 0.1 //OKAY!
 }
 Rule C6M1Intro_07bProducer
 {
 	criteria ConceptC6M1Intro_07b IsProducer IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:1"
-	applycontexttoworld
 	Response C6M1Intro_07bProducer
 }
 
 Response C6M1Intro_07cProducer
 {
-	scene "scenes/Producer/DLC1_C6M1_InitialMeeting09.vcd"  //(to group) Maybe, but at least he's no zombie. OKAY!
-	scene "scenes/Producer/DLC1_C6M1_InitialMeeting11.vcd"  //(to group) Maybe, but at least he's no zombie.
+	scene "scenes/Producer/DLC1_C6M1_InitialMeeting09.vcd" then self IntroEnd foo:0 0.1 //(to group) Maybe, but at least he's no zombie. OKAY!
+	scene "scenes/Producer/DLC1_C6M1_InitialMeeting11.vcd" then self IntroEnd foo:0 0.1 //(to group) Maybe, but at least he's no zombie.
 }
 Rule C6M1Intro_07cProducer
 {
 	criteria ConceptC6M1Intro_07c IsProducer IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:4"
-	applycontexttoworld
 	Response C6M1Intro_07cProducer
 }
 
@@ -3060,14 +3054,12 @@ Rule C6M1Intro_10dProducer
 
 Response C6M1Intro_10eProducer
 {
-	scene "scenes/Producer/DLC1_C6M1_InitialMeeting18.vcd"  //THANK YOU!
-	scene "scenes/Producer/DLC1_C6M1_InitialMeeting19.vcd"  //THANK YOU, VERY MUCH!
+	scene "scenes/Producer/DLC1_C6M1_InitialMeeting18.vcd" then self IntroEnd foo:0 0.1 //THANK YOU!
+	scene "scenes/Producer/DLC1_C6M1_InitialMeeting19.vcd" then self IntroEnd foo:0 0.1 //THANK YOU, VERY MUCH!
 }
 Rule C6M1Intro_10eProducer
 {
 	criteria ConceptC6M1Intro_10e IsProducer IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:3"
-	applycontexttoworld
 	Response C6M1Intro_10eProducer
 }
 
@@ -3084,27 +3076,23 @@ Rule C6M1Intro_12aProducer
 
 Response C6M1Intro_12cProducer
 {
-	scene "scenes/Producer/DLC1_C6M1_InitialMeeting22.vcd"  //He's got it. We'll see you on the other side.
-	scene "scenes/Producer/DLC1_C6M1_InitialMeeting23.vcd"  //He's got it. We'll see you on the other side.
+	scene "scenes/Producer/DLC1_C6M1_InitialMeeting22.vcd" then self IntroEnd foo:0 0.1 //He's got it. We'll see you on the other side.
+	scene "scenes/Producer/DLC1_C6M1_InitialMeeting23.vcd" then self IntroEnd foo:0 0.1 //He's got it. We'll see you on the other side.
 }
 Rule C6M1Intro_12cProducer
 {
 	criteria ConceptC6M1Intro_12c IsProducer IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:4"
-	applycontexttoworld
 	Response C6M1Intro_12cProducer
 }
 
 Response C6M1Intro_14dProducer
 {
-	scene "scenes/Producer/DLC1_C6M1_InitialMeeting24.vcd"  //Let's go, real charming Nick.
-	scene "scenes/Producer/DLC1_C6M1_InitialMeeting25.vcd"  //Let's go, real charming Nick.
+	scene "scenes/Producer/DLC1_C6M1_InitialMeeting24.vcd" then self IntroEnd foo:0 0.1 //Let's go, real charming Nick.
+	scene "scenes/Producer/DLC1_C6M1_InitialMeeting25.vcd" then self IntroEnd foo:0 0.1 //Let's go, real charming Nick.
 }
 Rule C6M1Intro_14dProducer
 {
 	criteria ConceptC6M1Intro_14d IsProducer IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:3"
-	applycontexttoworld
 	Response C6M1Intro_14dProducer
 }
 
@@ -3135,15 +3123,13 @@ Rule C6M1Intro_17bProducer
 
 Response C6M1Intro_17dProducer
 {
-	scene "scenes/Producer/DLC1_C6M1_InitialMeeting34.vcd"  //Well shit.
-	scene "scenes/Producer/DLC1_C6M1_InitialMeeting35.vcd"  //Well shit.
-	scene "scenes/Producer/DLC1_C6M1_InitialMeeting36.vcd"  //Well shit.
+	scene "scenes/Producer/DLC1_C6M1_InitialMeeting34.vcd" then self IntroEnd foo:0 0.1 //Well shit.
+	scene "scenes/Producer/DLC1_C6M1_InitialMeeting35.vcd" then self IntroEnd foo:0 0.1 //Well shit.
+	scene "scenes/Producer/DLC1_C6M1_InitialMeeting36.vcd" then self IntroEnd foo:0 0.1 //Well shit.
 }
 Rule C6M1Intro_17dProducer
 {
 	criteria ConceptC6M1Intro_17d IsProducer IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:1"
-	applycontexttoworld
 	Response C6M1Intro_17dProducer
 }
 
@@ -3172,13 +3158,11 @@ Rule C6M1Intro_18dProducer
 
 Response C6M1Intro_19bProducer
 {
-	scene "scenes/Producer/DLC1_C6M1_InitialMeeting44.vcd" //Yeah, that sounds simple.
+	scene "scenes/Producer/DLC1_C6M1_InitialMeeting44.vcd" then self IntroEnd foo:0 0.1 //Yeah, that sounds simple.
 }
 Rule C6M1Intro_19bProducer
 {
 	criteria ConceptC6M1Intro_19b IsProducer IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:2"
-	applycontexttoworld
 	Response C6M1Intro_19bProducer
 }
 
@@ -3230,13 +3214,11 @@ Rule C6M1Intro_20fProducer
 
 Response C6M1Intro_20gProducer
 {
-	scene "scenes/Producer/DLC1_C6M1_InitialMeeting53.vcd"  //Dear lord, why'd I ever leave Cleveland.
+	scene "scenes/Producer/DLC1_C6M1_InitialMeeting53.vcd" then self IntroEnd foo:0 0.1 //Dear lord, why'd I ever leave Cleveland.
 }
 Rule C6M1Intro_20gProducer
 {
 	criteria ConceptC6M1Intro_20g IsProducer IsProducerAVampire IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:4"
-	applycontexttoworld
 	Response C6M1Intro_20gProducer
 }
 
@@ -3272,14 +3254,12 @@ Rule C6M1Intro_22fProducer
 
 Response C6M1Intro_22hProducer
 {
-	scene "scenes/Producer/DLC1_C6M1_InitialMeeting59.vcd"  //Take care.
-	scene "scenes/Producer/DLC1_C6M1_InitialMeeting60.vcd"  //You too.
+	scene "scenes/Producer/DLC1_C6M1_InitialMeeting59.vcd" then self IntroEnd foo:0 0.1 //Take care.
+	scene "scenes/Producer/DLC1_C6M1_InitialMeeting60.vcd" then self IntroEnd foo:0 0.1 //You too.
 }
 Rule C6M1Intro_22hProducer
 {
 	criteria ConceptC6M1Intro_22h IsProducer IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:1"
-	applycontexttoworld
 	Response C6M1Intro_22hProducer
 }
 
@@ -3295,13 +3275,11 @@ Rule C6M1Intro_24bProducer
 
 Response C6M1Intro_ConfirmObjectiveProducer
 {
-	scene "scenes/Producer/DLC1_C6M1_InitialMeeting56.vcd" //If that's what we gotta do, that we gotta do.
+	scene "scenes/Producer/DLC1_C6M1_InitialMeeting56.vcd" then self IntroEnd foo:0 0.1 //If that's what we gotta do, that we gotta do.
 }
 Rule C6M1Intro_ConfirmObjectiveProducer
 {
 	criteria ConceptC6M1Intro_ConfirmObjective IsProducer IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:3"
-	applycontexttoworld
 	Response C6M1Intro_ConfirmObjectiveProducer
 }
 
@@ -3449,8 +3427,8 @@ Rule DLC1_C6M2_SafeRoomConvo01aProducer
 
 Response DLC1_C6M2_SafeRoomConvo03aProducer
 {
-	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo06.vcd"  //You'll be back with her soon enough. Also she's a car. And this is creepy.
-	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo07.vcd"  //You'll be back with her soon enough. Also she's a car. And this is creepy.
+	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo06.vcd" then self IntroEnd foo:0 0.1 //You'll be back with her soon enough. Also she's a car. And this is creepy.
+	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo07.vcd" then self IntroEnd foo:0 0.1 //You'll be back with her soon enough. Also she's a car. And this is creepy.
 }
 Rule DLC1_C6M2_SafeRoomConvo03aProducer
 {
@@ -3470,8 +3448,8 @@ Rule DLC1_C6M2_SafeRoomConvo03aZoeyProducer
 
 Response DLC1_C6M2_SafeRoomConvo03cProducer
 {
-	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo04.vcd"  //Calm down Ellis.
-	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo05.vcd"  //Feel better now?
+	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo04.vcd" then self IntroEnd foo:0 0.1 //Calm down Ellis.
+	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo05.vcd" then self IntroEnd foo:0 0.1 //Feel better now?
 }
 Rule DLC1_C6M2_SafeRoomConvo03cProducer
 {
@@ -3481,7 +3459,7 @@ Rule DLC1_C6M2_SafeRoomConvo03cProducer
 
 Response DLC1_C6M2_SafeRoomConvo06aProducer
 {
-	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo09.vcd"  //I have a bunch of good memories, too... of never once going to a boiled peanut festival.
+	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo09.vcd" then self IntroEnd foo:0 0.1 //I have a bunch of good memories, too... of never once going to a boiled peanut festival.
 }
 Rule DLC1_C6M2_SafeRoomConvo06aProducer
 {
@@ -3503,8 +3481,8 @@ Rule DLC1_C6M2_SafeRoomConvoFrancisStartProducer
 
 Response DLC1_C6M2_SafeRoomConvo07aProducer
 {
-	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo10.vcd"  //Sweety, she'd be crazy not to.
-	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo14.vcd"  //Out of all the men left? Sure.
+	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo10.vcd" then self IntroEnd foo:0 0.1 //Sweety, she'd be crazy not to.
+	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo14.vcd" then self IntroEnd foo:0 0.1 //Out of all the men left? Sure.
 }
 Rule DLC1_C6M2_SafeRoomConvo07aProducer
 {
@@ -3536,7 +3514,7 @@ Rule DLC1_C6M2_SafeRoomConvo08dProducer
 
 Response DLC1_C6M2_SafeRoomConvo08fProducer
 {
-	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo18.vcd"  //He is better looking than you.
+	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo18.vcd" then self IntroEnd foo:0 0.1 //He is better looking than you.
 }
 Rule DLC1_C6M2_SafeRoomConvo08fProducer
 {
@@ -3643,8 +3621,8 @@ Rule DLC1_C6M2_SafeRoomConvo16cProducer
 
 Response DLC1_C6M2_SafeRoomConvo17bProducer
 {
-	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo38.vcd"  //Oh! Actually, does anyone want to put that to a vote?
-	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo39.vcd"  //Uhh! Actually, does anyone want to put that to a vote?
+	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo38.vcd" then self IntroEnd foo:0 0.1 //Oh! Actually, does anyone want to put that to a vote?
+	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo39.vcd" then self IntroEnd foo:0 0.1 //Uhh! Actually, does anyone want to put that to a vote?
 }
 Rule DLC1_C6M2_SafeRoomConvo17bProducer
 {
@@ -3675,7 +3653,7 @@ Rule DLC1_C6M2_SafeRoomConvo18dProducer
 
 Response DLC1_C6M2_SafeRoomConvo19aProducer
 {
-	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo43.vcd"  //You're looking good coach.
+	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo43.vcd" then self IntroEnd foo:0 0.1 //You're looking good coach.
 }
 Rule DLC1_C6M2_SafeRoomConvo19aProducer
 {
@@ -3695,7 +3673,7 @@ Rule DLC1_C6M2_SafeRoomConvo19fProducer
 
 Response DLC1_C6M2_SafeRoomConvo20aProducer
 {
-	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo44.vcd"  //Well anybody who survives this shit is gonna be in GREAT shape.
+	scene "scenes/Producer/DLC1_C6M2_SafeRoomConvo44.vcd" then self IntroEnd foo:0 0.1 //Well anybody who survives this shit is gonna be in GREAT shape.
 }
 Rule DLC1_C6M2_SafeRoomConvo20aProducer
 {
@@ -3993,8 +3971,8 @@ Rule DLC1_C6M3_SafeRoomConvo04bProducer
 
 Response DLC1_C6M3_SafeRoomConvo04dProducer
 {
-	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo09.vcd"  //I just think Nick is jealous.
-	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo10.vcd"  //Nick is just jealous.
+	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo09.vcd" then self IntroEnd foo:0 0.1 //I just think Nick is jealous.
+	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo10.vcd" then self IntroEnd foo:0 0.1 //Nick is just jealous.
 }
 Rule DLC1_C6M3_SafeRoomConvo04dProducer
 {
@@ -4053,8 +4031,8 @@ Rule DLC1_C6M3_SafeRoomConvo07bProducer
 
 Response DLC1_C6M3_SafeRoomConvo08gProducer
 {
-	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo21.vcd"  //Great. Thanks, Coach.
-	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo22.vcd"  //Thanks, Coach.
+	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo21.vcd" then self IntroEnd foo:0 0.1 //Great. Thanks, Coach.
+	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo22.vcd" then self IntroEnd foo:0 0.1 //Thanks, Coach.
 }
 Rule DLC1_C6M3_SafeRoomConvo08gProducer
 {
@@ -4064,10 +4042,10 @@ Rule DLC1_C6M3_SafeRoomConvo08gProducer
 
 Response DLC1_C6M3_SafeRoomConvo09bProducer
 {
-	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo25.vcd"  //Oh, yeah, um... What woman wouldn't love that.
-	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo26.vcd"  //What woman wouldn't love that.
-	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo27.vcd"  //Uh... Lucky girl.
-	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo28.vcd"  //Lucky girl.
+	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo25.vcd" then self IntroEnd foo:0 0.1 //Oh, yeah, um... What woman wouldn't love that.
+	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo26.vcd" then self IntroEnd foo:0 0.1 //What woman wouldn't love that.
+	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo27.vcd" then self IntroEnd foo:0 0.1 //Uh... Lucky girl.
+	scene "scenes/Producer/DLC1_C6M3_SafeRoomConvo28.vcd" then self IntroEnd foo:0 0.1 //Lucky girl.
 }
 Rule DLC1_C6M3_SafeRoomConvo09bProducer
 {
@@ -4125,7 +4103,7 @@ Response c6m3_outroProducer
 }
 Rule c6m3_outroProducer
 {
-	criteria Conceptc6m3_outro3 IsProducer isC6m3_port IsNotVersus IsNotIncapacitated ChanceToFire100Percent
+	criteria Conceptc6m3_outro3 IsProducer isC6m3_port IsNotVersus IsNotIncapacitated ChanceToFire100Percent FromIsBiker
 	forceweight 1
 	Response c6m3_outroProducer
 }
@@ -10060,7 +10038,7 @@ Response C4M2LockTheDoorCheckPointProducer
 }
 Rule C4M2LockTheDoorCheckPointProducer
 {
-	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsProducer IsInSafeSpot IsTalk IsTalkProducer IsWorldTalkProducer ismap_c4m2_sugarmill_a
+	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsProducer IsInSafeSpot IsTalk IsTalkProducer IsWorldTalkProducer ismap_c4m2_sugarmill_a AutoIsNotScavenge AutoIsNotSurvival
 	Response C4M2LockTheDoorCheckPointProducer
 }
 
@@ -10235,7 +10213,7 @@ Response PlayerGetInsideCheckPointProducer
 }
 Rule PlayerGetInsideCheckPointProducer
 {
-	criteria ConceptPlayerGetInsideCheckPoint  IsNotCoughing IsProducer IsInSafeSpot IsTalk IsTalkProducer SomeoneOutsideSafeSpot IsWorldTalkProducer
+	criteria ConceptPlayerGetInsideCheckPoint  IsNotCoughing IsProducer IsInSafeSpot IsTalk IsTalkProducer SomeoneOutsideSafeSpot IsWorldTalkProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerGetInsideCheckPointProducer
 }
 
@@ -10250,7 +10228,7 @@ Response PlayerStayTogetherSaferoomProducer
 }
 Rule PlayerStayTogetherSaferoomProducer
 {
-	criteria ConceptPlayerStayTogether IsNotCoughing IsProducer IsInSafeSpot IsTalk IsTalkProducer SomeoneOutsideSafeSpot IsWorldTalkProducer
+	criteria ConceptPlayerStayTogether IsNotCoughing IsProducer IsInSafeSpot IsTalk IsTalkProducer SomeoneOutsideSafeSpot IsWorldTalkProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerStayTogetherSaferoomProducer
 }
 
@@ -10554,7 +10532,7 @@ Response PlayerLockTheDoorCheckPointProducer
 }
 Rule PlayerLockTheDoorCheckPointProducer
 {
-	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsProducer IsInSafeSpot IsNotAlone IsTalk IsTalkProducer IsWorldTalkProducer
+	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsProducer IsInSafeSpot IsNotAlone IsTalk IsTalkProducer IsWorldTalkProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerLockTheDoorCheckPointProducer
 }
 
@@ -10568,7 +10546,7 @@ Response PlayerLockTheDoorCheckPointC1Producer
 }
 Rule PlayerLockTheDoorCheckPointC1Producer
 {
-	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsProducer IsInSafeSpot IsNotAlone IsTalk IsTalkProducer ismap_c1m1_hotel IsWorldTalkProducer
+	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsProducer IsInSafeSpot IsNotAlone IsTalk IsTalkProducer ismap_c1m1_hotel IsWorldTalkProducer AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerLockTheDoorCheckPointC1Producer
 }
 
@@ -10700,7 +10678,7 @@ Response PlayerTransitionProducer
 }
 Rule PlayerTransitionProducer
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsProducer IsNotSaidPlayerTransition IsTalk IsTalkProducer IsWorldTalkProducer IsNotSomeoneDied isNotmap_c1m1_hotel
+	criteria ConceptPlayerTransition IsNotCoughing IsProducer IsNotSaidPlayerTransition IsTalk IsTalkProducer IsWorldTalkProducer IsNotSomeoneDied isNotmap_c1m1_hotel AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionProducer
@@ -10719,7 +10697,7 @@ Response PlayerTransitionCloseProducer
 }
 Rule PlayerTransitionCloseProducer
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsProducer IsNotSaidPlayerTransition IsTalk IsTalkProducer IsWorldTalkProducer IsNotAlone IsSomeoneDied isNotmap_c1m1_hotel
+	criteria ConceptPlayerTransition IsNotCoughing IsProducer IsNotSaidPlayerTransition IsTalk IsTalkProducer IsWorldTalkProducer IsNotAlone IsSomeoneDied isNotmap_c1m1_hotel AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionCloseProducer
@@ -10733,7 +10711,7 @@ Response PlayerTransitionC1M3Producer
 }
 Rule PlayerTransitionC1M3Producer
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsProducer IsNotSaidPlayerTransition IsTalk IsTalkProducer IsWorldTalkProducer ismap_c1m3_mall IsNotAlone IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsProducer IsNotSaidPlayerTransition IsTalk IsTalkProducer IsWorldTalkProducer ismap_c1m3_mall IsNotAlone IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionC1M3Producer
@@ -10745,7 +10723,7 @@ Response PlayerTransitionC2M1Producer
 }
 Rule PlayerTransitionC2M1Producer
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsProducer IsNotSaidPlayerTransition IsTalk IsTalkProducer IsWorldTalkProducer ismap_c2m1 IsNotAlone IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsProducer IsNotSaidPlayerTransition IsTalk IsTalkProducer IsWorldTalkProducer ismap_c2m1 IsNotAlone IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionC2M1Producer
@@ -10757,7 +10735,7 @@ Response PlayerTransitionC2M1EllisProducer
 }
 Rule PlayerTransitionC2M1EllisProducer
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsProducer IsNotSaidPlayerTransition IsTalk IsTalkProducer IsWorldTalkProducer ismap_c2m1 IsNotAlone IsMechanicAlive ChanceToFire50Percent IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsProducer IsNotSaidPlayerTransition IsTalk IsTalkProducer IsWorldTalkProducer ismap_c2m1 IsNotAlone IsMechanicAlive ChanceToFire50Percent IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionC2M1EllisProducer
@@ -10769,7 +10747,7 @@ Response PlayerTransitionC5M4Producer
 }
 Rule PlayerTransitionC5M4Producer
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsProducer IsNotSaidPlayerTransition IsTalk IsTalkProducer IsWorldTalkProducer IsMapc5m4_quarter IsNotAlone IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsProducer IsNotSaidPlayerTransition IsTalk IsTalkProducer IsWorldTalkProducer IsMapc5m4_quarter IsNotAlone IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionC5M4Producer
@@ -13429,6 +13407,18 @@ Rule _C4M5_FinaleStart01Producer
 	Response _C4M5_FinaleStart01Producer
 }
 
+Response _C4M5_BoatComing01Producer
+{
+	scene "scenes/Producer/WorldC4M4B19.vcd"  //VIRGIL'S BACK!
+	scene "scenes/Producer/WorldC4M4B20.vcd"  //VIRGIL'S HERE!
+	scene "scenes/Producer/WorldC4M4B21.vcd"  //HEY, VIRGIL'S HERE!
+}
+Rule _C4M5_BoatComing01Producer
+{
+	criteria Concept_C4M5_BoatComing01 IsProducer AutoIsNotScavenge AutoIsNotSurvival
+	Response _C4M5_BoatComing01Producer
+}
+
 Response _C4M5_Intro03Producer
 {
 	scene "scenes/Producer/WorldC4M4B11.vcd"  then any _C4M5_Intro04 foo:0 0.1 //What if we turn on the Burger Tank sign? Virgil might see it?
@@ -13442,8 +13432,8 @@ Rule _C4M5_Intro03Producer
 
 Response _C4M5_Intro04Producer
 {
-	scene "scenes/Producer/WorldC1M1B30.vcd"  //Alright, sounds like a plan.
-	scene "scenes/Producer/WorldC4M4B10.vcd"  //Yeah, that might work.
+	scene "scenes/Producer/WorldC1M1B30.vcd" then self IntroEnd foo:0 0.1 //Alright, sounds like a plan.
+	scene "scenes/Producer/WorldC4M4B10.vcd" then self IntroEnd foo:0 0.1 //Yeah, that might work.
 }
 Rule _C4M5_Intro04Producer
 {
@@ -13529,13 +13519,11 @@ Rule _introc1m1b05Producer
 
 Response _introc1m1b06Producer
 {
-	scene "scenes/Producer/WorldC1M1B09.vcd"  //Guys, now's not the time for a pissing contest. The building's on fire. Let's get off this roof while we still can.
+	scene "scenes/Producer/WorldC1M1B09.vcd" then self IntroEnd foo:0 0.1 //Guys, now's not the time for a pissing contest. The building's on fire. Let's get off this roof while we still can.
 }
 Rule _introc1m1b06Producer
 {
 	criteria Concept_introc1m1b06 IsProducer AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:9"
-	applycontexttoworld
 	Response _introc1m1b06Producer
 }
 
@@ -13551,23 +13539,19 @@ Rule _introc1m1d01Producer
 
 Response _introc1m1lastProducer
 {
-	scene "scenes/Producer/WorldC1M1B10.vcd"  //
-	scene "scenes/Producer/WorldC1M1B11.vcd"  //
-	scene "scenes/Producer/WorldC1M1B12.vcd"  //
+	scene "scenes/Producer/WorldC1M1B10.vcd" then self IntroEnd foo:0 0.1 //
+	scene "scenes/Producer/WorldC1M1B11.vcd" then self IntroEnd foo:0 0.1 //
+	scene "scenes/Producer/WorldC1M1B12.vcd" then self IntroEnd foo:0 0.1 //
 }
 Rule _introc1m1lastProducer
 {
 	criteria Concept_introc1m1last IsProducer AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:4"
-	applycontexttoworld
 	Response _introc1m1lastProducer
 }
 
 Rule _introc1m1lastweaponsProducer
 {
 	criteria Concept_introc1m1lastweapons IsProducer AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:4"
-	applycontexttoworld
 	Response _introc1m1lastProducer
 }
 
@@ -13622,7 +13606,7 @@ Response c1m1_elevator_ready2Producer
 Rule c1m1_elevator_ready2Producer
 {
 	criteria Conceptc1m1_elevator_ready2 IsProducer IsNotSaidC1M1OpenDoor AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "SaidC1M1OpenDoor:1:30,Talk:0:0"
+	ApplyContext "SaidC1M1OpenDoor:1:30"
 	applycontexttoworld
 	Response c1m1_elevator_ready2Producer
 }
@@ -13821,7 +13805,7 @@ Rule C1M1CoughProducer
 Response C1M2SafeRoomProducer
 {
 	scene "scenes/Producer/WorldC1M1B13.vcd"  then mechanic C1M2SafeRoomc1 foo:0 -2.170 //I can't believe I'm stranded in Savannah.
-	scene "scenes/Producer/WorldGenericProducer05.vcd"  //I'm glad I can't tweet. Because I could never fit today in 140 characters.
+	scene "scenes/Producer/WorldGenericProducer05.vcd" then self IntroEnd foo:0 0.1 //I'm glad I can't tweet. Because I could never fit today in 140 characters.
 }
 Rule C1M2SafeRoomProducer
 {
@@ -13844,7 +13828,7 @@ Rule C1M3AlarmOffaProducer
 Response C1M3SafeRoomProducer
 {
 	scene "scenes/Producer/WorldC1M3B01.vcd"  then gambler C1M3SafeRoom2a foo:0 -3.646 //Alright. So… it's a bit quiet. I still say we should check it out.
-	scene "scenes/Producer/WorldC1M3B02.vcd"  //Okay, so-it's a little deserted. There might still be an evac deeper in.
+	scene "scenes/Producer/WorldC1M3B02.vcd" then self IntroEnd foo:0 0.1 //Okay, so-it's a little deserted. There might still be an evac deeper in.
 }
 Rule C1M3SafeRoomProducer
 {
@@ -13854,16 +13838,16 @@ Rule C1M3SafeRoomProducer
 	Response C1M3SafeRoomProducer
 }
 
-Response C1M3SafeRoom2dProducer
+Response C1M3SafeRoom2eProducer
 {
-	scene "scenes/Producer/WorldC1M3B03.vcd"  //Amen.
-	scene "scenes/Producer/WorldC1M3B04.vcd"  //Amen.
-	scene "scenes/Producer/WorldC1M3B05.vcd"  //Lord, have mercy on Coach and spare the food court.
+	scene "scenes/Producer/WorldC1M3B03.vcd" then self IntroEnd foo:0 0.1 //Amen.
+	scene "scenes/Producer/WorldC1M3B04.vcd" then self IntroEnd foo:0 0.1 //Amen.
+	scene "scenes/Producer/WorldC1M3B05.vcd" then self IntroEnd foo:0 0.1 //Lord, have mercy on Coach and spare the food court.
 }
-Rule C1M3SafeRoom2dProducer
+Rule C1M3SafeRoom2eProducer
 {
-	criteria ConceptC1M3SafeRoom2d IsProducer AutoIsNotScavenge AutoIsNotSurvival
-	Response C1M3SafeRoom2dProducer
+	criteria ConceptC1M3SafeRoom2e IsProducer AutoIsNotScavenge AutoIsNotSurvival
+	Response C1M3SafeRoom2eProducer
 }
 
 Response C1M4NearFinale03aProducer
@@ -13961,7 +13945,7 @@ Rule C2M1IntroStartProducer
 Response C2M1Intro002Producer
 {
 	scene "scenes/Producer/WorldC2M101.vcd"  then coach C2M1Intro002 foo:0 0.01 //Well, the ride was nice while it lasted.
-	scene "scenes/Producer/WorldC2M102.vcd"  //I guess we walk.
+	scene "scenes/Producer/WorldC2M102.vcd" then self IntroEnd foo:0 0.1 //I guess we walk.
 	scene "scenes/Producer/WorldC2M1B02.vcd"  then Coach C2M1Intro009 foo:0 0.02 //Don't worry about it, Ellis. It was amazing of you to get us THIS far.
 	scene "scenes/Producer/WorldC2M1B03.vcd"  then Coach C2M1Intro009 foo:0 0.02 //Don't sweat it, Ellis. It was amazing of you to get us THIS far.
 }
@@ -13973,7 +13957,7 @@ Rule C2M1Intro002Producer
 
 Response C2M1Intro003Producer
 {
-	scene "scenes/Producer/WorldC2M103.vcd"  //I do not want to walk all the way to New Orleans.
+	scene "scenes/Producer/WorldC2M103.vcd" then self IntroEnd foo:0 0.1 //I do not want to walk all the way to New Orleans.
 }
 Rule C2M1Intro003Producer
 {
@@ -14296,7 +14280,7 @@ Rule WorldIntroC31a2Producer
 
 Response WorldIntroC31a4Producer
 {
-	scene "scenes/Producer/WorldC3M1B04.vcd"  //Anyone know where we are?
+	scene "scenes/Producer/WorldC3M1B04.vcd" then self IntroEnd foo:0 0.1 //Anyone know where we are?
 }
 Rule WorldIntroC31a4Producer
 {
@@ -14314,21 +14298,21 @@ Rule WorldIntroC31c3Producer
 	Response WorldIntroC31c3Producer
 }
 
-Response WorldIntroC31d1Producer
+Response WorldIntroC31d2Producer
 {
-	scene "scenes/Producer/WorldC3M1B05.vcd"  //Well, at least we crashed in the swamp!
+	scene "scenes/Producer/WorldC3M1B05.vcd" then self IntroEnd foo:0 0.1 //Well, at least we crashed in the swamp!
 }
-Rule WorldIntroC31d1Producer
+Rule WorldIntroC31d2Producer
 {
-	criteria ConceptWorldIntroC31d1 IsProducer AutoIsNotScavenge AutoIsNotSurvival
-	Response WorldIntroC31d1Producer
+	criteria ConceptWorldIntroC31d2 IsProducer AutoIsNotScavenge AutoIsNotSurvival
+	Response WorldIntroC31d2Producer
 }
 
 Response WorldIntroC31e1Producer
 {
 	scene "scenes/Producer/WorldC3M101.vcd"  then producer WorldIntroC31e2 foo:0 -4.802 //Well, we aren't CEDA or the military, so I guess we're welcome.
 	scene "scenes/Producer/WorldC3M102.vcd"  then mechanic WorldIntroC31e2a foo:0 -3.487 //When they say stay out, I'm sure they mean someone else.
-	scene "scenes/Producer/WorldC3M103.vcd"  //Do you think they put this sign up before or after the infection?
+	scene "scenes/Producer/WorldC3M103.vcd" then self IntroEnd foo:0 0.1 //Do you think they put this sign up before or after the infection?
 	scene "scenes/Producer/WorldC3M106.vcd"  then producer WorldIntroC31e2 foo:0 0.1 //What a friendly bunch.
 }
 Rule WorldIntroC31e1Producer
@@ -15199,7 +15183,7 @@ Rule C13M1Intro3Producer
 
 Response C13M1IntroLastProducer
 {
-	scene "scenes/Producer/WorldC5M4B01.vcd"  //We need to keep moving.
+	scene "scenes/Producer/WorldC5M4B01.vcd" then self IntroEnd foo:0 0.1 //We need to keep moving.
 }
 Rule C13M1IntroLastProducer
 {
@@ -15209,8 +15193,8 @@ Rule C13M1IntroLastProducer
 
 Response C13M1IntroLocationLastProducer
 {
-	scene "scenes/Producer/WorldC1M1B10.vcd"  //
-	scene "scenes/Producer/WorldC1M1B12.vcd"  //
+	scene "scenes/Producer/WorldC1M1B10.vcd" then self IntroEnd foo:0 0.1 //
+	scene "scenes/Producer/WorldC1M1B12.vcd" then self IntroEnd foo:0 0.1 //
 }
 Rule C13M1IntroLocationLastProducer
 {
@@ -15599,6 +15583,14 @@ Rule SafeRoomStartProducer
 {
 	criteria ConceptTalkIdle IsProducer IsInStartArea AutoIsNotScavenge AutoIsNotSurvival _auto_NotSafeRoomStart
 	ApplyContext "Talk:1:45,_auto_SafeRoomStart:1:0,_auto_SafeRoomQuiet:1:5"
+	applycontexttoworld
+	Response NoResponse
+}
+
+Rule IntroEndProducer
+{
+	criteria ConceptIntroEnd IsProducer FromIsProducer IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "Talk:0:0"
 	applycontexttoworld
 	Response NoResponse
 }

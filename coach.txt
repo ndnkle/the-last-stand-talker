@@ -44,7 +44,7 @@ Rule C1M3AlarmActiveCoach
 Response C4M3SaferoomCoach
 {
 	scene "scenes/Coach/WorldC4M3B01.vcd"  then any _c4m3_startsafe02 foo:0 0.01 //Allright, people. Everybody got a can?
-	scene "scenes/Coach/WorldC4M301.vcd"   //We got our shit, let's get back to the boat.
+	scene "scenes/Coach/WorldC4M301.vcd" then self IntroEnd foo:0 0.1 //We got our shit, let's get back to the boat.
 }
 Rule C4M3SaferoomCoach
 {
@@ -808,7 +808,7 @@ Response PlayerWorldIntroC31Coach
 	scene "scenes/Coach/WorldC3M1B02.vcd"  then gambler WorldIntroC31d1 foo:0 -6.371 //That was some shit, the pilot becoming a zombie right before our eyes. Nice shooting Nick.
 	scene "scenes/Coach/WorldC3M1B04.vcd"  then coach WorldIntroC3f1 foo:0 -5.327 //You know what? No more helicopters. I'm just saying that now. I'm good.
 	scene "scenes/Coach/WorldC3M1B06.vcd"  then mechanic WorldIntroC31c1 foo:0 -5.605 //That was the first time I was in a helicopter. I always imagined it with less zombies.
-	scene "scenes/Coach/WorldC3M1B10.vcd"  then producer WorldIntroC3f1 foo:0 0.1 //Anyone check where we were before we went down?
+	scene "scenes/Coach/WorldC3M1B10.vcd" then self IntroEnd foo:0 0.1 //Anyone check where we were before we went down?
 }
 Rule PlayerWorldIntroC31Coach
 {
@@ -1992,7 +1992,7 @@ Rule c2m5_intro010Coach
 
 Response c2m5_intro012Coach
 {
-	scene "scenes/Coach/WorldC2M5B08.vcd"  //These zombies better be ready to rock.
+	scene "scenes/Coach/WorldC2M5B08.vcd" then self IntroEnd foo:0 0.1 //These zombies better be ready to rock.
 }
 Rule c2m5_intro012Coach
 {
@@ -2019,7 +2019,7 @@ Rule c2m5_intro018Coach
 
 Response c2m5_intro016Coach
 {
-	scene "scenes/Coach/WorldC2M5B08.vcd"  //These zombies better be ready to rock.
+	scene "scenes/Coach/WorldC2M5B08.vcd" then self IntroEnd foo:0 0.1 //These zombies better be ready to rock.
 }
 Rule c2m5_intro016Coach
 {
@@ -2069,7 +2069,7 @@ Rule C2M5ChopperOCDCoach
 //--------------------------------------------------------------------------------------------------------------
 Response C2M3SaferoomCoach
 {
-	scene "scenes/Coach/WorldC2M3B01.vcd"  //Well-looks like we're going through the tunnel of love, people. No hanky panky.
+	scene "scenes/Coach/WorldC2M3B01.vcd" then self IntroEnd foo:0 0.1 //Well-looks like we're going through the tunnel of love, people. No hanky panky.
 	scene "scenes/Coach/WorldC2M3B02.vcd"  then gambler C2M3SafeIntro013 foo:0 0.1 //Well-looks like we're going through the tunnel of love, people. Stay close to me.
 }
 Rule C2M3SaferoomCoach
@@ -2154,8 +2154,8 @@ Rule InfoRemc3m2_parachutist2Coach
 //--------------------------------------------------------------------------------------------------------------
 Response C3M3SafeRoom2b2Coach
 {
-	scene "scenes/Coach/WorldC3M301.vcd"  //All right, this just makes me sad.
-	scene "scenes/Coach/WorldC3M303.vcd"  //I don't want to think that, but I gotta agree.
+	scene "scenes/Coach/WorldC3M301.vcd" then self IntroEnd foo:0 0.1 //All right, this just makes me sad.
+	scene "scenes/Coach/WorldC3M303.vcd" then self IntroEnd foo:0 0.1 //I don't want to think that, but I gotta agree.
 }
 Rule C3M3SafeRoom2b2Coach
 {
@@ -2175,8 +2175,8 @@ Rule C3M3SafeRoom2c2Coach
 
 Response C3M3SafeRoom2c3Coach
 {
-	scene "scenes/Coach/WorldC3M3B02.vcd"  //I don't want to stay here, let's follow 'em.
-	scene "scenes/Coach/WorldC3M306.vcd"  //Might as well head there as well.
+	scene "scenes/Coach/WorldC3M3B02.vcd" then self IntroEnd foo:0 0.1 //I don't want to stay here, let's follow 'em.
+	scene "scenes/Coach/WorldC3M306.vcd" then self IntroEnd foo:0 0.1 //Might as well head there as well.
 }
 Rule C3M3SafeRoom2c3Coach
 {
@@ -2445,7 +2445,7 @@ Rule _c4m1Intro05Coach
 
 Response _c4m1Intro06Coach
 {
-	scene "scenes/Coach/WorldC4M103.vcd"  //Don't jinx us, Nick.
+	scene "scenes/Coach/WorldC4M103.vcd" then self IntroEnd foo:0 0.1 //Don't jinx us, Nick.
 }
 Rule _c4m1Intro06Coach
 {
@@ -2465,8 +2465,8 @@ Rule _c4m1Intro07Coach
 
 Response _c4m1Intro09Coach
 {
-	scene "scenes/Coach/WorldC4M1B01.vcd"  //Look here, the gas station's right across the street. We coulda already been there and back by now. Come on.
-	scene "scenes/Coach/WorldC4M1B05.vcd"  //Look here, the gas station's right across the street. We coulda already been there and back by now. Come on.
+	scene "scenes/Coach/WorldC4M1B01.vcd" then self IntroEnd foo:0 0.1 //Look here, the gas station's right across the street. We coulda already been there and back by now. Come on.
+	scene "scenes/Coach/WorldC4M1B05.vcd" then self IntroEnd foo:0 0.1 //Look here, the gas station's right across the street. We coulda already been there and back by now. Come on.
 }
 Rule _c4m1Intro09Coach
 {
@@ -2611,7 +2611,7 @@ Rule _C4M5_Intro03Coach
 
 Response _C4M5_Intro04Coach
 {
-	scene "scenes/Coach/WorldC4M4B12.vcd"  //Let's do it.
+	scene "scenes/Coach/WorldC4M4B12.vcd" then self IntroEnd foo:0 0.1 //Let's do it.
 }
 Rule _C4M5_Intro04Coach
 {
@@ -2648,8 +2648,8 @@ Rule C5M1_intro002Coach
 
 Response C5M1_intro004Coach
 {
-	scene "scenes/Coach/WorldC5M1B02.vcd"  //We made it REAL damn far, people. I'm proud of you. Now let's just cross that last mile.
-	scene "scenes/Coach/WorldC5M1B03.vcd"  //We BEEN through hell getting here. Now we're at the last mile. Let's make this COUNT.
+	scene "scenes/Coach/WorldC5M1B02.vcd" then self IntroEnd foo:0 0.1 //We made it REAL damn far, people. I'm proud of you. Now let's just cross that last mile.
+	scene "scenes/Coach/WorldC5M1B03.vcd" then self IntroEnd foo:0 0.1 //We BEEN through hell getting here. Now we're at the last mile. Let's make this COUNT.
 	scene "scenes/Coach/WorldC5M1B04.vcd"  then gambler C5M1_intro006 foo:0 0.01 //All right people, let's get to that bridge.
 	scene "scenes/Coach/WorldC5M1B05.vcd"  then gambler C5M1_intro007 foo:0 0.01 //We're almost home free, people.
 }
@@ -2667,7 +2667,7 @@ Rule C5M1_intro005Coach
 
 Response C5M1_intro008Coach
 {
-	scene "scenes/Coach/World02.vcd"  //Oh yeaah. Our goal is right next to the bridge, ON THE OTHER MOTHER F'IN SIDE OF THE RIVER!
+	scene "scenes/Coach/World02.vcd" then self IntroEnd foo:0 0.1 //Oh yeaah. Our goal is right next to the bridge, ON THE OTHER MOTHER F'IN SIDE OF THE RIVER!
 }
 Rule C5M1_intro008Coach
 {
@@ -3702,13 +3702,11 @@ Rule C6M1Intro_04bCoach
 
 Response C6M1Intro_08aCoach
 {
-	scene "scenes/Coach/DLC1_C6M1_InitialMeeting03.vcd"  //Got it. We'll holla back at you when we get there.
+	scene "scenes/Coach/DLC1_C6M1_InitialMeeting03.vcd" then self IntroEnd foo:0 0.1 //Got it. We'll holla back at you when we get there.
 }
 Rule C6M1Intro_08aCoach
 {
 	criteria ConceptC6M1Intro_08a IsCoach IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:6"
-	applycontexttoworld
 	Response C6M1Intro_08aCoach
 }
 
@@ -3767,25 +3765,21 @@ Rule C6M1Intro_20dCoach
 
 Response C6M1Intro_20gCoach
 {
-	scene "scenes/Coach/DLC1_C6M1_InitialMeeting10.vcd"  //Dear lord, why'd I ever leave Savannah.
+	scene "scenes/Coach/DLC1_C6M1_InitialMeeting10.vcd" then self IntroEnd foo:0 0.1 //Dear lord, why'd I ever leave Savannah.
 }
 Rule C6M1Intro_20gCoach
 {
 	criteria ConceptC6M1Intro_20g IsCoach IsCoachAVampire IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:5"
-	applycontexttoworld
 	Response C6M1Intro_20gCoach
 }
 
 Response C6M1Intro_ConfirmObjectiveCoach
 {
-	scene "scenes/Coach/DLC1_C6M1_InitialMeeting03.vcd"  //Got it. We'll holla back at you when we get there.
+	scene "scenes/Coach/DLC1_C6M1_InitialMeeting03.vcd" then self IntroEnd foo:0 0.1 //Got it. We'll holla back at you when we get there.
 }
 Rule C6M1Intro_ConfirmObjectiveCoach
 {
 	criteria ConceptC6M1Intro_ConfirmObjective IsCoach IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:5"
-	applycontexttoworld
 	Response C6M1Intro_ConfirmObjectiveCoach
 }
 
@@ -3901,7 +3895,7 @@ Rule C6M2_OpenGate2Coach
 
 Response DLC1_C6M2_SafeRoomConvo01aCoach
 {
-	scene "scenes/Coach/DLC1_C6M2_SafeRoomConvo01.vcd"  //Nick. Son. I think we got bigger problems.
+	scene "scenes/Coach/DLC1_C6M2_SafeRoomConvo01.vcd" then self IntroEnd foo:0 0.1 //Nick. Son. I think we got bigger problems.
 }
 Rule DLC1_C6M2_SafeRoomConvo01aCoach
 {
@@ -3943,7 +3937,7 @@ Rule DLC1_C6M2_SafeRoomConvo12bCoach
 
 Response DLC1_C6M2_SafeRoomConvo12dCoach
 {
-	scene "scenes/Coach/DLC1_C6M2_SafeRoomConvo06.vcd"  //Uh, historical shit. Man, how am I supposed to know? I ain't been there yet.
+	scene "scenes/Coach/DLC1_C6M2_SafeRoomConvo06.vcd" then self IntroEnd foo:0 0.1 //Uh, historical shit. Man, how am I supposed to know? I ain't been there yet.
 }
 Rule DLC1_C6M2_SafeRoomConvo12dCoach
 {
@@ -3963,8 +3957,8 @@ Rule DLC1_C6M2_SafeRoomConvo13bCoach
 
 Response DLC1_C6M2_SafeRoomConvo13dCoach
 {
-	scene "scenes/Coach/DLC1_C6M2_SafeRoomConvo09.vcd"  //There you go Nick. Stay positive.
-	scene "scenes/Coach/DLC1_C6M2_SafeRoomConvo10.vcd"  //There you go Nick. Stay positive. Maybe you'll knock all his teeth out.
+	scene "scenes/Coach/DLC1_C6M2_SafeRoomConvo09.vcd" then self IntroEnd foo:0 0.1 //There you go Nick. Stay positive.
+	scene "scenes/Coach/DLC1_C6M2_SafeRoomConvo10.vcd" then self IntroEnd foo:0 0.1 //There you go Nick. Stay positive. Maybe you'll knock all his teeth out.
 }
 Rule DLC1_C6M2_SafeRoomConvo13dCoach
 {
@@ -4024,7 +4018,7 @@ Rule DLC1_C6M2_SafeRoomConvo18cCoach
 
 Response DLC1_C6M2_SafeRoomConvo18eCoach
 {
-	scene "scenes/Coach/DLC1_C6M2_SafeRoomConvo16.vcd"  //Listen, if you let your guard down for one minute we all pay the price.
+	scene "scenes/Coach/DLC1_C6M2_SafeRoomConvo16.vcd" then self IntroEnd foo:0 0.1 //Listen, if you let your guard down for one minute we all pay the price.
 }
 Rule DLC1_C6M2_SafeRoomConvo18eCoach
 {
@@ -4242,7 +4236,7 @@ Rule C6M3_GivenItemTeenGirlCoach
 
 Response DLC1_C6M3_SafeRoomConvo02eCoach
 {
-	scene "scenes/Coach/DLC1_C6M3_SafeRoomConvo01.vcd"  //Sometimes you just gotta have faith, Nick.
+	scene "scenes/Coach/DLC1_C6M3_SafeRoomConvo01.vcd" then self IntroEnd foo:0 0.1 //Sometimes you just gotta have faith, Nick.
 }
 Rule DLC1_C6M3_SafeRoomConvo02eCoach
 {
@@ -4342,7 +4336,7 @@ Response c6m3_outroCoach
 }
 Rule c6m3_outroCoach
 {
-	criteria Conceptc6m3_outro3 IsCoach isC6m3_port IsNotVersus IsNotIncapacitated ChanceToFire100Percent
+	criteria Conceptc6m3_outro3 IsCoach isC6m3_port IsNotVersus IsNotIncapacitated ChanceToFire100Percent FromIsBiker
 	forceweight 1
 	Response c6m3_outroCoach
 }
@@ -10874,7 +10868,7 @@ Response C4M2LockTheDoorCheckPointCoach
 }
 Rule C4M2LockTheDoorCheckPointCoach
 {
-	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsCoach IsInSafeSpot IsTalk IsTalkCoach IsWorldTalkCoach ismap_c4m2_sugarmill_a
+	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsCoach IsInSafeSpot IsTalk IsTalkCoach IsWorldTalkCoach ismap_c4m2_sugarmill_a AutoIsNotScavenge AutoIsNotSurvival
 	Response C4M2LockTheDoorCheckPointCoach
 }
 
@@ -11029,7 +11023,7 @@ Response PlayerGetInsideCheckPointCoach
 }
 Rule PlayerGetInsideCheckPointCoach
 {
-	criteria ConceptPlayerGetInsideCheckPoint  IsNotCoughing IsCoach IsInSafeSpot IsTalk IsTalkCoach SomeoneOutsideSafeSpot IsWorldTalkCoach
+	criteria ConceptPlayerGetInsideCheckPoint  IsNotCoughing IsCoach IsInSafeSpot IsTalk IsTalkCoach SomeoneOutsideSafeSpot IsWorldTalkCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerGetInsideCheckPointCoach
 }
 
@@ -11042,7 +11036,7 @@ Response PlayerGetInsideCheckPointC2M2Coach
 }
 Rule PlayerGetInsideCheckPointC2M2Coach
 {
-	criteria ConceptPlayerGetInsideCheckPoint ismap_c2m2 IsNotCoughing IsCoach IsInSafeSpot IsTalk IsTalkCoach SomeoneOutsideSafeSpot IsWorldTalkCoach
+	criteria ConceptPlayerGetInsideCheckPoint ismap_c2m2 IsNotCoughing IsCoach IsInSafeSpot IsTalk IsTalkCoach SomeoneOutsideSafeSpot IsWorldTalkCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerGetInsideCheckPointC2M2Coach
 }
 
@@ -11326,7 +11320,7 @@ Response PlayerLockTheDoorCheckPointCoach
 }
 Rule PlayerLockTheDoorCheckPointCoach
 {
-	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsCoach IsInSafeSpot IsNotAlone IsTalk IsTalkCoach IsWorldTalkCoach
+	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsCoach IsInSafeSpot IsNotAlone IsTalk IsTalkCoach IsWorldTalkCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerLockTheDoorCheckPointCoach
 }
 
@@ -11337,7 +11331,7 @@ Response PlayerLockTheDoorCheckPointC1Coach
 }
 Rule PlayerLockTheDoorCheckPointC1Coach
 {
-	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsCoach IsInSafeSpot ismap_c1m1_hotel IsNotAlone IsTalk IsTalkCoach IsWorldTalkCoach
+	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsCoach IsInSafeSpot ismap_c1m1_hotel IsNotAlone IsTalk IsTalkCoach IsWorldTalkCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerLockTheDoorCheckPointC1Coach
 }
 
@@ -11473,22 +11467,6 @@ Rule PlayerRevivedByDefibrillator2TeenGirlCoach
 	Response PlayerRevivedByDefibrillator2ProducerCoach
 }
 
-
-Response PlayerStayTogetherInsideCoach
-{
-	scene "scenes/Coach/StayTogetherInside01.vcd" then any StayTogetherInsideReponse foo:0 -2.761 //Come on people, get you asses in here!
-	scene "scenes/Coach/StayTogetherInside02.vcd" then any StayTogetherInsideReponse foo:0 -1.527 //Get you asses in here!
-	scene "scenes/Coach/StayTogetherInside03.vcd" then any StayTogetherInsideReponse foo:0 -2.445 //Ain't got time for this shit, get in here.
-	scene "scenes/Coach/StayTogetherInside04.vcd" then any StayTogetherInsideReponse foo:0 -2.677 //Come on people, come on, get in here!
-	scene "scenes/Coach/StayTogetherInside05.vcd" then any StayTogetherInsideReponse foo:0 -1.197 //Hey! Get in here!
-	scene "scenes/Coach/StayTogetherInside06.vcd" then any StayTogetherInsideReponse foo:0 -2.170 //Get you asses in here right now!
-}
-Rule PlayerStayTogetherInsideCoach
-{
-	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsCoach IsInSafeSpot IsTalk IsTalkCoach SomeoneOutsideSafeSpot IsWorldTalkCoach
-	Response PlayerStayTogetherInsideCoach
-}
-
 Response PlayerStayTogetherSaferoomCoach
 {
 	scene "scenes/Coach/StayTogetherInside01.vcd" //Come on people, get you asses in here!
@@ -11500,7 +11478,7 @@ Response PlayerStayTogetherSaferoomCoach
 }
 Rule PlayerStayTogetherSaferoomCoach
 {
-	criteria ConceptPlayerStayTogether IsNotCoughing IsCoach IsInSafeSpot IsTalk IsTalkCoach SomeoneOutsideSafeSpot IsWorldTalkCoach
+	criteria ConceptPlayerStayTogether IsNotCoughing IsCoach IsInSafeSpot IsTalk IsTalkCoach SomeoneOutsideSafeSpot IsWorldTalkCoach AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerStayTogetherSaferoomCoach
 }
 
@@ -11606,7 +11584,7 @@ Response PlayerTransitionCoach
 }
 Rule PlayerTransitionCoach
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsCoach IsNotSaidPlayerTransition IsTalk IsTalkCoach IsWorldTalkCoach IsNotSomeoneDied isNotmap_c1m1_hotel
+	criteria ConceptPlayerTransition IsNotCoughing IsCoach IsNotSaidPlayerTransition IsTalk IsTalkCoach IsWorldTalkCoach IsNotSomeoneDied isNotmap_c1m1_hotel AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionCoach
@@ -11626,7 +11604,7 @@ Response PlayerTransitionCloseCoach
 }
 Rule PlayerTransitionCloseCoach
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsCoach IsNotSaidPlayerTransition IsTalk IsTalkCoach IsWorldTalkCoach IsNotAlone IsSomeoneDied isNotmap_c1m1_hotel
+	criteria ConceptPlayerTransition IsNotCoughing IsCoach IsNotSaidPlayerTransition IsTalk IsTalkCoach IsWorldTalkCoach IsNotAlone IsSomeoneDied isNotmap_c1m1_hotel AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionCloseCoach
@@ -11638,7 +11616,7 @@ Response PlayerTransitionSoloCoach
 }
 Rule PlayerTransitionSoloCoach
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsCoach IsNotSaidPlayerTransition IsTalk IsTalkCoach IsWorldTalkCoach IsAlone IsSomeoneDied isNotmap_c1m1_hotel
+	criteria ConceptPlayerTransition IsNotCoughing IsCoach IsNotSaidPlayerTransition IsTalk IsTalkCoach IsWorldTalkCoach IsAlone IsSomeoneDied isNotmap_c1m1_hotel AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionSoloCoach
@@ -11650,7 +11628,7 @@ Response PlayerTransitionC1M2Coach
 }
 Rule PlayerTransitionC1M2Coach
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsCoach IsNotSaidPlayerTransition IsTalk IsTalkCoach IsWorldTalkCoach ismap_c1m2_streets IsNotAlone IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsCoach IsNotSaidPlayerTransition IsTalk IsTalkCoach IsWorldTalkCoach ismap_c1m2_streets IsNotAlone IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionC1M2Coach
@@ -11662,7 +11640,7 @@ Response PlayerTransitionC1M3Coach
 }
 Rule PlayerTransitionC1M3Coach
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsCoach IsNotSaidPlayerTransition IsTalk IsTalkCoach IsWorldTalkCoach ismap_c1m3_mall IsNotAlone IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsCoach IsNotSaidPlayerTransition IsTalk IsTalkCoach IsWorldTalkCoach ismap_c1m3_mall IsNotAlone IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionC1M3Coach
@@ -11674,7 +11652,7 @@ Response PlayerTransitionC5M4Coach
 }
 Rule PlayerTransitionC5M4Coach
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsCoach IsNotSaidPlayerTransition IsTalk IsTalkCoach IsWorldTalkCoach IsMapc5m4_quarter IsNotAlone IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsCoach IsNotSaidPlayerTransition IsTalk IsTalkCoach IsWorldTalkCoach IsMapc5m4_quarter IsNotAlone IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionC5M4Coach
@@ -11686,7 +11664,7 @@ Response PlayerTransitionC6M2Coach
 }
 Rule PlayerTransitionC6M2Coach
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsCoach IsNotSaidPlayerTransition IsTalk IsTalkCoach IsWorldTalkCoach Isc6m2_bedlam IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsCoach IsNotSaidPlayerTransition IsTalk IsTalkCoach IsWorldTalkCoach Isc6m2_bedlam IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionC6M2Coach
@@ -14349,8 +14327,8 @@ Rule _c4m3_startsafe02Coach
 
 Response _c4m3_startsafe03Coach
 {
-	scene "scenes/Coach/WorldC4M3B02.vcd"  //Let's head back to the boat.
-	scene "scenes/Coach/WorldC4M3B03.vcd"  //Back to the boat, people.
+	scene "scenes/Coach/WorldC4M3B02.vcd" then self IntroEnd foo:0 0.1 //Let's head back to the boat.
+	scene "scenes/Coach/WorldC4M3B03.vcd" then self IntroEnd foo:0 0.1 //Back to the boat, people.
 	scene "scenes/Coach/WorldC4M3B08.vcd"  then any _c4m3_startsafe04 foo:0 0.2 //Getting' back to the boat ain't gonna be as easy as gettin' here.
 	scene "scenes/Coach/WorldC4M3B06.vcd"  then any _c4m3_startsafe04 foo:0 0.2 //Getting' back to the boat ain't gonna be as easy as getting' here.
 }
@@ -14503,8 +14481,8 @@ Rule _introc1m1c02Coach
 
 Response _introc1m1lastweaponsCoach
 {
-	scene "scenes/Coach/WorldC1M1B16.vcd" //Gotta agree. Let's follow them to the mall.
-	scene "scenes/Coach/WorldC1M1B17.vcd" //Then let's do it. Everybody grab a weapon, and let's go.
+	scene "scenes/Coach/WorldC1M1B16.vcd" then self IntroEnd foo:0 0.1 //Gotta agree. Let's follow them to the mall.
+	scene "scenes/Coach/WorldC1M1B17.vcd" then self IntroEnd foo:0 0.1 //Then let's do it. Everybody grab a weapon, and let's go.
 }
 Rule _introc1m1lastweaponsCoach
 {
@@ -14739,7 +14717,7 @@ Rule C1M3AlarmOffaCoach
 
 Response C1M3SafeRoomCoach
 {
-	scene "scenes/Coach/WorldC1M3B01.vcd"  //Keep an eye out for the evac center. Also the food court. I am STARVING.
+	scene "scenes/Coach/WorldC1M3B01.vcd" then self IntroEnd foo:0 0.1 //Keep an eye out for the evac center. Also the food court. I am STARVING.
 	scene "scenes/Coach/WorldC1M3B02.vcd"  then self C1M3SafeRoom2d foo:0 -13.984 //Everybody, gather 'round. Let's pray. Dear Lord. See us safely through our time of trial in this mall. And please Lord... let the food court be okay.
 }
 Rule C1M3SafeRoomCoach
@@ -14752,7 +14730,7 @@ Rule C1M3SafeRoomCoach
 
 Response C1M3SafeRoom2cCoach
 {
-	scene "scenes/Coach/WorldC1M3B05.vcd"  //CEDA's gotta be around here somewhere. Let's find this evac and get out of here.
+	scene "scenes/Coach/WorldC1M3B05.vcd" then self IntroEnd foo:0 0.1 //CEDA's gotta be around here somewhere. Let's find this evac and get out of here.
 }
 Rule C1M3SafeRoom2cCoach
 {
@@ -14762,8 +14740,8 @@ Rule C1M3SafeRoom2cCoach
 
 Response C1M3SafeRoom2dCoach
 {
-	scene "scenes/Coach/WorldC1M3B03.vcd" then all C1M3SafeRoom2d foo:0 -0.1 //Amen
-	scene "scenes/Coach/WorldC1M3B04.vcd" then all C1M3SafeRoom2d foo:0 -0.1 //Amen
+	scene "scenes/Coach/WorldC1M3B03.vcd" then all C1M3SafeRoom2e foo:0 -0.1 //Amen
+	scene "scenes/Coach/WorldC1M3B04.vcd" then all C1M3SafeRoom2e foo:0 -0.1 //Amen
 }
 Rule C1M3SafeRoom2dCoach
 {
@@ -14828,8 +14806,8 @@ Rule C1M4SafeRoom2a3Coach
 
 Response C1M4SafeRoom2b5Coach
 {
-	scene "scenes/Coach/WorldC1M3B03.vcd"  //Amen
-	scene "scenes/Coach/WorldC1M3B04.vcd"  //Amen
+	scene "scenes/Coach/WorldC1M3B03.vcd" then self IntroEnd foo:0 0.1 //Amen
+	scene "scenes/Coach/WorldC1M3B04.vcd" then self IntroEnd foo:0 0.1 //Amen
 }
 Rule C1M4SafeRoom2b5Coach
 {
@@ -14866,9 +14844,9 @@ Rule C2M1DoneFallingAlt1Coach
 
 Response C2M1Intro002Coach
 {
-	scene "scenes/Coach/WorldC2M103.vcd"  //All right, let's get back on foot.
-	scene "scenes/Coach/WorldC2M104.vcd"  //Let's get back on foot.
-	scene "scenes/Coach/WorldC2M107.vcd"  //Ain't no way to drive around this mess, let's walk it.
+	scene "scenes/Coach/WorldC2M103.vcd" then self IntroEnd foo:0 0.1 //All right, let's get back on foot.
+	scene "scenes/Coach/WorldC2M104.vcd" then self IntroEnd foo:0 0.1 //Let's get back on foot.
+	scene "scenes/Coach/WorldC2M107.vcd" then self IntroEnd foo:0 0.1 //Ain't no way to drive around this mess, let's walk it.
 	scene "scenes/Coach/WorldC2M1B01.vcd"  then Producer C2M1Intro003 foo:0 0.01 //Hell, it got us this far. We'll find another way to N'awlins.
 }
 Rule C2M1Intro002Coach
@@ -14879,7 +14857,7 @@ Rule C2M1Intro002Coach
 
 Response C2M1Intro009Coach
 {
-	scene "scenes/Coach/WorldC2M101.vcd"  //Yeah, Ellis, that was some good driving.
+	scene "scenes/Coach/WorldC2M101.vcd" then self IntroEnd foo:0 0.1 //Yeah, Ellis, that was some good driving.
 }
 Rule C2M1Intro009Coach
 {
@@ -15248,7 +15226,7 @@ Rule WorldIntroC31a2Coach
 
 Response WorldIntroC31e3Coach
 {
-	scene "scenes/Coach/WorldC3M104.vcd"  //Come on now, if I was having a cookout, I ain't invitin' CEDA either.
+	scene "scenes/Coach/WorldC3M104.vcd" then self IntroEnd foo:0 0.1 //Come on now, if I was having a cookout, I ain't invitin' CEDA either.
 }
 Rule WorldIntroC31e3Coach
 {
@@ -15258,7 +15236,7 @@ Rule WorldIntroC31e3Coach
 
 Response WorldIntroC3e1Coach
 {
-	scene "scenes/Coach/WorldC3M1B05.vcd"  //Next time someone wants to shoot our pilot, can I get a little warning?
+	scene "scenes/Coach/WorldC3M1B05.vcd" then self IntroEnd foo:0 0.1 //Next time someone wants to shoot our pilot, can I get a little warning?
 }
 Rule WorldIntroC3e1Coach
 {
@@ -15278,7 +15256,7 @@ Rule WorldIntroC3f1Coach
 
 Response WorldIntroC31g2Coach
 {
-	scene "scenes/Coach/WorldC3M103.vcd"  //I don't think anyone likes the swamp.
+	scene "scenes/Coach/WorldC3M103.vcd" then self IntroEnd foo:0 0.1 //I don't think anyone likes the swamp.
 }
 Rule WorldIntroC31g2Coach
 {
@@ -16115,11 +16093,11 @@ Rule C13M1Intro3Coach
 
 Response C13M1IntroLastCoach
 {
-	scene "scenes/Coach/MoveOn06.vcd"  //Alright, let's get it on.
-	scene "scenes/Coach/MoveOn07.vcd"  //All right, let's roll.
-	scene "scenes/Coach/MoveOn08.vcd"  //Let's get it on.
-	scene "scenes/Coach/MoveOn09.vcd"  //Alright people, let's get it on.
-	scene "scenes/Coach/MoveOn10.vcd"  //All right, let's roll.
+	scene "scenes/Coach/MoveOn06.vcd" then self IntroEnd foo:0 0.1 //Alright, let's get it on.
+	scene "scenes/Coach/MoveOn07.vcd" then self IntroEnd foo:0 0.1 //All right, let's roll.
+	scene "scenes/Coach/MoveOn08.vcd" then self IntroEnd foo:0 0.1 //Let's get it on.
+	scene "scenes/Coach/MoveOn09.vcd" then self IntroEnd foo:0 0.1 //Alright people, let's get it on.
+	scene "scenes/Coach/MoveOn10.vcd" then self IntroEnd foo:0 0.1 //All right, let's roll.
 }
 Rule C13M1IntroLastCoach
 {
@@ -16129,8 +16107,8 @@ Rule C13M1IntroLastCoach
 
 Response C13M1IntroLocationLastCoach
 {
-	scene "scenes/Coach/MoveOn01.vcd"  //Allright, let's go.
-	scene "scenes/Coach/MoveOn02.vcd"  //Come on, people, let's get with it.
+	scene "scenes/Coach/MoveOn01.vcd" then self IntroEnd foo:0 0.1 //Allright, let's go.
+	scene "scenes/Coach/MoveOn02.vcd" then self IntroEnd foo:0 0.1 //Come on, people, let's get with it.
 }
 Rule C13M1IntroLocationLastCoach
 {
@@ -16515,6 +16493,14 @@ Rule SafeRoomStartCoach
 {
 	criteria ConceptTalkIdle IsCoach IsInStartArea AutoIsNotScavenge AutoIsNotSurvival _auto_NotSafeRoomStart
 	ApplyContext "Talk:1:45,_auto_SafeRoomStart:1:0,_auto_SafeRoomQuiet:1:5"
+	applycontexttoworld
+	Response NoResponse
+}
+
+Rule IntroEndCoach
+{
+	criteria ConceptIntroEnd IsCoach FromIsCoach IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "Talk:0:0"
 	applycontexttoworld
 	Response NoResponse
 }

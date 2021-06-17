@@ -1385,6 +1385,7 @@ criterion "IsHowitzerFired" "worldHowitzerWasFired" "1" required
 criterion "NotHowitzerSeen" "worldHowitzerSeen" "<1" required
 criterion "IsHowitzerSeen" "worldHowitzerSeen" "1" required
 criterion "IsCrashGenerator1Nag" "worldCrashGenerator1Nag" "1" required
+criterion "IsCrashGeneratorNotOn" "worldCrashGenerator1Nag" "!=2" required
 criterion "NotCrash01ThroughBridge" "worldCrash01ThroughBridge" "<1" required
 criterion "NotSaidMegaMobPilot" "worldSaidMegaMobPilot" "<1" required
 
@@ -1397,6 +1398,7 @@ criterion "ConceptCrashFinaleTruckReady" "Concept" "CrashFinaleTruckReady" requi
 criterion "ConceptCrashFinaleTruckReadySpk" "Concept" "CrashFinaleTruckReadySpk" required //Truck is down and ready to go! GO GO GO!
 criterion "ConceptCrashFinaleTruckReadyResp" "Concept" "CrashFinaleTruckReadyResp" required //Truck is down and ready to go! GO GO GO!
 criterion "IsCrashFinaleGeneratorBroken" "worldCrashFinaleGenerator" "1" required
+criterion "IsCrashFinaleGeneratorNotFixed" "worldCrashFinaleGenerator" "!=2" required
 criterion "ConceptCrashFinaleGenerator2Press" "Concept" "CrashFinaleGenerator2Press" required //started pressing the power generator button
 criterion "ConceptCrashFinaleGenerator2UnPress" "Concept" "CrashFinaleGenerator2UnPress" required //stoppen pressing the power generator button before power is on
 criterion "ConceptCrashFinaleGenerator2On" "Concept" "CrashFinaleGenerator2On" required //finished pressing the power generator button
@@ -1512,7 +1514,7 @@ Response CrashFinaleGen2UnPressBOrator
 }
 Rule CrashFinaleGen2UnPressBOrator
 {
-	criteria ConceptCrashFinaleGenerator2UnPress _auto_BikerIsPressing
+	criteria ConceptCrashFinaleGenerator2UnPress IsCrashFinaleGeneratorNotFixed _auto_BikerIsPressing
 	Response CrashFinaleGen2UnPressBOrator
 }
 
@@ -1522,7 +1524,7 @@ Response CrashFinaleGen2UnPressMOrator
 }
 Rule CrashFinaleGen2UnPressMOrator
 {
-	criteria ConceptCrashFinaleGenerator2UnPress _auto_ManagerIsPressing
+	criteria ConceptCrashFinaleGenerator2UnPress IsCrashFinaleGeneratorNotFixed _auto_ManagerIsPressing
 	Response CrashFinaleGen2UnPressMOrator
 }
 
@@ -1532,7 +1534,7 @@ Response CrashFinaleGen2UnPressNOrator
 }
 Rule CrashFinaleGen2UnPressNOrator
 {
-	criteria ConceptCrashFinaleGenerator2UnPress _auto_NamVetIsPressing
+	criteria ConceptCrashFinaleGenerator2UnPress IsCrashFinaleGeneratorNotFixed _auto_NamVetIsPressing
 	Response CrashFinaleGen2UnPressNOrator
 }
 
@@ -1542,7 +1544,7 @@ Response CrashFinaleGen2UnPressTOrator
 }
 Rule CrashFinaleGen2UnPressTOrator
 {
-	criteria ConceptCrashFinaleGenerator2UnPress _auto_TeenGirlIsPressing
+	criteria ConceptCrashFinaleGenerator2UnPress IsCrashFinaleGeneratorNotFixed _auto_TeenGirlIsPressing
 	Response CrashFinaleGen2UnPressTOrator
 }
 
@@ -1661,6 +1663,8 @@ Response CrashFinaleGeneratorOnOrator
 Rule CrashFinaleGeneratorOnOrator
 {
 	criteria ConceptCrashFinaleGeneratorOn
+	ApplyContext "CrashGenerator1Nag:2:0"
+	applycontexttoworld
 	Response CrashFinaleGeneratorOnOrator
 }
 
@@ -1766,7 +1770,7 @@ Response CrashFinaleGenUnPressBOrator
 }
 Rule CrashFinaleGenUnPressBOrator
 {
-	criteria ConceptCrashFinaleGeneratorUnPress _auto_BikerIsPressing _auto_NotFinaleStarted
+	criteria ConceptCrashFinaleGeneratorUnPress IsCrashGeneratorNotOn _auto_BikerIsPressing _auto_NotFinaleStarted
 	Response CrashFinaleGenUnPressBOrator
 }
 
@@ -1776,7 +1780,7 @@ Response CrashFinaleGenUnPressMOrator
 }
 Rule CrashFinaleGenUnPressMOrator
 {
-	criteria ConceptCrashFinaleGeneratorUnPress _auto_ManagerIsPressing _auto_NotFinaleStarted
+	criteria ConceptCrashFinaleGeneratorUnPress IsCrashGeneratorNotOn _auto_ManagerIsPressing _auto_NotFinaleStarted
 	Response CrashFinaleGenUnPressMOrator
 }
 
@@ -1786,7 +1790,7 @@ Response CrashFinaleGenUnPressNOrator
 }
 Rule CrashFinaleGenUnPressNOrator
 {
-	criteria ConceptCrashFinaleGeneratorUnPress _auto_NamVetIsPressing _auto_NotFinaleStarted
+	criteria ConceptCrashFinaleGeneratorUnPress IsCrashGeneratorNotOn _auto_NamVetIsPressing _auto_NotFinaleStarted
 	Response CrashFinaleGenUnPressNOrator
 }
 
@@ -1796,7 +1800,7 @@ Response CrashFinaleGenUnPressTOrator
 }
 Rule CrashFinaleGenUnPressTOrator
 {
-	criteria ConceptCrashFinaleGeneratorUnPress _auto_TeenGirlIsPressing _auto_NotFinaleStarted
+	criteria ConceptCrashFinaleGeneratorUnPress IsCrashGeneratorNotOn _auto_TeenGirlIsPressing _auto_NotFinaleStarted
 	Response CrashFinaleGenUnPressTOrator
 }
 

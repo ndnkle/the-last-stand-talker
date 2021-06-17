@@ -682,26 +682,22 @@ Rule C6M1Intro_01Biker01GamblerProducerBiker
 
 Response C6M1Intro_01dBiker
 {
-	scene "scenes/Biker/DLC1_C6M1_InitialMeeting04.vcd"  //Generator's out. Get to the other side and we'll help you get this thing down!
-	scene "scenes/Biker/DLC1_C6M1_InitialMeeting06.vcd"  //Can't generator's out
+	scene "scenes/Biker/DLC1_C6M1_InitialMeeting04.vcd" then self IntroEnd foo:0 0.1 //Generator's out. Get to the other side and we'll help you get this thing down!
+	scene "scenes/Biker/DLC1_C6M1_InitialMeeting06.vcd" then self IntroEnd foo:0 0.1 //Can't generator's out
 }
 Rule C6M1Intro_01dBiker
 {
 	criteria ConceptC6M1Intro_01d IsBiker IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:5"
-	applycontexttoworld
 	Response C6M1Intro_01dBiker
 }
 
 Response C6M1Intro_02bBiker
 {
-	scene "scenes/Biker/DLC1_C6M1_InitialMeeting09.vcd"  //Can't! Generator's out. Get to the other side and fill it up! We'll cover ya!
+	scene "scenes/Biker/DLC1_C6M1_InitialMeeting09.vcd" then self IntroEnd foo:0 0.1 //Can't! Generator's out. Get to the other side and fill it up! We'll cover ya!
 }
 Rule C6M1Intro_02bBiker
 {
 	criteria ConceptC6M1Intro_02b IsBiker IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:5"
-	applycontexttoworld
 	Response C6M1Intro_02bBiker
 }
 
@@ -749,13 +745,11 @@ Rule C6M1Intro_06cBiker
 
 Response C6M1Intro_06eBiker
 {
-	scene "scenes/Biker/DLC1_C6M1_InitialMeeting17.vcd"  //HELL YEAH!
+	scene "scenes/Biker/DLC1_C6M1_InitialMeeting17.vcd" then self IntroEnd foo:0 0.1 //HELL YEAH!
 }
 Rule C6M1Intro_06eBiker
 {
 	criteria ConceptC6M1Intro_06e IsBiker IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:1"
-	applycontexttoworld
 	Response C6M1Intro_06eBiker
 }
 
@@ -781,13 +775,11 @@ Rule C6M1Intro_09cBiker
 
 Response C6M1Intro_09gBiker
 {
-	scene "scenes/Biker/DLC1_C6M1_InitialMeeting22.vcd"  //Ahh shit. Nooo. But if you can get to the other side we can help you lower it.
+	scene "scenes/Biker/DLC1_C6M1_InitialMeeting22.vcd" then self IntroEnd foo:0 0.1 //Ahh shit. Nooo. But if you can get to the other side we can help you lower it.
 }
 Rule C6M1Intro_09gBiker
 {
 	criteria ConceptC6M1Intro_09g IsBiker IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:6"
-	applycontexttoworld
 	Response C6M1Intro_09gBiker
 }
 
@@ -827,14 +819,12 @@ Rule C6M1Intro_14bBiker
 
 Response C6M1Intro_16bBiker
 {
-	scene "scenes/Biker/DLC1_C6M1_InitialMeeting32.vcd"  //Look, I don't love this bridge. But we just lost a man and… Sorry brother, but you are on your own.
-	scene "scenes/Biker/DLC1_C6M1_InitialMeeting34.vcd"  //Brother, I don't love this bridge, but right now we just lost a man and got a man down. Sorry, you are on your own.
+	scene "scenes/Biker/DLC1_C6M1_InitialMeeting32.vcd" then self IntroEnd foo:0 0.1 //Look, I don't love this bridge. But we just lost a man and… Sorry brother, but you are on your own.
+	scene "scenes/Biker/DLC1_C6M1_InitialMeeting34.vcd" then self IntroEnd foo:0 0.1 //Brother, I don't love this bridge, but right now we just lost a man and got a man down. Sorry, you are on your own.
 }
 Rule C6M1Intro_16bBiker
 {
 	criteria ConceptC6M1Intro_16b IsBiker IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:8"
-	applycontexttoworld
 	Response C6M1Intro_16bBiker
 }
 
@@ -860,13 +850,11 @@ Rule C6M1Intro_18cBiker
 
 Response C6M1Intro_18eBiker
 {
-	scene "scenes/Biker/DLC1_C6M1_InitialMeeting37.vcd"  //Oh yeah... uh, yeah it is.
+	scene "scenes/Biker/DLC1_C6M1_InitialMeeting37.vcd" then self IntroEnd foo:0 0.1 //Oh yeah... uh, yeah it is.
 }
 Rule C6M1Intro_18eBiker
 {
 	criteria ConceptC6M1Intro_18e IsBiker IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:3"
-	applycontexttoworld
 	Response C6M1Intro_18eBiker
 }
 
@@ -1212,7 +1200,7 @@ Rule C7M1_saferoom06Biker
 
 Response C7M1_saferoom07aBiker
 {
-	scene "scenes/Biker/C6DLC3INTRO13.vcd"  //What? We're not even gonna try driving it on the ground?
+	scene "scenes/Biker/C6DLC3INTRO13.vcd" then self IntroEnd foo:0 0.1 //What? We're not even gonna try driving it on the ground?
 }
 Rule C7M1_saferoom07aBiker
 {
@@ -1242,7 +1230,7 @@ Rule C7M1_saferoom13Biker
 
 Response C7M1_saferoom14aBiker
 {
-	scene "scenes/Biker/C6DLC3INTRO18.vcd"  //Hey, I ain't the one that thought we could drive a frickin'  train through the ocean.
+	scene "scenes/Biker/C6DLC3INTRO18.vcd" then self IntroEnd foo:0 0.1 //Hey, I ain't the one that thought we could drive a frickin'  train through the ocean.
 }
 Rule C7M1_saferoom14aBiker
 {
@@ -1273,7 +1261,7 @@ Rule C7M1_saferoom16Biker
 
 Response C7M1_saferoom16bBiker
 {
-	scene "scenes/Biker/C6DLC3INTRO22.vcd"  //I'm goin', I'm goin'.
+	scene "scenes/Biker/C6DLC3INTRO22.vcd" then self IntroEnd foo:0 0.1 //I'm goin', I'm goin'.
 }
 Rule C7M1_saferoom16bBiker
 {
@@ -1283,7 +1271,7 @@ Rule C7M1_saferoom16bBiker
 
 Response C7M1_saferoom17Biker
 {
-	scene "scenes/Biker/C6DLC3INTRO23.vcd"  //Yeah! Sandy beaches. Coconuts. Sand. Beaches. Sand... Wait a minute, I hate islands.
+	scene "scenes/Biker/C6DLC3INTRO23.vcd" then self IntroEnd foo:0 0.1 //Yeah! Sandy beaches. Coconuts. Sand. Beaches. Sand... Wait a minute, I hate islands.
 }
 Rule C7M1_saferoom17Biker
 {
@@ -1293,7 +1281,7 @@ Rule C7M1_saferoom17Biker
 
 Response C7M1_saferoom18aBiker
 {
-	scene "scenes/Biker/C6DLC3INTRO24.vcd"  //Okay. I vote for the island paradise where we don't have to fight any more zombies.
+	scene "scenes/Biker/C6DLC3INTRO24.vcd" then self IntroEnd foo:0 0.1 //Okay. I vote for the island paradise where we don't have to fight any more zombies.
 }
 Rule C7M1_saferoom18aBiker
 {
@@ -1303,7 +1291,7 @@ Rule C7M1_saferoom18aBiker
 
 Response C7M1_saferoom21Biker
 {
-	scene "scenes/Biker/C6DLC3INTRO25.vcd"  //Aye, Aye Captain!
+	scene "scenes/Biker/C6DLC3INTRO25.vcd" then self IntroEnd foo:0 0.1 //Aye, Aye Captain!
 	scene "scenes/Biker/C6DLC3INTRO27.vcd"  then Any C7M1_saferoom21b foo:0 .1 //Bill, when you sailed ships were they all still made of wood?
 }
 Rule C7M1_saferoom21Biker
@@ -1314,7 +1302,7 @@ Rule C7M1_saferoom21Biker
 
 Response C7M1_saferoom21aBiker
 {
-	scene "scenes/Biker/C6DLC3INTRO26.vcd"  //Nah, don't worry, I hate boats too.
+	scene "scenes/Biker/C6DLC3INTRO26.vcd" then self IntroEnd foo:0 0.1 //Nah, don't worry, I hate boats too.
 }
 Rule C7M1_saferoom21aBiker
 {
@@ -1417,7 +1405,6 @@ Rule InfoRemc7m1_tankcar01Biker
 //--------------------------------------------------------------------------------------------------------------
 // C7M2
 //--------------------------------------------------------------------------------------------------------------
-
 Response C7M2_saferoom02aBiker
 {
 	scene "scenes/Biker/C6DLC3FIRSTSAFEROOM02.vcd"  then Manager C7M2_saferoom02b foo:0 .1 //Whoa. How'd you do that?
@@ -1440,7 +1427,7 @@ Rule C7M2_saferoom02cBiker
 
 Response C7M2_saferoom02eBiker
 {
-	scene "scenes/Biker/C6DLC3FIRSTSAFEROOM04.vcd"  //Nice.
+	scene "scenes/Biker/C6DLC3FIRSTSAFEROOM04.vcd" then self IntroEnd foo:0 0.1 //Nice.
 }
 Rule C7M2_saferoom02eBiker
 {
@@ -1460,7 +1447,7 @@ Rule C7M2_saferoom03Biker
 
 Response C7M2_saferoom03bBiker
 {
-	scene "scenes/Biker/C6DLC3FIRSTSAFEROOM06.vcd"  //About to die in a brick factory? Cause I'm about to do that too. And I got to complain about shit the whole time.
+	scene "scenes/Biker/C6DLC3FIRSTSAFEROOM06.vcd" then self IntroEnd foo:0 0.1 //About to die in a brick factory? Cause I'm about to do that too. And I got to complain about shit the whole time.
 }
 Rule C7M2_saferoom03bBiker
 {
@@ -1514,7 +1501,7 @@ Rule Player.WarnMegaMobc7m201Biker
 
 Response C7M3_saferoom001Biker
 {
-	scene "scenes/Biker/C6DLC3SECONDSAFEROOM01.vcd"  //I wish I was heading to a deserted island. Can we each get our own?
+	scene "scenes/Biker/C6DLC3SECONDSAFEROOM01.vcd" then self IntroEnd foo:0 0.1 //I wish I was heading to a deserted island. Can we each get our own?
 }
 Rule C7M3_saferoom001Biker
 {
@@ -1524,7 +1511,7 @@ Rule C7M3_saferoom001Biker
 
 Response C7M3_saferoom002Biker
 {
-	scene "scenes/Biker/C6DLC3SECONDSAFEROOM02.vcd"  //I hate your good feelings.
+	scene "scenes/Biker/C6DLC3SECONDSAFEROOM02.vcd" then self IntroEnd foo:0 0.1 //I hate your good feelings.
 }
 Rule C7M3_saferoom002Biker
 {
@@ -1534,11 +1521,11 @@ Rule C7M3_saferoom002Biker
 
 Response C7M3_saferoom004bBiker
 {
-	scene "scenes/Biker/C6DLC3SECONDSAFEROOM03.vcd"  //Why aren't I allowed to shoot you again?
-	scene "scenes/Biker/C6DLC3SECONDSAFEROOM04.vcd"  //Yeah, I get it, Louis. Bill gets it for chrissake, and he can't even work a flush toilet.
-	scene "scenes/Biker/C6DLC3SECONDSAFEROOM06.vcd"  //Louis, you're such a nerd.
-	scene "scenes/Biker/C6DLC3SECONDSAFEROOM07.vcd"  //Nerd.
-	scene "scenes/Biker/C6DLC3SECONDSAFEROOM08.vcd"  //You're such a nerd.
+	scene "scenes/Biker/C6DLC3SECONDSAFEROOM03.vcd" then self IntroEnd foo:0 0.1 //Why aren't I allowed to shoot you again?
+	scene "scenes/Biker/C6DLC3SECONDSAFEROOM04.vcd" then self IntroEnd foo:0 0.1 //Yeah, I get it, Louis. Bill gets it for chrissake, and he can't even work a flush toilet.
+	scene "scenes/Biker/C6DLC3SECONDSAFEROOM06.vcd" then self IntroEnd foo:0 0.1 //Louis, you're such a nerd.
+	scene "scenes/Biker/C6DLC3SECONDSAFEROOM07.vcd" then self IntroEnd foo:0 0.1 //Nerd.
+	scene "scenes/Biker/C6DLC3SECONDSAFEROOM08.vcd" then self IntroEnd foo:0 0.1 //You're such a nerd.
 }
 Rule C7M3_saferoom004bBiker
 {
@@ -1568,7 +1555,7 @@ Rule C7M3_saferoom008Biker
 
 Response C7M3_saferoom008bBiker
 {
-	scene "scenes/Biker/C6DLC3SECONDSAFEROOM10.vcd"  //Well… there was that ship back there.
+	scene "scenes/Biker/C6DLC3SECONDSAFEROOM10.vcd" then self IntroEnd foo:0 0.1 //Well… there was that ship back there.
 }
 Rule C7M3_saferoom008bBiker
 {
@@ -1630,7 +1617,7 @@ Rule C7M3_saferoom013bBiker
 
 Response C7M3_saferoom013dBiker
 {
-	scene "scenes/Biker/C6DLC3SECONDSAFEROOM18.vcd"  //I seriously doubt it.
+	scene "scenes/Biker/C6DLC3SECONDSAFEROOM18.vcd" then self IntroEnd foo:0 0.1 //I seriously doubt it.
 }
 Rule C7M3_saferoom013dBiker
 {
@@ -1650,7 +1637,7 @@ Rule C7M3_saferoom014Biker
 
 Response C7M3_saferoom014bBiker
 {
-	scene "scenes/Biker/C6DLC3SECONDSAFEROOM21.vcd"  //Oh no, I like eating them. That's one of the ways I let fish know how much I hate them.
+	scene "scenes/Biker/C6DLC3SECONDSAFEROOM21.vcd" then self IntroEnd foo:0 0.1 //Oh no, I like eating them. That's one of the ways I let fish know how much I hate them.
 }
 Rule C7M3_saferoom014bBiker
 {
@@ -1681,7 +1668,7 @@ Rule C7M3_saferoom016aBiker
 
 Response C7M3_saferoom016cBiker
 {
-	scene "scenes/Biker/C6DLC3SECONDSAFEROOM25.vcd"  //See? I'm serious. Given, you know, current goddamn events, that's not optimism, it's mental illness.
+	scene "scenes/Biker/C6DLC3SECONDSAFEROOM25.vcd" then self IntroEnd foo:0 0.1 //See? I'm serious. Given, you know, current goddamn events, that's not optimism, it's mental illness.
 }
 Rule C7M3_saferoom016cBiker
 {
@@ -1731,7 +1718,7 @@ Rule C7M3_saferoom017gBiker
 
 Response C7M3_saferoom017hBiker
 {
-	scene "scenes/Biker/C6DLC3SECONDSAFEROOM32.vcd"  //Damn right.
+	scene "scenes/Biker/C6DLC3SECONDSAFEROOM32.vcd" then self IntroEnd foo:0 0.1 //Damn right.
 }
 Rule C7M3_saferoom017hBiker
 {
@@ -2454,8 +2441,8 @@ Response L4D1PlayerRemarkcrashcourse01_path24Biker
 }
 Rule L4D1PlayerRemarkcrashcourse01_path24Biker
 {
-	criteria ConceptRemark IsBiker Iscrashcourse01_path24 IsNotSaidcrashcourse01_path24 IsNotCoughing NotInCombat IsTalk IsTalkBiker IsSubjectNear200 IsWorldTalkBiker IsNotSpeakingWeight0 AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Saidcrashcourse01_path24:1:0,SaidSafeSpotAhead:1:0"
+	criteria ConceptRemark IsBiker Iscrashcourse01_path24 IsNotSaidSafeSpotAhead IsNotCoughing NotInCombat IsTalk IsTalkBiker IsSubjectNear200 IsWorldTalkBiker IsNotSpeakingWeight0 AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "SaidSafeSpotAhead:1:0"
 	applycontexttoworld
 	Response L4D1PlayerRemarkcrashcourse01_path24Biker
 }
@@ -2610,7 +2597,7 @@ Rule PlayerRemarkcrashcourse01_path21Biker
 //--------------------------------------------------------------------------------------------------------------
 Response IntroCrashR02Biker
 {
-	scene "scenes/Biker/DLC2Intro18.vcd"  //I guess I DID tell ya.
+	scene "scenes/Biker/DLC2Intro18.vcd" then self IntroEnd foo:0 0.1 //I guess I DID tell ya.
 }
 Rule IntroCrashR02Biker
 {
@@ -2620,7 +2607,7 @@ Rule IntroCrashR02Biker
 
 Response IntroCrashR04Biker
 {
-	scene "scenes/Biker/DLC2Intro08.vcd"  //Alright. I'll give ya that.
+	scene "scenes/Biker/DLC2Intro08.vcd" then self IntroEnd foo:0 0.1 //Alright. I'll give ya that.
 }
 Rule IntroCrashR04Biker
 {
@@ -2630,7 +2617,7 @@ Rule IntroCrashR04Biker
 
 Response IntroCrashR06Biker
 {
-	scene "scenes/Biker/DLC2Intro25.vcd"  //Well, it's pretty complicated. I don't wanna bore you with a lotta... complex... fractions. But step one is we walk THAT way.
+	scene "scenes/Biker/DLC2Intro25.vcd" then self IntroEnd foo:0 0.1 //Well, it's pretty complicated. I don't wanna bore you with a lotta... complex... fractions. But step one is we walk THAT way.
 }
 Rule IntroCrashR06Biker
 {
@@ -2650,9 +2637,9 @@ Rule IntroCrashR08Biker
 
 Response IntroCrashR10Biker
 {
-	scene "scenes/Biker/DLC2Intro30.vcd"  //Let's just hike the hell out of here.
-	scene "scenes/Biker/DLC2Intro31.vcd"  //Looks like we're walking again.
-	scene "scenes/Biker/DLC2M1Goal01.vcd"  //I already hate this place. Let's get outta here.
+	scene "scenes/Biker/DLC2Intro30.vcd" then self IntroEnd foo:0 0.1 //Let's just hike the hell out of here.
+	scene "scenes/Biker/DLC2Intro31.vcd" then self IntroEnd foo:0 0.1 //Looks like we're walking again.
+	scene "scenes/Biker/DLC2M1Goal01.vcd" then self IntroEnd foo:0 0.1 //I already hate this place. Let's get outta here.
 }
 Rule IntroCrashR10Biker
 {
@@ -2662,7 +2649,7 @@ Rule IntroCrashR10Biker
 
 Response IntroCrashR12Biker
 {
-	scene "scenes/Biker/DLC2Intro16.vcd"  //Yeah! Stupid helicopter.
+	scene "scenes/Biker/DLC2Intro16.vcd" then self IntroEnd foo:0 0.1 //Yeah! Stupid helicopter.
 }
 Rule IntroCrashR12Biker
 {
@@ -2672,7 +2659,7 @@ Rule IntroCrashR12Biker
 
 Response IntroCrashR14Biker
 {
-	scene "scenes/Biker/DLC2Intro14.vcd"  //Terrific. Looks like we're walkin, then.
+	scene "scenes/Biker/DLC2Intro14.vcd" then self IntroEnd foo:0 0.1 //Terrific. Looks like we're walkin, then.
 }
 Rule IntroCrashR14Biker
 {
@@ -2692,7 +2679,7 @@ Rule IntroCrashR16Biker
 
 Response IntroCrashR18Biker
 {
-	scene "scenes/Biker/DLC2Intro06.vcd"  //'Cause it's money in the bank. Remind me to explain gambling to you sometime.
+	scene "scenes/Biker/DLC2Intro06.vcd" then self IntroEnd foo:0 0.1 //'Cause it's money in the bank. Remind me to explain gambling to you sometime.
 }
 Rule IntroCrashR18Biker
 {
@@ -2702,7 +2689,7 @@ Rule IntroCrashR18Biker
 
 Response IntroCrashR20Biker
 {
-	scene "scenes/Biker/DLC2Intro02.vcd"  //[pouty] Well, I guess NOW we'll never know, will we?
+	scene "scenes/Biker/DLC2Intro02.vcd" then self IntroEnd foo:0 0.1 //[pouty] Well, I guess NOW we'll never know, will we?
 }
 Rule IntroCrashR20Biker
 {
@@ -2722,7 +2709,7 @@ Rule IntroCrashR21Biker
 
 Response IntroCrashR23Biker
 {
-	scene "scenes/Biker/DLC2Intro23.vcd"  //And it turns out I was right about that.
+	scene "scenes/Biker/DLC2Intro23.vcd" then self IntroEnd foo:0 0.1 //And it turns out I was right about that.
 }
 Rule IntroCrashR23Biker
 {
@@ -2732,9 +2719,9 @@ Rule IntroCrashR23Biker
 
 Response IntroCrashR26Biker
 {
-	scene "scenes/Biker/DLC2Intro27.vcd"  //[grumbling under breath]...Don't see what's wrong with vests...
-	scene "scenes/Biker/DLC2Intro28.vcd"  //[grumbling under breath]...not even WEARING chaps...
-	scene "scenes/Biker/DLC2Intro29.vcd"  //[grumbling under breath]... I HATE parades.
+	scene "scenes/Biker/DLC2Intro27.vcd" then self IntroEnd foo:0 0.1 //[grumbling under breath]...Don't see what's wrong with vests...
+	scene "scenes/Biker/DLC2Intro28.vcd" then self IntroEnd foo:0 0.1 //[grumbling under breath]...not even WEARING chaps...
+	scene "scenes/Biker/DLC2Intro29.vcd" then self IntroEnd foo:0 0.1 //[grumbling under breath]... I HATE parades.
 }
 Rule IntroCrashR26Biker
 {
@@ -2801,7 +2788,7 @@ Rule L4D1PlayerCrashCourseIntroBiker
 //--------------------------------------------------------------------------------------------------------------
 Response CrashCourseI01Biker
 {
-	scene "scenes/Biker/AnswerReady03.vcd"  //Yeah, let's do it.
+	scene "scenes/Biker/AnswerReady03.vcd" then self IntroEnd foo:0 0.1 //Yeah, let's do it.
 }
 Rule CrashCourseI01Biker
 {
@@ -2811,8 +2798,8 @@ Rule CrashCourseI01Biker
 
 Response CrashCourseB02Biker
 {
-	scene "scenes/Biker/DLC2CanadaHate01.vcd"  //Oh my god, I hate Canada so much.
-	scene "scenes/Biker/DLC2Riverside04.vcd"  //Guess I've been hatin' Riverside all this time for nothin' then.
+	scene "scenes/Biker/DLC2CanadaHate01.vcd" then self IntroEnd foo:0 0.1 //Oh my god, I hate Canada so much.
+	scene "scenes/Biker/DLC2Riverside04.vcd" then self IntroEnd foo:0 0.1 //Guess I've been hatin' Riverside all this time for nothin' then.
 }
 Rule CrashCourseB02Biker
 {
@@ -2824,7 +2811,7 @@ Rule CrashCourseB02Biker
 
 Response CrashCourseC01Biker
 {
-	scene "scenes/Biker/DLC2Riverside01.vcd"  //Ahhhh, I doubt it.
+	scene "scenes/Biker/DLC2Riverside01.vcd" then self IntroEnd foo:0 0.1 //Ahhhh, I doubt it.
 }
 Rule CrashCourseC01Biker
 {
@@ -2851,7 +2838,7 @@ Rule L4D1C9M2SafeRoomBiker
 //--------------------------------------------------------------------------------------------------------------
 Response L4D1IntroFarm4Biker
 {
-	scene "scenes/Biker/AnswerReady03.vcd"  //Yeah, let's do it.
+	scene "scenes/Biker/AnswerReady03.vcd" then self IntroEnd foo:0 0.1 //Yeah, let's do it.
 }
 Rule L4D1IntroFarm4Biker
 {
@@ -7076,7 +7063,7 @@ Rule ScavengeStartBiker
 //--------------------------------------------------------------------------------------------------------------
 Response L4D1IntroSmalltown3Biker
 {
-	scene "scenes/Biker/WorldSmallTown0105.vcd"  //Sounds good to me. Let's head to Riverside.
+	scene "scenes/Biker/WorldSmallTown0105.vcd" then self IntroEnd foo:0 0.1 //Sounds good to me. Let's head to Riverside.
 }
 Rule L4D1IntroSmalltown3Biker
 {
@@ -7096,11 +7083,11 @@ Rule L4D1IntroSmalltownEasterEggBiker
 
 Response L4D1IntroSmalltownEasterEgg2Biker
 {
-	scene "scenes/Biker/Laughter04.vcd" then all IntroSmalltownEasterEgg2 foo:0 -0.01 //<Hearty Laugh>
-	scene "scenes/Biker/Laughter12.vcd" then all IntroSmalltownEasterEgg2 foo:0 -0.01 //<Hearty Laugh>
-	scene "scenes/Biker/Laughter13.vcd" then all IntroSmalltownEasterEgg2 foo:0 -0.01 //<Hearty Laugh>
-	scene "scenes/Biker/Laughter14.vcd" then all IntroSmalltownEasterEgg2 foo:0 -0.01 //<Hearty Laugh>
-	scene "scenes/Biker/Laughter15.vcd" then all IntroSmalltownEasterEgg2 foo:0 -0.01 //<Hearty Laugh>
+	scene "scenes/Biker/Laughter04.vcd" then all IntroSmalltownEasterEgg3 foo:0 -0.01 //<Hearty Laugh>
+	scene "scenes/Biker/Laughter12.vcd" then all IntroSmalltownEasterEgg3 foo:0 -0.01 //<Hearty Laugh>
+	scene "scenes/Biker/Laughter13.vcd" then all IntroSmalltownEasterEgg3 foo:0 -0.01 //<Hearty Laugh>
+	scene "scenes/Biker/Laughter14.vcd" then all IntroSmalltownEasterEgg3 foo:0 -0.01 //<Hearty Laugh>
+	scene "scenes/Biker/Laughter15.vcd" then all IntroSmalltownEasterEgg3 foo:0 -0.01 //<Hearty Laugh>
 }
 Rule L4D1IntroSmalltownEasterEgg2Biker
 {
@@ -7180,13 +7167,13 @@ Response L4D1PlayerGetInsideCheckPointBiker
 }
 Rule L4D1PlayerGetInsideCheckPointBiker
 {
-	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsBiker IsInSafeSpot IsTalk IsTalkBiker SomeoneOutsideSafeSpot IsWorldTalkBiker
+	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsBiker IsInSafeSpot IsTalk IsTalkBiker SomeoneOutsideSafeSpot IsWorldTalkBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response L4D1PlayerGetInsideCheckPointBiker
 }
 
 Rule L4D1PlayerStayTogetherSaferoomBiker
 {
-	criteria ConceptPlayerStayTogether IsNotCoughing IsBiker IsInSafeSpot IsTalk IsTalkBiker SomeoneOutsideSafeSpot IsWorldTalkBiker
+	criteria ConceptPlayerStayTogether IsNotCoughing IsBiker IsInSafeSpot IsTalk IsTalkBiker SomeoneOutsideSafeSpot IsWorldTalkBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response L4D1PlayerGetInsideCheckPointBiker
 }
 
@@ -7335,7 +7322,7 @@ Response L4D1PlayerLockTheDoorCheckPointBiker
 }
 Rule L4D1PlayerLockTheDoorCheckPointBiker
 {
-	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsBiker IsInSafeSpot IsTalk IsTalkBiker IsWorldTalkBiker
+	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsBiker IsInSafeSpot IsTalk IsTalkBiker IsWorldTalkBiker AutoIsNotScavenge AutoIsNotSurvival
 	Response L4D1PlayerLockTheDoorCheckPointBiker
 }
 
@@ -7476,7 +7463,7 @@ Response L4D1PlayerTransitionBiker
 }
 Rule L4D1PlayerTransitionBiker
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsBiker IsNotSaidPlayerTransition IsTalk IsTalkBiker IsWorldTalkBiker IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsBiker IsNotSaidPlayerTransition IsTalk IsTalkBiker IsWorldTalkBiker IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response L4D1PlayerTransitionBiker
@@ -7493,7 +7480,7 @@ Response L4D1PlayerTransitionCloseBiker
 }
 Rule L4D1PlayerTransitionCloseBiker
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsBiker IsNotSaidPlayerTransition IsTalk IsTalkBiker IsWorldTalkBiker IsNotAlone IsSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsBiker IsNotSaidPlayerTransition IsTalk IsTalkBiker IsWorldTalkBiker IsNotAlone IsSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response L4D1PlayerTransitionCloseBiker
@@ -9022,10 +9009,10 @@ Rule L4D1PlayerLedgeSaveCriticalBiker
 //--------------------------------------------------------------------------------------------------------------
 Response L4D1PlayerAirportIntroBiker
 {
-	scene "scenes/Biker/WorldAirport0102.vcd"  //Working plane means working airport. I say we head there.
-	scene "scenes/Biker/WorldAirport0104.vcd"  //That plane's headed right for the airport. I say we head there too.
+	scene "scenes/Biker/WorldAirport0102.vcd" then self IntroEnd foo:0 0.1 //Working plane means working airport. I say we head there.
+	scene "scenes/Biker/WorldAirport0104.vcd" then self IntroEnd foo:0 0.1 //That plane's headed right for the airport. I say we head there too.
 	scene "scenes/Biker/WorldAirport0106.vcd"  then TeenGirl IntroAirport01zb foo:0 -4.312 //I sure as hell wouldn't mind flyin' outta here. Let's head to the airport.
-	scene "scenes/Biker/WorldAirport0107.vcd"  //That plane's headed for the airport and the airport ain't far from here. If nobody's got a better idea, I say we head for the airport too.
+	scene "scenes/Biker/WorldAirport0107.vcd" then self IntroEnd foo:0 0.1 //That plane's headed for the airport and the airport ain't far from here. If nobody's got a better idea, I say we head for the airport too.
 	scene "scenes/Biker/WorldAirport0114.vcd"  then TeenGirl IntroAirport01zb foo:0 -4.612 //That plane's headed right for the airport. I say we head there too.
 }
 Rule L4D1PlayerAirportIntroBiker
@@ -9038,7 +9025,7 @@ Rule L4D1PlayerAirportIntroBiker
 
 Response L4D1PlayerAirportIntrobcBiker
 {
-	scene "scenes/Biker/WorldAirport0513.vcd"  //I hate planes.
+	scene "scenes/Biker/WorldAirport0513.vcd" then self IntroEnd foo:0 0.1 //I hate planes.
 }
 Rule L4D1PlayerAirportIntrobcBiker
 {
@@ -9048,7 +9035,7 @@ Rule L4D1PlayerAirportIntrobcBiker
 
 Response L4D1PlayerAirportIntrofbBiker
 {
-	scene "scenes/Biker/WorldAirport0102.vcd"  //Working plane means working airport. I say we head there.
+	scene "scenes/Biker/WorldAirport0102.vcd" then self IntroEnd foo:0 0.1 //Working plane means working airport. I say we head there.
 }
 Rule L4D1PlayerAirportIntrofbBiker
 {
@@ -9081,7 +9068,7 @@ Rule L4D1PlayerFarmHouseIntro2Biker
 
 Response L4D1PlayerHospitalIntro02Biker
 {
-	scene "scenes/Biker/WorldHospital0201.vcd"  //I hate subways.
+	scene "scenes/Biker/WorldHospital0201.vcd" then self IntroEnd foo:0 0.1 //I hate subways.
 }
 Rule L4D1PlayerHospitalIntro02Biker
 {
@@ -9823,7 +9810,7 @@ Rule L4D1PlayerLighthouseIntro03Biker
 
 Response L4D1PlayerLighthouseIntro03bBiker
 {
-	scene "scenes/Biker/Vampires10.vcd" //*What*ever.
+	scene "scenes/Biker/Vampires10.vcd" then self IntroEnd foo:0 0.1 //*What*ever.
 }
 Rule L4D1PlayerLighthouseIntro03bBiker
 {
@@ -9834,7 +9821,7 @@ Rule L4D1PlayerLighthouseIntro03bBiker
 Response L4D1PlayerLighthouseIntro04aBiker
 {
 	scene "scenes/Biker/DLC2Intro30.vcd" then manager C14M1Intro4b foo:0 0.1 //Let's just hike the hell out of here.
-	scene "scenes/Biker/DLC2Intro31.vcd"  //Looks like we're walking again.
+	scene "scenes/Biker/DLC2Intro31.vcd" then self IntroEnd foo:0 0.1 //Looks like we're walking again.
 }
 Rule L4D1PlayerLighthouseIntro04aBiker
 {
@@ -10118,6 +10105,14 @@ Rule SafeRoomStartBiker
 {
 	criteria ConceptTalkIdle IsBiker IsInStartArea AutoIsNotScavenge AutoIsNotSurvival _auto_NotSafeRoomStart
 	ApplyContext "Talk:1:45,_auto_SafeRoomStart:1:0,_auto_SafeRoomQuiet:1:5"
+	applycontexttoworld
+	Response NoResponse
+}
+
+Rule IntroEndBiker
+{
+	criteria ConceptIntroEnd IsBiker FromIsBiker IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "Talk:0:0"
 	applycontexttoworld
 	Response NoResponse
 }

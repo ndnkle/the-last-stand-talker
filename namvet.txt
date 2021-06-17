@@ -117,7 +117,6 @@ Rule L4D1ReviveMeInterruptedCriticalNamVet
 	Response L4D1ReviveMeInterruptedCriticalNamVet
 }
 
-
 Response L4D1SurvivorMournFrancisNamVet
 {
 	scene "scenes/NamVet/GriefBiker01.vcd"  //Ah, not Francis
@@ -592,7 +591,7 @@ Rule L4D1_SurvivorBotTakeThisItemNamVet
 //--------------------------------------------------------------------------------------------------------------
 Response C7M1_saferoom01aNamVet
 {
-	scene "scenes/NamVet/C6DLC3INTRO02.vcd"  //Shut up, Francis.
+	scene "scenes/NamVet/C6DLC3INTRO02.vcd" then self IntroEnd foo:0 0.1 //Shut up, Francis.
 }
 Rule C7M1_saferoom01aNamVet
 {
@@ -612,7 +611,7 @@ Rule C7M1_saferoom03NamVet
 
 Response C7M1_saferoom03bNamVet
 {
-	scene "scenes/NamVet/C6DLC3INTRO06.vcd"  //I ain't stoppin' the boat every 15 minutes to go look for gas.
+	scene "scenes/NamVet/C6DLC3INTRO06.vcd" then self IntroEnd foo:0 0.1 //I ain't stoppin' the boat every 15 minutes to go look for gas.
 }
 Rule C7M1_saferoom03bNamVet
 {
@@ -632,7 +631,7 @@ Rule C7M1_saferoom04aNamVet
 
 Response C7M1_saferoom04bNamVet
 {
-	scene "scenes/NamVet/C6DLC3INTRO09.vcd"  //You know who runs around filling up things with gas? Idiots.
+	scene "scenes/NamVet/C6DLC3INTRO09.vcd" then self IntroEnd foo:0 0.1 //You know who runs around filling up things with gas? Idiots.
 }
 Rule C7M1_saferoom04bNamVet
 {
@@ -644,8 +643,7 @@ Response C7M1_saferoom06aNamVet
 {
 	scene "scenes/NamVet/C6DLC3INTRO12.vcd"  then Any C7M1_saferoom06b foo:0 .1 //That's not a sailboat.
 	scene "scenes/NamVet/C6DLC3INTRO12.vcd"  then self C7M1_saferoom06b foo:0 .1 //That's not a sailboat.
-	scene "scenes/NamVet/C6DLC3INTRO14.vcd"  then Any C7M1_saferoom06b foo:0 .1 //That's not a sailboat.
-	scene "scenes/NamVet/C6DLC3INTRO14.vcd"  then self C7M1_saferoom06b foo:0 .1 //That's not a sailboat.
+	scene "scenes/NamVet/C6DLC3INTRO14.vcd" then self IntroEnd foo:0 0.1 //That's not a sailboat.
 }
 Rule C7M1_saferoom06aNamVet
 {
@@ -655,7 +653,7 @@ Rule C7M1_saferoom06aNamVet
 
 Response C7M1_saferoom06bNamVet
 {
-	scene "scenes/NamVet/C6DLC3INTRO13.vcd"  //And it's on fire.
+	scene "scenes/NamVet/C6DLC3INTRO13.vcd" then self IntroEnd foo:0 0.1 //And it's on fire.
 }
 Rule C7M1_saferoom06bNamVet
 {
@@ -685,7 +683,7 @@ Rule C7M1_saferoom08NamVet
 
 Response C7M1_saferoom08bNamVet
 {
-	scene "scenes/NamVet/C6DLC3INTRO17.vcd"  //Both of you shut up.
+	scene "scenes/NamVet/C6DLC3INTRO17.vcd" then self IntroEnd foo:0 0.1 //Both of you shut up.
 }
 Rule C7M1_saferoom08bNamVet
 {
@@ -717,8 +715,8 @@ Rule C7M1_saferoom09aNamVet
 
 Response C7M1_saferoom10bNamVet
 {
-	scene "scenes/NamVet/C6DLC3INTRO23.vcd"  //Train ride's over, you gotta focus.  This isn't gonna be easy.
-	scene "scenes/NamVet/C6DLC3INTRO24.vcd"  //Pull yourself together, if not for me then for them.
+	scene "scenes/NamVet/C6DLC3INTRO23.vcd" then self IntroEnd foo:0 0.1 //Train ride's over, you gotta focus.  This isn't gonna be easy.
+	scene "scenes/NamVet/C6DLC3INTRO24.vcd" then self IntroEnd foo:0 0.1 //Pull yourself together, if not for me then for them.
 }
 Rule C7M1_saferoom10bNamVet
 {
@@ -728,7 +726,7 @@ Rule C7M1_saferoom10bNamVet
 
 Response C7M1_saferoom11aNamVet
 {
-	scene "scenes/NamVet/C6DLC3INTRO27.vcd"  //Come on, let's move.
+	scene "scenes/NamVet/C6DLC3INTRO27.vcd" then self IntroEnd foo:0 0.1 //Come on, let's move.
 }
 Rule C7M1_saferoom11aNamVet
 {
@@ -738,7 +736,7 @@ Rule C7M1_saferoom11aNamVet
 
 Response C7M1_saferoom12bNamVet
 {
-	scene "scenes/NamVet/C6DLC3INTRO28.vcd"  //Shut your traps, let's move out.
+	scene "scenes/NamVet/C6DLC3INTRO28.vcd" then self IntroEnd foo:0 0.1 //Shut your traps, let's move out.
 }
 Rule C7M1_saferoom12bNamVet
 {
@@ -748,7 +746,7 @@ Rule C7M1_saferoom12bNamVet
 
 Response C7M1_saferoom13aNamVet
 {
-	scene "scenes/NamVet/C6DLC3INTRO29.vcd"  //I'll give you something to cry about, Francis.
+	scene "scenes/NamVet/C6DLC3INTRO29.vcd" then self IntroEnd foo:0 0.1 //I'll give you something to cry about, Francis.
 }
 Rule C7M1_saferoom13aNamVet
 {
@@ -800,7 +798,7 @@ Rule C7M1_saferoom20NamVet
 
 Response C7M1_saferoom20bNamVet
 {
-	scene "scenes/NamVet/C6DLC3INTRO39.vcd"  //Zoey.  I can't.
+	scene "scenes/NamVet/C6DLC3INTRO39.vcd" then self IntroEnd foo:0 0.1 //Zoey.  I can't.
 }
 Rule C7M1_saferoom20bNamVet
 {
@@ -810,7 +808,7 @@ Rule C7M1_saferoom20bNamVet
 
 Response C7M1_saferoom21bNamVet
 {
-	scene "scenes/NamVet/C6DLC3INTRO41.vcd"  //Francis, you'd have been walking the plank right now.
+	scene "scenes/NamVet/C6DLC3INTRO41.vcd" then self IntroEnd foo:0 0.1 //Francis, you'd have been walking the plank right now.
 }
 Rule C7M1_saferoom21bNamVet
 {
@@ -830,7 +828,7 @@ Rule C7M1_saferoom22NamVet
 
 Response C7M1_saferoom23aNamVet
 {
-	scene "scenes/NamVet/C6DLC3INTRO44.vcd"  //Zoey...  I'm not leaving any of you behind.
+	scene "scenes/NamVet/C6DLC3INTRO44.vcd" then self IntroEnd foo:0 0.1 //Zoey...  I'm not leaving any of you behind.
 }
 Rule C7M1_saferoom23aNamVet
 {
@@ -840,7 +838,7 @@ Rule C7M1_saferoom23aNamVet
 
 Response C7M1_saferoom24aNamVet
 {
-	scene "scenes/NamVet/C6DLC3INTRO45.vcd"  //You're a regular health nut.
+	scene "scenes/NamVet/C6DLC3INTRO45.vcd" then self IntroEnd foo:0 0.1 //You're a regular health nut.
 }
 Rule C7M1_saferoom24aNamVet
 {
@@ -947,7 +945,7 @@ Rule C7M2_saferoom05bNamVet
 
 Response C7M2_saferoom06NamVet
 {
-	scene "scenes/NamVet/C6DLC3FIRSTSAFEROOM06.vcd"  //Dammit, Zoey! We trusted CEDA! We trusted the military! And they left us to die! Do you think they'll ever let us back in? We're on our own, kid. It's high time you started actin' like it.
+	scene "scenes/NamVet/C6DLC3FIRSTSAFEROOM06.vcd" then self IntroEnd foo:0 0.1 //Dammit, Zoey! We trusted CEDA! We trusted the military! And they left us to die! Do you think they'll ever let us back in? We're on our own, kid. It's high time you started actin' like it.
 }
 Rule C7M2_saferoom06NamVet
 {
@@ -957,7 +955,7 @@ Rule C7M2_saferoom06NamVet
 
 Response C7M2_saferoom07NamVet
 {
-	scene "scenes/NamVet/C6DLC3FIRSTSAFEROOM07.vcd"  //We'll find it, we'll find it.
+	scene "scenes/NamVet/C6DLC3FIRSTSAFEROOM07.vcd" then self IntroEnd foo:0 0.1 //We'll find it, we'll find it.
 }
 Rule C7M2_saferoom07NamVet
 {
@@ -1029,7 +1027,7 @@ Rule C7M3_saferoom003NamVet
 Response C7M3_saferoom003bNamVet
 {
 	scene "scenes/NamVet/C6DLC3SECONDSAFEROOM02.vcd"  then Any C7M3_saferoom003c foo:0 .1 //NOOOO!
-	scene "scenes/NamVet/C6DLC3SECONDSAFEROOM04.vcd"  //No! They hadn't even invented the wheel when I was born.
+	scene "scenes/NamVet/C6DLC3SECONDSAFEROOM04.vcd" then self IntroEnd foo:0 0.1 //No! They hadn't even invented the wheel when I was born.
 }
 Rule C7M3_saferoom003bNamVet
 {
@@ -1039,7 +1037,7 @@ Rule C7M3_saferoom003bNamVet
 
 Response C7M3_saferoom003cNamVet
 {
-	scene "scenes/NamVet/C6DLC3SECONDSAFEROOM03.vcd"  //They didn't have electricity when I was born.
+	scene "scenes/NamVet/C6DLC3SECONDSAFEROOM03.vcd" then self IntroEnd foo:0 0.1 //They didn't have electricity when I was born.
 }
 Rule C7M3_saferoom003cNamVet
 {
@@ -1089,7 +1087,7 @@ Rule C7M3_saferoom010NamVet
 
 Response C7M3_saferoom010bNamVet
 {
-	scene "scenes/NamVet/C6DLC3SECONDSAFEROOM10.vcd"  //Tell you what: Once we clear the island and settle in, I'll make you a pro.
+	scene "scenes/NamVet/C6DLC3SECONDSAFEROOM10.vcd" then self IntroEnd foo:0 0.1 //Tell you what: Once we clear the island and settle in, I'll make you a pro.
 }
 Rule C7M3_saferoom010bNamVet
 {
@@ -1129,7 +1127,7 @@ Rule C7M3_saferoom012dNamVet
 
 Response C7M3_saferoom012fNamVet
 {
-	scene "scenes/NamVet/C6DLC3SECONDSAFEROOM15.vcd"  //Noted. Let's go.
+	scene "scenes/NamVet/C6DLC3SECONDSAFEROOM15.vcd" then self IntroEnd foo:0 0.1 //Noted. Let's go.
 }
 Rule C7M3_saferoom012fNamVet
 {
@@ -5284,7 +5282,7 @@ Rule ScavengeStartNamVet
 //--------------------------------------------------------------------------------------------------------------
 Response L4D1IntroSmalltown3NamVet
 {
-	scene "scenes/NamVet/GenericResponses09.vcd"  //Allright, then, let's do it.
+	scene "scenes/NamVet/GenericResponses09.vcd" then self IntroEnd foo:0 0.1 //Allright, then, let's do it.
 }
 Rule L4D1IntroSmalltown3NamVet
 {
@@ -5302,14 +5300,14 @@ Rule L4D1IntroSmalltownEasterEggNamVet
 	Response L4D1IntroSmalltownEasterEggNamVet
 }
 
-Response L4D1IntroSmalltownEasterEgg2NamVet
+Response L4D1IntroSmalltownEasterEgg3NamVet
 {
-	scene "scenes/NamVet/Laughter04.vcd"  //<Hearty Laugh>
+	scene "scenes/NamVet/Laughter04.vcd" then self IntroEnd foo:0 0.1 //<Hearty Laugh>
 }
-Rule L4D1IntroSmalltownEasterEgg2NamVet
+Rule L4D1IntroSmalltownEasterEgg3NamVet
 {
-	criteria ConceptIntroSmalltownEasterEgg2 IsNamVet AutoIsNotScavenge AutoIsNotSurvival
-	Response L4D1IntroSmalltownEasterEgg2NamVet
+	criteria ConceptIntroSmalltownEasterEgg3 IsNamVet AutoIsNotScavenge AutoIsNotSurvival
+	Response L4D1IntroSmalltownEasterEgg3NamVet
 }
 
 
@@ -5383,13 +5381,13 @@ Response L4D1PlayerGetInsideCheckPointNamVet
 }
 Rule L4D1PlayerGetInsideCheckPointNamVet
 {
-	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsNamVet IsInSafeSpot IsTalk IsTalkNamVet SomeoneOutsideSafeSpot IsWorldTalkNamVet
+	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsNamVet IsInSafeSpot IsTalk IsTalkNamVet SomeoneOutsideSafeSpot IsWorldTalkNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response L4D1PlayerGetInsideCheckPointNamVet
 }
 
 Rule L4D1PlayerStayTogetherSaferoomNamVet
 {
-	criteria ConceptPlayerStayTogether IsNotCoughing IsNamVet IsInSafeSpot IsTalk IsTalkNamVet SomeoneOutsideSafeSpot IsWorldTalkNamVet
+	criteria ConceptPlayerStayTogether IsNotCoughing IsNamVet IsInSafeSpot IsTalk IsTalkNamVet SomeoneOutsideSafeSpot IsWorldTalkNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response L4D1PlayerGetInsideCheckPointNamVet
 }
 
@@ -5527,7 +5525,7 @@ Response L4D1PlayerLockTheDoorCheckPointNamVet
 }
 Rule L4D1PlayerLockTheDoorCheckPointNamVet
 {
-	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsNamVet IsInSafeSpot IsTalk IsTalkNamVet IsWorldTalkNamVet
+	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsNamVet IsInSafeSpot IsTalk IsTalkNamVet IsWorldTalkNamVet AutoIsNotScavenge AutoIsNotSurvival
 	Response L4D1PlayerLockTheDoorCheckPointNamVet
 }
 
@@ -5574,13 +5572,12 @@ Rule L4D1PlayerSuggestHealthFrancisNamVet
 
 Response L4D1PlayerSuggestHealthLouisNamVet
 {
-	scene "scenes/NamVet/PlayerSuggestHealth01.vcd"  //You should heal up.
 	scene "scenes/NamVet/PlayerSuggestHealthLouis01.vcd"  //Louis, use your first aid kit
 	scene "scenes/NamVet/PlayerSuggestHealthLouis02.vcd"  //Heal up, Louis.
 }
 Rule L4D1PlayerSuggestHealthLouisNamVet
 {
-	criteria ConceptPlayerSuggestHealth IsNamVet IssuerReallyClose IsNotBeingHealed IsTalk IsTalkNamVet IsNotIncapacitated TimeSinceGroupInCombat20 IsNotSpeakingWeight0 ChanceToFire50Percent IsWorldTalkNamVet
+	criteria ConceptPlayerSuggestHealth IsNamVet IssuerReallyClose IsNotBeingHealed IsTalk IsTalkNamVet IsNotIncapacitated TimeSinceGroupInCombat20 IsNotSpeakingWeight0 FromIsManager ChanceToFire50Percent IsWorldTalkNamVet
 	ApplyContext "SuggestedHealth:1:120"
 	applycontexttoworld
 	Response L4D1PlayerSuggestHealthLouisNamVet
@@ -5621,7 +5618,7 @@ Response L4D1PlayerTransitionNamVet
 }
 Rule L4D1PlayerTransitionNamVet
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsNamVet IsNotSaidPlayerTransition IsTalk IsTalkNamVet IsWorldTalkNamVet IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsNamVet IsNotSaidPlayerTransition IsTalk IsTalkNamVet IsWorldTalkNamVet IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response L4D1PlayerTransitionNamVet
@@ -5640,7 +5637,7 @@ Response L4D1PlayerTransitionCloseNamVet
 }
 Rule L4D1PlayerTransitionCloseNamVet
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsNamVet IsNotSaidPlayerTransition IsTalk IsTalkNamVet IsWorldTalkNamVet IsNotAlone IsSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsNamVet IsNotSaidPlayerTransition IsTalk IsTalkNamVet IsWorldTalkNamVet IsNotAlone IsSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response L4D1PlayerTransitionCloseNamVet
@@ -7091,8 +7088,8 @@ Rule L4D1PlayerHospitalIntroNamVet
 
 Response L4D1PlayerHospitalIntro03NamVet
 {
-	scene "scenes/NamVet/GenericResponses10.vcd"  //Good thinking.
-	scene "scenes/NamVet/WorldHospital0104.vcd"  //Might not be a bad idea to get off the street.
+	scene "scenes/NamVet/GenericResponses10.vcd" then self IntroEnd foo:0 0.1 //Good thinking.
+	scene "scenes/NamVet/WorldHospital0104.vcd" then self IntroEnd foo:0 0.1 //Might not be a bad idea to get off the street.
 }
 Rule L4D1PlayerHospitalIntro03NamVet
 {
@@ -7859,7 +7856,7 @@ Rule L4D1PlayerLighthouseIntro01NamVet
 
 Response L4D1PlayerLighthouseIntro01bNamVet
 {
-	scene "scenes/NamVet/C6DLC3INTRO02.vcd"  //Shut up, Francis.
+	scene "scenes/NamVet/C6DLC3INTRO02.vcd" then self IntroEnd foo:0 0.1 //Shut up, Francis.
 }
 Rule L4D1PlayerLighthouseIntro01bNamVet
 {
@@ -7869,7 +7866,7 @@ Rule L4D1PlayerLighthouseIntro01bNamVet
 
 Response L4D1PlayerLighthouseIntro02aNamVet
 {
-	scene "scenes/NamVet/C6DLC3INTRO27.vcd"  //Cmon, let's move.
+	scene "scenes/NamVet/C6DLC3INTRO27.vcd" then self IntroEnd foo:0 0.1 //Cmon, let's move.
 }
 Rule L4D1PlayerLighthouseIntro02aNamVet
 {
@@ -8212,6 +8209,14 @@ Rule SafeRoomStartNamVet
 {
 	criteria ConceptTalkIdle IsNamVet IsInStartArea AutoIsNotScavenge AutoIsNotSurvival _auto_NotSafeRoomStart
 	ApplyContext "Talk:1:45,_auto_SafeRoomStart:1:0,_auto_SafeRoomQuiet:1:5"
+	applycontexttoworld
+	Response NoResponse
+}
+
+Rule IntroEndNamVet
+{
+	criteria ConceptIntroEnd IsNamVet FromIsNamVet IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "Talk:0:0"
 	applycontexttoworld
 	Response NoResponse
 }

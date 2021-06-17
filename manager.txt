@@ -738,8 +738,8 @@ Rule C7M1_saferoom03aManager
 
 Response C7M1_saferoom05aManager
 {
-	scene "scenes/Manager/C6DLC3INTRO05.vcd"  //I think she's mad at Bill.
-	scene "scenes/Manager/C6DLC3INTRO06.vcd"  //I think she's mad at Bill.
+	scene "scenes/Manager/C6DLC3INTRO05.vcd" then self IntroEnd foo:0 0.1 //I think she's mad at Bill.
+	scene "scenes/Manager/C6DLC3INTRO06.vcd" then self IntroEnd foo:0 0.1 //I think she's mad at Bill.
 }
 Rule C7M1_saferoom05aManager
 {
@@ -749,9 +749,9 @@ Rule C7M1_saferoom05aManager
 
 Response C7M1_saferoom06bManager
 {
-	scene "scenes/Manager/C6DLC3INTRO07.vcd"  //And it's on fire.
-	scene "scenes/Manager/C6DLC3INTRO08.vcd"  //And it's on fire.
-	scene "scenes/Manager/C6DLC3INTRO09.vcd"  //And it's on fire.
+	scene "scenes/Manager/C6DLC3INTRO07.vcd" then self IntroEnd foo:0 0.1 //And it's on fire.
+	scene "scenes/Manager/C6DLC3INTRO08.vcd" then self IntroEnd foo:0 0.1 //And it's on fire.
+	scene "scenes/Manager/C6DLC3INTRO09.vcd" then self IntroEnd foo:0 0.1 //And it's on fire.
 }
 Rule C7M1_saferoom06bManager
 {
@@ -788,8 +788,8 @@ Rule C7M1_saferoom12Manager
 
 Response C7M1_saferoom15cManager
 {
-	scene "scenes/Manager/C6DLC3INTRO21.vcd"  //Well, thanks, man!
-	scene "scenes/Manager/C6DLC3INTRO22.vcd"  //Well, thanks, man!
+	scene "scenes/Manager/C6DLC3INTRO21.vcd" then self IntroEnd foo:0 0.1 //Well, thanks, man!
+	scene "scenes/Manager/C6DLC3INTRO22.vcd" then self IntroEnd foo:0 0.1 //Well, thanks, man!
 }
 Rule C7M1_saferoom15cManager
 {
@@ -799,8 +799,8 @@ Rule C7M1_saferoom15cManager
 
 Response C7M1_saferoom18aManager
 {
-	scene "scenes/Manager/C6DLC3INTRO23.vcd"  //I got a good feeling about this island.
-	scene "scenes/Manager/C6DLC3INTRO24.vcd"  //I got a good feeling about this island.
+	scene "scenes/Manager/C6DLC3INTRO23.vcd" then self IntroEnd foo:0 0.1 //I got a good feeling about this island.
+	scene "scenes/Manager/C6DLC3INTRO24.vcd" then self IntroEnd foo:0 0.1 //I got a good feeling about this island.
 }
 Rule C7M1_saferoom18aManager
 {
@@ -820,10 +820,10 @@ Rule C7M1_saferoom19Manager
 
 Response C7M1_saferoom19bManager
 {
-	scene "scenes/Manager/C6DLC3INTRO26.vcd"  //Come on, we have to keep moving.
-	scene "scenes/Manager/C6DLC3INTRO27.vcd"  //Come on, we have to keep moving.
-	scene "scenes/Manager/C6DLC3INTRO28.vcd"  //Come on, we have to keep moving.
-	scene "scenes/Manager/C6DLC3INTRO29.vcd"  //I do, but we have to keep moving.
+	scene "scenes/Manager/C6DLC3INTRO26.vcd" then self IntroEnd foo:0 0.1 //Come on, we have to keep moving.
+	scene "scenes/Manager/C6DLC3INTRO27.vcd" then self IntroEnd foo:0 0.1 //Come on, we have to keep moving.
+	scene "scenes/Manager/C6DLC3INTRO28.vcd" then self IntroEnd foo:0 0.1 //Come on, we have to keep moving.
+	scene "scenes/Manager/C6DLC3INTRO29.vcd" then self IntroEnd foo:0 0.1 //I do, but we have to keep moving.
 }
 Rule C7M1_saferoom19bManager
 {
@@ -844,9 +844,9 @@ Rule C7M1_saferoom21Manager
 
 Response C7M1_saferoom22aManager
 {
-	scene "scenes/Manager/C6DLC3INTRO33.vcd"  //I'm trying to keep my head up Bill.
-	scene "scenes/Manager/C6DLC3INTRO34.vcd"  //I'm trying, Bill. I'm trying.
-	scene "scenes/Manager/C6DLC3INTRO35.vcd"  //Look, I'm trying, Bill. I'm trying.
+	scene "scenes/Manager/C6DLC3INTRO33.vcd" then self IntroEnd foo:0 0.1 //I'm trying to keep my head up Bill.
+	scene "scenes/Manager/C6DLC3INTRO34.vcd" then self IntroEnd foo:0 0.1 //I'm trying, Bill. I'm trying.
+	scene "scenes/Manager/C6DLC3INTRO35.vcd" then self IntroEnd foo:0 0.1 //Look, I'm trying, Bill. I'm trying.
 }
 Rule C7M1_saferoom22aManager
 {
@@ -877,7 +877,7 @@ Rule C7M1_saferoom25Manager
 
 Response C7M1_saferoom25bManager
 {
-	scene "scenes/Manager/C6DLC3INTRO39.vcd"  //How can we be sure they're immune?
+	scene "scenes/Manager/C6DLC3INTRO39.vcd" then self IntroEnd foo:0 0.1 //How can we be sure they're immune?
 }
 Rule C7M1_saferoom25bManager
 {
@@ -935,7 +935,7 @@ Response InfoRemc7m1_tankcar01aManager
 }
 Rule InfoRemc7m1_tankcar01aManager
 {
-	criteria ConceptInfoRemc7m1_tankcar01a IsManager IsNotCoughing NotInCombat IsTalk IsTalkBiker IsWorldTalkBiker AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptInfoRemc7m1_tankcar01a IsManager IsNotCoughing NotInCombat IsTalk IsTalkManager IsWorldTalkManager AutoIsNotScavenge AutoIsNotSurvival
 	Response InfoRemc7m1_tankcar01aManager
 }
 
@@ -988,8 +988,8 @@ Rule C7M2_saferoom03aManager
 
 Response C7M2_saferoom04Manager
 {
-	scene "scenes/Manager/C6DLC3FIRSTSAFEROOM08.vcd"  //Even if it does go back to normal, they're not lettin' us back in. I think this island's the only chance we got.
-	scene "scenes/Manager/C6DLC3FIRSTSAFEROOM09.vcd"  //Even if it does go back to normal, we won't. I think this island's the only chance we got.
+	scene "scenes/Manager/C6DLC3FIRSTSAFEROOM08.vcd" then self IntroEnd foo:0 0.1 //Even if it does go back to normal, they're not lettin' us back in. I think this island's the only chance we got.
+	scene "scenes/Manager/C6DLC3FIRSTSAFEROOM09.vcd" then self IntroEnd foo:0 0.1 //Even if it does go back to normal, we won't. I think this island's the only chance we got.
 }
 Rule C7M2_saferoom04Manager
 {
@@ -999,7 +999,7 @@ Rule C7M2_saferoom04Manager
 
 Response C7M2_saferoom05cManager
 {
-	scene "scenes/Manager/C6DLC3FIRSTSAFEROOM10.vcd"  //Let's make a note of that for next time, alright?
+	scene "scenes/Manager/C6DLC3FIRSTSAFEROOM10.vcd" then self IntroEnd foo:0 0.1 //Let's make a note of that for next time, alright?
 }
 Rule C7M2_saferoom05cManager
 {
@@ -1039,8 +1039,8 @@ Rule Player.WarnMegaMobc7m201Manager
 
 Response C7M3_saferoom003aManager
 {
-	scene "scenes/Manager/C6DLC3SECONDSAFEROOM05.vcd"  //You literally are the oldest man in the world, aren't you?
-	scene "scenes/Manager/C6DLC3SECONDSAFEROOM06.vcd"  //How old are you again Bill?
+	scene "scenes/Manager/C6DLC3SECONDSAFEROOM05.vcd" then self IntroEnd foo:0 0.1 //You literally are the oldest man in the world, aren't you?
+	scene "scenes/Manager/C6DLC3SECONDSAFEROOM06.vcd" then self IntroEnd foo:0 0.1 //How old are you again Bill?
 	scene "scenes/Manager/C6DLC3SECONDSAFEROOM07.vcd"  then Any C7M3_saferoom003b foo:0 .1 //Bill, did they have TV when you were young?
 }
 Rule C7M3_saferoom003aManager
@@ -1093,7 +1093,7 @@ Rule C7M3_saferoom007aManager
 
 Response C7M3_saferoom007cManager
 {
-	scene "scenes/Manager/C6DLC3SECONDSAFEROOM18.vcd"  //I don't remember what that feels like.
+	scene "scenes/Manager/C6DLC3SECONDSAFEROOM18.vcd" then self IntroEnd foo:0 0.1 //I don't remember what that feels like.
 }
 Rule C7M3_saferoom007cManager
 {
@@ -1103,7 +1103,7 @@ Rule C7M3_saferoom007cManager
 
 Response C7M3_saferoom009aManager
 {
-	scene "scenes/Manager/C6DLC3SECONDSAFEROOM20.vcd"  //I like the sound of that.
+	scene "scenes/Manager/C6DLC3SECONDSAFEROOM20.vcd" then self IntroEnd foo:0 0.1 //I like the sound of that.
 }
 Rule C7M3_saferoom009aManager
 {
@@ -1124,7 +1124,7 @@ Rule C7M3_saferoom010aManager
 
 Response C7M3_saferoom011Manager
 {
-	scene "scenes/Manager/C6DLC3SECONDSAFEROOM24.vcd"  //Sounds good to me.
+	scene "scenes/Manager/C6DLC3SECONDSAFEROOM24.vcd" then self IntroEnd foo:0 0.1 //Sounds good to me.
 }
 Rule C7M3_saferoom011Manager
 {
@@ -1164,8 +1164,8 @@ Rule C7M3_saferoom014aManager
 
 Response C7M3_saferoom015aManager
 {
-	scene "scenes/Manager/C6DLC3SECONDSAFEROOM31.vcd"  //Just a good feeling, I guess.
-	scene "scenes/Manager/C6DLC3SECONDSAFEROOM32.vcd"  //Just a good feeling, I guess.
+	scene "scenes/Manager/C6DLC3SECONDSAFEROOM31.vcd" then self IntroEnd foo:0 0.1 //Just a good feeling, I guess.
+	scene "scenes/Manager/C6DLC3SECONDSAFEROOM32.vcd" then self IntroEnd foo:0 0.1 //Just a good feeling, I guess.
 }
 Rule C7M3_saferoom015aManager
 {
@@ -1237,9 +1237,9 @@ Rule C7M3_saferoom017fManager
 
 Response C7M3_saferoom017gManager
 {
-	scene "scenes/Manager/C6DLC3SECONDSAFEROOM42.vcd"  //Punk ass island bitch...
-	scene "scenes/Manager/C6DLC3SECONDSAFEROOM43.vcd"  //Punk ass bitch island...
-	scene "scenes/Manager/C6DLC3SECONDSAFEROOM44.vcd"  //Punk ass island bitch ya better watch yourself...
+	scene "scenes/Manager/C6DLC3SECONDSAFEROOM42.vcd" then self IntroEnd foo:0 0.1 //Punk ass island bitch...
+	scene "scenes/Manager/C6DLC3SECONDSAFEROOM43.vcd" then self IntroEnd foo:0 0.1 //Punk ass bitch island...
+	scene "scenes/Manager/C6DLC3SECONDSAFEROOM44.vcd" then self IntroEnd foo:0 0.1 //Punk ass island bitch ya better watch yourself...
 	scene "scenes/Manager/C6DLC3SECONDSAFEROOM45.vcd"  then Any C7M3_saferoom017h foo:0 .1 //Punk ass island bitch better watch yourself once Louis and Francis on the case.
 }
 Rule C7M3_saferoom017gManager
@@ -1290,7 +1290,7 @@ Rule C7M3FinalPressNamVetManager
 Response C7M3FinalPressTeenGirlManager
 {
 	scene "scenes/Manager/C6DLC3ZOEYDIES01.vcd"  //Oh my god! Zoey!
-	scene "scenes/Manager/C6DLC3ZOEYDIES01.vcd"  //Oh my god! Zoey!
+	scene "scenes/Manager/C6DLC3ZOEYDIES02.vcd"  //Oh my god! Zoey!
 	scene "scenes/Manager/C6DLC3ZOEYDIES03.vcd"  //Zoey! You saved us!
 	scene "scenes/Manager/C6DLC3ZOEYDIES04.vcd"  //Ah Damnit, Zoey's dead!
 	scene "scenes/Manager/C6DLC3ZOEYDIES05.vcd"  //Not Zoey!
@@ -1582,7 +1582,7 @@ Rule CrashFinaleTruckResp01Manager
 
 Response IntroCrashWalkingBManager
 {
-	scene "scenes/Manager/DLC2Intro13.vcd"  //I got a baaad feeling about this. Ohp. It passed. I think we're gonna be JUST fine.
+	scene "scenes/Manager/DLC2Intro13.vcd" then self IntroEnd foo:0 0.1 //I got a baaad feeling about this. Ohp. It passed. I think we're gonna be JUST fine.
 }
 Rule IntroCrashWalkingBManager
 {
@@ -1797,8 +1797,8 @@ Response L4D1PlayerRemarkcrashcourse01_path24Manager
 }
 Rule L4D1PlayerRemarkcrashcourse01_path24Manager
 {
-	criteria ConceptRemark IsManager Iscrashcourse01_path24 IsNotSaidcrashcourse01_path24 IsNotCoughing NotInCombat IsTalk IsTalkManager IsSubjectNear200 IsWorldTalkManager IsNotSpeakingWeight0 AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Saidcrashcourse01_path24:1:0,SaidSafeSpotAhead:1:0"
+	criteria ConceptRemark IsManager Iscrashcourse01_path24 IsNotSaidSafeSpotAhead IsNotCoughing NotInCombat IsTalk IsTalkManager IsSubjectNear200 IsWorldTalkManager IsNotSpeakingWeight0 AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "SaidSafeSpotAhead:1:0"
 	applycontexttoworld
 	Response L4D1PlayerRemarkcrashcourse01_path24Manager
 }
@@ -1933,8 +1933,8 @@ Rule IntroCrashR09Manager
 
 Response IntroCrashR10Manager
 {
-	scene "scenes/Manager/DLC2Intro06.vcd"  //Well, I guess we're walking.
-	scene "scenes/Manager/DLC2Intro10.vcd"  //Looks like we're gonna have to walk outta here.
+	scene "scenes/Manager/DLC2Intro06.vcd" then self IntroEnd foo:0 0.1 //Well, I guess we're walking.
+	scene "scenes/Manager/DLC2Intro10.vcd" then self IntroEnd foo:0 0.1 //Looks like we're gonna have to walk outta here.
 }
 Rule IntroCrashR10Manager
 {
@@ -1995,17 +1995,17 @@ Rule IntroCrashR24Manager
 
 Response IntroCrashR30Manager
 {
-	scene "scenes/Manager/DLC2Intro12.vcd"  //Damn. I had a good feeling about that helicopter, too.
+	scene "scenes/Manager/DLC2Intro12.vcd" then self IntroEnd foo:0 0.1 //Damn. I had a good feeling about that helicopter, too.
 }
 Rule IntroCrashR30Manager
 {
-	criteria ConceptIntroCrashR30 IsManager ChanceToFire20Percent AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptIntroCrashR30 IsManager AutoIsNotScavenge AutoIsNotSurvival
 	Response IntroCrashR30Manager
 }
 
 Response IntroCrashR31Manager
 {
-	scene "scenes/Manager/DLC2Intro11.vcd"  //On the bright side: look at all the great scenery we'd have missed if we flew over this in a helicopter, huh?
+	scene "scenes/Manager/DLC2Intro11.vcd" then self IntroEnd foo:0 0.1 //On the bright side: look at all the great scenery we'd have missed if we flew over this in a helicopter, huh?
 }
 Rule IntroCrashR31Manager
 {
@@ -2042,8 +2042,8 @@ Rule L4D1PlayerCrashCourseIntroManager
 //--------------------------------------------------------------------------------------------------------------
 Response CrashCourseI01Manager
 {
-	scene "scenes/Manager/GenericResponses24.vcd"  //Sounds good.
-	scene "scenes/Manager/WorldFarmHouseNPC10.vcd"  //Sounds good to me.
+	scene "scenes/Manager/GenericResponses24.vcd" then self IntroEnd foo:0 0.1 //Sounds good.
+	scene "scenes/Manager/WorldFarmHouseNPC10.vcd" then self IntroEnd foo:0 0.1 //Sounds good to me.
 }
 Rule CrashCourseI01Manager
 {
@@ -2053,7 +2053,7 @@ Rule CrashCourseI01Manager
 
 Response CrashCourseA01Manager
 {
-	scene "scenes/Manager/DLC2Riverside02.vcd"  //Man, if it gets us to a safe zone? It's my favorite town on the PLANET.
+	scene "scenes/Manager/DLC2Riverside02.vcd" then self IntroEnd foo:0 0.1 //Man, if it gets us to a safe zone? It's my favorite town on the PLANET.
 }
 Rule CrashCourseA01Manager
 {
@@ -2074,7 +2074,7 @@ Rule CrashCourseB01Manager
 Response L4D1C9M2SafeRoomManager
 {
 	scene "scenes/Manager/DLC2M2Saferoom01.vcd"  then any CrashCourseI01 foo:0 -1.558 //We should try and find this depot.
-	scene "scenes/Manager/DLC2M1Directional11.vcd"  //Riverside! We're headed the right way!
+	scene "scenes/Manager/DLC2M1Directional11.vcd" then self IntroEnd foo:0 0.1 //Riverside! We're headed the right way!
 	scene "scenes/Manager/DLC2M1Goal02.vcd" then any CrashCourseI01 foo:0 0.1 //People were heading to Riverside.  We might as well follow them!
 	scene "scenes/Manager/DLC2Riverside01.vcd"  then Biker CrashCourseC01 foo:0 -3.291 //If we can just make it to Riverside, we are HOME FREE, guys...
 }
@@ -2091,7 +2091,7 @@ Rule L4D1C9M2SafeRoomManager
 //--------------------------------------------------------------------------------------------------------------
 Response L4D1IntroFarm4Manager
 {
-	scene "scenes/Manager/WorldFarmHouseNPC10.vcd"  //Sounds good to me.
+	scene "scenes/Manager/WorldFarmHouseNPC10.vcd" then self IntroEnd foo:0 0.1 //Sounds good to me.
 }
 Rule L4D1IntroFarm4Manager
 {
@@ -3971,7 +3971,7 @@ Response L4D1PlayerRemarkFarm05_path08Manager
 }
 Rule L4D1PlayerRemarkFarm05_path08Manager
 {
-	criteria ConceptRemark IsManager IsFarm05_path08 IsNotSaidFarm05_path08 IsNotCoughing NotInCombat IsTalk IsTalkManager IsSubjectNear500 IsWorldTalkManager IsNotSpeakingWeight0 AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptRemark IsManager IsFarm05_path08 IsNotSaidFarm05_path08 IsNotSaidFarm05_path09 IsNotCoughing NotInCombat IsTalk IsTalkManager IsSubjectNear500 IsWorldTalkManager IsNotSpeakingWeight0 AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidFarm05_path08:1:0"
 	applycontexttoworld
 	Response L4D1PlayerRemarkFarm05_path08Manager
@@ -3979,7 +3979,7 @@ Rule L4D1PlayerRemarkFarm05_path08Manager
 
 Rule L4D1PlayerRemarkFarm05_path10Manager
 {
-	criteria ConceptRemark IsManager IsFarm05_path10 IsNotSaidFarm05_path08 IsNotCoughing NotInCombat IsTalk IsTalkManager IsSubjectNear500 IsWorldTalkManager IsNotSpeakingWeight0 AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptRemark IsManager IsFarm05_path10 IsNotSaidFarm05_path08 IsNotSaidFarm05_path09 IsNotCoughing NotInCombat IsTalk IsTalkManager IsSubjectNear500 IsWorldTalkManager IsNotSpeakingWeight0 AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidFarm05_path08:1:0"
 	applycontexttoworld
 	Response L4D1PlayerRemarkFarm05_path08Manager
@@ -4042,7 +4042,7 @@ Rule L4D1PlayerRemarkhospital02_path02Manager
 Response L4D1PlayerRemarkhospital02_path03Manager
 {
 	scene "scenes/Manager/WorldHospital0204.vcd"  then NamVet hospital02_path03b1 foo:0 -1.835 //Damn, the line's blocked.
-	scene "scenes/Manager/WorldHospital0205.vcd"  then Manager hospital02_path03c1 foo:0 -3.030 //Tracks are blocked. We gotta find another way
+	scene "scenes/Manager/WorldHospital0205.vcd"  then NamVet hospital02_path03c1 foo:0 0.1 //Tracks are blocked. We gotta find another way
 }
 Rule L4D1PlayerRemarkhospital02_path03Manager
 {
@@ -5777,8 +5777,8 @@ Rule L4D1IntroSmalltownManager
 
 Response L4D1IntroSmalltown3Manager
 {
-	scene "scenes/Manager/WorldFarmHouseNPC10.vcd"  //Sounds good to me.
-	scene "scenes/Manager/WorldSmallTownIntro02.vcd"  //We get to Riverside and we'll probably be allright.
+	scene "scenes/Manager/WorldFarmHouseNPC10.vcd" then self IntroEnd foo:0 0.1 //Sounds good to me.
+	scene "scenes/Manager/WorldSmallTownIntro02.vcd" then self IntroEnd foo:0 0.1 //We get to Riverside and we'll probably be allright.
 }
 Rule L4D1IntroSmalltown3Manager
 {
@@ -5786,17 +5786,17 @@ Rule L4D1IntroSmalltown3Manager
 	Response L4D1IntroSmalltown3Manager
 }
 
-Response L4D1IntroSmalltownEasterEgg2Manager
+Response L4D1IntroSmalltownEasterEgg3Manager
 {
-	scene "scenes/Manager/Laughter04.vcd"  //<Hearty Laugh>
-	scene "scenes/Manager/Laughter05.vcd"  //<Hearty Laugh>
-	scene "scenes/Manager/Laughter20.vcd"  //<Hearty Laugh>
-	scene "scenes/Manager/Laughter21.vcd"  //<Hearty Laugh>
+	scene "scenes/Manager/Laughter04.vcd" then self IntroEnd foo:0 0.1 //<Hearty Laugh>
+	scene "scenes/Manager/Laughter05.vcd" then self IntroEnd foo:0 0.1 //<Hearty Laugh>
+	scene "scenes/Manager/Laughter20.vcd" then self IntroEnd foo:0 0.1 //<Hearty Laugh>
+	scene "scenes/Manager/Laughter21.vcd" then self IntroEnd foo:0 0.1 //<Hearty Laugh>
 }
-Rule L4D1IntroSmalltownEasterEgg2Manager
+Rule L4D1IntroSmalltownEasterEgg3Manager
 {
-	criteria ConceptIntroSmalltownEasterEgg2 IsManager AutoIsNotScavenge AutoIsNotSurvival
-	Response L4D1IntroSmalltownEasterEgg2Manager
+	criteria ConceptIntroSmalltownEasterEgg3 IsManager AutoIsNotScavenge AutoIsNotSurvival
+	Response L4D1IntroSmalltownEasterEgg3Manager
 }
 
 
@@ -5885,13 +5885,13 @@ Response L4D1PlayerGetInsideCheckPointManager
 }
 Rule L4D1PlayerGetInsideCheckPointManager
 {
-	criteria ConceptPlayerGetInsideCheckPoint  IsNotCoughing IsManager IsInSafeSpot IsTalk IsTalkManager SomeoneOutsideSafeSpot IsWorldTalkManager
+	criteria ConceptPlayerGetInsideCheckPoint  IsNotCoughing IsManager IsInSafeSpot IsTalk IsTalkManager SomeoneOutsideSafeSpot IsWorldTalkManager AutoIsNotScavenge AutoIsNotSurvival
 	Response L4D1PlayerGetInsideCheckPointManager
 }
 
 Rule L4D1PlayerStayTogetherSaferoomManager
 {
-	criteria ConceptPlayerStayTogether IsNotCoughing IsManager IsInSafeSpot IsTalk IsTalkManager SomeoneOutsideSafeSpot IsWorldTalkManager
+	criteria ConceptPlayerStayTogether IsNotCoughing IsManager IsInSafeSpot IsTalk IsTalkManager SomeoneOutsideSafeSpot IsWorldTalkManager AutoIsNotScavenge AutoIsNotSurvival
 	Response L4D1PlayerGetInsideCheckPointManager
 }
 
@@ -6061,7 +6061,7 @@ Response L4D1PlayerLockTheDoorCheckPointManager
 }
 Rule L4D1PlayerLockTheDoorCheckPointManager
 {
-	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsManager IsInSafeSpot IsTalk IsTalkManager IsWorldTalkManager
+	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsManager IsInSafeSpot IsTalk IsTalkManager IsWorldTalkManager AutoIsNotScavenge AutoIsNotSurvival
 	Response L4D1PlayerLockTheDoorCheckPointManager
 }
 
@@ -6175,7 +6175,7 @@ Response L4D1PlayerTransitionManager
 }
 Rule L4D1PlayerTransitionManager
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsManager IsNotSaidPlayerTransition IsTalk IsTalkManager IsWorldTalkManager IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsManager IsNotSaidPlayerTransition IsTalk IsTalkManager IsWorldTalkManager IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response L4D1PlayerTransitionManager
@@ -6190,7 +6190,7 @@ Response L4D1PlayerTransitionCloseManager
 }
 Rule L4D1PlayerTransitionCloseManager
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsManager IsNotSaidPlayerTransition IsTalk IsTalkManager IsWorldTalkManager IsNotAlone IsSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsManager IsNotSaidPlayerTransition IsTalk IsTalkManager IsWorldTalkManager IsNotAlone IsSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response L4D1PlayerTransitionCloseManager
@@ -6202,7 +6202,7 @@ Response L4D1PlayerTransitionC8M3Manager
 }
 Rule L4D1PlayerTransitionC8M3Manager
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsManager IsNoMercy3 IsNotSaidPlayerTransition IsTalk IsTalkManager IsWorldTalkManager IsNotAlone IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsManager IsNoMercy3 IsNotSaidPlayerTransition IsTalk IsTalkManager IsWorldTalkManager IsNotAlone IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response L4D1PlayerTransitionC8M3Manager
@@ -7694,7 +7694,7 @@ Rule L4D1PlayerHospitalIntroManager
 
 Response L4D1PlayerHospitalIntro02Manager
 {
-	scene "scenes/Manager/GenericResponses24.vcd"  //Sounds good.
+	scene "scenes/Manager/GenericResponses24.vcd" then self IntroEnd foo:0 0.1 //Sounds good.
 }
 Rule L4D1PlayerHospitalIntro02Manager
 {
@@ -8411,7 +8411,7 @@ Rule L4D1PlayerLighthouseIntro01Manager
 
 Response L4D1PlayerLighthouseIntro01cManager
 {
-	scene "scenes/Manager/C6DLC3INTRO39.vcd"  //How can we be sure they're immune?
+	scene "scenes/Manager/C6DLC3INTRO39.vcd" then self IntroEnd foo:0 0.1 //How can we be sure they're immune?
 }
 Rule L4D1PlayerLighthouseIntro01cManager
 {
@@ -8431,7 +8431,7 @@ Rule L4D1PlayerLighthouseIntro02Manager
 
 Response L4D1PlayerLighthouseIntro04bManager
 {
-	scene "scenes/Manager/GenericResponses24.vcd" //Sounds good.
+	scene "scenes/Manager/GenericResponses24.vcd" then self IntroEnd foo:0 0.1 //Sounds good.
 }
 Rule L4D1PlayerLighthouseIntro04bManager
 {
@@ -8720,6 +8720,14 @@ Rule SafeRoomStartManager
 {
 	criteria ConceptTalkIdle IsManager IsInStartArea AutoIsNotScavenge AutoIsNotSurvival _auto_NotSafeRoomStart
 	ApplyContext "Talk:1:45,_auto_SafeRoomStart:1:0,_auto_SafeRoomQuiet:1:5"
+	applycontexttoworld
+	Response NoResponse
+}
+
+Rule IntroEndManager
+{
+	criteria ConceptIntroEnd IsManager FromIsManager IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "Talk:0:0"
 	applycontexttoworld
 	Response NoResponse
 }

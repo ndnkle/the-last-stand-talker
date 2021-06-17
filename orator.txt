@@ -269,7 +269,7 @@ Response C3M4ButtonOrator
 Rule C3M4ButtonCOrator
 {
 	criteria ConceptC3M4Button1 PanicEventCoach AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:1.765,_auto_Button1:1:0,_auto_Button1Coach:1:0,_auto_NoLostCall:1:0"
+	ApplyContext "Talk:1:1.765,_auto_Button1:1:0,_auto_TalkingCoach:1:0,_auto_NoLostCall:1:0"
 	applycontexttoworld
 	Response C3M4ButtonOrator
 }

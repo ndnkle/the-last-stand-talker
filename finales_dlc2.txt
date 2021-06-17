@@ -3273,7 +3273,7 @@ Response ConceptBlock720
 Rule ConceptBlock720
 {
 	criteria ConceptBlock606 IsManager IsEveryoneAlive ChanceToFire20Percent
-	forceweight 5
+	forceweight 7
 	Response ConceptBlock720
 }
 

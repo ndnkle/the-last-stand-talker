@@ -193,6 +193,7 @@ criterion "ConceptIntroSmallTown2"   "Concept" "IntroSmallTown2"	  required
 criterion "ConceptIntroSmallTown3"   "Concept" "IntroSmallTown3"	  required
 criterion "ConceptIntroSmallTownEasterEgg"   "Concept" "introSmallTownEasterEgg"	  required
 criterion "ConceptIntroSmallTownEasterEgg2"   "Concept" "introSmallTownEasterEgg2"	  required
+criterion "ConceptIntroSmallTownEasterEgg3"   "Concept" "introSmallTownEasterEgg3"	  required
 
 
 criterion "InCombat"	"InCombat" "1"          required
@@ -1157,6 +1158,8 @@ criterion "IsNotSaidSmell" "worldSaidSmell" "!=1" required
 
 criterion "IsNotSaidCXM1Intro" "worldCXM1Intro" "!=1" required
 
+//Ends the intro and dispels worldTalk
+criterion "ConceptIntroEnd"	"Concept" "IntroEnd"	required
 
 //Concepts for replies to automated speech below
 criterion "ConceptWorldIntroC512a"	"Concept" "WorldIntroC512a"	required

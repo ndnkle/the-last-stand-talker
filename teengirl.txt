@@ -143,11 +143,6 @@ Rule L4D1SurvivorMournLouisTeenGirl
 	Response L4D1SurvivorMournLouisTeenGirl
 }
 
-
-//--------------------------------------------------------------------------------------------------------------
-// At Top
-//--------------------------------------------------------------------------------------------------------------
-
 //--------------------------------------------------------------------------------------------------------------
 // AutoConvo
 //--------------------------------------------------------------------------------------------------------------
@@ -1099,9 +1094,9 @@ Rule WorldC6M3_ByBridge01EllisTeenGirl
 //--------------------------------------------------------------------------------------------------------------
 Response C7M1_saferoom02TeenGirl
 {
-	scene "scenes/TeenGirl/C6DLC3INTRO01.vcd"  //Yeah, or Bill'll leave you behind.
-	scene "scenes/TeenGirl/C6DLC3INTRO02.vcd"  //Yeah, or Bill'll leave you behind.
-	scene "scenes/TeenGirl/C6DLC3INTRO03.vcd"  //Yeah, or Bill'll leave you behind.
+	scene "scenes/TeenGirl/C6DLC3INTRO01.vcd" then self IntroEnd foo:0 0.1 //Yeah, or Bill'll leave you behind.
+	scene "scenes/TeenGirl/C6DLC3INTRO02.vcd" then self IntroEnd foo:0 0.1 //Yeah, or Bill'll leave you behind.
+	scene "scenes/TeenGirl/C6DLC3INTRO03.vcd" then self IntroEnd foo:0 0.1 //Yeah, or Bill'll leave you behind.
 }
 Rule C7M1_saferoom02TeenGirl
 {
@@ -1111,8 +1106,8 @@ Rule C7M1_saferoom02TeenGirl
 
 Response C7M1_saferoom09bTeenGirl
 {
-	scene "scenes/TeenGirl/C6DLC3INTRO06.vcd"  //Whatever.
-	scene "scenes/TeenGirl/C6DLC3INTRO07.vcd"  //Let's just go.
+	scene "scenes/TeenGirl/C6DLC3INTRO06.vcd" then self IntroEnd foo:0 0.1 //Whatever.
+	scene "scenes/TeenGirl/C6DLC3INTRO07.vcd" then self IntroEnd foo:0 0.1 //Let's just go.
 }
 Rule C7M1_saferoom09bTeenGirl
 {
@@ -1244,7 +1239,7 @@ Rule C7M2_saferoom01TeenGirl
 
 Response C7M2_saferoom01bTeenGirl
 {
-	scene "scenes/TeenGirl/C6DLC3FIRSTSAFEROOM02.vcd"  //Bill, I'm not ready to give up on everything yet.
+	scene "scenes/TeenGirl/C6DLC3FIRSTSAFEROOM02.vcd" then self IntroEnd foo:0 0.1 //Bill, I'm not ready to give up on everything yet.
 }
 Rule C7M2_saferoom01bTeenGirl
 {
@@ -1285,6 +1280,8 @@ Response Player.WarnMegaMobc7m201TeenGirl
 Rule Player.WarnMegaMobc7m201TeenGirl
 {
 	criteria ConceptPlayer.WarnMegaMobc7m201 IsTeenGirl
+	ApplyContext "WarnMegaMob:1:300,SaidSpecialWarn:1:30"
+	applycontexttoworld
 	Response Player.WarnMegaMobc7m201TeenGirl
 }
 
@@ -1295,7 +1292,7 @@ Rule Player.WarnMegaMobc7m201TeenGirl
 
 Response C7M3_saferoom004bTeenGirl
 {
-	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM01.vcd"  //Ohhhh. Boo.
+	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM01.vcd" then self IntroEnd foo:0 0.1 //Ohhhh. Boo.
 }
 Rule C7M3_saferoom004bTeenGirl
 {
@@ -1305,9 +1302,9 @@ Rule C7M3_saferoom004bTeenGirl
 
 Response C7M3_saferoom005TeenGirl
 {
-	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM02.vcd"  //You asked me that last year? It would have been ten zombie movies. Now? Probably a documentary on how to make toilet paper.
-	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM03.vcd"  //A month ago? I would have picked ten zombie movies. Now? Like, ten documentaries on how to build shelter, catch food and make toilet paper.
-	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM04.vcd"  //A month ago? I would have picked ten zombie movies. Now? Like, ten documentaries on how to build shelter, catch food and make toilet paper.
+	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM02.vcd" then self IntroEnd foo:0 0.1 //You asked me that last year? It would have been ten zombie movies. Now? Probably a documentary on how to make toilet paper.
+	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM03.vcd" then self IntroEnd foo:0 0.1 //A month ago? I would have picked ten zombie movies. Now? Like, ten documentaries on how to build shelter, catch food and make toilet paper.
+	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM04.vcd" then self IntroEnd foo:0 0.1 //A month ago? I would have picked ten zombie movies. Now? Like, ten documentaries on how to build shelter, catch food and make toilet paper.
 }
 Rule C7M3_saferoom005TeenGirl
 {
@@ -1317,7 +1314,7 @@ Rule C7M3_saferoom005TeenGirl
 
 Response C7M3_saferoom006cTeenGirl
 {
-	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM05.vcd"  //No more human race...
+	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM05.vcd" then self IntroEnd foo:0 0.1 //No more human race...
 }
 Rule C7M3_saferoom006cTeenGirl
 {
@@ -1358,11 +1355,11 @@ Rule C7M3_saferoom016TeenGirl
 
 Response C7M3_saferoom016cTeenGirl
 {
-	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM10.vcd"  //I hate putting the lotion in the basket.
-	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM11.vcd"  //I hate putting the lotion in the basket.
-	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM12.vcd"  //I hate putting the lotion in the basket.
-	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM13.vcd"  //I hate putting the lotion in the basket.
-	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM14.vcd"  //I hate putting the lotion in the basket.
+	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM10.vcd" then self IntroEnd foo:0 0.1 //I hate putting the lotion in the basket.
+	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM11.vcd" then self IntroEnd foo:0 0.1 //I hate putting the lotion in the basket.
+	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM12.vcd" then self IntroEnd foo:0 0.1 //I hate putting the lotion in the basket.
+	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM13.vcd" then self IntroEnd foo:0 0.1 //I hate putting the lotion in the basket.
+	scene "scenes/TeenGirl/C6DLC3SECONDSAFEROOM14.vcd" then self IntroEnd foo:0 0.1 //I hate putting the lotion in the basket.
 }
 Rule C7M3_saferoom016cTeenGirl
 {
@@ -1948,7 +1945,7 @@ Rule L4D1PlayerRemarkcrashcourse01_path10TeenGirl
 //AUTOGENERATED BLANK FOR L4D1PlayerRemarkcrashcourse02_path01TeenGirl : ChanceToFire20Percent
 Rule AUTOBLANK_L4D1PlayerRemarkcrashcourse01_path10TeenGirl
 {
-	criteria ConceptRemark IsTeenGirl Iscrashcourse01_path10 IsNotCoughing NotInCombat IsTalk IsTalkTeenGirl IsSubjectNear100 IsBikerAlive IsBikerNear400 IsWorldTalkManager IsNotSpeakingWeight0 AutoIsNotScavenge AutoIsNotSurvival
+	criteria ConceptRemark IsTeenGirl Iscrashcourse01_path10 IsNotCoughing NotInCombat IsTalk IsTalkTeenGirl IsSubjectNear100 IsBikerAlive IsBikerNear400 IsTalkTeenGirl IsNotSpeakingWeight0 AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "Saidcrashcourse01_path10:1:0"
 	applycontexttoworld
 	Response _PlayerInfoRemarkableBlankTeenGirl
@@ -2023,8 +2020,8 @@ Response L4D1PlayerRemarkcrashcourse01_path24TeenGirl
 }
 Rule L4D1PlayerRemarkcrashcourse01_path24TeenGirl
 {
-	criteria ConceptRemark IsTeenGirl Iscrashcourse01_path24 IsNotSaidcrashcourse01_path24 IsNotCoughing NotInCombat IsTalk IsTalkTeenGirl IsSubjectNear200 IsWorldTalkTeenGirl IsNotSpeakingWeight0 AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Saidcrashcourse01_path24:1:0,SaidSafeSpotAhead:1:0"
+	criteria ConceptRemark IsTeenGirl Iscrashcourse01_path24 IsNotSaidSafeSpotAhead IsNotCoughing NotInCombat IsTalk IsTalkTeenGirl IsSubjectNear200 IsWorldTalkTeenGirl IsNotSpeakingWeight0 AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "SaidSafeSpotAhead:1:0"
 	applycontexttoworld
 	Response L4D1PlayerRemarkcrashcourse01_path24TeenGirl
 }
@@ -2140,7 +2137,7 @@ Rule IntroCrashR01TeenGirl
 
 Response IntroCrashR04TeenGirl
 {
-	scene "scenes/TeenGirl/DLC2Intro11.vcd"  //Well, at least we got out of the city. And... into... a different city...
+	scene "scenes/TeenGirl/DLC2Intro11.vcd" then self IntroEnd foo:0 0.1 //Well, at least we got out of the city. And... into... a different city...
 }
 Rule IntroCrashR04TeenGirl
 {
@@ -2170,7 +2167,7 @@ Rule IntroCrashR09TeenGirl
 
 Response IntroCrashR10TeenGirl
 {
-	scene "scenes/TeenGirl/DLC2Intro09.vcd"  //I knew it was too good to last.
+	scene "scenes/TeenGirl/DLC2Intro09.vcd" then self IntroEnd foo:0 0.1 //I knew it was too good to last.
 }
 Rule IntroCrashR10TeenGirl
 {
@@ -2200,8 +2197,8 @@ Rule IntroCrashR19TeenGirl
 
 Response IntroCrashR28TeenGirl
 {
-	scene "scenes/TeenGirl/DLC2Misc03.vcd"  //He was a ZOMBIE, Francis!
-	scene "scenes/TeenGirl/DLC2Misc04.vcd"  //No. ZOMBIE, he was a zombie, francis
+	scene "scenes/TeenGirl/DLC2Misc03.vcd" then self IntroEnd foo:0 0.1 //He was a ZOMBIE, Francis!
+	scene "scenes/TeenGirl/DLC2Misc04.vcd" then self IntroEnd foo:0 0.1 //No. ZOMBIE, he was a zombie, francis
 }
 Rule IntroCrashR28TeenGirl
 {
@@ -2230,8 +2227,8 @@ Rule L4D1PlayerCrashCourseIntroTeenGirl
 //--------------------------------------------------------------------------------------------------------------
 Response CrashCourseI01TeenGirl
 {
-	scene "scenes/TeenGirl/DLC2M2Saferoom03.vcd"  //Could be a way out of here.
-	scene "scenes/TeenGirl/DLC2M2Saferoom04.vcd"  //It's worth a shot.
+	scene "scenes/TeenGirl/DLC2M2Saferoom03.vcd" then self IntroEnd foo:0 0.1 //Could be a way out of here.
+	scene "scenes/TeenGirl/DLC2M2Saferoom04.vcd" then self IntroEnd foo:0 0.1 //It's worth a shot.
 }
 Rule CrashCourseI01TeenGirl
 {
@@ -2243,7 +2240,7 @@ Response CrashCourseB01TeenGirl
 {
 	scene "scenes/TeenGirl/DLC2Riverside01.vcd"  then biker CrashCourseB02 foo:0 -3.052 //Canada? Francis, we're in Pennsylvania.
 	scene "scenes/TeenGirl/DLC2Riverside02.vcd"  then biker CrashCourseB02 foo:0 0.1 //Riverside's not in Canada, Francis.
-	scene "scenes/TeenGirl/DLC2Riverside03.vcd"  //Yeah, Canadians are DICKS!
+	scene "scenes/TeenGirl/DLC2Riverside03.vcd" then self IntroEnd foo:0 0.1 //Yeah, Canadians are DICKS!
 }
 Rule CrashCourseB01TeenGirl
 {
@@ -2257,8 +2254,8 @@ Response L4D1C9M2SafeRoomTeenGirl
 {
 	scene "scenes/TeenGirl/DLC2M2Saferoom01.vcd"  then any CrashCourseI01 foo:0 0.1 //Let's head to that truck depot.
 	scene "scenes/TeenGirl/DLC2M2Saferoom02.vcd"  then any CrashCourseI01 foo:0 -1.680 //We should check out  that truck depot.
-	scene "scenes/TeenGirl/DLC2M1Directional15.vcd"  //Good! Riverside must be up ahead.
-	scene "scenes/TeenGirl/DLC2M1Goal02.vcd"  //Riverside. That's where the army's holding out!
+	scene "scenes/TeenGirl/DLC2M1Directional15.vcd" then self IntroEnd foo:0 0.1 //Good! Riverside must be up ahead.
+	scene "scenes/TeenGirl/DLC2M1Goal02.vcd" then self IntroEnd foo:0 0.1 //Riverside. That's where the army's holding out!
 }
 Rule L4D1C9M2SafeRoomTeenGirl
 {
@@ -2273,7 +2270,7 @@ Rule L4D1C9M2SafeRoomTeenGirl
 //--------------------------------------------------------------------------------------------------------------
 Response L4D1IntroFarm4TeenGirl
 {
-	scene "scenes/TeenGirl/GenericResponses08.vcd"  //Yeah, let's do it.
+	scene "scenes/TeenGirl/GenericResponses08.vcd" then self IntroEnd foo:0 0.1 //Yeah, let's do it.
 }
 Rule L4D1IntroFarm4TeenGirl
 {
@@ -4831,7 +4828,7 @@ Rule L4D1PlayerRemarkSmalltown03_path04TeenGirl
 Rule L4D1PlayerRemarkSmalltown03_path05TeenGirl
 {
 	criteria ConceptRemark IsTeenGirl IsSmalltown03_path05 IsNotSaidSmalltown03_path04 IsNotCoughing NotInCombat IsTalk IsTalkTeenGirl IsSubjectNear200 IsWorldTalkTeenGirl IsNotSpeakingWeight0 AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "SaidSmalltown03_path05:1:0"
+	ApplyContext "SaidSmalltown03_path04:1:0"
 	applycontexttoworld
 	Response L4D1PlayerRemarkSmalltown03_path04TeenGirl
 }
@@ -5840,7 +5837,7 @@ Response L4D1PlayerNegativeTeenGirl
 	scene "scenes/TeenGirl/ReactionNegative28.vcd"  //This is not going well
 	scene "scenes/TeenGirl/ReactionNegative29.vcd"  //Oh man oh man oh man
 	scene "scenes/TeenGirl/ReactionNegative32.vcd"  //This is bad
-	scene "scenes/TeenGirl/ReactionNegative33.vcd"  //Ah crapl
+	scene "scenes/TeenGirl/ReactionNegative33.vcd"  //Ah crap!
 }
 Rule L4D1PlayerNegativeTeenGirl
 {
@@ -6219,16 +6216,16 @@ Rule L4D1IntroSmalltown2EasterEggTeenGirl
 	Response L4D1IntroSmalltown2EasterEggTeenGirl
 }
 
-Response L4D1IntroSmalltown2EasterEgg2TeenGirl
+Response L4D1IntroSmalltown2EasterEgg3TeenGirl
 {
-	scene "scenes/TeenGirl/Laughter04.vcd"  //<Hearty Laugh>
-	scene "scenes/TeenGirl/Laughter05.vcd"  //<Hearty Laugh>
-	scene "scenes/TeenGirl/Laughter06.vcd"  //<Hearty Laugh>
+	scene "scenes/TeenGirl/Laughter04.vcd" then self IntroEnd foo:0 0.1 //<Hearty Laugh>
+	scene "scenes/TeenGirl/Laughter05.vcd" then self IntroEnd foo:0 0.1 //<Hearty Laugh>
+	scene "scenes/TeenGirl/Laughter06.vcd" then self IntroEnd foo:0 0.1 //<Hearty Laugh>
 }
-Rule L4D1IntroSmalltown2EasterEgg2TeenGirl
+Rule L4D1IntroSmalltown2EasterEgg3TeenGirl
 {
-	criteria ConceptIntroSmalltownEasterEgg2 IsTeenGirl AutoIsNotScavenge AutoIsNotSurvival
-	Response L4D1IntroSmalltown2EasterEgg2TeenGirl
+	criteria ConceptIntroSmalltownEasterEgg3 IsTeenGirl AutoIsNotScavenge AutoIsNotSurvival
+	Response L4D1IntroSmalltown2EasterEgg3TeenGirl
 }
 
 
@@ -6332,13 +6329,13 @@ Response L4D1PlayerGetInsideCheckPointTeenGirl
 }
 Rule L4D1PlayerGetInsideCheckPointTeenGirl
 {
-	criteria ConceptPlayerGetInsideCheckPoint  IsNotCoughing IsTeenGirl IsInSafeSpot IsTalk IsTalkTeenGirl SomeoneOutsideSafeSpot IsWorldTalkTeenGirl
+	criteria ConceptPlayerGetInsideCheckPoint  IsNotCoughing IsTeenGirl IsInSafeSpot IsTalk IsTalkTeenGirl SomeoneOutsideSafeSpot IsWorldTalkTeenGirl AutoIsNotScavenge AutoIsNotSurvival
 	Response L4D1PlayerGetInsideCheckPointTeenGirl
 }
 
 Rule L4D1PlayerStayTogetherSaferoomTeenGirl
 {
-	criteria ConceptPlayerStayTogether IsNotCoughing IsTeenGirl IsInSafeSpot IsTalk IsTalkTeenGirl SomeoneOutsideSafeSpot IsWorldTalkTeenGirl
+	criteria ConceptPlayerStayTogether IsNotCoughing IsTeenGirl IsInSafeSpot IsTalk IsTalkTeenGirl SomeoneOutsideSafeSpot IsWorldTalkTeenGirl AutoIsNotScavenge AutoIsNotSurvival
 	Response L4D1PlayerGetInsideCheckPointTeenGirl
 }
 
@@ -6486,7 +6483,7 @@ Response L4D1PlayerLockTheDoorCheckPointTeenGirl
 }
 Rule L4D1PlayerLockTheDoorCheckPointTeenGirl
 {
-	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsTeenGirl IsInSafeSpot IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl
+	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsTeenGirl IsInSafeSpot IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl AutoIsNotScavenge AutoIsNotSurvival
 	Response L4D1PlayerLockTheDoorCheckPointTeenGirl
 }
 
@@ -6601,10 +6598,6 @@ Rule L4D1PlayerSuggestHealthFrancisTeenGirl
 Response L4D1PlayerSuggestHealthLouisTeenGirl
 {
 	scene "scenes/TeenGirl/PlayerSuggestHealthSpecific08.vcd"  //Louis, come on, patch yourself up.
-	scene "scenes/TeenGirl/SuggestHealth01.vcd"  //You should heal up
-	scene "scenes/TeenGirl/SuggestHealth02.vcd"  //C'mon man, use your first aid kit
-	scene "scenes/TeenGirl/SuggestHealth03.vcd"  //You might want to heal up.
-	scene "scenes/TeenGirl/SuggestHealth04.vcd"  //Use your first aid kit
 	scene "scenes/TeenGirl/SuggestHealthLouis01.vcd"  //Louis, use your first aid kit
 	scene "scenes/TeenGirl/SuggestHealthLouis02.vcd"  //Louis, use your first aid kit
 }
@@ -6640,7 +6633,7 @@ Response L4D1PlayerTransitionTeenGirl
 }
 Rule L4D1PlayerTransitionTeenGirl
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsTeenGirl IsNotSaidPlayerTransition IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsTeenGirl IsNotSaidPlayerTransition IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response L4D1PlayerTransitionTeenGirl
@@ -6658,7 +6651,7 @@ Response L4D1PlayerTransitionCloseTeenGirl
 }
 Rule L4D1PlayerTransitionCloseTeenGirl
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsTeenGirl IsNotSaidPlayerTransition IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl IsNotAlone IsSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsTeenGirl IsNotSaidPlayerTransition IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl IsNotAlone IsSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response L4D1PlayerTransitionCloseTeenGirl
@@ -6691,7 +6684,7 @@ Rule L4D1PlayerWarnHeardBoomerTeenGirl
 
 Rule PlayerHeardBoomerTeenGirl
 {
-	criteria ConceptPlayerHeardBoomer IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGIrl IsWorldTalkTeenGirl _auto_NotSpottedVehicle
+	criteria ConceptPlayerHeardBoomer IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl _auto_NotSpottedVehicle
 	Response L4D1PlayerWarnHeardBoomerTeenGirl
 }
 
@@ -6720,7 +6713,7 @@ Rule L4D1PlayerWarnHeardHunterTeenGirl
 
 Rule PlayerHeardHunterTeenGirl
 {
-	criteria ConceptPlayerHeardHunter IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGIrl IsWorldTalkTeenGirl _auto_NotSpottedVehicle
+	criteria ConceptPlayerHeardHunter IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl _auto_NotSpottedVehicle
 	Response L4D1PlayerWarnHeardHunterTeenGirl
 }
 
@@ -6745,7 +6738,7 @@ Rule L4D1PlayerWarnHeardSmokerTeenGirl
 
 Rule PlayerHeardSmokerTeenGirl
 {
-	criteria ConceptPlayerHeardSmoker IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGIrl IsWorldTalkTeenGirl _auto_NotSpottedVehicle
+	criteria ConceptPlayerHeardSmoker IsNotCoughing IsTeenGirl IsTalk IsTalkTeenGirl IsWorldTalkTeenGirl _auto_NotSpottedVehicle
 	Response L4D1PlayerWarnHeardSmokerTeenGirl
 }
 
@@ -8328,7 +8321,7 @@ Rule L4D1PlayerLedgeSaveCriticalTeenGirl
 //--------------------------------------------------------------------------------------------------------------
 Response L4D1PlayerAirportIntroTeenGirl
 {
-	scene "scenes/TeenGirl/WorldAirport0102.vcd"  //Looks like the airport's still operating.  Let's try to get there.
+	scene "scenes/TeenGirl/WorldAirport0102.vcd" then self IntroEnd foo:0 0.1 //Looks like the airport's still operating.  Let's try to get there.
 	scene "scenes/TeenGirl/WorldAirportIntro04.vcd"  then NamVet IntroAirport01bb foo:0 -3.608 //That plane's headed right for the airport. Maybe they're still evacuating.
 	scene "scenes/TeenGirl/WorldAirportIntro05.vcd"  then Biker IntroAirport01fb foo:0 -3.263 //Flying out of this place would be a lot easier than walking.
 }
@@ -8342,8 +8335,8 @@ Rule L4D1PlayerAirportIntroTeenGirl
 
 Response L4D1PlayerAirportIntrozbTeenGirl
 {
-	scene "scenes/TeenGirl/WorldAirportIntro06.vcd"  //It's worth a try.
-	scene "scenes/TeenGirl/WorldAirportIntro07.vcd"  //We can't stay up here forever.
+	scene "scenes/TeenGirl/WorldAirportIntro06.vcd" then self IntroEnd foo:0 0.1 //It's worth a try.
+	scene "scenes/TeenGirl/WorldAirportIntro07.vcd" then self IntroEnd foo:0 0.1 //We can't stay up here forever.
 }
 Rule L4D1PlayerAirportIntrozbTeenGirl
 {
@@ -8353,8 +8346,8 @@ Rule L4D1PlayerAirportIntrozbTeenGirl
 
 Response L4D1PlayerHospitalIntro02TeenGirl
 {
-	scene "scenes/TeenGirl/WorldAirport0220.vcd"  //Good thinking!
-	scene "scenes/TeenGirl/WorldHospitalIntro01.vcd"  //Well, I guess we're going to the hospital.
+	scene "scenes/TeenGirl/WorldAirport0220.vcd" then self IntroEnd foo:0 0.1 //Good thinking!
+	scene "scenes/TeenGirl/WorldHospitalIntro01.vcd" then self IntroEnd foo:0 0.1 //Well, I guess we're going to the hospital.
 }
 Rule L4D1PlayerHospitalIntro02TeenGirl
 {
@@ -9078,7 +9071,7 @@ Rule L4D1PlayerLighthouseIntroTeenGirl
 
 Response L4D1PlayerLighthouseIntro01aTeenGirl
 {
-	scene "scenes/TeenGirl/Generic15.vcd"  //You're an optimist, I'll give you that Louis.
+	scene "scenes/TeenGirl/Generic15.vcd" then self IntroEnd foo:0 0.1 //You're an optimist, I'll give you that Louis.
 }
 Rule L4D1PlayerLighthouseIntro01aTeenGirl
 {
@@ -9391,6 +9384,14 @@ Rule SafeRoomStartTeenGirl
 {
 	criteria ConceptTalkIdle IsTeenGirl IsInStartArea AutoIsNotScavenge AutoIsNotSurvival _auto_NotSafeRoomStart
 	ApplyContext "Talk:1:45,_auto_SafeRoomStart:1:0,_auto_SafeRoomQuiet:1:5"
+	applycontexttoworld
+	Response NoResponse
+}
+
+Rule IntroEndTeenGirl
+{
+	criteria ConceptIntroEnd IsTeenGirl FromIsTeenGirl IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "Talk:0:0"
 	applycontexttoworld
 	Response NoResponse
 }

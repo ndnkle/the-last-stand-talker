@@ -45,8 +45,8 @@ Rule C1M3AlarmActiveGambler
 Response C4M3SaferoomGambler
 {
 	scene "scenes/Gambler/WorldC4M3B01.vcd"  then any _c4m3_startsafe02 foo:0 0.01 //Okay, everybody gassed up and good to go?
-	scene "scenes/Gambler/WorldC4M301.vcd"  //We got it, let's hump it back to the boat.
-	scene "scenes/Gambler/WorldC4M302.vcd"  //We got the diesel, let's hump it back to the boat.
+	scene "scenes/Gambler/WorldC4M301.vcd" then self IntroEnd foo:0 0.1 //We got it, let's hump it back to the boat.
+	scene "scenes/Gambler/WorldC4M302.vcd" then self IntroEnd foo:0 0.1 //We got the diesel, let's hump it back to the boat.
 }
 Rule C4M3SaferoomGambler
 {
@@ -1134,7 +1134,7 @@ Response C1M2SafeRoomb1Gambler
 {
 	scene "scenes/Gambler/WorldC1M1B103.vcd"  then coach C1M2SafeRoomb2 foo:0 -1.777 //I guess living here's finally paying off.
 	scene "scenes/Gambler/WorldC1M1B102.vcd"  then coach C1M2SafeRoomb2 foo:0 0.1 //Jesus, are you FROM here? Ugh, look at you. That is so depressing.
-	scene "scenes/Gambler/WorldC1M1B104.vcd"  //Get me to the mall and I'll make it worth your while.
+	scene "scenes/Gambler/WorldC1M1B104.vcd" then self IntroEnd foo:0 0.1 //Get me to the mall and I'll make it worth your while.
 }
 Rule C1M2SafeRoomb1Gambler
 {
@@ -1158,7 +1158,7 @@ Response C1M2SafeRoomb3Gambler
 {
 	scene "scenes/Gambler/WorldC1M1B49.vcd"  then producer C1M2SafeRoomb3 foo:0 0.01 //Hm. This'd be really awkward if I gave a shit about your feelings.
 	scene "scenes/Gambler/WorldC1M1B121.vcd"  then producer C1M2SafeRoomb3 foo:0 0.01 //Call 911, I hurt his feelings.
-	scene "scenes/Gambler/YouAreWelcomeC104.vcd"  //Whatever.
+	scene "scenes/Gambler/YouAreWelcomeC104.vcd" then self IntroEnd foo:0 0.1 //Whatever.
 }
 Rule C1M2SafeRoomb3Gambler
 {
@@ -1180,7 +1180,7 @@ Response C1M2SafeRoomd1Gambler
 {
 	scene "scenes/Gambler/WorldC1M1B34.vcd"  then producer C1M2SafeRoomd2 foo:0 -1.030 //Now we're talking.
 	scene "scenes/Gambler/WorldC1M2B01.vcd"  then producer C1M2SafeRoomd2a foo:0 -1.060 //Sounds good to me.
-	scene "scenes/Gambler/WorldC1M2B02.vcd"  //A gun store sounds like a fine to stop.
+	scene "scenes/Gambler/WorldC1M2B02.vcd" then self IntroEnd foo:0 0.1 //A gun store sounds like a fine to stop.
 }
 Rule C1M2SafeRoomd1Gambler
 {
@@ -1523,11 +1523,11 @@ Rule c2m4SeeChopperGambler
 //--------------------------------------------------------------------------------------------------------------
 Response c2m5_intro003Gambler
 {
-	scene "scenes/Gambler/WorldC2M5B04.vcd"  //Unless someone has a better idea, let's rock.
+	scene "scenes/Gambler/WorldC2M5B04.vcd" then self IntroEnd foo:0 0.1 //Unless someone has a better idea, let's rock.
 	scene "scenes/Gambler/WorldC2M457.vcd"  then any c2m5_intro025 foo:0 0.01 //I don't think we have a choice.
 	scene "scenes/Gambler/WorldC2M450.vcd"  then any c2m5_intro025 foo:0 0.01 //Okay, we'll set off the pyrotechnics, but I'm telling you right now.  I AM NOT GOING TO AIR GUITAR.
 	scene "scenes/Gambler/WorldC2M451.vcd"  then any c2m5_intro025 foo:0 0.01 //Okay, fine, we'll put on the finale show.
-	scene "scenes/Gambler/WorldC2M459.vcd"  //For once, I wish we would have just stumbled onto some cops.
+	scene "scenes/Gambler/WorldC2M459.vcd" then self IntroEnd foo:0 0.1 //For once, I wish we would have just stumbled onto some cops.
 	scene "scenes/Gambler/WorldC2M5B03.vcd"  then Any c2m5_intro012 foo:0 0.1 //I've never seen the Midnight Riders, but okay. Let's try it.
 }
 Rule c2m5_intro003Gambler
@@ -1568,7 +1568,7 @@ Rule c2m5_intro015Gambler
 
 Response c2m5_intro020Gambler
 {
-	scene "scenes/Gambler/WorldC2M5B04.vcd"  //Unless someone has a better idea, let's rock.
+	scene "scenes/Gambler/WorldC2M5B04.vcd" then self IntroEnd foo:0 0.1 //Unless someone has a better idea, let's rock.
 }
 Rule c2m5_intro020Gambler
 {
@@ -1781,7 +1781,7 @@ Rule C2M5ChopperOCDGambler
 //--------------------------------------------------------------------------------------------------------------
 Response C2M3SaferoomGambler
 {
-	scene "scenes/Gambler/WorldC2M2B22.vcd"  //This is the most RELAXING safe room I've ever been in.
+	scene "scenes/Gambler/WorldC2M2B22.vcd" then self IntroEnd foo:0 0.1 //This is the most RELAXING safe room I've ever been in.
 	scene "scenes/Gambler/WorldC2M301.vcd"  then self C2M3SafeIntro007 foo:0 0.2 //Why couldn't I have been in Vegas when the infection hit? Or even Atlantic city? Instead I am trapped inside some hillbilly tunnel of love.
 	scene "scenes/Gambler/WorldC2M3B02.vcd"  then mechanic C2M3SafeIntro006 foo:0 0.1 //You got your wish, Ellis. We're in an amusement park ride.
 	scene "scenes/Gambler/WorldC2M3B14.vcd"  then Mechanic C2M3SafeIntro006 foo:0 0.1 //You got your wish, Ellis. We're on a ride.
@@ -1798,7 +1798,7 @@ Rule C2M3SaferoomGambler
 
 Response C2M3SafeIntro007Gambler
 {
-	scene "scenes/Gambler/WorldC2M303.vcd"  //Did you see the sign out front?  Cousins only day today.
+	scene "scenes/Gambler/WorldC2M303.vcd" then self IntroEnd foo:0 0.1 //Did you see the sign out front?  Cousins only day today.
 }
 Rule C2M3SafeIntro007Gambler
 {
@@ -1808,7 +1808,7 @@ Rule C2M3SafeIntro007Gambler
 
 Response C2M3SafeIntro009Gambler
 {
-	scene "scenes/Gambler/WorldC2M3B06.vcd"  //Not cool, Rochelle.
+	scene "scenes/Gambler/WorldC2M3B06.vcd" then self IntroEnd foo:0 0.1 //Not cool, Rochelle.
 }
 Rule C2M3SafeIntro009Gambler
 {
@@ -1831,7 +1831,7 @@ Rule C2M3SafeIntro010Gambler
 
 Response C2M3SafeIntro012Gambler
 {
-	scene "scenes/Gambler/WorldC2M3B04.vcd"  //Psh! Huh. Several. Easily.
+	scene "scenes/Gambler/WorldC2M3B04.vcd" then self IntroEnd foo:0 0.1 //Psh! Huh. Several. Easily.
 }
 Rule C2M3SafeIntro012Gambler
 {
@@ -1841,8 +1841,8 @@ Rule C2M3SafeIntro012Gambler
 
 Response C2M3SafeIntro013Gambler
 {
-	scene "scenes/Gambler/WorldC2M2B21.vcd"  //Alright, but keep your hands to yourself.
-	scene "scenes/Gambler/WorldC2M3B01.vcd"  //I think we should clarify what constitutes "close".
+	scene "scenes/Gambler/WorldC2M2B21.vcd" then self IntroEnd foo:0 0.1 //Alright, but keep your hands to yourself.
+	scene "scenes/Gambler/WorldC2M3B01.vcd" then self IntroEnd foo:0 0.1 //I think we should clarify what constitutes "close".
 }
 Rule C2M3SafeIntro013Gambler
 {
@@ -1912,7 +1912,7 @@ Rule C3M2DisgustGambler
 Response C3M2SafeRoomGambler
 {
 	scene "scenes/Gambler/WorldC3M2B03.vcd"  then gambler C3M2SafeRoomb2 foo:0 .01 //These swamps don't agree with me.
-	scene "scenes/Gambler/WorldC3M2B05.vcd"  //I am not dying in this goddamn swamp.
+	scene "scenes/Gambler/WorldC3M2B05.vcd" then self IntroEnd foo:0 0.1 //I am not dying in this goddamn swamp.
 }
 Rule C3M2SafeRoomGambler
 {
@@ -1935,7 +1935,7 @@ Rule C3M2SafeRoom3dGambler
 Response C3M2SafeRoomb2Gambler
 {
 	scene "scenes/Gambler/WorldC3M2B01.vcd"  then mechanic C3M2SafeRoomb3 foo:0 .01 //This swamp is just a cesspool for disease.
-	scene "scenes/Gambler/WorldC3M2B02.vcd"  //I can feel my feet growing fungus.
+	scene "scenes/Gambler/WorldC3M2B02.vcd" then self IntroEnd foo:0 0.1 //I can feel my feet growing fungus.
 }
 Rule C3M2SafeRoomb2Gambler
 {
@@ -2173,25 +2173,21 @@ Rule C4StormBlindIdleGambler
 //--------------------------------------------------------------------------------------------------------------
 Response _c4m1Intro20Gambler
 {
-	scene "scenes/Gambler/WorldC4M1B07.vcd"  //The gas station's right across the street. Let's just get the gas and then we'll figure out how to signal Virgil.
+	scene "scenes/Gambler/WorldC4M1B07.vcd" then self IntroEnd foo:0 0.1 //The gas station's right across the street. Let's just get the gas and then we'll figure out how to signal Virgil.
 }
 Rule _c4m1Intro20Gambler
 {
 	criteria Concept_c4m1Intro20 IsGambler AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:5.114"
-	applycontexttoworld
 	Response _c4m1Intro20Gambler
 }
 
 Response _c4m1Intro23Gambler
 {
-	scene "scenes/Gambler/WorldC4M1B02.vcd"  //What gun bag?
+	scene "scenes/Gambler/WorldC4M1B02.vcd" then self IntroEnd foo:0 0.1 //What gun bag?
 }
 Rule _c4m1Intro23Gambler
 {
 	criteria Concept_c4m1Intro23 IsGambler AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:1.184"
-	applycontexttoworld
 	Response _c4m1Intro23Gambler
 }
 
@@ -2327,7 +2323,7 @@ Rule C5M1_intro006Gambler
 
 Response C5M1_intro007Gambler
 {
-	scene "scenes/Gambler/WorldC5M1B04.vcd"  //Yeah, well, seeing the bridge and getting to it are two different things.
+	scene "scenes/Gambler/WorldC5M1B04.vcd" then self IntroEnd foo:0 0.1 //Yeah, well, seeing the bridge and getting to it are two different things.
 }
 Rule C5M1_intro007Gambler
 {
@@ -3304,9 +3300,9 @@ Rule C5M5_saferoom001Gambler
 
 Response C5M5_saferoom003Gambler
 {
-	scene "scenes/Gambler/WorldC5M5B02.vcd"  //Oh yeah.
-	scene "scenes/Gambler/WorldC5M5B03.vcd"  //[chuckles] Allright, let's go.
-	scene "scenes/Gambler/WorldC5M5B04.vcd"  //[chuckles] Okay, allright, let's go.
+	scene "scenes/Gambler/WorldC5M5B02.vcd" then self IntroEnd foo:0 0.1 //Oh yeah.
+	scene "scenes/Gambler/WorldC5M5B03.vcd" then self IntroEnd foo:0 0.1 //[chuckles] Allright, let's go.
+	scene "scenes/Gambler/WorldC5M5B04.vcd" then self IntroEnd foo:0 0.1 //[chuckles] Okay, allright, let's go.
 }
 Rule C5M5_saferoom003Gambler
 {
@@ -3661,30 +3657,26 @@ Rule C6M1Intro_09dGambler
 
 Response C6M1Intro_10eGambler
 {
-	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting08.vcd"  //Whatever.
-	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting09.vcd"  //Whatever.
-	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting10.vcd"  //Whatever sweety.
-	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting11.vcd"  //Or: I could try is being more attractive to grease ball bikers.
-	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting12.vcd"  //Or: I could try is being more attractive to grease ball bikers.
+	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting08.vcd" then self IntroEnd foo:0 0.1 //Whatever.
+	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting09.vcd" then self IntroEnd foo:0 0.1 //Whatever.
+	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting10.vcd" then self IntroEnd foo:0 0.1 //Whatever sweety.
+	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting11.vcd" then self IntroEnd foo:0 0.1 //Or: I could try is being more attractive to grease ball bikers.
+	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting12.vcd" then self IntroEnd foo:0 0.1 //Or: I could try is being more attractive to grease ball bikers.
 }
 Rule C6M1Intro_10eGambler
 {
 	criteria ConceptC6M1Intro_10e IsGambler IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:4"
-	applycontexttoworld
 	Response C6M1Intro_10eGambler
 }
 
 Response C6M1Intro_11dGambler
 {
-	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting13.vcd"  //All right.
-	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting14.vcd"  //Yeah, all right.
+	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting13.vcd" then self IntroEnd foo:0 0.1 //All right.
+	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting14.vcd" then self IntroEnd foo:0 0.1 //Yeah, all right.
 }
 Rule C6M1Intro_11dGambler
 {
 	criteria ConceptC6M1Intro_11d IsGambler IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:1"
-	applycontexttoworld
 	Response C6M1Intro_11dGambler
 }
 
@@ -3721,14 +3713,12 @@ Rule C6M1Intro_15aGambler
 
 Response C6M1Intro_15eGambler
 {
-	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting19.vcd"  //Hey, lighten up. Man, no one can take a joke anymore.
-	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting20.vcd"  //Wouldja  lighten up?  Man, no one can take a joke anymore.
+	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting19.vcd" then self IntroEnd foo:0 0.1 //Hey, lighten up. Man, no one can take a joke anymore.
+	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting20.vcd" then self IntroEnd foo:0 0.1 //Wouldja  lighten up?  Man, no one can take a joke anymore.
 }
 Rule C6M1Intro_15eGambler
 {
 	criteria ConceptC6M1Intro_15e IsGambler IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:5"
-	applycontexttoworld
 	Response C6M1Intro_15eGambler
 }
 
@@ -3744,14 +3734,12 @@ Rule C6M1Intro_16aGambler
 
 Response C6M1Intro_ConfirmObjectiveGambler
 {
-	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting08.vcd"  //Whatever.
-	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting09.vcd"  //Whatever.
+	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting08.vcd" then self IntroEnd foo:0 0.1 //Whatever.
+	scene "scenes/Gambler/DLC1_C6M1_InitialMeeting09.vcd" then self IntroEnd foo:0 0.1 //Whatever.
 }
 Rule C6M1Intro_ConfirmObjectiveGambler
 {
 	criteria ConceptC6M1Intro_ConfirmObjective IsGambler IsNotVersus AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:5"
-	applycontexttoworld
 	Response C6M1Intro_ConfirmObjectiveGambler
 }
 
@@ -3887,7 +3875,7 @@ Rule DLC1_C6M2_SafeRoomConvoFrancisStartGambler
 
 Response DLC1_C6M2_SafeRoomConvo01bGambler
 {
-	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo02.vcd"  //Go to hell.
+	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo02.vcd" then self IntroEnd foo:0 0.1 //Go to hell.
 }
 Rule DLC1_C6M2_SafeRoomConvo01bGambler
 {
@@ -3897,7 +3885,7 @@ Rule DLC1_C6M2_SafeRoomConvo01bGambler
 
 Response DLC1_C6M2_SafeRoomConvo02bGambler
 {
-	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo04.vcd"  //I don't have a problem with leaving the car AND you behind. Okay, Ellis?
+	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo04.vcd" then self IntroEnd foo:0 0.1 //I don't have a problem with leaving the car AND you behind. Okay, Ellis?
 }
 Rule DLC1_C6M2_SafeRoomConvo02bGambler
 {
@@ -3907,10 +3895,10 @@ Rule DLC1_C6M2_SafeRoomConvo02bGambler
 
 Response DLC1_C6M2_SafeRoomConvo06aGambler
 {
-	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo05.vcd"  //Boiled nuts? Christ. What is wrong with you Southerners?
-	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo06.vcd"  //Boiled nuts? Coah, come on, what is wrong with you Southerners?
-	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo07.vcd"  //And you want to live?
-	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo08.vcd"  //I hate your life Coach.
+	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo05.vcd" then self IntroEnd foo:0 0.1 //Boiled nuts? Christ. What is wrong with you Southerners?
+	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo06.vcd" then self IntroEnd foo:0 0.1 //Boiled nuts? Coah, come on, what is wrong with you Southerners?
+	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo07.vcd" then self IntroEnd foo:0 0.1 //And you want to live?
+	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo08.vcd" then self IntroEnd foo:0 0.1 //I hate your life Coach.
 }
 Rule DLC1_C6M2_SafeRoomConvo06aGambler
 {
@@ -3920,7 +3908,7 @@ Rule DLC1_C6M2_SafeRoomConvo06aGambler
 
 Response DLC1_C6M2_SafeRoomConvo07aGambler
 {
-	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo09.vcd"  //I think you had a better chance with that witch.
+	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo09.vcd" then self IntroEnd foo:0 0.1 //I think you had a better chance with that witch.
 }
 Rule DLC1_C6M2_SafeRoomConvo07aGambler
 {
@@ -3968,7 +3956,7 @@ Response DLC1_C6M2_SafeRoomConvo08eGambler
 {
 	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo14.vcd"  then Producer DLC1_C6M2_SafeRoomConvo08f foo:0 -2.774 //I don't know... he fills out a vest pretty good.
 	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo15.vcd"  then Producer DLC1_C6M2_SafeRoomConvo08f foo:0 -1.303 //He could be the one.
-	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo16.vcd"  //Look, there are probably 10 guys left on the planet Rochelle, and you're not getting any younger, sweetie.
+	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo16.vcd" then self IntroEnd foo:0 0.1 //Look, there are probably 10 guys left on the planet Rochelle, and you're not getting any younger, sweetie.
 }
 Rule DLC1_C6M2_SafeRoomConvo08eGambler
 {
@@ -3978,8 +3966,8 @@ Rule DLC1_C6M2_SafeRoomConvo08eGambler
 
 Response DLC1_C6M2_SafeRoomConvo09bGambler
 {
-	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo18.vcd"  //A germ just wiped out the whole planet, Coach. So yes.
-	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo19.vcd"  //Coach, A germ just wiped out the whole planet. So yes.
+	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo18.vcd" then self IntroEnd foo:0 0.1 //A germ just wiped out the whole planet, Coach. So yes.
+	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo19.vcd" then self IntroEnd foo:0 0.1 //Coach, A germ just wiped out the whole planet. So yes.
 }
 Rule DLC1_C6M2_SafeRoomConvo09bGambler
 {
@@ -4011,7 +3999,7 @@ Rule DLC1_C6M2_SafeRoomConvo10bGambler
 
 Response DLC1_C6M2_SafeRoomConvo10dGambler
 {
-	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo22.vcd"  //Under the what now?
+	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo22.vcd" then self IntroEnd foo:0 0.1 //Under the what now?
 }
 Rule DLC1_C6M2_SafeRoomConvo10dGambler
 {
@@ -4021,7 +4009,7 @@ Rule DLC1_C6M2_SafeRoomConvo10dGambler
 
 Response DLC1_C6M2_SafeRoomConvo11bGambler
 {
-	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo24.vcd"  //Yeah agreed, she is totally out of your league.
+	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo24.vcd" then self IntroEnd foo:0 0.1 //Yeah agreed, she is totally out of your league.
 }
 Rule DLC1_C6M2_SafeRoomConvo11bGambler
 {
@@ -4063,7 +4051,7 @@ Rule DLC1_C6M2_SafeRoomConvo13aGambler
 
 Response DLC1_C6M2_SafeRoomConvo13cGambler
 {
-	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo30.vcd"  //Coach, it's a hole. Oh no, excuse me, an historic hole. Under a river.
+	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo30.vcd" then self IntroEnd foo:0 0.1 //Coach, it's a hole. Oh no, excuse me, an historic hole. Under a river.
 }
 Rule DLC1_C6M2_SafeRoomConvo13cGambler
 {
@@ -4083,7 +4071,7 @@ Rule DLC1_C6M2_SafeRoomConvo13cFrancisIntroGambler
 
 Response DLC1_C6M2_SafeRoomConvo14fGambler
 {
-	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo31.vcd"  //Yeah, no, I'm good, I'm good.
+	scene "scenes/Gambler/DLC1_C6M2_SafeRoomConvo31.vcd" then self IntroEnd foo:0 0.1 //Yeah, no, I'm good, I'm good.
 }
 Rule DLC1_C6M2_SafeRoomConvo14fGambler
 {
@@ -4093,7 +4081,7 @@ Rule DLC1_C6M2_SafeRoomConvo14fGambler
 
 Response DLC1_C6M2_SafeRoomConvo15cGambler
 {
-	scene "scenes/Gambler/YouAreWelcomeC104.vcd"  //Whatever.
+	scene "scenes/Gambler/YouAreWelcomeC104.vcd" then self IntroEnd foo:0 0.1 //Whatever.
 }
 Rule DLC1_C6M2_SafeRoomConvo15cGambler
 {
@@ -4353,8 +4341,8 @@ Rule DLC1_C6M3_SafeRoomConvo03bGambler
 
 Response DLC1_C6M3_SafeRoomConvo03dGambler
 {
-	scene "scenes/Gambler/DLC1_C6M3_SafeRoomConvo06.vcd"  //I'm not even going to look.
-	scene "scenes/Gambler/DLC1_C6M3_SafeRoomConvo07.vcd"  //I'm not even going to look, Ellis.
+	scene "scenes/Gambler/DLC1_C6M3_SafeRoomConvo06.vcd" then self IntroEnd foo:0 0.1 //I'm not even going to look.
+	scene "scenes/Gambler/DLC1_C6M3_SafeRoomConvo07.vcd" then self IntroEnd foo:0 0.1 //I'm not even going to look, Ellis.
 }
 Rule DLC1_C6M3_SafeRoomConvo03dGambler
 {
@@ -4397,10 +4385,10 @@ Rule DLC1_C6M3_SafeRoomConvo05bGambler
 
 Response DLC1_C6M3_SafeRoomConvo05dGambler
 {
-	scene "scenes/Gambler/DLC1_C6M3_SafeRoomConvo12.vcd"  //What? I'm a handsome man.
-	scene "scenes/Gambler/DLC1_C6M3_SafeRoomConvo13.vcd"  //What? I'm a closer.
-	scene "scenes/Gambler/DLC1_C6M3_SafeRoomConvo14.vcd"  //What? I'm a handsome man, what can I tell ya?
-	scene "scenes/Gambler/DLC1_C6M3_SafeRoomConvo15.vcd"  //A-B-C. A;ways be closing.
+	scene "scenes/Gambler/DLC1_C6M3_SafeRoomConvo12.vcd" then self IntroEnd foo:0 0.1 //What? I'm a handsome man.
+	scene "scenes/Gambler/DLC1_C6M3_SafeRoomConvo13.vcd" then self IntroEnd foo:0 0.1 //What? I'm a closer.
+	scene "scenes/Gambler/DLC1_C6M3_SafeRoomConvo14.vcd" then self IntroEnd foo:0 0.1 //What? I'm a handsome man, what can I tell ya?
+	scene "scenes/Gambler/DLC1_C6M3_SafeRoomConvo15.vcd" then self IntroEnd foo:0 0.1 //A-B-C. A;ways be closing.
 }
 Rule DLC1_C6M3_SafeRoomConvo05dGambler
 {
@@ -4458,7 +4446,7 @@ Response c6m3_outroGambler
 }
 Rule c6m3_outroGambler
 {
-	criteria Conceptc6m3_outro3 IsGambler isC6m3_port IsNotVersus IsNotIncapacitated ChanceToFire100Percent
+	criteria Conceptc6m3_outro3 IsGambler isC6m3_port IsNotVersus IsNotIncapacitated ChanceToFire100Percent FromIsBiker
 	forceweight 1
 	Response c6m3_outroGambler
 }
@@ -4469,7 +4457,7 @@ Response c6m3_outroEllisGambler
 }
 Rule c6m3_outroEllisGambler
 {
-	criteria Conceptc6m3_outro3 IsGambler IsMechanicAlive ChanceToFire50Percent IsNotIncapacitated isC6m3_port IsNotVersus
+	criteria Conceptc6m3_outro3 IsGambler IsMechanicAlive ChanceToFire50Percent IsNotIncapacitated isC6m3_port IsNotVersus FromIsBiker
 	forceweight 5
 	Response c6m3_outroEllisGambler
 }
@@ -4481,7 +4469,7 @@ Response c6m3_outroZoeyOutroGambler
 }
 Rule c6m3_outroZoeyOutroGambler
 {
-	criteria Conceptc6m3_outroL4D1011a IsGambler IsNotIncapacitated
+	criteria Conceptc6m3_outroL4D1011a IsGambler IsNotIncapacitated FromIsMechanic
 	Response c6m3_outroZoeyOutroGambler
 }
 
@@ -10886,7 +10874,7 @@ Response C4M2LockTheDoorCheckPointGambler
 }
 Rule C4M2LockTheDoorCheckPointGambler
 {
-	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsGambler IsInSafeSpot IsTalk IsTalkGambler IsWorldTalkGambler ismap_c4m2_sugarmill_a
+	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsGambler IsInSafeSpot IsTalk IsTalkGambler IsWorldTalkGambler ismap_c4m2_sugarmill_a AutoIsNotScavenge AutoIsNotSurvival
 	Response C4M2LockTheDoorCheckPointGambler
 }
 
@@ -11011,7 +10999,7 @@ Response PlayerGetInsideCheckPointGambler
 }
 Rule PlayerGetInsideCheckPointGambler
 {
-	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsGambler IsInSafeSpot IsTalk IsTalkGambler SomeoneOutsideSafeSpot IsWorldTalkGambler
+	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsGambler IsInSafeSpot IsTalk IsTalkGambler SomeoneOutsideSafeSpot IsWorldTalkGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerGetInsideCheckPointGambler
 }
 
@@ -11027,7 +11015,7 @@ Response PlayerStayTogetherSaferoomGambler
 }
 Rule PlayerStayTogetherSaferoomGambler
 {
-	criteria ConceptPlayerStayTogether IsNotCoughing IsGambler IsInSafeSpot IsTalk IsTalkGambler SomeoneOutsideSafeSpot IsWorldTalkGambler
+	criteria ConceptPlayerStayTogether IsNotCoughing IsGambler IsInSafeSpot IsTalk IsTalkGambler SomeoneOutsideSafeSpot IsWorldTalkGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerStayTogetherSaferoomGambler
 }
 
@@ -11040,7 +11028,7 @@ Response PlayerGetInsideCheckPointC2M2Gambler
 }
 Rule PlayerGetInsideCheckPointC2M2Gambler
 {
-	criteria ConceptPlayerGetInsideCheckPoint ismap_c2m2 IsNotCoughing IsGambler IsInSafeSpot IsTalk IsTalkGambler SomeoneOutsideSafeSpot IsWorldTalkGambler
+	criteria ConceptPlayerGetInsideCheckPoint ismap_c2m2 IsNotCoughing IsGambler IsInSafeSpot IsTalk IsTalkGambler SomeoneOutsideSafeSpot IsWorldTalkGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerGetInsideCheckPointC2M2Gambler
 }
 
@@ -11051,7 +11039,7 @@ Response PlayerGetInsideCheckPointC4M3Gambler
 }
 Rule PlayerGetInsideCheckPointC4M3Gambler
 {
-	criteria ConceptPlayerGetInsideCheckPoint isc4m3 IsNotCoughing IsGambler IsInSafeSpot IsTalk IsTalkGambler SomeoneOutsideSafeSpot IsWorldTalkGambler
+	criteria ConceptPlayerGetInsideCheckPoint isc4m3 IsNotCoughing IsGambler IsInSafeSpot IsTalk IsTalkGambler SomeoneOutsideSafeSpot IsWorldTalkGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerGetInsideCheckPointC4M3Gambler
 }
 
@@ -11322,7 +11310,7 @@ Response PlayerLockTheDoorCheckPointGambler
 }
 Rule PlayerLockTheDoorCheckPointGambler
 {
-	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsGambler IsInSafeSpot IsNotAlone IsTalk IsTalkGambler IsWorldTalkGambler
+	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsGambler IsInSafeSpot IsNotAlone IsTalk IsTalkGambler IsWorldTalkGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerLockTheDoorCheckPointGambler
 }
 
@@ -11333,7 +11321,7 @@ Response PlayerLockTheDoorCheckPointC1Gambler
 }
 Rule PlayerLockTheDoorCheckPointC1Gambler
 {
-	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsGambler IsInSafeSpot ismap_c1m1_hotel IsNotAlone IsTalk IsTalkGambler IsWorldTalkGambler
+	criteria ConceptPlayerLockTheDoorCheckPoint IsNotCoughing IsGambler IsInSafeSpot ismap_c1m1_hotel IsNotAlone IsTalk IsTalkGambler IsWorldTalkGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response PlayerLockTheDoorCheckPointC1Gambler
 }
 
@@ -11414,22 +11402,6 @@ Rule PlayerRevivedByDefibrillator2Gambler
 	ApplyContext "TalkGambler:1:3"
 	applycontexttoworld
 	Response PlayerRevivedByDefibrillator2Gambler
-}
-
-Response PlayerStayTogetherInsideGambler
-{
-	scene "scenes/Gambler/StayTogetherInside01.vcd"  //Get inside!
-	scene "scenes/Gambler/StayTogetherInside02.vcd"  //Everybody INSIDE!
-	scene "scenes/Gambler/StayTogetherInside03.vcd"  //Inside NOW!
-	scene "scenes/Gambler/StayTogetherInside04.vcd"  //Quit screwing around, get inside!
-	scene "scenes/Gambler/StayTogetherInside05.vcd"  //Don't make me come out there for you!
-	scene "scenes/Gambler/StayTogetherInside06.vcd"  //Quit screwing around, get inside!
-	scene "scenes/Gambler/StayTogetherInside07.vcd"  //Get inside!
-}
-Rule PlayerStayTogetherInsideGambler
-{
-	criteria ConceptPlayerGetInsideCheckPoint IsNotCoughing IsGambler IsInSafeSpot IsTalk IsTalkGambler SomeoneOutsideSafeSpot IsWorldTalkGambler
-	Response PlayerStayTogetherInsideGambler
 }
 
 Response PlayerSuggestMeHealthGambler
@@ -11541,7 +11513,7 @@ Response PlayerTransitionGambler
 }
 Rule PlayerTransitionGambler
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler IsNotSomeoneDied isNotmap_c1m1_hotel
+	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler IsNotSomeoneDied isNotmap_c1m1_hotel AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionGambler
@@ -11563,7 +11535,7 @@ Response PlayerTransitionCloseGambler
 }
 Rule PlayerTransitionCloseGambler
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler IsNotAlone IsSomeoneDied isNotmap_c1m1_hotel
+	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler IsNotAlone IsSomeoneDied isNotmap_c1m1_hotel AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionCloseGambler
@@ -11575,7 +11547,7 @@ Response PlayerTransitionSoloGambler
 }
 Rule PlayerTransitionSoloGambler
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler IsAlone IsSomeoneDied isNotmap_c1m1_hotel
+	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler IsAlone IsSomeoneDied isNotmap_c1m1_hotel AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionSoloGambler
@@ -11589,7 +11561,7 @@ Response PlayerTransitionC1M2Gambler
 }
 Rule PlayerTransitionC1M2Gambler
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler ismap_c1m2_streets IsNotAlone IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler ismap_c1m2_streets IsNotAlone IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionC1M2Gambler
@@ -11601,7 +11573,7 @@ Response PlayerTransitionCloseC1M2Gambler
 }
 Rule PlayerTransitionCloseC1M2Gambler
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler ismap_c1m2_streets IsNotAlone IsSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler ismap_c1m2_streets IsNotAlone IsSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionCloseC1M2Gambler
@@ -11615,7 +11587,7 @@ Response PlayerTransitionC1M3Gambler
 }
 Rule PlayerTransitionC1M3Gambler
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler ismap_c1m3_mall IsNotAlone IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler ismap_c1m3_mall IsNotAlone IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionC1M3Gambler
@@ -11627,7 +11599,7 @@ Response PlayerTransitionC2M1Gambler
 }
 Rule PlayerTransitionC2M1Gambler
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler ismap_c2m1 IsNotAlone IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler ismap_c2m1 IsNotAlone IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionC2M1Gambler
@@ -11639,7 +11611,7 @@ Response PlayerTransitionC2M4Gambler
 }
 Rule PlayerTransitionC2M4Gambler
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler ismap_c2m4 IsNotAlone IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler ismap_c2m4 IsNotAlone IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionC2M4Gambler
@@ -11651,7 +11623,7 @@ Response PlayerTransitionC4M2Gambler
 }
 Rule PlayerTransitionC4M2Gambler
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler ismap_c4m2_sugarmill_a IsNotAlone IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler ismap_c4m2_sugarmill_a IsNotAlone IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionC4M2Gambler
@@ -11663,7 +11635,7 @@ Response PlayerTransitionC4M3Gambler
 }
 Rule PlayerTransitionC4M3Gambler
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler isc4m3 IsNotAlone IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler isc4m3 IsNotAlone IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionC4M3Gambler
@@ -11676,7 +11648,7 @@ Response PlayerTransitionC5M4Gambler
 }
 Rule PlayerTransitionC5M4Gambler
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler IsMapc5m4_quarter IsNotAlone IsNotSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler IsMapc5m4_quarter IsNotAlone IsNotSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionC5M4Gambler
@@ -11692,7 +11664,7 @@ Response PlayerTransitionCloseC6M1Gambler
 }
 Rule PlayerTransitionCloseC6M1Gambler
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler Isc6m1_riverbank IsSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler Isc6m1_riverbank IsSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionCloseC6M1Gambler
@@ -11700,7 +11672,7 @@ Rule PlayerTransitionCloseC6M1Gambler
 
 Rule PlayerTransitionCloseC6M2Gambler
 {
-	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler Isc6m2_bedlam IsSomeoneDied
+	criteria ConceptPlayerTransition IsNotCoughing IsGambler IsNotSaidPlayerTransition IsTalk IsTalkGambler IsWorldTalkGambler Isc6m2_bedlam IsSomeoneDied AutoIsNotScavenge AutoIsNotSurvival
 	ApplyContext "SaidPlayerTransition:1:90"
 	applycontexttoworld
 	Response PlayerTransitionCloseC6M1Gambler
@@ -14475,17 +14447,17 @@ Response _c4m3_startsafe02Gambler
 }
 Rule _c4m3_startsafe02Gambler
 {
-	criteria Concept_c4m3_startsafe02 IsGambler IsInStartArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_c4m3_startsafe02 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response _c4m3_startsafe02Gambler
 }
 
 Response _c4m3_startsafe04Gambler
 {
-	scene "scenes/Gambler/WorldC4M3B02.vcd"  //Let's hit it.
+	scene "scenes/Gambler/WorldC4M3B02.vcd" then self IntroEnd foo:0 0.1 //Let's hit it.
 }
 Rule _c4m3_startsafe04Gambler
 {
-	criteria Concept_c4m3_startsafe04 IsGambler IsInStartArea AutoIsNotScavenge AutoIsNotSurvival
+	criteria Concept_c4m3_startsafe04 IsGambler AutoIsNotScavenge AutoIsNotSurvival
 	Response _c4m3_startsafe04Gambler
 }
 
@@ -14530,7 +14502,7 @@ Rule _C4M5_Intro02Gambler
 
 Response _C4M5_Intro04Gambler
 {
-	scene "scenes/Gambler/WorldC4M4B12.vcd"  //It's worth a shot.
+	scene "scenes/Gambler/WorldC4M4B12.vcd" then self IntroEnd foo:0 0.1 //It's worth a shot.
 }
 Rule _C4M5_Intro04Gambler
 {
@@ -14675,57 +14647,47 @@ Rule _introc1m1b06Gambler
 
 Response _introc1m1b08donutsGambler
 {
-	scene "scenes/Gambler/WorldC1M1B122.vcd"  //I trust you. You look like a man who knows his donuts.
+	scene "scenes/Gambler/WorldC1M1B122.vcd" then self IntroEnd foo:0 0.1 //I trust you. You look like a man who knows his donuts.
 }
 Rule _introc1m1b08donutsGambler
 {
 	criteria Concept_introc1m1b08donuts IsGambler AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:4.315"
-	applycontexttoworld
 	Response _introc1m1b08donutsGambler
 }
 
 Response _introc1m1b09Gambler
 {
-	scene "scenes/Gambler/WorldC1M1B100.vcd"  //Good, that's decided. Moving on: I think this building's on fire. Sooo... I'd like to leave it.
+	scene "scenes/Gambler/WorldC1M1B100.vcd" then self IntroEnd foo:0 0.1 //Good, that's decided. Moving on: I think this building's on fire. Sooo... I'd like to leave it.
 }
 Rule _introc1m1b09Gambler
 {
 	criteria Concept_introc1m1b09 IsGambler AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:4.315"
-	applycontexttoworld
 	Response _introc1m1b09Gambler
 }
 
 Response _introc1m1b10Gambler
 {
-	scene "scenes/Gambler/WorldC1M1B95.vcd"  //Then so am I. Grab a weapon and let's go. I think this goddamn building's on fire.
+	scene "scenes/Gambler/WorldC1M1B95.vcd" then self IntroEnd foo:0 0.1 //Then so am I. Grab a weapon and let's go. I think this goddamn building's on fire.
 }
 Rule _introc1m1b10Gambler
 {
 	criteria Concept_introc1m1b10 IsGambler AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:4.315"
-	applycontexttoworld
 	Response _introc1m1b10Gambler
 }
 
 Response _introc1m1lastGambler
 {
-	scene "scenes/Gambler/WorldC1M1B115.vcd"  //Good enough for me. Grab a weapon and let's go.
+	scene "scenes/Gambler/WorldC1M1B115.vcd" then self IntroEnd foo:0 0.1 //Good enough for me. Grab a weapon and let's go.
 }
 Rule _introc1m1lastGambler
 {
 	criteria Concept_introc1m1last IsGambler AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:2.678"
-	applycontexttoworld
 	Response _introc1m1lastGambler
 }
 
 Rule _introc1m1lastweaponsGambler
 {
 	criteria Concept_introc1m1lastweapons IsGambler AutoIsNotScavenge AutoIsNotSurvival
-	ApplyContext "Talk:1:2.678"
-	applycontexttoworld
 	Response _introc1m1lastGambler
 }
 
@@ -14973,7 +14935,7 @@ Rule C1M3SafeRoomGambler
 
 Response C1M3SafeRoom2aGambler
 {
-	scene "scenes/Gambler/WorldC1M3B01.vcd"  //If anyone sees a men's store let me know. I got blood on this suit.
+	scene "scenes/Gambler/WorldC1M3B01.vcd" then self IntroEnd foo:0 0.1 //If anyone sees a men's store let me know. I got blood on this suit.
 }
 Rule C1M3SafeRoom2aGambler
 {
@@ -14983,7 +14945,7 @@ Rule C1M3SafeRoom2aGambler
 
 Response C1M3SafeRoom2bGambler
 {
-	scene "scenes/Gambler/WorldC1M3B03.vcd"  //Ugh. GOD, I hate malls.
+	scene "scenes/Gambler/WorldC1M3B03.vcd" then self IntroEnd foo:0 0.1 //Ugh. GOD, I hate malls.
 }
 Rule C1M3SafeRoom2bGambler
 {
@@ -15489,7 +15451,7 @@ Rule PlayerCr0wnedBrideProducerGambler
 
 Response WeddingWitchDead02Gambler
 {
-	scene "scenes/Gambler/DLC1_C6M1_WeddingWitchDead05.vcd" then producer WeddingWitchDead02a foo:0 0.1 //Even for us, that was just too weird.
+	scene "scenes/Gambler/DLC1_C6M1_WeddingWitchDead04.vcd" then producer WeddingWitchDead02a foo:0 0.1 //Even for us, that was just too weird.
 }
 Rule WeddingWitchDead02Gambler
 {
@@ -15546,9 +15508,9 @@ Rule WorldIntroC31a3Gambler
 Response WorldIntroC31b1Gambler
 {
 	scene "scenes/Gambler/WorldC3M1B06.vcd"  then producer WorldIntroC31e2 foo:0 -1.403 //This looks like a friendly place.
-	scene "scenes/Gambler/WorldC3M1B07.vcd"  //I don't think zombies can read.
-	scene "scenes/Gambler/WorldC3M1B08.vcd"  //They probably should have added no zombies to that sign.
-	scene "scenes/Gambler/WorldC3M1B05.vcd"  //Great, we crash land in front of a village that hates everyone.
+	scene "scenes/Gambler/WorldC3M1B07.vcd" then self IntroEnd foo:0 0.1 //I don't think zombies can read.
+	scene "scenes/Gambler/WorldC3M1B08.vcd" then self IntroEnd foo:0 0.1 //They probably should have added no zombies to that sign.
+	scene "scenes/Gambler/WorldC3M1B05.vcd" then self IntroEnd foo:0 0.1 //Great, we crash land in front of a village that hates everyone.
 }
 Rule WorldIntroC31b1Gambler
 {
@@ -15568,7 +15530,7 @@ Rule WorldIntroC31c2Gambler
 
 Response WorldIntroC31c4Gambler
 {
-	scene "scenes/Gambler/YouAreWelcomeC104.vcd"  //Whatever.
+	scene "scenes/Gambler/YouAreWelcomeC104.vcd" then self IntroEnd foo:0 0.1 //Whatever.
 }
 Rule WorldIntroC31c4Gambler
 {
@@ -15578,7 +15540,7 @@ Rule WorldIntroC31c4Gambler
 
 Response WorldIntroC31d1Gambler
 {
-	scene "scenes/Gambler/WorldC3M1B04.vcd"  then mechanic WorldIntroC31d2 foo:0 -2.303 //No problem big guy, sorry about the landing.
+	scene "scenes/Gambler/WorldC3M1B04.vcd"  then any WorldIntroC31d2 foo:0 -2.303 //No problem big guy, sorry about the landing.
 }
 Rule WorldIntroC31d1Gambler
 {
@@ -15588,7 +15550,7 @@ Rule WorldIntroC31d1Gambler
 
 Response WorldIntroC31e3aGambler
 {
-	scene "scenes/Gambler/WorldC3M1B05.vcd"  //Great, we crash land in front of a village that hates everyone.
+	scene "scenes/Gambler/WorldC3M1B05.vcd" then self IntroEnd foo:0 0.1 //Great, we crash land in front of a village that hates everyone.
 }
 Rule WorldIntroC31e3aGambler
 {
@@ -16406,10 +16368,10 @@ Rule C13M1Intro3Gambler
 
 Response C13M1IntroLastGambler
 {
-	scene "scenes/Gambler/MoveOn01.vcd"  //Look at ya. What are we waiting for?  Let's go.
-	scene "scenes/Gambler/MoveOn02.vcd"  //Let's roll!
-	scene "scenes/Gambler/MoveOn03.vcd"  //Time to move.
-	scene "scenes/Gambler/MoveOn04.vcd"  //What are we waiting for?  Let's go.
+	scene "scenes/Gambler/MoveOn01.vcd" then self IntroEnd foo:0 0.1 //Look at ya. What are we waiting for?  Let's go.
+	scene "scenes/Gambler/MoveOn02.vcd" then self IntroEnd foo:0 0.1 //Let's roll!
+	scene "scenes/Gambler/MoveOn03.vcd" then self IntroEnd foo:0 0.1 //Time to move.
+	scene "scenes/Gambler/MoveOn04.vcd" then self IntroEnd foo:0 0.1 //What are we waiting for?  Let's go.
 }
 Rule C13M1IntroLastGambler
 {
@@ -16419,7 +16381,7 @@ Rule C13M1IntroLastGambler
 
 Response C13M1IntroLocationLastGambler
 {
-	scene "scenes/Gambler/WorldC1M1B115.vcd"  //Good enough for me. Grab a weapon and let's go.
+	scene "scenes/Gambler/WorldC1M1B115.vcd" then self IntroEnd foo:0 0.1 //Good enough for me. Grab a weapon and let's go.
 }
 Rule C13M1IntroLocationLastGambler
 {
@@ -16826,6 +16788,14 @@ Rule SafeRoomStartGambler
 {
 	criteria ConceptTalkIdle IsGambler IsInStartArea AutoIsNotScavenge AutoIsNotSurvival _auto_NotSafeRoomStart
 	ApplyContext "Talk:1:45,_auto_SafeRoomStart:1:0,_auto_SafeRoomQuiet:1:5"
+	applycontexttoworld
+	Response NoResponse
+}
+
+Rule IntroEndGambler
+{
+	criteria ConceptIntroEnd IsGambler FromIsGambler IsNotSaidLeavingSafeArea AutoIsNotScavenge AutoIsNotSurvival
+	ApplyContext "Talk:0:0"
 	applycontexttoworld
 	Response NoResponse
 }
